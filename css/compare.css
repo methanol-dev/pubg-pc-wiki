@@ -1,0 +1,198 @@
+/* ==========================================================================
+   PUBG PC TACTICAL WIKI - COMPARE STYLESHEET
+   Side-by-Side Weapon Comparison Tool
+   ========================================================================== */
+
+.compare-page-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.compare-title {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.compare-title span {
+  color: var(--pubg-gold);
+}
+
+.compare-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* --------------------------------------------------------------------------
+   Weapon Selectors Bar
+   -------------------------------------------------------------------------- */
+.compare-selector-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .compare-selector-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.selector-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-tactical);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.selector-label {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--pubg-gold);
+}
+
+.weapon-dropdown {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  padding: 0.65rem 0.85rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.weapon-dropdown:focus {
+  border-color: var(--pubg-gold);
+  box-shadow: 0 0 10px var(--pubg-gold-glow);
+}
+
+.weapon-slot-preview {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-primary);
+  border-radius: var(--radius-sm);
+  border: 1px dashed var(--border-tactical);
+}
+
+.weapon-slot-preview svg {
+  max-height: 60px;
+  width: 75%;
+}
+
+/* --------------------------------------------------------------------------
+   Comparison Table & Showdown Bars
+   -------------------------------------------------------------------------- */
+.showdown-table-wrap {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-tactical);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.showdown-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.showdown-table th,
+.showdown-table td {
+  padding: 1rem 1.25rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.showdown-table th {
+  background: var(--bg-surface-elevated);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+}
+
+.showdown-table th.metric-col {
+  text-align: left;
+  color: var(--pubg-gold);
+  width: 25%;
+}
+
+.metric-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+  display: block;
+}
+
+.metric-desc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.val-cell {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  position: relative;
+}
+
+.val-cell.winner {
+  color: #55e616;
+  background: rgba(85, 230, 22, 0.06);
+}
+
+.val-cell.winner::after {
+  content: '★';
+  position: absolute;
+  top: 6px;
+  right: 12px;
+  font-size: 0.75rem;
+  color: #55e616;
+}
+
+.val-cell.loser {
+  color: var(--text-secondary);
+}
+
+/* TTK Showdown Visual Banner */
+.ttk-showdown-section {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-tactical);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  margin-bottom: 3rem;
+}
+
+.ttk-bar-row {
+  margin-bottom: 1.25rem;
+}
+
+.ttk-bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}

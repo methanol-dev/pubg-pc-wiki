@@ -1,0 +1,159 @@
+{
+  "helmets": [
+    {
+      "id": "helmet-1",
+      "level": 1,
+      "name": "Motorcycle Helmet (Level 1)",
+      "durability": 80,
+      "reduction": 30,
+      "description": {
+        "vi": "Mũ bảo hiểm xe máy giảm 30% sát thương vào vùng đầu. Bị hạ 1 viên bởi tất cả súng bắn tỉa (SR) và DMR mạnh.",
+        "en": "Motorcycle helmet offering 30% headshot damage reduction. Easily breached by any sniper or high-powered DMR in 1 tap."
+      }
+    },
+    {
+      "id": "helmet-2",
+      "level": 2,
+      "name": "Military Helmet (Level 2)",
+      "durability": 150,
+      "reduction": 40,
+      "description": {
+        "vi": "Mũ quân sự tiêu chuẩn giảm 40% sát thương đầu. Giúp sống sót trước 1 phát bắn vào đầu của súng trường AR.",
+        "en": "Standard military helmet mitigating 40% head damage. Survives 1 headshot from all assault rifles."
+      }
+    },
+    {
+      "id": "helmet-3",
+      "level": 3,
+      "name": "Spetsnaz Helmet (Level 3)",
+      "durability": 230,
+      "reduction": 55,
+      "description": {
+        "vi": "Mũ 3 nồi cơm điện huyền thoại giảm 55% sát thương. Chặn được phát headshot tử thần từ Kar98k và M24 (chỉ thua AWM/Lynx).",
+        "en": "Legendary Spetsnaz helmet granting 55% damage reduction. Survives headshots from Kar98k and M24."
+      }
+    }
+  ],
+  "vests": [
+    {
+      "id": "vest-1",
+      "level": 1,
+      "name": "Police Vest (Level 1)",
+      "durability": 200,
+      "reduction": 30,
+      "capacity": 50,
+      "description": {
+        "vi": "Áo giáp cảnh sát cấp 1 giảm 30% sát thương vào thân và tăng 50 đơn vị sức chứa đồ.",
+        "en": "Level 1 Police vest reducing torso damage by 30% while adding +50 inventory capacity."
+      }
+    },
+    {
+      "id": "vest-2",
+      "level": 2,
+      "name": "Police Vest (Level 2)",
+      "durability": 220,
+      "reduction": 40,
+      "capacity": 50,
+      "description": {
+        "vi": "Áo giáp cảnh sát cấp 2 phổ biến nhất, giảm 40% sát thương thân người.",
+        "en": "Standard Level 2 vest mitigating 40% damage to torso areas."
+      }
+    },
+    {
+      "id": "vest-3",
+      "level": 3,
+      "name": "Military Vest (Level 3)",
+      "durability": 250,
+      "reduction": 55,
+      "capacity": 50,
+      "description": {
+        "vi": "Áo giáp quân đội cấp 3 chống chịu 55% sát thương, tấm lá chắn sống còn trong các vòng bo cuối.",
+        "en": "High-grade military vest absorbing 55% bullet damage, vital protection in late circle endgames."
+      }
+    }
+  ],
+  "backpacks": [
+    {
+      "id": "bag-1",
+      "level": 1,
+      "name": "Backpack (Level 1)",
+      "capacity": 150,
+      "description": {
+        "vi": "Ba lô cấp 1 mở rộng 150 đơn vị dung tích.",
+        "en": "Level 1 backpack adding +150 capacity volume."
+      }
+    },
+    {
+      "id": "bag-2",
+      "level": 2,
+      "name": "Backpack (Level 2)",
+      "capacity": 200,
+      "description": {
+        "vi": "Ba lô cấp 2 mở rộng 200 đơn vị dung tích, tiêu chuẩn cho mọi trận đấu.",
+        "en": "Level 2 backpack adding +200 capacity volume, tournament standard."
+      }
+    },
+    {
+      "id": "bag-3",
+      "level": 3,
+      "name": "Backpack (Level 3)",
+      "capacity": 250,
+      "description": {
+        "vi": "Ba lô cấp 3 tối đa sức chứa với 250 đơn vị, mang thoải mái lựu đạn và đạn dược.",
+        "en": "Maximum gear carrying capacity with +250 volume for nades and ammo."
+      }
+    },
+    {
+      "id": "jammer-pack",
+      "level": 2,
+      "name": "Jammer Pack",
+      "capacity": 200,
+      "description": {
+        "vi": "Ba lô chống bo điện giúp hấp thụ sát thương Bluezone trong một khoảng thời gian nhất định.",
+        "en": "Energy-shielded pack absorbing Bluezone electricity damage for limited duration."
+      }
+    }
+  ],
+  "medical": [
+    {
+      "id": "med-kit",
+      "name": "Med Kit",
+      "castTime": 8.0,
+      "healAmount": "100%",
+      "description": {
+        "vi": "Hồi phục 100% máu ngay lập tức chỉ với 1 lần dùng.",
+        "en": "Restores 100% full HP instantly upon application."
+      }
+    },
+    {
+      "id": "first-aid",
+      "name": "First Aid Kit",
+      "castTime": 6.0,
+      "healAmount": "75%",
+      "description": {
+        "vi": "Hồi máu lên mốc 75% tối đa trong 6 giây.",
+        "en": "Heals player back up to 75% max health."
+      }
+    },
+    {
+      "id": "painkiller",
+      "name": "Painkiller",
+      "castTime": 6.0,
+      "boostAmount": "60%",
+      "description": {
+        "vi": "Tăng 60% thanh lực boost hồi máu theo thời gian và tăng tốc độ chạy.",
+        "en": "Provides 60% boost meter for continuous regen and sprint acceleration."
+      }
+    },
+    {
+      "id": "energy-drink",
+      "name": "Energy Drink",
+      "castTime": 4.0,
+      "boostAmount": "40%",
+      "description": {
+        "vi": "Tăng 40% thanh lực boost, dùng nhanh trong 4 giây.",
+        "en": "Increases boost by 40%, quick 4-second cast time."
+      }
+    }
+  ]
+}

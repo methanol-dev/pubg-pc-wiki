@@ -1,0 +1,117 @@
+[
+  {
+    "id": "ar-compensator",
+    "slot": "muzzle",
+    "name": "AR Compensator",
+    "compatible": ["ar", "dmr", "s12k"],
+    "effects": {
+      "recoilVertical": -15,
+      "recoilHorizontal": -10,
+      "recoilRecovery": 10
+    },
+    "description": {
+      "vi": "Giảm 15% giật dọc và 10% giật ngang cho súng trường, phụ kiện tối quan trọng để spray đạn chuẩn.",
+      "en": "Reduces vertical recoil by 15% and horizontal recoil by 10% on ARs, essential for tight spray patterns."
+    }
+  },
+  {
+    "id": "ar-suppressor",
+    "slot": "muzzle",
+    "name": "AR Suppressor",
+    "compatible": ["ar", "dmr", "s12k"],
+    "effects": {
+      "soundDampening": 90,
+      "flashRemoval": 100
+    },
+    "description": {
+      "vi": "Triệt tiêu tia lửa đầu nòng và giảm đáng kể âm thanh phát ra, che giấu vị trí bắn tối ưu.",
+      "en": "Eliminates muzzle flash and greatly dampens gunshot report, concealing your firing position."
+    }
+  },
+  {
+    "id": "vert-grip",
+    "slot": "grip",
+    "name": "Vertical Foregrip",
+    "compatible": ["ar", "dmr", "smg"],
+    "effects": {
+      "recoilVertical": -15,
+      "recoilRecovery": 15
+    },
+    "description": {
+      "vi": "Tay cầm dọc giảm 15% giật dọc, lựa chọn số 1 cho súng giật mạnh như Beryl M762 và DMR nhấp nhả.",
+      "en": "Cuts vertical climb by 15%, top choice for high-kick weapons like the Beryl M762 and DMR tapping."
+    }
+  },
+  {
+    "id": "angled-grip",
+    "slot": "grip",
+    "name": "Angled Foregrip",
+    "compatible": ["ar", "dmr", "smg"],
+    "effects": {
+      "recoilHorizontal": -15,
+      "adsSpeed": 10
+    },
+    "description": {
+      "vi": "Giảm 15% giật ngang và tăng 10% tốc độ bật ống ngắm (ADS), thích hợp cho M416 và SCAR-L.",
+      "en": "Reduces horizontal horizontal wobble by 15% and accelerates ADS speed by 10%, great for M416/SCAR-L."
+    }
+  },
+  {
+    "id": "half-grip",
+    "slot": "grip",
+    "name": "Half Grip",
+    "compatible": ["ar", "dmr", "smg"],
+    "effects": {
+      "recoilVertical": -8,
+      "recoilHorizontal": -8,
+      "recoilRecovery": 10
+    },
+    "description": {
+      "vi": "Giảm cả giật dọc lẫn giật ngang, tăng tốc độ hồi tâm, cực kỳ phù hợp cho phong cách sấy đạn (spray).",
+      "en": "Balanced reduction in both vertical & horizontal recoil, ideal for continuous full-auto spray."
+    }
+  },
+  {
+    "id": "thumb-grip",
+    "slot": "grip",
+    "name": "Thumb Grip",
+    "compatible": ["ar", "dmr", "smg"],
+    "effects": {
+      "adsSpeed": 30,
+      "recoilVertical": -5
+    },
+    "description": {
+      "vi": "Tăng tốc độ bật ống ngắm ADS lên tới 30%, phản xạ nhanh nhất trong các pha đấu súng chớp nhoáng.",
+      "en": "Boosts ADS speed by a massive 30%, granting the fastest target acquisition in twitch gunfights."
+    }
+  },
+  {
+    "id": "ext-quick-mag-ar",
+    "slot": "magazine",
+    "name": "Extended QuickDraw Mag (AR)",
+    "compatible": ["ar", "dmr", "s12k"],
+    "effects": {
+      "capacity": 10,
+      "reloadSpeed": 30
+    },
+    "description": {
+      "vi": "Tăng 10 viên dung lượng băng đạn và rút ngắn 30% thời gian nạp đạn.",
+      "en": "Adds 10 rounds to magazine capacity and cuts reload duration by 30%."
+    }
+  },
+  {
+    "id": "tac-stock",
+    "slot": "stock",
+    "name": "Tactical Stock",
+    "compatible": ["m416", "vector", "ace32", "m249"],
+    "effects": {
+      "recoilRecovery": 20,
+      "swayReduction": 10,
+      "adsSpeed": 5
+    },
+    "description": {
+      "vi": "Báng súng chiến thuật giảm lắc lư khi ngắm bắn và hỗ trợ tâm súng hồi về nhanh hơn 20%.",
+      "en": "Tactical stock reducing weapon sway while accelerating reticle recovery speed by 20%."
+    }
+  }
+]

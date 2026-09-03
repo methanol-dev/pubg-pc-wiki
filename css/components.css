@@ -1,0 +1,376 @@
+/* ==========================================================================
+   PUBG PC TACTICAL WIKI - COMPONENTS STYLESHEET
+   Reusable Tactical HUD UI Elements
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Buttons
+   -------------------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition-normal);
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: var(--pubg-gold);
+  color: #000;
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+}
+
+.btn-primary:hover {
+  background: var(--pubg-gold-hover);
+  box-shadow: 0 0 16px var(--pubg-gold-glow);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-tactical);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-surface-elevated);
+  border-color: var(--border-gold);
+  color: var(--pubg-gold);
+}
+
+.btn-outline {
+  border: 1px solid var(--border-tactical);
+  color: var(--text-secondary);
+}
+
+.btn-outline:hover {
+  border-color: var(--pubg-gold);
+  color: var(--text-primary);
+  background: rgba(241, 168, 10, 0.08);
+}
+
+.btn-sm {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+}
+
+/* --------------------------------------------------------------------------
+   Ammo & Spawn Badges
+   -------------------------------------------------------------------------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-sm);
+}
+
+.badge-ammo-556 {
+  background: rgba(56, 176, 0, 0.15);
+  color: #55e616;
+  border: 1px solid rgba(56, 176, 0, 0.4);
+}
+
+.badge-ammo-762 {
+  background: rgba(234, 88, 12, 0.15);
+  color: #fb923c;
+  border: 1px solid rgba(234, 88, 12, 0.4);
+}
+
+.badge-ammo-9mm {
+  background: rgba(234, 179, 8, 0.15);
+  color: #fde047;
+  border: 1px solid rgba(234, 179, 8, 0.4);
+}
+
+.badge-ammo-45acp {
+  background: rgba(2, 132, 199, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(2, 132, 199, 0.4);
+}
+
+.badge-ammo-12g {
+  background: rgba(220, 38, 38, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(220, 38, 38, 0.4);
+}
+
+.badge-ammo-300m {
+  background: rgba(147, 51, 234, 0.15);
+  color: #c084fc;
+  border: 1px solid rgba(147, 51, 234, 0.4);
+}
+
+.badge-airdrop {
+  background: rgba(224, 62, 62, 0.2);
+  color: #ff6b6b;
+  border: 1px solid var(--airdrop-red);
+  box-shadow: 0 0 10px var(--airdrop-glow);
+  animation: pulse-airdrop 2s infinite;
+}
+
+@keyframes pulse-airdrop {
+  0%, 100% { box-shadow: 0 0 4px var(--airdrop-glow); }
+  50% { box-shadow: 0 0 12px var(--airdrop-glow); }
+}
+
+.badge-world {
+  background: rgba(100, 116, 139, 0.2);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-tactical);
+}
+
+.badge-class {
+  background: var(--bg-surface-elevated);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-tactical);
+}
+
+/* --------------------------------------------------------------------------
+   Search Bar Component
+   -------------------------------------------------------------------------- */
+.search-box-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-tactical);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1rem 0.85rem 2.75rem;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  transition: var(--transition-fast);
+}
+
+.search-input:focus {
+  border-color: var(--pubg-gold);
+  box-shadow: 0 0 12px var(--pubg-gold-glow);
+  background: var(--bg-surface-elevated);
+}
+
+/* --------------------------------------------------------------------------
+   Filter Tabs & Pills
+   -------------------------------------------------------------------------- */
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.filter-pill {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 1rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-tactical);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.filter-pill:hover {
+  background: var(--bg-surface-elevated);
+  color: var(--text-primary);
+  border-color: var(--border-subtle);
+}
+
+.filter-pill.active {
+  background: var(--pubg-gold);
+  color: #000;
+  font-weight: 700;
+  border-color: var(--pubg-gold);
+  box-shadow: 0 0 12px var(--pubg-gold-glow);
+}
+
+/* --------------------------------------------------------------------------
+   Stat Progress Bar
+   -------------------------------------------------------------------------- */
+.stat-item {
+  margin-bottom: 0.65rem;
+}
+
+.stat-header {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.stat-value {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.stat-bar-track {
+  height: 6px;
+  background: var(--bg-surface-elevated);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.stat-bar-fill {
+  height: 100%;
+  background: var(--pubg-gold);
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+.stat-bar-fill.fill-red {
+  background: var(--airdrop-red);
+}
+
+.stat-bar-fill.fill-blue {
+  background: var(--bluezone-cyan);
+}
+
+/* --------------------------------------------------------------------------
+   Modal Component
+   -------------------------------------------------------------------------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 7, 10, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-normal);
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-dialog {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-tactical);
+  border-radius: var(--radius-md);
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 25px rgba(241, 168, 10, 0.15);
+  transform: scale(0.95);
+  transition: transform var(--transition-normal);
+}
+
+.modal-overlay.open .modal-dialog {
+  transform: scale(1);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+  position: sticky;
+  top: 0;
+  background: var(--bg-secondary);
+  z-index: 10;
+}
+
+.modal-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.modal-close {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
+}
+
+.modal-close:hover {
+  background: var(--bg-surface-elevated);
+  color: var(--pubg-gold);
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   Tactical Range Slider
+   -------------------------------------------------------------------------- */
+input[type="range"].tactical-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: var(--bg-surface-elevated);
+  border-radius: 3px;
+  outline: none;
+}
+
+input[type="range"].tactical-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  background: var(--pubg-gold);
+  cursor: pointer;
+  box-shadow: 0 0 8px var(--pubg-gold-glow);
+  transition: var(--transition-fast);
+}
+
+input[type="range"].tactical-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}

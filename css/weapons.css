@@ -1,0 +1,403 @@
+/* ==========================================================================
+   PUBG PC TACTICAL WIKI - WEAPONS STYLESHEET
+   Weapon Cards, Grid, Interactive Damage & TTK Calculator UI
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Weapons Grid & Control Bar
+   -------------------------------------------------------------------------- */
+.weapons-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.sort-select-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.sort-select {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-tactical);
+  color: var(--text-primary);
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.sort-select:focus {
+  border-color: var(--pubg-gold);
+}
+
+.weapons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   Weapon Card
+   -------------------------------------------------------------------------- */
+.weapon-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.weapon-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: transparent;
+  transition: var(--transition-fast);
+}
+
+.weapon-card:hover {
+  border-color: var(--border-gold);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5), 0 0 16px rgba(241, 168, 10, 0.12);
+}
+
+.weapon-card:hover::before {
+  background: var(--pubg-gold);
+}
+
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.weapon-name {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--text-primary);
+}
+
+.weapon-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: flex-end;
+}
+
+.weapon-preview {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem 0 1rem;
+  position: relative;
+}
+
+.weapon-img-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, rgba(241, 168, 10, 0.05) 0%, transparent 70%);
+  border: 1px dashed rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-sm);
+  color: var(--pubg-gold);
+}
+
+.weapon-preview svg {
+  width: 80%;
+  max-height: 80px;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.6));
+  transition: transform var(--transition-normal);
+}
+
+.weapon-card:hover .weapon-preview svg {
+  transform: scale(1.05);
+}
+
+.weapon-card-stats {
+  background: var(--bg-primary);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card-actions .btn {
+  flex: 1;
+}
+
+/* --------------------------------------------------------------------------
+   Weapon Detail Modal Layout
+   -------------------------------------------------------------------------- */
+.weapon-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 2rem;
+}
+
+@media (max-width: 860px) {
+  .weapon-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detail-visual-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-tactical);
+  border-radius: var(--radius-sm);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  min-height: 180px;
+}
+
+.detail-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.attachment-slots-section {
+  margin-top: 1.25rem;
+}
+
+.section-subtitle {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--pubg-gold);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.attachment-slots-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.slot-tag {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-tactical);
+  padding: 0.35rem 0.65rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* --------------------------------------------------------------------------
+   Interactive Damage & TTK Calculator
+   -------------------------------------------------------------------------- */
+.calculator-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-tactical);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+}
+
+.calc-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  background: var(--bg-primary);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+}
+
+.control-group-title {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.segmented-control {
+  display: flex;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-tactical);
+  border-radius: var(--radius-sm);
+  padding: 2px;
+  gap: 2px;
+}
+
+.seg-btn {
+  flex: 1;
+  padding: 0.45rem 0.25rem;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.seg-btn:hover {
+  color: var(--text-primary);
+}
+
+.seg-btn.active {
+  background: var(--pubg-gold);
+  color: #000;
+  font-weight: 700;
+}
+
+.calc-results-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.result-card {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 0.5rem;
+  text-align: center;
+}
+
+.result-card.highlight {
+  border-color: var(--border-gold);
+  background: rgba(241, 168, 10, 0.08);
+}
+
+.result-label {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.result-value {
+  font-family: var(--font-mono);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.result-value.val-damage {
+  color: var(--pubg-gold);
+}
+
+.result-value.val-shots {
+  color: var(--bluezone-cyan);
+}
+
+.result-value.val-ttk {
+  color: #ff6b6b;
+}
+
+/* One Shot Banner */
+.oneshot-alert {
+  background: rgba(224, 62, 62, 0.15);
+  border: 1px solid var(--airdrop-red);
+  color: #ff6b6b;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Damage Matrix Table */
+.damage-matrix-wrap {
+  overflow-x: auto;
+}
+
+.damage-matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.825rem;
+}
+
+.damage-matrix-table th, 
+.damage-matrix-table td {
+  padding: 0.5rem 0.65rem;
+  text-align: center;
+  border: 1px solid var(--border-subtle);
+}
+
+.damage-matrix-table th {
+  background: var(--bg-primary);
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+.damage-matrix-table td {
+  background: var(--bg-surface);
+  font-family: var(--font-mono);
+}
+
+.damage-matrix-table td.location-name {
+  text-align: left;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.damage-matrix-table tr:hover td {
+  background: var(--bg-surface-elevated);
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bản Đồ Chiến Thuật | PUBG PC Tactical Wiki</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <style>
+    .maps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .map-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-tactical);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition-normal);
+    }
+    .map-card:hover {
+      border-color: var(--pubg-gold);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5), 0 0 16px var(--pubg-gold-glow);
+    }
+    .map-banner {
+      height: 140px;
+      background: linear-gradient(135deg, rgba(241, 168, 10, 0.15) 0%, rgba(10, 12, 15, 0.95) 100%), var(--bg-surface-elevated);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.25rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .map-name {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .map-body {
+      padding: 1.25rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .map-info-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      border-bottom: 1px dashed var(--border-subtle);
+      padding-bottom: 0.5rem;
+    }
+    .map-feature-list {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .map-vehicle-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+    .vehicle-tag {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      padding: 0.2rem 0.5rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="tactical-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-badge">TACTICAL</span>
+        PUBG <span class="brand-accent">HUB</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link" data-i18n="nav.home">Trang Chủ</a></li>
+          <li><a href="weapons.html" class="nav-link" data-i18n="nav.weapons">Vũ Khí</a></li>
+          <li><a href="compare.html" class="nav-link" data-i18n="nav.compare">So Sánh</a></li>
+          <li><a href="maps.html" class="nav-link active" data-i18n="nav.maps">Bản Đồ</a></li>
+          <li><a href="equipment.html" class="nav-link" data-i18n="nav.equipment">Trang Bị</a></li>
+          <li><a href="mechanics.html" class="nav-link" data-i18n="nav.mechanics">Cơ Chế</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="vi" title="Tiếng Việt">🇻🇳 VN</button>
+          <button class="lang-btn" data-lang="en" title="English">🇬🇧 EN</button>
+        </div>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <a href="index.html" class="nav-link" data-i18n="nav.home">Trang Chủ</a>
+    <a href="weapons.html" class="nav-link" data-i18n="nav.weapons">Vũ Khí & Phụ Kiện</a>
+    <a href="compare.html" class="nav-link" data-i18n="nav.compare">So Sánh Vũ Khí</a>
+    <a href="maps.html" class="nav-link active" data-i18n="nav.maps">Bản Đồ Chiến Thuật</a>
+    <a href="equipment.html" class="nav-link" data-i18n="nav.equipment">Trang Bị & Giáp</a>
+    <a href="mechanics.html" class="nav-link" data-i18n="nav.mechanics">Cơ Chế Game</a>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container" style="padding-top: 2.5rem;">
+    <div>
+      <h1 style="font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-primary);">
+        <span style="color: var(--pubg-gold);">BẢN ĐỒ</span> CHIẾN THUẬT PUBG PC
+      </h1>
+      <p style="color: var(--text-secondary); font-size: 1.05rem;" data-i18n="maps_page.subtitle">
+        Khám phá địa hình, kích thước, cơ chế đặc trưng và vị trí chiến lược
+      </p>
+    </div>
+
+    <!-- Maps Grid -->
+    <div class="maps-grid" id="mapsGrid">
+      <!-- Injected by script -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="tactical-footer">
+    <div class="container footer-inner">
+      <ul class="footer-links">
+        <li><a href="index.html" data-i18n="nav.home">Trang Chủ</a></li>
+        <li><a href="weapons.html" data-i18n="nav.weapons">Vũ Khí</a></li>
+        <li><a href="compare.html" data-i18n="nav.compare">So Sánh</a></li>
+        <li><a href="maps.html" data-i18n="nav.maps">Bản Đồ</a></li>
+        <li><a href="equipment.html" data-i18n="nav.equipment">Trang Bị</a></li>
+        <li><a href="mechanics.html" data-i18n="nav.mechanics">Cơ Chế</a></li>
+      </ul>
+      <p class="footer-disclaimer" data-i18n="site.footer_text">
+        PUBG: BATTLEGROUNDS là thương hiệu đã đăng ký của KRAFTON, Inc. Trang web này được xây dựng bởi cộng đồng vì mục đích tham khảo và phi thương mại.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/i18n.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const maps = await window.dataLoader.getMaps();
+      const grid = document.getElementById('mapsGrid');
+
+      const renderMaps = () => {
+        if (!grid) return;
+        const lang = window.i18n.getLang();
+        grid.innerHTML = maps.map(m => `
+          <div class="map-card">
+            <div class="map-banner">
+              <span class="badge ${m.featured ? 'badge-airdrop' : 'badge-world'}" style="align-self: flex-start; margin-bottom: 0.5rem;">
+                ${m.size}
+              </span>
+              <h3 class="map-name">${m.name}</h3>
+            </div>
+            <div class="map-body">
+              <div class="map-info-row">
+                <span>${window.i18n.t('maps_page.size', 'Kích thước')}:</span>
+                <strong style="color: var(--text-primary); font-family: var(--font-mono);">${m.size}</strong>
+              </div>
+              <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5;">
+                ${m.description[lang] || m.description.en}
+              </p>
+              <div>
+                <strong style="font-family: var(--font-display); font-size: 0.85rem; color: var(--pubg-gold); text-transform: uppercase;">
+                  ✨ ${window.i18n.t('maps_page.secret_rooms', 'Cơ chế & Khí tài')}:
+                </strong>
+                <p class="map-feature-list">${m.specialFeatures[lang] || m.specialFeatures.en}</p>
+              </div>
+              <div>
+                <strong style="font-family: var(--font-display); font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; display: block; margin-bottom: 0.35rem;">
+                  🚗 ${window.i18n.t('maps_page.vehicles', 'Phương tiện tiêu biểu')}:
+                </strong>
+                <div class="map-vehicle-tags">
+                  ${m.vehicles.map(v => `<span class="vehicle-tag">${v}</span>`).join('')}
+                </div>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      };
+
+      renderMaps();
+      document.addEventListener('languageChanged', renderMaps);
+    });
+  </script>
+</body>
+</html>

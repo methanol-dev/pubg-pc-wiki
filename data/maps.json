@@ -1,0 +1,98 @@
+[
+  {
+    "id": "erangel",
+    "name": "Erangel",
+    "size": "8x8 km",
+    "terrain": "Eastern European Woodlands & Coastlines",
+    "featured": true,
+    "specialFeatures": {
+      "vi": "Hầm bí mật (Secret Basements), Phà qua đảo Sosnovka Military, Trụ hồi sinh Blue Chip Transmitter.",
+      "en": "Secret Basement rooms, Sosnovka Island ferries, Blue Chip revive transmitters."
+    },
+    "vehicles": ["UAZ", "Dacia 1300", "Motorcycle", "Buggy", "BRDM-2", "PG-117"],
+    "description": {
+      "vi": "Bản đồ khởi nguồn huyền thoại của PUBG. Địa hình đồi cỏ thoải, rừng cây và các khu đô thị kinh điển như Pochinki, School, Georgopol, Military Base.",
+      "en": "The original birthplace of PUBG. Rolling green hills, lush forests, and iconic POIs including Pochinki, School, Georgopol, and Military Base."
+    }
+  },
+  {
+    "id": "miramar",
+    "name": "Miramar",
+    "size": "8x8 km",
+    "terrain": "Mexican Desert & Rugged Badlands",
+    "featured": true,
+    "specialFeatures": {
+      "vi": "Cáp treo (Zip lines), Máy bán nước tăng lực tự động (Vending Machines), Bão cát (Sandstorm).",
+      "en": "Tactical ziplines, energy drink vending machines, blinding Sandstorms."
+    },
+    "vehicles": ["Pickup Truck", "Van (Minibus)", "Mirado", "Motorcycle", "Quad"],
+    "description": {
+      "vi": "Bản đồ sa mạc rộng lớn với tầm nhìn thoáng đãng, thánh địa của các tay súng bắn tỉa (SR/DMR) và các pha đấu xe nghẹt thở trên sườn núi đá.",
+      "en": "Expansive desert badlands with sheer verticality, the ultimate haven for marksmen and long-range ridge duels."
+    }
+  },
+  {
+    "id": "taego",
+    "name": "Taego",
+    "size": "8x8 km",
+    "terrain": "Korean Countryside & Reeds",
+    "featured": true,
+    "specialFeatures": {
+      "vi": "Hòm bí mật chìa khóa Taego, Xe bán tải Porter có cốp chứa đồ (Trunk Storage), Hồi sinh Tự cứu Self-AED.",
+      "en": "Taego secret key rooms, Porter trucks with vehicle trunk storage, Self-AED revives."
+    },
+    "vehicles": ["Hyundai Pony Coupe", "Porter Truck", "UAZ", "Dacia"],
+    "description": {
+      "vi": "Khung cảnh thôn quê Hàn Quốc thập niên 1980 với những cánh đồng lau sậy bạt ngàn, nhiều khu đền thờ cổ và trang bị độc quyền.",
+      "en": "1980s South Korean rural countryside with vast reed plains, traditional temples, and rich regional exclusive mechanics."
+    }
+  },
+  {
+    "id": "rondo",
+    "name": "Rondo",
+    "size": "8x8 km",
+    "terrain": "Modern Megacity & Ancient Bamboo Groves",
+    "featured": true,
+    "specialFeatures": {
+      "vi": "Hệ thống tiền tệ BR Coins mua đồ tại trạm Market, Kỹ thuật leo tường đồng đội (Co-op Climb), Súng JS9 độc quyền.",
+      "en": "In-game BR Coins economy with Market kiosks, Co-op climb mechanic, JS9 SMG exclusive."
+    },
+    "vehicles": ["Blanc SUV", "Pillar UAZ", "Bus", "Motorcycle"],
+    "description": {
+      "vi": "Bản đồ lớn thứ 10 kết hợp đối lập giữa siêu đô thị Jadena City chọc trời hiện đại và các đền làng truyền thống giữa rừng tre tĩnh mịch.",
+      "en": "The 10th battleground featuring the stark contrast between futuristic skyscraper metropolis Jadena City and serene bamboo groves."
+    }
+  },
+  {
+    "id": "vikendi",
+    "name": "Vikendi Reborn",
+    "size": "8x8 km",
+    "terrain": "Snowy Glaciers & Alpine Forests",
+    "featured": false,
+    "specialFeatures": {
+      "vi": "Hệ thống cáp treo (Cable Car), Bão tuyết nhiệt độ âm (Blizzard Zone), Xà beng cạy cửa mật thất.",
+      "en": "High-altitude Cable Cars, subzero Blizzard Zones, crowbar-pryable secret doors."
+    },
+    "vehicles": ["Snowmobile", "Snowbike", "Zima 4x4", "Vikendi Station Wagon"],
+    "description": {
+      "vi": "Bản đồ băng giá được tái sinh với diện tích 8x8 km, thử thách sinh tồn trong gió tuyết và các đỉnh núi băng dựng đứng.",
+      "en": "Reborn alpine winter wonderland expanded to 8x8 km, challenging players in blistering cold and steep glacier crests."
+    }
+  },
+  {
+    "id": "deston",
+    "name": "Deston",
+    "size": "8x8 km",
+    "terrain": "Submerged Metropolis & Swamps",
+    "featured": false,
+    "specialFeatures": {
+      "vi": "Dây đu thẳng đứng (Ascenders) leo nóc nhà chọc trời, Dù khẩn cấp vĩnh viễn (Emergency Parachute), Thẻ an ninh Pillar Security Key.",
+      "en": "Vertical Ascender ropes to skyscrapers, unlimited utility parachutes, Pillar Security Keycards."
+    },
+    "vehicles": ["Airboat (Lướt đầm lầy)", "Pillar Security Car", "Pickup Truck"],
+    "description": {
+      "vi": "Thành phố hiện đại ven biển bị ngập lụt một phần, nơi diễn ra các cuộc đột kích đỉnh tháp và di chuyển bằng thuyền lướt khí trên đầm lầy.",
+      "en": "A partly flooded coastal megacity featuring high-rise rooftop sky battles and amphibious swamp airboat chases."
+    }
+  }
+]
