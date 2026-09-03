@@ -16,3 +16,7 @@ npm-debug.log*
 
 # Local logs
 *.log
+
+# Agent configuration & rules
+.agent/
+GEMINI.md
