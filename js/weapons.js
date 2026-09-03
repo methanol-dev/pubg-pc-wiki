@@ -22,8 +22,12 @@ class WeaponsManager {
   }
 
   async init() {
-    this.weapons = await window.dataLoader.getWeapons();
-    this.attachments = await window.dataLoader.getAttachments();
+    const [weapons, attachments] = await Promise.all([
+      window.dataLoader.getWeapons(),
+      window.dataLoader.getAttachments()
+    ]);
+    this.weapons = weapons;
+    this.attachments = attachments;
     this.bindEvents();
     this.renderCatalog();
 
@@ -57,12 +61,16 @@ class WeaponsManager {
       });
     });
 
-    // Search bar
+    // Search bar with 120ms debounce to prevent input lag
     const searchInput = document.getElementById('weaponSearchInput');
     if (searchInput) {
+      let debounceTimer = null;
       searchInput.addEventListener('input', (e) => {
-        this.searchQuery = e.target.value.toLowerCase().trim();
-        this.renderCatalog();
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+          this.searchQuery = e.target.value.toLowerCase().trim();
+          this.renderCatalog();
+        }, 120);
       });
     }
 
