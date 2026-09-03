@@ -1,7 +1,15 @@
 /**
- * PUBG PC Tactical Wiki - Main Application Controller
- * Handles global navigation, mobile drawer, keyboard shortcuts, and i18n bootup
+ * HTML sanitization helper for defensive XSS prevention
  */
+window.escapeHtml = function (str) {
+  if (typeof str !== 'string') return '';
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+};
 
 document.addEventListener('DOMContentLoaded', async () => {
   // 1. Initialize i18n Engine

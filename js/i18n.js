@@ -5,7 +5,8 @@
 
 class I18nEngine {
   constructor() {
-    this.currentLang = localStorage.getItem('pubg_wiki_lang') || this.detectInitialLang();
+    const savedLang = localStorage.getItem('pubg_wiki_lang');
+    this.currentLang = ['vi', 'en'].includes(savedLang) ? savedLang : this.detectInitialLang();
     this.translations = {};
     this.loaded = false;
   }
@@ -43,11 +44,16 @@ class I18nEngine {
   }
 
   t(keyPath, fallback = '') {
-    if (!this.loaded || !this.translations[this.currentLang]) return fallback || keyPath;
+    if (!this.loaded || !this.translations[this.currentLang] || typeof keyPath !== 'string') {
+      return fallback || keyPath;
+    }
     const parts = keyPath.split('.');
     let current = this.translations[this.currentLang];
     for (const part of parts) {
-      if (current && current[part] !== undefined) {
+      if (part === '__proto__' || part === 'constructor' || part === 'prototype') {
+        return fallback || keyPath;
+      }
+      if (current && typeof current === 'object' && Object.prototype.hasOwnProperty.call(current, part)) {
         current = current[part];
       } else {
         return fallback || keyPath;
