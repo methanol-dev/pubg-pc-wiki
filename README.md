@@ -78,24 +78,3 @@ npx serve .
 ### Cách 3: Dùng Live Server trên Visual Studio Code
 - Nhấp chuột phải vào `index.html` và chọn **"Open with Live Server"**.
 
----
-
-## 🌐 Hướng Dẫn Deploy Lên GitHub Pages
-
-1. Khởi tạo Git repository và push mã nguồn lên GitHub:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: initial commit pubg pc tactical wiki"
-   git branch -M main
-   git remote add origin https://github.com/TÊN_NGƯỜI_DÙNG/TÊN_REPO.git
-   git push -u origin main
-   ```
-2. Vào **Settings** của repository trên GitHub.
-3. Chọn mục **Pages** ở menu bên trái.
-4. Tại phần **Build and deployment**:
-   - **Source**: Chọn `Deploy from a branch`.
-   - **Branch**: Chọn `main`, thư mục `/ (root)`.
-   - Bấm **Save**.
-5. Sau 1-2 phút, trang web sẽ được kích hoạt tại địa chỉ:  
-   `https://TÊN_NGƯỜI_DÙNG.github.io/TÊN_REPO/`
