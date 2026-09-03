@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# AI Crawlers & LLM Scrapers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Sitemap Location
+Sitemap: https://methanol-dev.github.io/pubg-pc-wiki/sitemap.xml

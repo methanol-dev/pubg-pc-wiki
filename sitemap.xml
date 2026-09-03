@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://methanol-dev.github.io/pubg-pc-wiki/</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://methanol-dev.github.io/pubg-pc-wiki/?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://methanol-dev.github.io/pubg-pc-wiki/?lang=en" />
+  </url>
+  <url>
+    <loc>https://methanol-dev.github.io/pubg-pc-wiki/weapons.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://methanol-dev.github.io/pubg-pc-wiki/weapons.html?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://methanol-dev.github.io/pubg-pc-wiki/weapons.html?lang=en" />
+  </url>
+  <url>
+    <loc>https://methanol-dev.github.io/pubg-pc-wiki/compare.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://methanol-dev.github.io/pubg-pc-wiki/compare.html?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://methanol-dev.github.io/pubg-pc-wiki/compare.html?lang=en" />
+  </url>
+  <url>
+    <loc>https://methanol-dev.github.io/pubg-pc-wiki/maps.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://methanol-dev.github.io/pubg-pc-wiki/maps.html?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://methanol-dev.github.io/pubg-pc-wiki/maps.html?lang=en" />
+  </url>
+  <url>
+    <loc>https://methanol-dev.github.io/pubg-pc-wiki/equipment.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://methanol-dev.github.io/pubg-pc-wiki/equipment.html?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://methanol-dev.github.io/pubg-pc-wiki/equipment.html?lang=en" />
+  </url>
+  <url>
+    <loc>https://methanol-dev.github.io/pubg-pc-wiki/mechanics.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://methanol-dev.github.io/pubg-pc-wiki/mechanics.html?lang=vi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://methanol-dev.github.io/pubg-pc-wiki/mechanics.html?lang=en" />
+  </url>
+</urlset>
