@@ -131,8 +131,8 @@
 
       <div class="header-actions">
         <div class="lang-switcher">
-          <button class="lang-btn active" data-lang="vi" title="Tiếng Việt">🇻🇳 VN</button>
-          <button class="lang-btn" data-lang="en" title="English">🇬🇧 EN</button>
+          <button class="lang-btn active" data-lang="vi" title="Tiếng Việt">VN</button>
+          <button class="lang-btn" data-lang="en" title="English">EN</button>
         </div>
         <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Menu">
           <span></span><span></span><span></span>
@@ -154,7 +154,8 @@
   <!-- Main Content -->
   <main class="container" style="padding-top: 2.5rem;">
     <div>
-      <h1 style="font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-primary);">
+      <div class="sys-tag">CARTOGRAPHY // TACTICAL THEATERS</div>
+      <h1 style="font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-primary); margin-top: 0.25rem;">
         <span style="color: var(--pubg-gold);">BẢN ĐỒ</span> CHIẾN THUẬT PUBG PC
       </h1>
       <p style="color: var(--text-secondary); font-size: 1.05rem;" data-i18n="maps_page.subtitle">
@@ -215,13 +216,13 @@
               </p>
               <div>
                 <strong style="font-family: var(--font-display); font-size: 0.85rem; color: var(--pubg-gold); text-transform: uppercase;">
-                  ✨ ${window.i18n.t('maps_page.secret_rooms', 'Cơ chế & Khí tài')}:
+                  // ${window.i18n.t('maps_page.secret_rooms', 'Cơ chế & Khí tài')}:
                 </strong>
                 <p class="map-feature-list">${m.specialFeatures[lang] || m.specialFeatures.en}</p>
               </div>
               <div>
                 <strong style="font-family: var(--font-display); font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; display: block; margin-bottom: 0.35rem;">
-                  🚗 ${window.i18n.t('maps_page.vehicles', 'Phương tiện tiêu biểu')}:
+                  // ${window.i18n.t('maps_page.vehicles', 'Phương tiện tiêu biểu')}:
                 </strong>
                 <div class="map-vehicle-tags">
                   ${m.vehicles.map(v => `<span class="vehicle-tag">${v}</span>`).join('')}

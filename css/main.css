@@ -48,9 +48,9 @@
   /* Transitions & Radii */
   --transition-fast: 0.15s ease;
   --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 10px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
 
   /* Container Max Width */
   --max-width: 1280px;
@@ -80,12 +80,48 @@ body {
   flex-direction: column;
   background-color: var(--bg-primary);
   background-image: 
-    radial-gradient(circle at 50% 0%, rgba(241, 168, 10, 0.08) 0%, transparent 60%),
-    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-  background-size: 100% 100%, 40px 40px, 40px 40px;
+    radial-gradient(circle at 50% 0%, rgba(241, 168, 10, 0.05) 0%, transparent 50%),
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 100% 100%, 32px 32px, 32px 32px;
   background-position: 0 0, -1px -1px, -1px -1px;
 }
+
+/* Tactical Telemetry & Monospace Elements */
+.sys-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--pubg-gold);
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.sys-tag::before {
+  content: '//';
+  opacity: 0.6;
+}
+
+.hud-panel {
+  position: relative;
+  border: 1px solid var(--border-tactical);
+  background: var(--bg-surface);
+}
+
+.hud-corner-tl, .hud-corner-tr, .hud-corner-bl, .hud-corner-br {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-color: var(--pubg-gold);
+  pointer-events: none;
+}
+
+.hud-corner-tl { top: -1px; left: -1px; border-top: 2px solid var(--pubg-gold); border-left: 2px solid var(--pubg-gold); }
+.hud-corner-tr { top: -1px; right: -1px; border-top: 2px solid var(--pubg-gold); border-right: 2px solid var(--pubg-gold); }
+.hud-corner-bl { bottom: -1px; left: -1px; border-bottom: 2px solid var(--pubg-gold); border-left: 2px solid var(--pubg-gold); }
+.hud-corner-br { bottom: -1px; right: -1px; border-bottom: 2px solid var(--pubg-gold); border-right: 2px solid var(--pubg-gold); }
 
 a {
   color: inherit;

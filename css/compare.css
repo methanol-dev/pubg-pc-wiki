@@ -164,12 +164,18 @@
 }
 
 .val-cell.winner::after {
-  content: '★';
+  content: 'TOP';
   position: absolute;
   top: 6px;
-  right: 12px;
-  font-size: 0.75rem;
-  color: #55e616;
+  right: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #000;
+  background: #55e616;
+  padding: 1px 4px;
+  border-radius: 2px;
 }
 
 .val-cell.loser {

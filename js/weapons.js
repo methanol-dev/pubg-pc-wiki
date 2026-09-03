@@ -173,6 +173,44 @@ class WeaponsManager {
     });
   }
 
+  getWeaponSvgSilhouette(category, name) {
+    const silhouettes = {
+      ar: `<svg viewBox="0 0 240 70" fill="currentColor">
+        <path d="M15 32 L65 32 L72 26 L135 26 L142 32 L170 32 L174 36 L185 36 L192 52 L180 54 L172 44 L148 44 L138 62 L122 59 L132 44 L85 44 L78 56 L66 54 L72 44 L38 44 L32 52 L15 48 Z" fill="var(--pubg-gold)" opacity="0.85"/>
+        <rect x="5" y="33" width="12" height="3" fill="var(--pubg-gold)" opacity="0.6"/>
+        <rect x="90" y="22" width="25" height="4" fill="var(--text-secondary)" opacity="0.4"/>
+      </svg>`,
+      dmr: `<svg viewBox="0 0 240 70" fill="currentColor">
+        <path d="M10 32 L75 32 L82 27 L155 27 L162 32 L190 32 L196 36 L208 36 L215 54 L202 55 L195 46 L160 46 L148 64 L135 61 L144 46 L95 46 L88 58 L76 56 L82 46 L40 46 L34 54 L16 50 Z" fill="var(--bluezone-cyan)" opacity="0.85"/>
+        <rect x="100" y="18" width="45" height="7" rx="1" fill="var(--bluezone-cyan)" opacity="0.7"/>
+        <line x1="108" y1="25" x2="108" y2="28" stroke="var(--bluezone-cyan)" stroke-width="2"/>
+        <line x1="138" y1="25" x2="138" y2="28" stroke="var(--bluezone-cyan)" stroke-width="2"/>
+      </svg>`,
+      sr: `<svg viewBox="0 0 240 70" fill="currentColor">
+        <path d="M8 33 L85 33 L92 29 L165 29 L172 33 L200 33 L206 37 L218 37 L226 55 L212 56 L206 47 L170 47 L164 52 L152 51 L158 47 L100 47 L94 52 L88 47 L46 47 L40 55 L22 51 Z" fill="#9333ea" opacity="0.85"/>
+        <rect x="95" y="16" width="60" height="9" rx="2" fill="#9333ea" opacity="0.75"/>
+        <circle cx="125" cy="20" r="2.5" fill="#f1a80a"/>
+      </svg>`,
+      smg: `<svg viewBox="0 0 240 70" fill="currentColor">
+        <path d="M30 30 L80 30 L86 25 L140 25 L146 30 L165 30 L170 35 L176 48 L164 49 L160 41 L140 41 L132 60 L120 57 L127 41 L80 41 L74 50 L62 48 L67 41 L36 41 Z" fill="#eab308" opacity="0.85"/>
+        <rect x="90" y="20" width="25" height="4" fill="#eab308" opacity="0.6"/>
+      </svg>`,
+      sg: `<svg viewBox="0 0 240 70" fill="currentColor">
+        <path d="M20 31 L90 31 L96 28 L160 28 L170 33 L195 33 L200 38 L212 38 L218 52 L206 54 L198 44 L165 44 L158 50 L135 50 L142 44 L90 44 L84 50 L66 50 L72 44 L30 44 Z" fill="#dc2626" opacity="0.85"/>
+        <rect x="65" y="37" width="28" height="6" rx="1" fill="#dc2626" opacity="0.5"/>
+      </svg>`,
+      lmg: `<svg viewBox="0 0 240 70" fill="currentColor">
+        <path d="M12 31 L78 31 L84 26 L160 26 L166 31 L195 31 L200 36 L210 36 L218 54 L204 55 L196 45 L160 45 L148 64 L125 64 L136 45 L95 45 L84 62 L72 59 L82 45 L42 45 L36 54 L22 51 Z" fill="#ea580c" opacity="0.85"/>
+        <ellipse cx="136" cy="52" rx="16" ry="9" fill="#ea580c" opacity="0.6"/>
+        <line x1="30" y1="44" x2="18" y2="62" stroke="#ea580c" stroke-width="2.5" opacity="0.7"/>
+      </svg>`,
+      default: `<svg viewBox="0 0 240 70" fill="currentColor">
+        <path d="M25 35 L95 35 L101 30 L155 30 L161 35 L190 35 L196 50 L180 51 L174 43 L144 43 L132 59 L120 56 L128 43 L85 43 L78 52 L66 50 L70 43 L36 43 Z" fill="var(--pubg-gold)" opacity="0.8"/>
+      </svg>`
+    };
+    return silhouettes[category] || silhouettes.default;
+  }
+
   renderWeaponCard(weapon) {
     const lang = window.i18n.getLang();
     const ammoLabel = window.i18n.t(`ammo.${weapon.ammo}`, weapon.ammo);
@@ -194,11 +232,7 @@ class WeaponsManager {
           </div>
 
           <div class="weapon-preview">
-            <div class="weapon-img-placeholder">
-              <span style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: 0.1em;">
-                ${weapon.name}
-              </span>
-            </div>
+            ${this.getWeaponSvgSilhouette(weapon.category, weapon.name)}
           </div>
 
           <div class="weapon-card-stats">
@@ -236,7 +270,7 @@ class WeaponsManager {
 
         <div class="card-actions">
           <button class="btn btn-secondary btn-sm btn-add-compare" data-id="${weapon.id}" title="${window.i18n.t('common.compare', 'So sánh')}">
-            ⚖️ ${window.i18n.t('common.compare', 'So sánh')}
+            ${window.i18n.t('common.compare', 'So sánh')}
           </button>
           <button class="btn btn-primary btn-sm btn-view-details" data-id="${weapon.id}">
             ${window.i18n.t('common.details', 'Chi tiết')}
@@ -322,12 +356,12 @@ class WeaponsManager {
 
           <div class="attachment-slots-section">
             <h4 class="section-subtitle">
-              ⚙️ ${window.i18n.t('stats.attachments_slots', 'Các khe phụ kiện')} (${weapon.slots.length})
+              // ${window.i18n.t('stats.attachments_slots', 'Các khe phụ kiện')} (${weapon.slots.length})
             </h4>
             <div class="attachment-slots-list">
               ${weapon.slots.map((s) => `
                 <span class="slot-tag">
-                  ✓ ${window.i18n.t(`attachments.${s}`, s)}
+                  // ${window.i18n.t(`attachments.${s}`, s)}
                 </span>
               `).join('')}
             </div>
@@ -338,7 +372,7 @@ class WeaponsManager {
         <div class="detail-right-col">
           <div class="calculator-box">
             <h3 class="section-subtitle" style="margin-bottom: 1rem;">
-              🎯 ${window.i18n.t('calculator.title', 'Bảng tính sát thương thực chiến')}
+              // ${window.i18n.t('calculator.title', 'Bảng tính sát thương thực chiến')}
             </h3>
 
             <!-- Controls -->
@@ -403,7 +437,7 @@ class WeaponsManager {
             <!-- Full Damage Matrix -->
             <div style="margin-top: 1.5rem;">
               <h4 style="font-family: var(--font-display); font-size: 0.95rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.5rem;">
-                📊 ${window.i18n.t('calculator.damage_matrix_title', 'Ma trận sát thương toàn diện')}
+                // ${window.i18n.t('calculator.damage_matrix_title', 'Ma trận sát thương toàn diện')}
               </h4>
               <div class="damage-matrix-wrap" id="damageMatrixTableWrap">
                 <!-- Rendered by renderDamageMatrix() -->
@@ -470,7 +504,8 @@ class WeaponsManager {
     container.innerHTML = `
       ${isOneShot ? `
         <div class="oneshot-alert">
-          💀 <strong>${window.i18n.t('calculator.one_shot', 'Hạ gục 1 viên! (One-Shot Kill)')}</strong>
+          <span style="font-family: var(--font-mono); color: #ff6b6b; font-weight: 700;">[CRITICAL]</span>
+          <strong>${window.i18n.t('calculator.one_shot', 'Hạ gục 1 viên! (One-Shot Kill)')}</strong>
         </div>
       ` : ''}
 

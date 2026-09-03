@@ -53,12 +53,12 @@
 }
 
 /* --------------------------------------------------------------------------
-   Weapon Card
+   Weapon Card (Tactical Chamfered HUD)
    -------------------------------------------------------------------------- */
 .weapon-card {
   background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
+  border: 1px solid var(--border-tactical);
+  border-radius: var(--radius-sm);
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
@@ -83,8 +83,8 @@
 
 .weapon-card:hover {
   border-color: var(--border-gold);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5), 0 0 16px rgba(241, 168, 10, 0.12);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6), 0 0 16px rgba(241, 168, 10, 0.12);
 }
 
 .weapon-card:hover::before {
@@ -115,40 +115,45 @@
 }
 
 .weapon-preview {
-  height: 110px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0.5rem 0 1rem;
   position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.015) 0%, rgba(15, 19, 25, 0.95) 100%);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
 }
 
-.weapon-img-placeholder {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: radial-gradient(circle, rgba(241, 168, 10, 0.05) 0%, transparent 70%);
-  border: 1px dashed rgba(255, 255, 255, 0.08);
-  border-radius: var(--radius-sm);
-  color: var(--pubg-gold);
+.weapon-preview::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(rgba(241, 168, 10, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(241, 168, 10, 0.03) 1px, transparent 1px);
+  background-size: 16px 16px;
+  pointer-events: none;
 }
 
 .weapon-preview svg {
-  width: 80%;
-  max-height: 80px;
-  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.6));
+  width: 85%;
+  max-height: 90px;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.8));
   transition: transform var(--transition-normal);
+  z-index: 1;
 }
 
 .weapon-card:hover .weapon-preview svg {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
 .weapon-card-stats {
   background: var(--bg-primary);
   border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
   padding: 0.75rem;
   margin-bottom: 1rem;
 }
@@ -343,19 +348,20 @@
   color: #ff6b6b;
 }
 
-/* One Shot Banner */
+/* Tactical One Shot Alert */
 .oneshot-alert {
-  background: rgba(224, 62, 62, 0.15);
+  background: rgba(224, 62, 62, 0.12);
   border: 1px solid var(--airdrop-red);
   color: #ff6b6b;
-  font-family: var(--font-display);
-  font-size: 0.95rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
   font-weight: 700;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.6rem 1rem;
   border-radius: var(--radius-sm);
   margin-bottom: 1.25rem;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
