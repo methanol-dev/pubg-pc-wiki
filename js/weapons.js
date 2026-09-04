@@ -219,6 +219,7 @@ class WeaponsManager {
     const spawnText = window.i18n.t(`common.${weapon.spawn}`, weapon.spawn);
     const ammoBadgeClass = `badge-${weapon.ammo.replace('_', '-')}`;
     const dps = window.damageCalculator.calculateDPS(weapon);
+    const imgUrl = weapon.image || weapon.icon;
 
     return `
       <article class="weapon-card" data-id="${weapon.id}">
@@ -232,7 +233,16 @@ class WeaponsManager {
           </div>
 
           <div class="weapon-preview">
-            ${this.getWeaponSvgSilhouette(weapon.category, weapon.name)}
+            <img 
+              src="${imgUrl}" 
+              alt="${weapon.name}" 
+              class="weapon-card-img" 
+              loading="lazy" 
+              onerror="this.style.display='none'; if (this.nextElementSibling) this.nextElementSibling.style.display='flex';"
+            />
+            <div class="weapon-fallback-silhouette" style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center;">
+              ${this.getWeaponSvgSilhouette(weapon.category, weapon.name)}
+            </div>
           </div>
 
           <div class="weapon-card-stats">
@@ -311,6 +321,7 @@ class WeaponsManager {
     const ammoLabel = window.i18n.t(`ammo.${weapon.ammo}`, weapon.ammo);
     const desc = weapon.description[lang] || weapon.description.en;
     const dps = window.damageCalculator.calculateDPS(weapon);
+    const imgUrl = weapon.image || weapon.icon;
 
     titleEl.innerHTML = `
       ${weapon.name}
@@ -325,12 +336,20 @@ class WeaponsManager {
         <!-- Left: Visual & Core Attributes -->
         <div class="detail-left-col">
           <div class="detail-visual-box">
-            <h2 style="font-family: var(--font-display); font-size: 2.2rem; color: var(--pubg-gold); text-align: center; margin-bottom: 0.5rem;">
-              ${weapon.name}
-            </h2>
-            <p style="font-family: var(--font-display); color: var(--text-secondary); text-transform: uppercase;">
-              ${window.i18n.t(`categories.${weapon.category}`)} | ${ammoLabel}
-            </p>
+            <img 
+              src="${imgUrl}" 
+              alt="${weapon.name}" 
+              class="modal-weapon-img" 
+              loading="lazy" 
+            />
+            <div class="modal-weapon-meta">
+              <h2 style="font-family: var(--font-display); font-size: 1.8rem; color: var(--pubg-gold); text-align: center; margin-top: 0.75rem; margin-bottom: 0.25rem;">
+                ${weapon.name}
+              </h2>
+              <p style="font-family: var(--font-display); color: var(--text-secondary); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.05em;">
+                ${window.i18n.t(`categories.${weapon.category}`)} | ${ammoLabel}
+              </p>
+            </div>
           </div>
 
           <p class="detail-desc">${desc}</p>

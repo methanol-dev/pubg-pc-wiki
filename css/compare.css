@@ -202,3 +202,18 @@
   font-weight: 600;
   margin-bottom: 0.35rem;
 }
+
+.compare-weapon-thumb {
+  width: 100%;
+  max-width: 150px;
+  height: 54px;
+  object-fit: contain;
+  margin: 0.25rem auto 0.6rem;
+  display: block;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.75));
+  transition: transform var(--transition-normal);
+}
+
+.compare-weapon-thumb:hover {
+  transform: scale(1.05);
+}

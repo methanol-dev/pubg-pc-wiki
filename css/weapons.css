@@ -146,8 +146,26 @@
   z-index: 1;
 }
 
+.weapon-card-img {
+  max-width: 90%;
+  max-height: 95px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.8));
+  transition: transform var(--transition-normal), filter var(--transition-normal);
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
 .weapon-card:hover .weapon-preview svg {
   transform: scale(1.04);
+}
+
+.weapon-card:hover .weapon-card-img {
+  transform: scale(1.06) translateY(-2px);
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 12px rgba(241, 168, 10, 0.25));
 }
 
 .weapon-card-stats {
@@ -183,7 +201,7 @@
 }
 
 .detail-visual-box {
-  background: var(--bg-surface);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(15, 19, 25, 0.98) 100%);
   border: 1px solid var(--border-tactical);
   border-radius: var(--radius-sm);
   padding: 1.5rem;
@@ -192,7 +210,42 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 1.25rem;
-  min-height: 180px;
+  min-height: 190px;
+  position: relative;
+  overflow: hidden;
+}
+
+.detail-visual-box::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(rgba(241, 168, 10, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(241, 168, 10, 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+}
+
+.modal-weapon-img {
+  max-width: 92%;
+  max-height: 130px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.85));
+  z-index: 1;
+  transition: transform 0.3s ease;
+  pointer-events: none;
+  user-select: none;
+}
+
+.detail-visual-box:hover .modal-weapon-img {
+  transform: scale(1.04);
+}
+
+.modal-weapon-meta {
+  z-index: 1;
+  text-align: center;
 }
 
 .detail-desc {

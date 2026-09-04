@@ -146,6 +146,7 @@ class CompareManager {
               <th class="metric-col">${window.i18n.t('stats.ammo_type', 'THÔNG SỐ SO SÁNH')}</th>
               ${activeWeapons.map((w) => `
                 <th>
+                  <img src="${w.image || w.icon}" alt="${w.name}" class="compare-weapon-thumb" loading="lazy" />
                   <div style="font-size: 1.3rem; margin-bottom: 0.25rem;">${w.name}</div>
                   <span class="badge badge-${w.ammo.replace('_', '-')}" style="font-size: 0.75rem;">
                     ${window.i18n.t(`ammo.${w.ammo}`)}

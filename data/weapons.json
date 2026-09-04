@@ -13,16 +13,27 @@
     "magExtended": 40,
     "reloadTime": 2.9,
     "tacticalReload": 2.3,
-    "fireModes": ["single", "burst", "auto"],
+    "fireModes": [
+      "single",
+      "burst",
+      "auto"
+    ],
     "recoilVertical": 85,
     "recoilHorizontal": 72,
     "headshotMultiplier": 2.35,
-    "slots": ["muzzle", "grip", "magazine", "sight", "stock"],
-    "icon": "assets/weapons/beryl-m762.svg",
+    "slots": [
+      "muzzle",
+      "grip",
+      "magazine",
+      "sight",
+      "stock"
+    ],
+    "icon": "assets/weapons/beryl-m762.png",
     "description": {
       "vi": "Khẩu súng trường tấn công 7.62mm hiện đại với tốc độ bắn nhanh và sát thương cao. Độ giật giật rất lớn đòi hỏi kỹ năng ghìm tâm tốt.",
       "en": "A modern 7.62mm assault rifle offering high fire rate and immense damage. Heavy vertical kick demands strong recoil control skills."
-    }
+    },
+    "image": "assets/weapons/beryl-m762.png"
   },
   {
     "id": "m416",
@@ -38,16 +49,26 @@
     "magExtended": 40,
     "reloadTime": 2.7,
     "tacticalReload": 2.1,
-    "fireModes": ["single", "auto"],
+    "fireModes": [
+      "single",
+      "auto"
+    ],
     "recoilVertical": 65,
     "recoilHorizontal": 55,
     "headshotMultiplier": 2.35,
-    "slots": ["muzzle", "grip", "magazine", "sight", "stock"],
-    "icon": "assets/weapons/m416.svg",
+    "slots": [
+      "muzzle",
+      "grip",
+      "magazine",
+      "sight",
+      "stock"
+    ],
+    "icon": "assets/weapons/m416.png",
     "description": {
       "vi": "Khẩu AR quốc dân của PUBG với độ ổn định cao nhất khi gắn đủ 5 phụ kiện. Rất đa dụng từ giao tranh tầm gần đến bắn spray tầm trung.",
       "en": "The quintessential all-rounder AR in PUBG with peak stability when fully attached. Highly versatile for both close sprays and mid-range taps."
-    }
+    },
+    "image": "assets/weapons/m416.png"
   },
   {
     "id": "akm",
@@ -63,16 +84,24 @@
     "magExtended": 40,
     "reloadTime": 3.2,
     "tacticalReload": 2.5,
-    "fireModes": ["single", "auto"],
+    "fireModes": [
+      "single",
+      "auto"
+    ],
     "recoilVertical": 78,
     "recoilHorizontal": 68,
     "headshotMultiplier": 2.35,
-    "slots": ["muzzle", "magazine", "sight"],
-    "icon": "assets/weapons/akm.svg",
+    "slots": [
+      "muzzle",
+      "magazine",
+      "sight"
+    ],
+    "icon": "assets/weapons/akm.png",
     "description": {
       "vi": "Sát thương đơn viên cực mạnh trong dòng súng trường thông thường. Chỉ cần gắn nòng bù giật là phát huy sức mạnh, không cần tay cầm.",
       "en": "Raw punch per shot among world spawn ARs. Requires no grip attachments, reaching combat effectiveness with just a compensator."
-    }
+    },
+    "image": "assets/weapons/akm.png"
   },
   {
     "id": "ace32",
@@ -88,16 +117,26 @@
     "magExtended": 40,
     "reloadTime": 2.9,
     "tacticalReload": 2.3,
-    "fireModes": ["single", "auto"],
+    "fireModes": [
+      "single",
+      "auto"
+    ],
     "recoilVertical": 75,
     "recoilHorizontal": 64,
     "headshotMultiplier": 2.35,
-    "slots": ["muzzle", "grip", "magazine", "sight", "stock"],
-    "icon": "assets/weapons/ace32.svg",
+    "slots": [
+      "muzzle",
+      "grip",
+      "magazine",
+      "sight",
+      "stock"
+    ],
+    "icon": "assets/weapons/ace32.png",
     "description": {
       "vi": "Sự cân bằng lý tưởng giữa sát thương đạn 7.62mm và độ đầm khi gắn đủ phụ kiện, dễ ghìm tâm hơn đáng kể so với Beryl M762.",
       "en": "An ideal balance of 7.62mm firepower with full attachment customizability, significantly easier to control than the Beryl M762."
-    }
+    },
+    "image": "assets/weapons/ace32.png"
   },
   {
     "id": "aug",
@@ -111,18 +150,27 @@
     "effectiveRange": 500,
     "magStandard": 30,
     "magExtended": 40,
-    "reloadTime": 3.0,
+    "reloadTime": 3,
     "tacticalReload": 2.4,
-    "fireModes": ["single", "auto"],
+    "fireModes": [
+      "single",
+      "auto"
+    ],
     "recoilVertical": 68,
     "recoilHorizontal": 50,
     "headshotMultiplier": 2.35,
-    "slots": ["muzzle", "grip", "magazine", "sight"],
-    "icon": "assets/weapons/aug.svg",
+    "slots": [
+      "muzzle",
+      "grip",
+      "magazine",
+      "sight"
+    ],
+    "icon": "assets/weapons/aug.png",
     "description": {
       "vi": "Vua súng trường 5.56mm hiện tại với vận tốc đạn cao và tốc độ xả đạn cực nhanh, áp đảo cự ly tầm trung.",
       "en": "Top-tier 5.56mm assault rifle boasting rapid muzzle velocity and intense fire rate, dominating medium range engagements."
-    }
+    },
+    "image": "assets/weapons/aug.png"
   },
   {
     "id": "scar-l",
@@ -138,16 +186,25 @@
     "magExtended": 40,
     "reloadTime": 2.8,
     "tacticalReload": 2.2,
-    "fireModes": ["single", "auto"],
+    "fireModes": [
+      "single",
+      "auto"
+    ],
     "recoilVertical": 58,
     "recoilHorizontal": 48,
     "headshotMultiplier": 2.35,
-    "slots": ["muzzle", "grip", "magazine", "sight"],
-    "icon": "assets/weapons/scar-l.svg",
+    "slots": [
+      "muzzle",
+      "grip",
+      "magazine",
+      "sight"
+    ],
+    "icon": "assets/weapons/scar-l.png",
     "description": {
       "vi": "Tốc độ bắn vừa phải nhưng độ giật rất êm và dễ kiểm soát, cực kỳ thích hợp cho người mới bắt đầu.",
       "en": "Moderate fire rate paired with gentle, forgiving recoil characteristics, perfect for players mastering spray control."
-    }
+    },
+    "image": "assets/weapons/scar-l.png"
   },
   {
     "id": "groza",
@@ -161,18 +218,26 @@
     "effectiveRange": 400,
     "magStandard": 30,
     "magExtended": 40,
-    "reloadTime": 3.0,
+    "reloadTime": 3,
     "tacticalReload": 2.2,
-    "fireModes": ["single", "auto"],
+    "fireModes": [
+      "single",
+      "auto"
+    ],
     "recoilVertical": 80,
     "recoilHorizontal": 65,
     "headshotMultiplier": 2.35,
-    "slots": ["muzzle", "magazine", "sight"],
-    "icon": "assets/weapons/groza.svg",
+    "slots": [
+      "muzzle",
+      "magazine",
+      "sight"
+    ],
+    "icon": "assets/weapons/groza.png",
     "description": {
       "vi": "Quái vật cận chiến từ Hòm Thính (Care Package). Tốc độ xả đạn 7.62mm kinh hoàng chỉ có thể gắn nòng giảm thanh.",
       "en": "Care package close-quarters monster. Devastating 7.62mm DPS that only accepts suppressor muzzle attachments."
-    }
+    },
+    "image": "assets/weapons/groza.png"
   },
   {
     "id": "famas",
@@ -188,16 +253,25 @@
     "magExtended": 40,
     "reloadTime": 3.1,
     "tacticalReload": 2.3,
-    "fireModes": ["single", "burst", "auto"],
+    "fireModes": [
+      "single",
+      "burst",
+      "auto"
+    ],
     "recoilVertical": 82,
     "recoilHorizontal": 62,
     "headshotMultiplier": 2.35,
-    "slots": ["muzzle", "magazine", "sight"],
-    "icon": "assets/weapons/famas.svg",
+    "slots": [
+      "muzzle",
+      "magazine",
+      "sight"
+    ],
+    "icon": "assets/weapons/famas.png",
     "description": {
       "vi": "Súng trường tấn công thiết kế Bullpup từ Hòm Thính, tốc độ bắn lên tới 900 RPM hủy diệt đối phương trong chớp mắt.",
       "en": "Bullpup assault rifle from airdrops with blistering 900 RPM fire rate shredding opponents in fractions of a second."
-    }
+    },
+    "image": "assets/weapons/famas.png"
   },
   {
     "id": "slr",
@@ -213,16 +287,24 @@
     "magExtended": 20,
     "reloadTime": 3.6,
     "tacticalReload": 2.8,
-    "fireModes": ["single"],
+    "fireModes": [
+      "single"
+    ],
     "recoilVertical": 88,
     "recoilHorizontal": 60,
     "headshotMultiplier": 2.35,
-    "slots": ["muzzle", "magazine", "sight", "stock"],
-    "icon": "assets/weapons/slr.svg",
+    "slots": [
+      "muzzle",
+      "magazine",
+      "sight",
+      "stock"
+    ],
+    "icon": "assets/weapons/slr.png",
     "description": {
       "vi": "Khẩu DMR 7.62mm sát thương cao, vận tốc đạn tốt. Độ nảy tâm giật mạnh cần nhịp nhấp bắn chuẩn xác.",
       "en": "Heavy hitting 7.62mm DMR with superior muzzle speed. Notable recoil kick demands disciplined trigger cadence."
-    }
+    },
+    "image": "assets/weapons/slr.png"
   },
   {
     "id": "sks",
@@ -238,16 +320,25 @@
     "magExtended": 20,
     "reloadTime": 2.9,
     "tacticalReload": 2.4,
-    "fireModes": ["single"],
+    "fireModes": [
+      "single"
+    ],
     "recoilVertical": 75,
     "recoilHorizontal": 50,
     "headshotMultiplier": 2.35,
-    "slots": ["muzzle", "grip", "magazine", "sight", "stock"],
-    "icon": "assets/weapons/sks.svg",
+    "slots": [
+      "muzzle",
+      "grip",
+      "magazine",
+      "sight",
+      "stock"
+    ],
+    "icon": "assets/weapons/sks.png",
     "description": {
       "vi": "Khẩu DMR linh hoạt nhất khi hỗ trợ tới 5 vị trí phụ kiện bao gồm tay cầm và má súng chắt chiu độ ổn định.",
       "en": "Most customizable DMR accepting 5 attachment slots including foregrips and cheek pads for stabilized follow-up shots."
-    }
+    },
+    "image": "assets/weapons/sks.png"
   },
   {
     "id": "dragunov",
@@ -262,17 +353,25 @@
     "magStandard": 10,
     "magExtended": 20,
     "reloadTime": 3.8,
-    "tacticalReload": 3.0,
-    "fireModes": ["single"],
+    "tacticalReload": 3,
+    "fireModes": [
+      "single"
+    ],
     "recoilVertical": 95,
     "recoilHorizontal": 65,
     "headshotMultiplier": 2.35,
-    "slots": ["muzzle", "magazine", "sight", "stock"],
-    "icon": "assets/weapons/dragunov.svg",
+    "slots": [
+      "muzzle",
+      "magazine",
+      "sight",
+      "stock"
+    ],
+    "icon": "assets/weapons/dragunov.png",
     "description": {
       "vi": "DMR huyền thoại có cơ chế sát thương chí mạng: có khả năng 1 viên headshot kết liễu đối thủ đội mũ 2 ở cự ly gần.",
       "en": "Legendary high-risk DMR featuring lethal headshot potency capable of 1-tapping Level 2 helmets at close ranges."
-    }
+    },
+    "image": "assets/weapons/dragunov.png"
   },
   {
     "id": "mk12",
@@ -288,16 +387,24 @@
     "magExtended": 30,
     "reloadTime": 3.2,
     "tacticalReload": 2.5,
-    "fireModes": ["single"],
+    "fireModes": [
+      "single"
+    ],
     "recoilVertical": 55,
     "recoilHorizontal": 35,
     "headshotMultiplier": 2.35,
-    "slots": ["muzzle", "grip", "magazine", "sight"],
-    "icon": "assets/weapons/mk12.svg",
+    "slots": [
+      "muzzle",
+      "grip",
+      "magazine",
+      "sight"
+    ],
+    "icon": "assets/weapons/mk12.png",
     "description": {
       "vi": "Khẩu DMR 5.56mm mạnh nhất nhì meta hiện tại. Tích hợp chân chống giật khi nằm bắn và băng đạn mặc định lớn (20 viên).",
       "en": "Dominant 5.56mm DMR in current meta. Features an integrated bipod for near-zero prone recoil and generous 20-round default mag."
-    }
+    },
+    "image": "assets/weapons/mk12.png"
   },
   {
     "id": "mini14",
@@ -313,16 +420,23 @@
     "magExtended": 30,
     "reloadTime": 3.6,
     "tacticalReload": 2.7,
-    "fireModes": ["single"],
+    "fireModes": [
+      "single"
+    ],
     "recoilVertical": 50,
     "recoilHorizontal": 30,
     "headshotMultiplier": 2.35,
-    "slots": ["muzzle", "magazine", "sight"],
-    "icon": "assets/weapons/mini14.svg",
+    "slots": [
+      "muzzle",
+      "magazine",
+      "sight"
+    ],
+    "icon": "assets/weapons/mini14.png",
     "description": {
       "vi": "Vận tốc đạn 990 m/s cao nhất trong các loại súng thế giới nhặt được, đạn rơi cực ít giúp bắn đón mục tiêu đang chạy dễ dàng.",
       "en": "Unmatched 990 m/s bullet velocity among world spawns, flat trajectory minimizes bullet drop when leading running targets."
-    }
+    },
+    "image": "assets/weapons/mini14.png"
   },
   {
     "id": "mk14-ebr",
@@ -338,16 +452,25 @@
     "magExtended": 20,
     "reloadTime": 3.6,
     "tacticalReload": 2.8,
-    "fireModes": ["single", "auto"],
+    "fireModes": [
+      "single",
+      "auto"
+    ],
     "recoilVertical": 92,
     "recoilHorizontal": 70,
     "headshotMultiplier": 2.35,
-    "slots": ["muzzle", "magazine", "sight", "stock"],
-    "icon": "assets/weapons/mk14.svg",
+    "slots": [
+      "muzzle",
+      "magazine",
+      "sight",
+      "stock"
+    ],
+    "icon": "assets/weapons/mk14-ebr.png",
     "description": {
       "vi": "Vũ khí đa năng mạnh nhất từ Airdrop. Vừa là khẩu DMR sát thương khủng khiếp vừa có chế độ bắn Full-Auto hủy diệt cận chiến.",
       "en": "The apex predator of airdrop weapons. Combines brutal DMR tap damage with an all-destroying full-auto fire mode."
-    }
+    },
+    "image": "assets/weapons/mk14-ebr.png"
   },
   {
     "id": "kar98k",
@@ -361,18 +484,25 @@
     "effectiveRange": 1000,
     "magStandard": 5,
     "magExtended": 5,
-    "reloadTime": 4.0,
+    "reloadTime": 4,
     "tacticalReload": 1.7,
-    "fireModes": ["single"],
+    "fireModes": [
+      "single"
+    ],
     "recoilVertical": 90,
     "recoilHorizontal": 40,
     "headshotMultiplier": 2.5,
-    "slots": ["muzzle", "sight", "stock"],
-    "icon": "assets/weapons/kar98k.svg",
+    "slots": [
+      "muzzle",
+      "sight",
+      "stock"
+    ],
+    "icon": "assets/weapons/kar98k.png",
     "description": {
       "vi": "Súng bắn tỉa lên đạn từng viên cổ điển. 1 viên vào đầu lập tức hạ gục mục tiêu đội Mũ 2 (118.5 sát thương).",
       "en": "Classic bolt-action sniper rifle. Instantly knocks out any enemy wearing a Level 2 Helmet with a single headshot (118.5 dmg)."
-    }
+    },
+    "image": "assets/weapons/kar98k.png"
   },
   {
     "id": "m24",
@@ -388,16 +518,24 @@
     "magExtended": 7,
     "reloadTime": 3.8,
     "tacticalReload": 1.8,
-    "fireModes": ["single"],
+    "fireModes": [
+      "single"
+    ],
     "recoilVertical": 85,
     "recoilHorizontal": 35,
     "headshotMultiplier": 2.5,
-    "slots": ["muzzle", "magazine", "sight", "stock"],
-    "icon": "assets/weapons/m24.svg",
+    "slots": [
+      "muzzle",
+      "magazine",
+      "sight",
+      "stock"
+    ],
+    "icon": "assets/weapons/m24.png",
     "description": {
       "vi": "Vận tốc đạn nhanh hơn Kar98k và gắn được băng đạn mở rộng thay đạn nhanh. Đảm bảo 1 viên headshot hạ Mũ 2.",
       "en": "Faster bullet velocity than Kar98k and accepts extended magazines. Reliably one-shots Level 2 Helmets on headshots."
-    }
+    },
+    "image": "assets/weapons/m24.png"
   },
   {
     "id": "awm",
@@ -413,16 +551,24 @@
     "magExtended": 7,
     "reloadTime": 4.6,
     "tacticalReload": 2.3,
-    "fireModes": ["single"],
+    "fireModes": [
+      "single"
+    ],
     "recoilVertical": 95,
     "recoilHorizontal": 30,
     "headshotMultiplier": 2.5,
-    "slots": ["muzzle", "magazine", "sight", "stock"],
-    "icon": "assets/weapons/awm.svg",
+    "slots": [
+      "muzzle",
+      "magazine",
+      "sight",
+      "stock"
+    ],
+    "icon": "assets/weapons/awm.png",
     "description": {
       "vi": "Vua súng tỉa độc quyền từ Airdrop. Khẩu súng duy nhất bắn 1 viên xuyên thủng Mũ 3 hạ gục đối thủ tức thì (118.1 sát thương).",
       "en": "The reigning king of snipers from care packages. The only weapon capable of a true 1-shot knockout against a full Level 3 Helmet."
-    }
+    },
+    "image": "assets/weapons/awm.png"
   },
   {
     "id": "vector",
@@ -438,16 +584,27 @@
     "magExtended": 33,
     "reloadTime": 2.2,
     "tacticalReload": 1.7,
-    "fireModes": ["single", "burst", "auto"],
+    "fireModes": [
+      "single",
+      "burst",
+      "auto"
+    ],
     "recoilVertical": 45,
     "recoilHorizontal": 35,
     "headshotMultiplier": 1.8,
-    "slots": ["muzzle", "grip", "magazine", "sight", "stock"],
-    "icon": "assets/weapons/vector.svg",
+    "slots": [
+      "muzzle",
+      "grip",
+      "magazine",
+      "sight",
+      "stock"
+    ],
+    "icon": "assets/weapons/vector.png",
     "description": {
       "vi": "Tốc độ bắn 1100 RPM xé nát giáp đối thủ trong phạm vi 20m. Rất cần băng đạn mở rộng để tối ưu hóa hiệu quả.",
       "en": "Mind-boggling 1100 RPM fire rate melts targets up close. Highly dependent on an extended magazine to shine."
-    }
+    },
+    "image": "assets/weapons/vector.png"
   },
   {
     "id": "ump45",
@@ -463,16 +620,26 @@
     "magExtended": 35,
     "reloadTime": 3.1,
     "tacticalReload": 2.3,
-    "fireModes": ["single", "burst", "auto"],
+    "fireModes": [
+      "single",
+      "burst",
+      "auto"
+    ],
     "recoilVertical": 35,
     "recoilHorizontal": 25,
     "headshotMultiplier": 1.8,
-    "slots": ["muzzle", "grip", "magazine", "sight"],
-    "icon": "assets/weapons/ump.svg",
+    "slots": [
+      "muzzle",
+      "grip",
+      "magazine",
+      "sight"
+    ],
+    "icon": "assets/weapons/ump45.png",
     "description": {
       "vi": "Độ ổn định cao nhất phân khúc SMG, độ giật cực kỳ êm dịu kết hợp sát thương tay chân (limb) ưu việt ở cự ly gần.",
       "en": "Laser-like stability in the SMG class, combining docile recoil with enhanced limb damage multipliers in close duels."
-    }
+    },
+    "image": "assets/weapons/ump45.png"
   },
   {
     "id": "js9",
@@ -488,16 +655,24 @@
     "magExtended": 40,
     "reloadTime": 2.6,
     "tacticalReload": 1.9,
-    "fireModes": ["single", "auto"],
+    "fireModes": [
+      "single",
+      "auto"
+    ],
     "recoilVertical": 40,
     "recoilHorizontal": 30,
     "headshotMultiplier": 1.8,
-    "slots": ["muzzle", "magazine", "sight"],
-    "icon": "assets/weapons/js9.svg",
+    "slots": [
+      "muzzle",
+      "magazine",
+      "sight"
+    ],
+    "icon": "assets/weapons/js9.webp",
     "description": {
       "vi": "Khẩu tiểu liên hiện đại của map Rondo với DPS cao, độ giật thấp và băng đạn lớn, thống trị các pha công nhà.",
       "en": "Modern Rondo-exclusive submachine gun featuring exceptional DPS, minimal recoil, and high capacity mag."
-    }
+    },
+    "image": "assets/weapons/js9.webp"
   },
   {
     "id": "dbs",
@@ -511,18 +686,23 @@
     "effectiveRange": 50,
     "magStandard": 14,
     "magExtended": 14,
-    "reloadTime": 5.0,
+    "reloadTime": 5,
     "tacticalReload": 0.8,
-    "fireModes": ["single"],
+    "fireModes": [
+      "single"
+    ],
     "recoilVertical": 85,
     "recoilHorizontal": 40,
     "headshotMultiplier": 1.5,
-    "slots": ["sight"],
-    "icon": "assets/weapons/dbs.svg",
+    "slots": [
+      "sight"
+    ],
+    "icon": "assets/weapons/dbs.png",
     "description": {
       "vi": "Vua công nhà nòng đôi kiểu bullpup, bắn được 2 viên liên tiếp trước khi bơm đạn. Sức chứa khổng lồ 14 viên đạn ghém.",
       "en": "The bullpup double-barrel house-clearing menace. Fires 2 rapid shells per pump with a massive 14-round capacity."
-    }
+    },
+    "image": "assets/weapons/dbs.png"
   },
   {
     "id": "s12k",
@@ -536,18 +716,25 @@
     "effectiveRange": 40,
     "magStandard": 5,
     "magExtended": 10,
-    "reloadTime": 3.0,
+    "reloadTime": 3,
     "tacticalReload": 2.4,
-    "fireModes": ["single"],
+    "fireModes": [
+      "single"
+    ],
     "recoilVertical": 90,
     "recoilHorizontal": 50,
     "headshotMultiplier": 1.5,
-    "slots": ["muzzle", "magazine", "sight"],
-    "icon": "assets/weapons/s12k.svg",
+    "slots": [
+      "muzzle",
+      "magazine",
+      "sight"
+    ],
+    "icon": "assets/weapons/s12k.png",
     "description": {
       "vi": "Shotgun bán tự động gắn được phụ kiện của dòng AR (băng đạn mở rộng lên tới 10 viên), xả đạn cực nhanh.",
       "en": "Semi-automatic shotgun utilizing AR attachments. Can hold up to 10 shells with an extended mag for rapid breach fire."
-    }
+    },
+    "image": "assets/weapons/s12k.png"
   },
   {
     "id": "m249",
@@ -563,16 +750,23 @@
     "magExtended": 150,
     "reloadTime": 8.2,
     "tacticalReload": 6.8,
-    "fireModes": ["auto"],
+    "fireModes": [
+      "auto"
+    ],
     "recoilVertical": 70,
     "recoilHorizontal": 60,
     "headshotMultiplier": 2.35,
-    "slots": ["magazine", "sight", "stock"],
-    "icon": "assets/weapons/m249.svg",
+    "slots": [
+      "magazine",
+      "sight",
+      "stock"
+    ],
+    "icon": "assets/weapons/m249.png",
     "description": {
       "vi": "Cỗ máy sấy xe và hỏa lực kìm chân số 1 với hộp tiếp đạn lên đến 150 viên. Khi nằm bắn độ giật giảm 80% nhờ chân chống.",
       "en": "Supreme vehicle shredder and suppression beast holding up to 150 rounds. Recoil drops by 80% when firing prone on its bipod."
-    }
+    },
+    "image": "assets/weapons/m249.png"
   },
   {
     "id": "mg3",
@@ -586,17 +780,22 @@
     "effectiveRange": 600,
     "magStandard": 75,
     "magExtended": 75,
-    "reloadTime": 7.0,
+    "reloadTime": 7,
     "tacticalReload": 5.5,
-    "fireModes": ["auto"],
+    "fireModes": [
+      "auto"
+    ],
     "recoilVertical": 85,
     "recoilHorizontal": 65,
     "headshotMultiplier": 2.35,
-    "slots": ["sight"],
-    "icon": "assets/weapons/mg3.svg",
+    "slots": [
+      "sight"
+    ],
+    "icon": "assets/weapons/mg3.png",
     "description": {
       "vi": "Súng máy cá nhân Airdrop với 2 chế độ bắn (660 RPM và 990 RPM hủy diệt). Gây thêm 1.25x sát thương lên xe cơ giới.",
       "en": "Airdrop machine gun with dual fire modes (660 & blazing 990 RPM). Deals 1.25x bonus damage against vehicles."
-    }
+    },
+    "image": "assets/weapons/mg3.png"
   }
 ]
