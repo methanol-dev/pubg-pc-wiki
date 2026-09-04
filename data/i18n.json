@@ -7,13 +7,15 @@
     },
     "nav": {
       "home": "Trang Chủ",
-      "weapons": "Vũ Khí & Phụ Kiện",
-      "compare": "So Sánh Vũ Khí",
+      "weapons": "Vũ Khí",
+      "compare": "So Sánh",
       "maps": "Bản Đồ",
-      "equipment": "Trang Bị & Giáp",
-      "mechanics": "Cơ Chế Game"
+      "equipment": "Trang Bị",
+      "mechanics": "Cơ Chế"
     },
     "common": {
+      "explore_weapons": "Tra Cứu Vũ Khí",
+      "compare_weapons": "So Sánh Súng",
       "search_placeholder": "Tìm kiếm súng, đạn, bản đồ, phụ kiện...",
       "all": "Tất cả",
       "filter": "Bộ lọc",
@@ -161,14 +163,16 @@
       "footer_text": "PUBG: BATTLEGROUNDS is a registered trademark of KRAFTON, Inc. This wiki is fan-made for reference and non-commercial educational purposes."
     },
     "nav": {
-      "home": "Home Hub",
-      "weapons": "Weapons & Attachments",
-      "compare": "Weapon Comparison",
-      "maps": "Tactical Maps",
-      "equipment": "Equipment & Armor",
-      "mechanics": "Game Mechanics"
+      "home": "Home",
+      "weapons": "Weapons",
+      "compare": "Compare",
+      "maps": "Maps",
+      "equipment": "Equipment",
+      "mechanics": "Mechanics"
     },
     "common": {
+      "explore_weapons": "Explore Weapons",
+      "compare_weapons": "Compare Weapons",
       "search_placeholder": "Search weapons, ammo, maps, attachments...",
       "all": "All",
       "filter": "Filter",
