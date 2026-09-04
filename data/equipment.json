@@ -4,33 +4,57 @@
       "id": "helmet-1",
       "level": 1,
       "name": "Motorcycle Helmet (Level 1)",
+      "nameVi": "Mũ Bảo Hiểm Xe Máy (Cấp 1)",
+      "image": "assets/equipment/helmet_lv1.png",
       "durability": 80,
       "reduction": 30,
+      "weight": 40,
+      "rarity": "Common",
       "description": {
-        "vi": "Mũ bảo hiểm xe máy giảm 30% sát thương vào vùng đầu. Bị hạ 1 viên bởi tất cả súng bắn tỉa (SR) và DMR mạnh.",
-        "en": "Motorcycle helmet offering 30% headshot damage reduction. Easily breached by any sniper or high-powered DMR in 1 tap."
+        "vi": "Mũ bảo hiểm xe máy tiêu chuẩn, giảm 30% sát thương vào vùng đầu. Bị hạ gục 1 viên bởi tất cả súng bắn tỉa (SR) và DMR uy lực.",
+        "en": "Standard motorcycle helmet offering 30% headshot damage reduction. Breached by any sniper rifle or high-powered DMR in 1 tap."
+      },
+      "tip": {
+        "vi": "Dù chỉ giảm 30%, mũ 1 vẫn giúp bạn không chết ngay trước 1 viên Kar98k nếu đối phương bắn lệch tâm hoặc bạn ở cự ly xa.",
+        "en": "Even with 30% reduction, a Level 1 helmet still prevents an instant one-shot death from long-range DMR hits."
       }
     },
     {
       "id": "helmet-2",
       "level": 2,
       "name": "Military Helmet (Level 2)",
+      "nameVi": "Mũ Quân Đội (Cấp 2)",
+      "image": "assets/equipment/helmet_lv2.png",
       "durability": 150,
       "reduction": 40,
+      "weight": 50,
+      "rarity": "Standard",
       "description": {
-        "vi": "Mũ quân sự tiêu chuẩn giảm 40% sát thương đầu. Giúp sống sót trước 1 phát bắn vào đầu của súng trường AR.",
-        "en": "Standard military helmet mitigating 40% head damage. Survives 1 headshot from all assault rifles."
+        "vi": "Mũ quân sự thông dụng nhất trên chiến trường, giảm 40% sát thương vào đầu. Giúp sống sót trước 1 phát bắn vào đầu của súng trường AR.",
+        "en": "Most common tactical helmet in PUBG, absorbing 40% head damage. Survives 1 direct headshot from any 5.56mm or 7.62mm AR."
+      },
+      "tip": {
+        "vi": "Mũ 2 sẽ vỡ nát và người chơi còn dưới 10 HP sau khi ăn 1 viên đạn Kar98k/M24. Hãy lập tức thay mũ mới ngay khi có thể.",
+        "en": "A Level 2 helmet will shatter and leave you below 10 HP after surviving a Kar98k/M24 headshot. Replace it ASAP."
       }
     },
     {
       "id": "helmet-3",
       "level": 3,
       "name": "Spetsnaz Helmet (Level 3)",
+      "nameVi": "Mũ Spetsnaz Nồi Cơm Điện (Cấp 3)",
+      "image": "assets/equipment/helmet_lv3.png",
       "durability": 230,
       "reduction": 55,
+      "weight": 60,
+      "rarity": "Airdrop",
       "description": {
-        "vi": "Mũ 3 nồi cơm điện huyền thoại giảm 55% sát thương. Chặn được phát headshot tử thần từ Kar98k và M24 (chỉ thua AWM/Lynx).",
-        "en": "Legendary Spetsnaz helmet granting 55% damage reduction. Survives headshots from Kar98k and M24."
+        "vi": "Chiếc mũ nồi cơm điện huyền thoại biểu tượng của PUBG. Giảm 55% sát thương, bảo vệ bạn sống sót trước phát bắn headshot của Kar98k và M24.",
+        "en": "The legendary iconic Spetsnaz helmet. Grants 55% damage reduction, guaranteeing survival against Kar98k and M24 headshots."
+      },
+      "tip": {
+        "vi": "Kể cả khi mũ 3 chỉ còn 1 điểm độ bền (Durability 1), nó vẫn giảm đủ 55% sát thương của 1 phát bắn headshot Kar98k kế tiếp!",
+        "en": "Even at 1 durability point, a Level 3 helmet still provides the full 55% damage reduction on the next fatal headshot!"
       }
     }
   ],
@@ -39,36 +63,60 @@
       "id": "vest-1",
       "level": 1,
       "name": "Police Vest (Level 1)",
+      "nameVi": "Áo Giáp Cảnh Sát (Cấp 1)",
+      "image": "assets/equipment/vest_lv1.png",
       "durability": 200,
       "reduction": 30,
       "capacity": 50,
+      "weight": 120,
+      "rarity": "Common",
       "description": {
-        "vi": "Áo giáp cảnh sát cấp 1 giảm 30% sát thương vào thân và tăng 50 đơn vị sức chứa đồ.",
+        "vi": "Áo giáp bảo hộ cảnh sát cấp 1, giảm 30% sát thương vào phần thân trên và cung cấp thêm 50 đơn vị sức chứa đồ.",
         "en": "Level 1 Police vest reducing torso damage by 30% while adding +50 inventory capacity."
+      },
+      "tip": {
+        "vi": "Bất kỳ chiếc áo giáp nào cũng cộng thêm 50 sức chứa balo, vì vậy luôn nhặt áo giáp ngay khi vừa tiếp đất.",
+        "en": "All vests grant +50 inventory capacity; always pick up a vest immediately upon landing."
       }
     },
     {
       "id": "vest-2",
       "level": 2,
       "name": "Police Vest (Level 2)",
+      "nameVi": "Áo Giáp Cảnh Sát (Cấp 2)",
+      "image": "assets/equipment/vest_lv2.png",
       "durability": 220,
       "reduction": 40,
       "capacity": 50,
+      "weight": 150,
+      "rarity": "Standard",
       "description": {
-        "vi": "Áo giáp cảnh sát cấp 2 phổ biến nhất, giảm 40% sát thương thân người.",
-        "en": "Standard Level 2 vest mitigating 40% damage to torso areas."
+        "vi": "Áo giáp cảnh sát cấp 2 xuất hiện rộng rãi, giảm 40% sát thương thân người. Chuẩn mực phòng thủ trong các cuộc đọ súng AR cự ly trung bình.",
+        "en": "Standard Level 2 vest mitigating 40% torso damage. Baseline ballistic armor for mid-range AR duels."
+      },
+      "tip": {
+        "vi": "Khi giáp 2 bị bắn tụt độ bền xuống dưới 50 điểm, hãy cân nhắc đổi sang một chiếc giáp 1 còn 100% độ bền nguyên vẹn.",
+        "en": "If your Level 2 vest falls below 50 durability, consider swapping to a pristine 100% Level 1 vest."
       }
     },
     {
       "id": "vest-3",
       "level": 3,
       "name": "Military Vest (Level 3)",
+      "nameVi": "Áo Giáp Quân Đội (Cấp 3)",
+      "image": "assets/equipment/vest_lv3.png",
       "durability": 250,
       "reduction": 55,
       "capacity": 50,
+      "weight": 180,
+      "rarity": "Airdrop",
       "description": {
-        "vi": "Áo giáp quân đội cấp 3 chống chịu 55% sát thương, tấm lá chắn sống còn trong các vòng bo cuối.",
-        "en": "High-grade military vest absorbing 55% bullet damage, vital protection in late circle endgames."
+        "vi": "Áo giáp chiến thuật quân sự hạng nặng, hấp thụ tới 55% sát thương. Lá chắn sinh tử quyết định thắng bại trong các vòng bo cuối cùng.",
+        "en": "Heavy-duty military tactical vest absorbing 55% bullet damage. Vital lifesaver that swings late-game 1v1 duels."
+      },
+      "tip": {
+        "vi": "Giáp 3 biến bạn thành xe tăng bọc thép, đối thủ phải tốn thêm 2 đến 3 viên đạn 7.62mm mới có thể hạ gục được bạn.",
+        "en": "Level 3 vest turns you into a tank, requiring enemies to land 2-3 extra 7.62mm shots to down you."
       }
     }
   ],
@@ -77,40 +125,145 @@
       "id": "bag-1",
       "level": 1,
       "name": "Backpack (Level 1)",
+      "nameVi": "Ba Lô (Cấp 1)",
+      "image": "assets/equipment/backpack_lv1.png",
       "capacity": 150,
+      "totalCapacity": 220,
+      "weight": 40,
+      "rarity": "Common",
       "description": {
-        "vi": "Ba lô cấp 1 mở rộng 150 đơn vị dung tích.",
-        "en": "Level 1 backpack adding +150 capacity volume."
+        "vi": "Ba lô dã ngoại cấp 1 mở rộng 150 đơn vị dung tích (tổng sức chứa đạt 220 khi mặc áo giáp).",
+        "en": "Level 1 basic backpack adding +150 capacity volume (reaching 220 total with a vest)."
+      },
+      "tip": {
+        "vi": "Chỉ nên mang 140 viên đạn, 3 nước tăng lực, 1 medkit và 2 quả khói để không bị tràn dung tích balo 1.",
+        "en": "Carry max 140 ammo, 3 boosters, 1 medkit, and 2 smokes to avoid capping out a Level 1 pack."
       }
     },
     {
       "id": "bag-2",
       "level": 2,
       "name": "Backpack (Level 2)",
+      "nameVi": "Ba Lô (Cấp 2)",
+      "image": "assets/equipment/backpack_lv2.png",
       "capacity": 200,
+      "totalCapacity": 270,
+      "weight": 50,
+      "rarity": "Standard",
       "description": {
-        "vi": "Ba lô cấp 2 mở rộng 200 đơn vị dung tích, tiêu chuẩn cho mọi trận đấu.",
-        "en": "Level 2 backpack adding +200 capacity volume, tournament standard."
+        "vi": "Ba lô quân sự cấp 2 cung cấp thêm 200 đơn vị sức chứa (tổng 270). Mức tiêu chuẩn tối ưu cho các tuyển thủ thi đấu chuyên nghiệp.",
+        "en": "Level 2 combat pack granting +200 capacity (total 270). Tournament standard volume for squads."
+      },
+      "tip": {
+        "vi": "Đủ không gian chứa 180 viên đạn, 4 quả khói, 2 lựu đạn nổ và đầy đủ vật phẩm hồi phục.",
+        "en": "Sufficient space for 180 rounds, 4 smokes, 2 frag grenades, and complete medical supplies."
       }
     },
     {
       "id": "bag-3",
       "level": 3,
       "name": "Backpack (Level 3)",
+      "nameVi": "Ba Lô (Cấp 3)",
+      "image": "assets/equipment/backpack_lv3.png",
       "capacity": 250,
+      "totalCapacity": 320,
+      "weight": 60,
+      "rarity": "Airdrop",
       "description": {
-        "vi": "Ba lô cấp 3 tối đa sức chứa với 250 đơn vị, mang thoải mái lựu đạn và đạn dược.",
-        "en": "Maximum gear carrying capacity with +250 volume for nades and ammo."
+        "vi": "Ba lô dã chiến kích thước cực đại với 250 đơn vị sức chứa mở rộng (tổng 320). Thoải mái tích trữ lựu đạn, đạn dược và C4.",
+        "en": "Massive capacity tactical backpack offering +250 extra space (total 320). Comfortably carry nade spam and C4."
+      },
+      "tip": {
+        "vi": "Kích thước balo 3 khá to phía sau lưng, khi bò trườn trong cỏ ở vòng bo cuối rất dễ bị đối thủ phát hiện nhô lên.",
+        "en": "Level 3 backpack has a noticeable bulk profile; prone players in open grass can be spotted more easily."
       }
     },
     {
       "id": "jammer-pack",
       "level": 2,
       "name": "Jammer Pack",
+      "nameVi": "Ba Lô Chống Bo Điện (Jammer Pack)",
+      "image": "assets/equipment/jammer_pack.png",
       "capacity": 200,
+      "totalCapacity": 270,
+      "weight": 50,
+      "rarity": "Rare",
       "description": {
-        "vi": "Ba lô chống bo điện giúp hấp thụ sát thương Bluezone trong một khoảng thời gian nhất định.",
-        "en": "Energy-shielded pack absorbing Bluezone electricity damage for limited duration."
+        "vi": "Ba lô công nghệ cao trang bị bộ triệt tiêu điện trường Bluezone. Hấp thụ toàn bộ sát thương của vòng bo điện trong thời gian nhất định.",
+        "en": "High-tech pack equipped with Bluezone energy dissipator. Completely shields the wearer from Bluezone damage for a duration."
+      },
+      "tip": {
+        "vi": "Thanh năng lượng của Jammer Pack sẽ cạn nhanh hơn nhiều ở các phase bo từ vòng 4 trở đi. Dùng để luồn vòng sau lưng kẻ địch cực kỳ hiệu quả.",
+        "en": "Jammer energy drains significantly faster in Phase 4+. Superb for executing deep outside-the-zone flanks."
+      }
+    },
+    {
+      "id": "emergency-parachute",
+      "level": 1,
+      "name": "Emergency Parachute",
+      "nameVi": "Dù Khẩn Cấp (Emergency Parachute)",
+      "image": "assets/equipment/emergency_parachute.png",
+      "capacity": 0,
+      "totalCapacity": 0,
+      "weight": 20,
+      "rarity": "Standard",
+      "description": {
+        "vi": "Dù dự phòng cá nhân cho phép bung dù từ các tòa cao ốc, đỉnh núi cao hoặc khi nhảy khỏi máy bay khẩn cấp mà không mất máu.",
+        "en": "Personal emergency parachute that deploys from rooftops, mountain cliffs, or gliders to land safely without fall damage."
+      },
+      "tip": {
+        "vi": "Trên bản đồ Deston, mọi người chơi đều được trang bị sẵn chiếc dù này vĩnh viễn trong kho đồ.",
+        "en": "On the Deston map, every player is permanently equipped with a reusable utility parachute."
+      }
+    }
+  ],
+  "ghillie": [
+    {
+      "id": "ghillie-woodland",
+      "name": "Ghillie Suit (Woodland)",
+      "nameVi": "Bộ Đồ Ngụy Trang Cỏ Xanh",
+      "image": "assets/equipment/ghillie_woodland.png",
+      "rarity": "Airdrop",
+      "weight": 20,
+      "description": {
+        "vi": "Bộ quần áo ngụy trang bằng sợi vải xanh mô phỏng cỏ tự nhiên. Biến người chơi thành vô hình khi ẩn nấp trong các đồng cỏ Erangel, Sanhok, Taego.",
+        "en": "Dense green camouflage foliage suit. Grants near invisibility when crouching or going prone in grasslands across Erangel, Sanhok, and Taego."
+      },
+      "tip": {
+        "vi": "Khi mặc Ghillie, hãy tháo súng phụ ở sau lưng nếu không có skin xanh lá để tránh bị lộ nòng súng đen nhô lên trong cỏ.",
+        "en": "Drop your secondary long gun or hide non-green weapon skins to avoid protruding barrels exposing your silhouette."
+      }
+    },
+    {
+      "id": "ghillie-desert",
+      "name": "Ghillie Suit (Desert)",
+      "nameVi": "Bộ Đồ Ngụy Trang Sa Mạc",
+      "image": "assets/equipment/ghillie_desert.png",
+      "rarity": "Airdrop",
+      "weight": 20,
+      "description": {
+        "vi": "Bộ đồ ngụy trang sợi cỏ khô màu nâu vàng nhạt hòa trộn hoàn hảo vào đất đá cằn cỗi và đồi cát sa mạc Miramar, Karakin.",
+        "en": "Light brownish-tan camo suit blending seamlessly into the arid rocky dirt and brush slopes of Miramar and Karakin."
+      },
+      "tip": {
+        "vi": "Rất khó nhận biết khi nằm phục kích ở các sườn đồi gồ ghề hull-down nhìn xuống thị trấn.",
+        "en": "Extremely difficult to spot when holding hull-down ambush angles on barren rocky ridges."
+      }
+    },
+    {
+      "id": "ghillie-snow",
+      "name": "Ghillie Suit (Snow)",
+      "nameVi": "Bộ Đồ Ngụy Trang Tuyết Trắng",
+      "image": "assets/equipment/ghillie_snow.png",
+      "rarity": "Airdrop",
+      "weight": 20,
+      "description": {
+        "vi": "Bộ đồ ngụy trang trắng muốt dành riêng cho vùng cực tuyết phủ Vikendi. Khiến đối thủ hoàn toàn mất dấu vết trong bão tuyết.",
+        "en": "Pure white snowfield camouflage suit exclusive to polar maps like Vikendi. Virtually invisible against snowdrifts."
+      },
+      "tip": {
+        "vi": "Đặc biệt uy lực khi nằm bắn tỉa giữa bình nguyên băng giá hoặc dọc theo các sườn đồi tuyết tuyết trắng.",
+        "en": "Devastating when sniping prone in open snowfields or along snow-covered ridgelines."
       }
     }
   ],
@@ -118,41 +271,369 @@
     {
       "id": "med-kit",
       "name": "Med Kit",
-      "castTime": 8.0,
+      "nameVi": "Hộp Cứu Thương Lớn (Med Kit)",
+      "image": "assets/equipment/med_kit.png",
+      "castTime": 8,
       "healAmount": "100%",
+      "weight": 20,
+      "rarity": "Rare",
       "description": {
-        "vi": "Hồi phục 100% máu ngay lập tức chỉ với 1 lần dùng.",
-        "en": "Restores 100% full HP instantly upon application."
+        "vi": "Hộp cứu thương phẫu thuật cao cấp nhất, hồi phục ngay lập tức 100% lượng máu tối đa chỉ sau 8 giây sử dụng.",
+        "en": "The premier medical kit. Fully restores health to 100% in a single 8-second application."
+      },
+      "tip": {
+        "vi": "Thời gian dùng 8 giây khá dài, hãy đảm bảo bạn đang ở vị trí an toàn có đồng đội yểm trợ hoặc trong làn khói.",
+        "en": "The 8-second cast time is long; ensure you are behind hard cover or concealed in dense smoke."
       }
     },
     {
       "id": "first-aid",
       "name": "First Aid Kit",
-      "castTime": 6.0,
+      "nameVi": "Hộp Sơ Cứu (First Aid Kit)",
+      "image": "assets/equipment/first_aid.png",
+      "castTime": 6,
       "healAmount": "75%",
+      "weight": 10,
+      "rarity": "Standard",
       "description": {
-        "vi": "Hồi máu lên mốc 75% tối đa trong 6 giây.",
-        "en": "Heals player back up to 75% max health."
+        "vi": "Hộp sơ cứu tiêu chuẩn phục hồi lượng máu lên mốc 75% tối đa trong 6 giây. Vật phẩm hồi phục quan trọng nhất trong ba lô.",
+        "en": "Standard emergency kit restoring health up to 75% in 6 seconds. The most critical medical supply in any loadout."
+      },
+      "tip": {
+        "vi": "Luôn duy trì từ 3 đến 5 hộp First Aid trong balo để sẵn sàng cho các pha giao tranh liên tiếp.",
+        "en": "Carry 3-5 First Aids at all times to sustain back-to-back combat engagements."
       }
     },
     {
-      "id": "painkiller",
-      "name": "Painkiller",
-      "castTime": 6.0,
-      "boostAmount": "60%",
+      "id": "bandage",
+      "name": "Bandage",
+      "nameVi": "Băng Gạc Cá Nhân (Bandage)",
+      "image": "assets/equipment/bandage.png",
+      "castTime": 4,
+      "healAmount": "10% (lên tới 75%)",
+      "weight": 2,
+      "rarity": "Common",
       "description": {
-        "vi": "Tăng 60% thanh lực boost hồi máu theo thời gian và tăng tốc độ chạy.",
-        "en": "Provides 60% boost meter for continuous regen and sprint acceleration."
+        "vi": "Băng gạc cá nhân hồi phục 10% máu dần dần theo thời gian (tối đa tới 75%). Trọng lượng nhẹ chỉ 2 đơn vị.",
+        "en": "Individual field bandages restoring 10% health over time up to 75%. Ultra-lightweight at just 2 units."
+      },
+      "tip": {
+        "vi": "Nhân vật sẽ tự động băng bó liên tục cho đến mốc 75% mà không cần bấm phím nhiều lần!",
+        "en": "Bandages automatically chain-cast until reaching 75% HP without needing repeated key presses!"
       }
     },
     {
       "id": "energy-drink",
       "name": "Energy Drink",
-      "castTime": 4.0,
-      "boostAmount": "40%",
+      "nameVi": "Nước Tăng Lực (Energy Drink)",
+      "image": "assets/equipment/energy_drink.png",
+      "castTime": 4,
+      "boostAmount": "+40% Boost",
+      "weight": 4,
+      "rarity": "Common",
       "description": {
-        "vi": "Tăng 40% thanh lực boost, dùng nhanh trong 4 giây.",
-        "en": "Increases boost by 40%, quick 4-second cast time."
+        "vi": "Lon nước tăng lực hồi phục 40% thanh lực boost. Thời gian sử dụng siêu nhanh chỉ 4 giây, giúp hồi máu thụ động.",
+        "en": "Energy drink replenishing 40% of the boost meter with a swift 4-second cast time."
+      },
+      "tip": {
+        "vi": "Uống 2 lon liên tiếp sẽ đưa thanh boost lên mốc 80%, kích hoạt hiệu ứng tăng tốc chạy +2.5%.",
+        "en": "Chugging 2 cans boosts you past 80%, triggering the +2.5% sprint speed acceleration bonus."
+      }
+    },
+    {
+      "id": "painkiller",
+      "name": "Painkiller",
+      "nameVi": "Thuốc Giảm Đau (Painkiller)",
+      "image": "assets/equipment/painkiller.png",
+      "castTime": 6,
+      "boostAmount": "+60% Boost",
+      "weight": 10,
+      "rarity": "Standard",
+      "description": {
+        "vi": "Lọ thuốc giảm đau bổ sung ngay 60% thanh lực boost trong 6 giây. Tự động hồi phục máu thụ động và tăng tốc chạy.",
+        "en": "Painkiller bottle adding 60% boost in 6 seconds. Provides sustained health regen and sprint speed."
+      },
+      "tip": {
+        "vi": "1 lon nước tăng lực kết hợp 1 lọ thuốc giảm đau sẽ lấp đầy 100% thanh lực boost tối đa.",
+        "en": "One Energy Drink paired with one Painkiller fills your boost gauge to 100% capacity."
+      }
+    },
+    {
+      "id": "adrenaline-syringe",
+      "name": "Adrenaline Syringe",
+      "nameVi": "Kim Tiêm Kích Thích (Adrenaline Syringe)",
+      "image": "assets/equipment/adrenaline_syringe.png",
+      "castTime": 6,
+      "boostAmount": "+100% Boost (Max)",
+      "weight": 20,
+      "rarity": "Rare",
+      "description": {
+        "vi": "Ống tiêm adrenaline cực mạnh, lập tức kích nạp đầy 100% thanh lực boost chỉ với 1 lần tiêm trong 6 giây.",
+        "en": "Powerful adrenaline injector that fills the boost meter to 100% in a single 6-second cast."
+      },
+      "tip": {
+        "vi": "Khi thanh boost đạt 100%, bạn sẽ được tăng tối đa +6.2% tốc độ chạy và hồi máu liên tục trong hơn 5 phút.",
+        "en": "At 100% boost, you gain maximum +6.2% sprint speed bonus and continuous passive health regen for 5 minutes."
+      }
+    }
+  ],
+  "throwables": [
+    {
+      "id": "frag-grenade",
+      "name": "Frag Grenade (M67)",
+      "nameVi": "Lựu Đạn Nổ (Frag Grenade)",
+      "image": "assets/equipment/frag_grenade.png",
+      "fuseTime": "5.0s",
+      "weight": 18,
+      "blastRadius": "3.5m Lethal / 10m Splash",
+      "rarity": "Standard",
+      "description": {
+        "vi": "Lựu đạn nổ phá vỡ phòng ngự tiêu chuẩn. Tạo sóng xung kích và mảnh văng gây sát thương kết liễu 100+ HP trong bán kính tâm nổ.",
+        "en": "Standard explosive fragmentation grenade. High-velocity shockwave inflicts lethal 100+ damage in blast core."
+      },
+      "tip": {
+        "vi": "Bấm phím R để rút chốt nấu lựu đạn (Cook Grenade). Nấu khoảng 3 đến 4 giây trước khi ném để nổ ngay trên không hoặc ngay khi chạm đất!",
+        "en": "Press R to unpin and cook the grenade. Cook for 3-4 seconds before throwing so it detonates on arrival."
+      }
+    },
+    {
+      "id": "smoke-grenade",
+      "name": "Smoke Grenade (M18)",
+      "nameVi": "Lựu Đạn Khói (Smoke Grenade)",
+      "image": "assets/equipment/smoke_grenade.png",
+      "fuseTime": "5.0s",
+      "duration": "40s",
+      "weight": 14,
+      "rarity": "Common",
+      "description": {
+        "vi": "Lựu đạn tạo màn khói dày đặc che chắn tầm nhìn trong 40 giây. Công cụ sinh tồn quan trọng bậc nhất trong mọi pha cứu đồng đội và di chuyển bo.",
+        "en": "Deployable smoke screen masking visibility for 40 seconds. The most crucial utility for revives and safe rotations."
+      },
+      "tip": {
+        "vi": "Ném khói hình chữ Z hoặc thẳng hàng để tạo hành lang di chuyển an toàn khi băng qua cánh đồng trống bị bắn tỉa.",
+        "en": "Throw smokes in a staggered line to form a concealed corridor across sniper-controlled open terrain."
+      }
+    },
+    {
+      "id": "flashbang",
+      "name": "Stun Grenade / Flashbang",
+      "nameVi": "Lựu Đạn Choáng (Flashbang)",
+      "image": "assets/equipment/flashbang.png",
+      "fuseTime": "2.5s",
+      "duration": "5.5s Blind",
+      "weight": 12,
+      "rarity": "Common",
+      "description": {
+        "vi": "Lựu đạn gây choáng phát ra ánh sáng chói lòa và tiếng nổ đinh tai, làm mù hoàn toàn đối thủ trong tối đa 5.5 giây và gây ù tai mất thính giác.",
+        "en": "Tactical stun grenade delivering blinding flash and deafening boom, causing up to 5.5s blindness and severe tinnitus."
+      },
+      "tip": {
+        "vi": "Ngòi nổ rất ngắn chỉ 2.5 giây. Ném vào phòng kín trước khi ập vào để đối thủ hoàn toàn tê liệt không thể phản xạ.",
+        "en": "Short 2.5s fuse. Bounce it off door frames right before room clearing to incapacitate defenders."
+      }
+    },
+    {
+      "id": "molotov",
+      "name": "Molotov Cocktail",
+      "nameVi": "Bom Xăng (Molotov Cocktail)",
+      "image": "assets/equipment/molotov.png",
+      "fuseTime": "Chạm là nổ",
+      "duration": "20s Burning",
+      "weight": 16,
+      "rarity": "Standard",
+      "description": {
+        "vi": "Vũ khí cháy bùng phát ngay khi va chạm bề mặt, lan tỏa ngọn lửa thiêu đốt diện rộng, phá hủy cửa gỗ và gây hiệu ứng cháy thiêu rút máu liên tục.",
+        "en": "Incendiary weapon shattering on impact. Spreads spreading flames that breach wooden doors and apply persistent burn ticks."
+      },
+      "tip": {
+        "vi": "Kẻ địch dính lửa sẽ không thể ngắm bắn ADS và liên tục bị trừ máu. Cực kỳ hữu hiệu để ép góc đối thủ trốn sau tảng đá hoặc gốc cây.",
+        "en": "Burning targets cannot ADS and suffer rapid damage ticks. Prime weapon for flushing enemies behind rocks or trees."
+      }
+    },
+    {
+      "id": "bluezone-grenade",
+      "name": "Bluezone Grenade",
+      "nameVi": "Lựu Đạn Bo Điện (Bluezone Grenade)",
+      "image": "assets/equipment/bluezone_grenade.png",
+      "fuseTime": "5.0s",
+      "duration": "8s Expanding Sphere",
+      "weight": 14,
+      "rarity": "Rare",
+      "description": {
+        "vi": "Quả cầu công nghệ phát tán vòng bo điện mini bán kính mở rộng 10m trong 8 giây. Sát thương bo điện xuyên qua tường và mọi chướng ngại vật.",
+        "en": "Generates an expanding miniature Bluezone sphere reaching 10m radius. Pierces directly through solid walls and cover."
+      },
+      "tip": {
+        "vi": "Ném thẳng lên nóc nhà hoặc tầng trên, quả cầu bo điện sẽ xuyên sàn ép kẻ địch đang camp trong phòng phải tháo chạy ra ngoài.",
+        "en": "Toss onto building roofs; the spherical zone clips through ceilings to flush deep room campers."
+      }
+    },
+    {
+      "id": "c4",
+      "name": "C4 Explosive",
+      "nameVi": "Khối Thuốc Nổ C4 (C4 Explosive)",
+      "image": "assets/equipment/c4.png",
+      "fuseTime": "16s Đếm ngược",
+      "weight": 20,
+      "blastRadius": "15m Xuyên tường / 25m Sát thương",
+      "rarity": "Rare",
+      "description": {
+        "vi": "Khối thuốc nổ dẻo quân sự có khả năng bám dính bề mặt. Phát ra tiếng bíp đếm ngược tăng dần trong 16 giây và tạo ra vụ nổ hủy diệt xuyên qua mọi công sự bê tông.",
+        "en": "Adhesive military charge. Emits an escalating 16-second beeping sequence before unleashing a devastating blast through solid concrete."
+      },
+      "tip": {
+        "vi": "Sát thương C4 xuyên qua toàn bộ các bức tường tòa nhà 3 tầng trong bán kính 15m. Ném C4 vào xe hơi rồi lái thẳng vào công sự địch!",
+        "en": "C4 blast pierces through entire 3-story buildings within 15m. Attach it to vehicles for explosive breaching runs!"
+      }
+    },
+    {
+      "id": "sticky-bomb",
+      "name": "Sticky Bomb",
+      "nameVi": "Bom Dính (Sticky Bomb)",
+      "image": "assets/equipment/sticky_bomb.png",
+      "fuseTime": "4s Đếm ngược",
+      "weight": 14,
+      "rarity": "Exclusive (Karakin)",
+      "description": {
+        "vi": "Bom dính nổ đặc trưng của bản đồ Karakin. Bám chặt vào tường gạch mỏng hoặc cửa hầm ngầm, đếm ngược phát nhạc và thổi bay công sự.",
+        "en": "Karakin-exclusive breach bomb. Adheres to drywall surfaces and catacomb seals, chiming a melody before breaching open secret rooms."
+      },
+      "tip": {
+        "vi": "Tìm các bức tường gạch có vệt nứt hoặc cửa hầm ngầm bằng đá trên đồi Karakin để thổi bay cửa vào kho đồ Cấp 3.",
+        "en": "Locate cracked drywall or sealed stone tunnel entrances in Karakin to blast open access to Tier 3 armories."
+      }
+    },
+    {
+      "id": "decoy-grenade",
+      "name": "Decoy Grenade",
+      "nameVi": "Lựu Đạn Mồi Nhử (Decoy Grenade)",
+      "image": "assets/equipment/decoy_grenade.png",
+      "fuseTime": "5.0s",
+      "duration": "10s Tiếng súng giả",
+      "weight": 12,
+      "rarity": "Common",
+      "description": {
+        "vi": "Lựu đạn mồi nhử mô phỏng âm thanh tiếng súng giao tranh ngẫu nhiên trong 10 giây, kèm khói giả và văng vỏ đạn để đánh lạc hướng kẻ địch.",
+        "en": "Audio decoy grenade mimicking realistic gunfire bursts for 10 seconds, ejecting casing sparks to deceive surrounding enemy squads."
+      },
+      "tip": {
+        "vi": "Ném về hướng đối diện để lừa đối phương quay mặt kiểm tra, tạo thời cơ cho bạn móc lốp từ phía sau.",
+        "en": "Throw toward the opposite flank to bait enemies into checking fake gunfire, opening an easy rear flank."
+      }
+    },
+    {
+      "id": "spike-trap",
+      "name": "Spike Trap",
+      "nameVi": "Bẫy Gai Chặn Đường (Spike Trap)",
+      "image": "assets/equipment/spike_trap.png",
+      "fuseTime": "Đặt ngay lập tức",
+      "weight": 15,
+      "rarity": "Common",
+      "description": {
+        "vi": "Dải chông bẫy gai thép rải trên mặt đường. Chọc thủng nát toàn bộ lốp xe của bất kỳ phương tiện nào cán qua, chỉ dùng được 1 lần.",
+        "en": "Deployable road spike strip. Instantly punctures and shreds tires of any vehicle passing over it (single use)."
+      },
+      "tip": {
+        "vi": "Đặt bẫy gai trên các cây cầu độc đạo hoặc khúc cua gấp che khuất tầm nhìn để phục kích bắt sống đoàn xe chở team bạn.",
+        "en": "Conceal spike strips across bridge choke points or blind bends to neutralize speeding enemy squads."
+      }
+    }
+  ],
+  "tactical": [
+    {
+      "id": "mountain-bike",
+      "name": "Mountain Bike",
+      "nameVi": "Xe Đạp Gấp Địa Hình (Mountain Bike)",
+      "image": "assets/equipment/mountain_bike.png",
+      "weight": 70,
+      "rarity": "Standard",
+      "description": {
+        "vi": "Phương tiện xe đạp gấp bỏ vừa vào ba lô. Mở ra đạp trên mọi địa hình với ưu điểm tối thượng: hoàn toàn không phát ra tiếng động cơ!",
+        "en": "Foldable bicycle storable in backpacks. Pedals across rough terrain with the ultimate stealth advantage: zero engine noise!"
+      },
+      "tip": {
+        "vi": "Xe đạp không thể bị bắn nổ lốp hay hư hỏng. Bấm phím nhảy để bật cao vượt chướng ngại vật và bấm còi leng keng bằng phím Chuột Trái!",
+        "en": "Mountain bikes cannot be destroyed or have tires popped. Press Jump for bunny hops and Left-Click to ring the bell!"
+      }
+    },
+    {
+      "id": "gas-can",
+      "name": "Gas Can / Jerry Can",
+      "nameVi": "Bình Xăng Dã Chiến (Gas Can)",
+      "image": "assets/equipment/gas_can.png",
+      "weight": 20,
+      "rarity": "Common",
+      "description": {
+        "vi": "Bình xăng đa năng dùng tiếp nhiên liệu cho xe cộ, hoặc có thể đổ vệt xăng tràn trên sàn nhà và bắn đạn để kích hoạt bức tường lửa.",
+        "en": "Versatile fuel can for refueling vehicles, or pouring combustible fuel puddles across floors that ignite when shot."
+      },
+      "tip": {
+        "vi": "Có thể ném bình xăng ra giữa phòng như một quả bom hẹn giờ rồi bắn 1 viên đạn vào bình để kích nổ như bom C4 tầm gần.",
+        "en": "Throw the gas can into a room and shoot it with a single bullet to trigger an instant explosive fireball."
+      }
+    },
+    {
+      "id": "panzerfaust",
+      "name": "Panzerfaust 100M",
+      "nameVi": "Súng Phóng Lựu Chống Tăng (Panzerfaust)",
+      "image": "assets/equipment/panzerfaust.png",
+      "weight": 60,
+      "rarity": "Rare",
+      "description": {
+        "vi": "Vũ khí phóng lựu phản lực dùng một lần. Bắn đầu đạn nổ lõm cực mạnh hủy diệt hoàn toàn phương tiện và tiêu diệt người chơi nấp sau tường mỏng.",
+        "en": "Disposable single-shot rocket launcher. Fires a devastating warhead that annihilates vehicles and knocks players behind cover."
+      },
+      "tip": {
+        "vi": "Cẩn thận luồng phụt ngược (Backblast) phía sau đuôi súng trong phạm vi 3m có thể gây sát thương kết liễu đồng đội đứng sau lưng!",
+        "en": "Beware of the 3m rear backblast plume behind the launcher, which deals lethal damage to teammates behind you!"
+      }
+    },
+    {
+      "id": "mortar",
+      "name": "Mortar (Súng Cối 60mm)",
+      "nameVi": "Súng Cối Pháo Kích 60mm (Mortar)",
+      "image": "assets/equipment/mortar.png",
+      "weight": 50,
+      "rarity": "Standard",
+      "description": {
+        "vi": "Súng cối bộ binh dã chiến triển khai trên nền đất bằng. Bắn đạn pháo cầu vồng tập kích chính xác mục tiêu ẩn nấp từ cự ly 121m đến 700m.",
+        "en": "Deployable infantry mortar set up on flat ground. Lofts high-arc artillery shells to strike targets from 121m to 700m away."
+      },
+      "tip": {
+        "vi": "Kết hợp máy bay không người lái Drone để trinh sát tọa độ khoảng cách của địch trước khi chỉnh thước ngắm súng cối pháo kích.",
+        "en": "Pair with squad spotters or Drones to measure target distance before dialing in elevation coordinates."
+      }
+    },
+    {
+      "id": "flare-gun",
+      "name": "Flare Gun",
+      "nameVi": "Súng Pháo Sáng Cứu Trợ (Flare Gun)",
+      "image": "assets/equipment/flare_gun.png",
+      "weight": 15,
+      "rarity": "Ultra Rare",
+      "description": {
+        "vi": "Súng bắn pháo sáng cứu trợ khẩn cấp. Bắn thẳng lên trời vuông góc 90 độ để gọi máy bay vận tải thả Hòm thính Siêu cấp hoặc Xe bọc thép BRDM-2.",
+        "en": "Emergency signal pistol. Fire vertically at 90 degrees to summon cargo planes dropping Special Care Packages or an amphibious BRDM-2."
+      },
+      "tip": {
+        "vi": "Bắn trong bo sẽ thả Hòm Thính Siêu Cấp (2 khẩu súng thùng + giáp mũ 3); bắn ngoài bo sẽ thả Xe bọc thép lội nước chống đạn BRDM-2.",
+        "en": "Fired inside the white circle: Special Care Package (2 crate guns + Lv3 armor). Fired outside: Armored amphibious BRDM-2."
+      }
+    },
+    {
+      "id": "crowbar-tactical",
+      "name": "Tactical Crowbar",
+      "nameVi": "Xà Beng Chiến Thuật Đa Năng",
+      "image": "assets/equipment/crowbar.png",
+      "weight": 60,
+      "rarity": "Common",
+      "description": {
+        "vi": "Xà beng cận chiến kiên cố. Ngoài khả năng cận chiến và ném từ xa, xà beng còn có tính năng độc quyền: nạy phá cửa hầm mật thất bí mật trên Erangel và Vikendi.",
+        "en": "Heavy-duty steel crowbar. Beyond melee blunt force and throwable utility, it can pry open sealed secret basement doors on Erangel and Vikendi."
+      },
+      "tip": {
+        "vi": "Luôn mang xà beng nếu bạn dự định ghé thăm các khu nhà có hầm trú ẩn bí mật ngầm trên bản đồ Erangel để lấy đồ Cấp 3.",
+        "en": "Keep a crowbar handy when rotating near secret cellar houses on Erangel to break locks for free Level 3 loot."
       }
     }
   ]

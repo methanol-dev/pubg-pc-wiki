@@ -1,0 +1,446 @@
+/* ==========================================================================
+   PUBG PC TACTICAL WIKI - EQUIPMENT MODULE STYLESHEET
+   Authentic In-Game Equipment Showcase & Ballistic Defense Matrix
+   ========================================================================== */
+
+/* 1. CONTROLS, SEARCH & FILTER BAR */
+.equip-controls-panel {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-tactical);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.equip-search-row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.equip-search-input-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 260px;
+}
+
+.equip-search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  pointer-events: none;
+}
+
+.equip-search-input {
+  width: 100%;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-tactical);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 1rem 0.65rem 2.4rem;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  outline: none;
+  transition: all var(--transition-fast);
+}
+
+.equip-search-input:focus {
+  border-color: var(--pubg-gold);
+  box-shadow: 0 0 10px var(--pubg-gold-glow);
+}
+
+.equip-level-filters {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.level-filter-btn {
+  padding: 0.45rem 0.8rem;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.level-filter-btn:hover {
+  border-color: var(--pubg-gold);
+  color: var(--text-primary);
+}
+
+.level-filter-btn.active {
+  background: rgba(241, 168, 10, 0.2);
+  border-color: var(--pubg-gold);
+  color: var(--pubg-gold);
+  font-weight: 700;
+}
+
+/* Category Filter Tabs */
+.equip-category-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--pubg-gold) var(--bg-surface);
+}
+
+.equip-category-bar::-webkit-scrollbar {
+  height: 4px;
+}
+
+.equip-category-bar::-webkit-scrollbar-thumb {
+  background: var(--pubg-gold);
+  border-radius: 2px;
+}
+
+.cat-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1rem;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-tactical);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.cat-tab-btn:hover {
+  background: var(--bg-surface);
+  border-color: rgba(241, 168, 10, 0.6);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
+.cat-tab-btn.active {
+  background: linear-gradient(135deg, rgba(241, 168, 10, 0.2) 0%, rgba(31, 39, 51, 0.9) 100%);
+  border-color: var(--pubg-gold);
+  color: var(--pubg-gold);
+  box-shadow: 0 0 10px var(--pubg-gold-glow);
+}
+
+.cat-count {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.4);
+  color: var(--text-muted);
+}
+
+.cat-tab-btn.active .cat-count {
+  color: var(--pubg-gold);
+  border: 1px solid rgba(241, 168, 10, 0.3);
+}
+
+/* 2. BALLISTIC DEFENSE MATRIX SECTION */
+.defense-matrix-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-tactical);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.matrix-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.matrix-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--pubg-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.matrix-weapon-select {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.matrix-select-box {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-tactical);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.45rem 0.85rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.matrix-select-box:focus {
+  border-color: var(--pubg-gold);
+}
+
+.matrix-table-wrapper {
+  overflow-x: auto;
+}
+
+.matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+.matrix-table th {
+  background: var(--bg-surface-elevated);
+  color: var(--text-secondary);
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 0.5rem;
+  border: 1px solid var(--border-subtle);
+}
+
+.matrix-table td {
+  padding: 0.75rem 0.5rem;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+}
+
+.matrix-table tr:hover td {
+  background: rgba(241, 168, 10, 0.04);
+}
+
+.ttk-hits-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.hits-1 { background: rgba(224, 62, 62, 0.3); border: 1px solid var(--airdrop-red); color: var(--airdrop-red); }
+.hits-2 { background: rgba(241, 168, 10, 0.2); border: 1px solid var(--pubg-gold); color: var(--pubg-gold); }
+.hits-3 { background: rgba(0, 210, 255, 0.2); border: 1px solid var(--bluezone-cyan); color: var(--bluezone-cyan); }
+.hits-4plus { background: rgba(255, 255, 255, 0.08); border: 1px solid var(--border-subtle); color: var(--text-secondary); }
+
+/* 3. EQUIPMENT CARDS GRID */
+.equipment-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.equipment-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-tactical);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.equipment-card:hover {
+  border-color: var(--pubg-gold);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6), 0 0 16px var(--pubg-gold-glow);
+}
+
+/* Card Media Canvas */
+.equip-card-media {
+  height: 160px;
+  background: radial-gradient(circle at center, #1c2430 0%, #0c1017 100%);
+  border-bottom: 1px solid var(--border-subtle);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+/* Subtle reticle watermark */
+.equip-card-media::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, rgba(241, 168, 10, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(241, 168, 10, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+}
+
+.equip-item-img {
+  max-width: 100%;
+  max-height: 125px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.7));
+  transition: transform var(--transition-normal);
+}
+
+.equipment-card:hover .equip-item-img {
+  transform: scale(1.08);
+}
+
+.equip-card-badges {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+/* Card Body */
+.equip-card-body {
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.equip-card-title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.equip-card-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.equip-card-subtitle {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Stats Rows & Bars */
+.equip-stats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.85rem;
+}
+
+.equip-stat-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.82rem;
+}
+
+.stat-label {
+  color: var(--text-secondary);
+}
+
+.stat-value {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--pubg-gold);
+}
+
+.stat-progress-bg {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 0.2rem;
+}
+
+.stat-progress-bar {
+  height: 100%;
+  background: var(--pubg-gold);
+  border-radius: 2px;
+}
+
+/* Description & Pro Tip */
+.equip-description {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.equip-pro-tip {
+  background: rgba(241, 168, 10, 0.07);
+  border-left: 3px solid var(--pubg-gold);
+  border-radius: 0 4px 4px 0;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.8rem;
+  color: var(--text-primary);
+  line-height: 1.45;
+}
+
+.equip-pro-tip-title {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--pubg-gold);
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* Empty State */
+.equip-empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem 1rem;
+  background: var(--bg-surface);
+  border: 1px dashed var(--border-tactical);
+  border-radius: var(--radius-md);
+  color: var(--text-muted);
+}
