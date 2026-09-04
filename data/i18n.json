@@ -7,11 +7,11 @@
     },
     "nav": {
       "home": "Trang Chủ",
-      "weapons": "Vũ Khí",
-      "compare": "So Sánh",
+      "weapons": "Vũ Khí & Phụ Kiện",
+      "compare": "So Sánh Vũ Khí",
       "maps": "Bản Đồ",
-      "equipment": "Trang Bị",
-      "mechanics": "Cơ Chế"
+      "equipment": "Trang Bị & Giáp",
+      "mechanics": "Cơ Chế Game"
     },
     "common": {
       "explore_weapons": "Tra Cứu Vũ Khí",
@@ -164,11 +164,11 @@
     },
     "nav": {
       "home": "Home",
-      "weapons": "Weapons",
-      "compare": "Compare",
-      "maps": "Maps",
-      "equipment": "Equipment",
-      "mechanics": "Mechanics"
+      "weapons": "Weapons & Attachments",
+      "compare": "Weapon Comparison",
+      "maps": "Tactical Maps",
+      "equipment": "Equipment & Armor",
+      "mechanics": "Game Mechanics"
     },
     "common": {
       "explore_weapons": "Explore Weapons",
