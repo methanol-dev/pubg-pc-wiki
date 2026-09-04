@@ -270,7 +270,7 @@ class WeaponsManager {
 
         <div class="card-actions">
           <button class="btn btn-secondary btn-sm btn-add-compare" data-id="${weapon.id}" title="${window.i18n.t('common.compare', 'So sánh')}">
-            ${window.i18n.t('common.compare', 'So sánh')}
+            ⚖️ ${window.i18n.t('common.compare', 'So sánh')}
           </button>
           <button class="btn btn-primary btn-sm btn-view-details" data-id="${weapon.id}">
             ${window.i18n.t('common.details', 'Chi tiết')}
@@ -356,12 +356,12 @@ class WeaponsManager {
 
           <div class="attachment-slots-section">
             <h4 class="section-subtitle">
-              // ${window.i18n.t('stats.attachments_slots', 'Các khe phụ kiện')} (${weapon.slots.length})
+              ⚙️ ${window.i18n.t('stats.attachments_slots', 'Các khe phụ kiện')} (${weapon.slots.length})
             </h4>
             <div class="attachment-slots-list">
               ${weapon.slots.map((s) => `
                 <span class="slot-tag">
-                  // ${window.i18n.t(`attachments.${s}`, s)}
+                  ✓ ${window.i18n.t(`attachments.${s}`, s)}
                 </span>
               `).join('')}
             </div>
@@ -372,7 +372,7 @@ class WeaponsManager {
         <div class="detail-right-col">
           <div class="calculator-box">
             <h3 class="section-subtitle" style="margin-bottom: 1rem;">
-              // ${window.i18n.t('calculator.title', 'Bảng tính sát thương thực chiến')}
+              🎯 ${window.i18n.t('calculator.title', 'Bảng tính sát thương thực chiến')}
             </h3>
 
             <!-- Controls -->
@@ -437,7 +437,7 @@ class WeaponsManager {
             <!-- Full Damage Matrix -->
             <div style="margin-top: 1.5rem;">
               <h4 style="font-family: var(--font-display); font-size: 0.95rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.5rem;">
-                // ${window.i18n.t('calculator.damage_matrix_title', 'Ma trận sát thương toàn diện')}
+                📊 ${window.i18n.t('calculator.damage_matrix_title', 'Ma trận sát thương toàn diện')}
               </h4>
               <div class="damage-matrix-wrap" id="damageMatrixTableWrap">
                 <!-- Rendered by renderDamageMatrix() -->
@@ -504,8 +504,7 @@ class WeaponsManager {
     container.innerHTML = `
       ${isOneShot ? `
         <div class="oneshot-alert">
-          <span style="font-family: var(--font-mono); color: #ff6b6b; font-weight: 700;">[CRITICAL]</span>
-          <strong>${window.i18n.t('calculator.one_shot', 'Hạ gục 1 viên! (One-Shot Kill)')}</strong>
+          💀 <strong>${window.i18n.t('calculator.one_shot', 'Hạ gục 1 viên! (One-Shot Kill)')}</strong>
         </div>
       ` : ''}
 

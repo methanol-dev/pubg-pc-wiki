@@ -87,8 +87,8 @@ class CompareManager {
     if (activeWeapons.length < 2) {
       container.innerHTML = `
         <div style="text-align: center; padding: 4rem 1rem; color: var(--text-muted); border: 1px dashed var(--border-tactical); border-radius: var(--radius-sm); background: rgba(255,255,255,0.01);">
-          <p class="sys-tag" style="font-size: 0.95rem; margin-bottom: 0.5rem;">SYS // AWAITING WEAPON SELECTION</p>
-          <p style="font-family: var(--font-body); font-size: 0.95rem;">
+          <p style="font-size: 1.5rem; margin-bottom: 0.5rem;">⚠️</p>
+          <p style="font-family: var(--font-body); font-size: 1rem; color: var(--text-secondary);">
             ${window.i18n.t('compare.subtitle', 'Vui lòng chọn ít nhất 2 khẩu súng để bắt đầu so sánh.')}
           </p>
         </div>
@@ -224,7 +224,7 @@ class CompareManager {
             <!-- TTK vs Vest 2 -->
             <tr style="background: rgba(241, 168, 10, 0.04);">
               <td class="metric-col">
-                <span class="metric-name" style="color: var(--pubg-gold);">TTK // ${window.i18n.t('calculator.ttk')} (Giáp 2)</span>
+                <span class="metric-name" style="color: var(--pubg-gold);">⏱️ ${window.i18n.t('calculator.ttk')} (Giáp 2)</span>
                 <span class="metric-desc">Bắn ngực đối thủ mang Giáp Cấp 2</span>
               </td>
               ${statsList.map((s, idx) => `
@@ -240,13 +240,13 @@ class CompareManager {
             <!-- Headshot vs Helmet 2 -->
             <tr>
               <td class="metric-col">
-                <span class="metric-name">HEADSHOT // Sát thương vs Mũ 2</span>
+                <span class="metric-name">🎯 Headshot vs Mũ 2</span>
                 <span class="metric-desc">Sát thương bắn trúng đầu Mũ Cấp 2</span>
               </td>
               ${statsList.map((s) => `
                 <td class="val-cell ${s.headDamage >= 100 ? 'winner' : ''}">
                   ${s.headDamage} dmg
-                  ${s.headDamage >= 100 ? '<div style="font-size: 0.7rem; color: #ff6b6b; font-family: var(--font-mono); font-weight: 700;">1-TAP KNOCKOUT</div>' : ''}
+                  ${s.headDamage >= 100 ? '<div style="font-size: 0.72rem; color: #ff6b6b; font-weight: 700;">💀 1-TAP KNOCKOUT!</div>' : ''}
                 </td>
               `).join('')}
             </tr>
