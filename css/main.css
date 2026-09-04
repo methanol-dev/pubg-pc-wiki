@@ -162,18 +162,22 @@ main {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: var(--bg-glass);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border-subtle);
+  background: rgba(10, 12, 15, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-tactical);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 68px;
   gap: 1.5rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .brand-logo {
@@ -181,12 +185,13 @@ main {
   align-items: center;
   gap: 0.75rem;
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-primary);
   transition: var(--transition-fast);
+  flex-shrink: 0;
 }
 
 .brand-logo:hover {
@@ -212,82 +217,112 @@ main {
   gap: 0.35rem;
   list-style: none;
   flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-link {
   font-family: var(--font-display);
   font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--text-secondary);
-  padding: 0.45rem 0.75rem;
+  padding: 0.45rem 0.8rem;
   border-radius: var(--radius-sm);
-  transition: var(--transition-fast);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
-  white-space: nowrap;
+  white-space: nowrap !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
 }
 
 .nav-link:hover {
   color: var(--text-primary);
   background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
 .nav-link.active {
   color: var(--pubg-gold);
-  background: rgba(241, 168, 10, 0.1);
+  background: rgba(241, 168, 10, 0.12);
+  border-color: rgba(241, 168, 10, 0.35);
+  text-shadow: 0 0 10px var(--pubg-gold-glow);
 }
 
 .nav-link.active::after {
   content: '';
   position: absolute;
-  bottom: -16px;
-  left: 15%;
-  right: 15%;
+  bottom: -1px;
+  left: 18%;
+  right: 18%;
   height: 2px;
   background: var(--pubg-gold);
-  box-shadow: 0 0 10px var(--pubg-gold);
+  box-shadow: 0 0 8px var(--pubg-gold);
+  border-radius: 2px;
 }
 
 .header-actions {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  flex-shrink: 0;
 }
 
 /* Language Switcher */
 .lang-switcher {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  background: var(--bg-surface);
+  background: rgba(18, 22, 28, 0.95);
   border: 1px solid var(--border-tactical);
-  border-radius: var(--radius-sm);
-  padding: 2px;
+  border-radius: 4px;
+  padding: 3px;
+  gap: 3px;
+  flex-shrink: 0;
 }
 
 .lang-btn {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
+  font-size: 0.825rem;
+  letter-spacing: 0.06em;
   padding: 0.35rem 0.65rem;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   border-radius: 2px;
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.45rem;
+  white-space: nowrap !important;
   transition: var(--transition-fast);
+  line-height: 1;
+  border: 1px solid transparent;
 }
 
 .lang-btn:hover {
   color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .lang-btn.active {
   background: var(--pubg-gold);
-  color: #000;
-  box-shadow: 0 0 8px var(--pubg-gold-glow);
+  color: #05070a;
+  font-weight: 800;
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 12px rgba(241, 168, 10, 0.4);
+}
+
+.flag-icon {
+  width: 18px;
+  height: 12px;
+  border-radius: 2px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 /* Mobile Hamburger Toggle */
@@ -384,7 +419,7 @@ main {
 /* --------------------------------------------------------------------------
    Responsive Breakpoints
    -------------------------------------------------------------------------- */
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   .nav-menu {
     display: none;
   }

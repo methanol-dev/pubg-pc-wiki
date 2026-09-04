@@ -16,7 +16,7 @@ class I18nEngine {
     return navLang.startsWith('vi') ? 'vi' : 'en';
   }
 
-  async init(jsonPath = 'data/i18n.json') {
+  async init(jsonPath = 'data/i18n.json?v=2.1') {
     try {
       const res = await fetch(jsonPath);
       if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);

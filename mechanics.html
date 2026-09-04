@@ -33,8 +33,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/main.css?v=2.1" />
+  <link rel="stylesheet" href="css/components.css?v=2.1" />
   <style>
     .mechanic-article {
       background: var(--bg-surface);
@@ -105,8 +105,23 @@
 
       <div class="header-actions">
         <div class="lang-switcher">
-          <button class="lang-btn active" data-lang="vi" title="Tiếng Việt">🇻🇳 VN</button>
-          <button class="lang-btn" data-lang="en" title="English">🇬🇧 EN</button>
+          <button class="lang-btn active" data-lang="vi" title="Tiếng Việt">
+            <svg class="flag-icon" viewBox="0 0 30 20">
+              <rect width="30" height="20" fill="#da251d"/>
+              <polygon points="15,4 16.5,8.8 21.5,8.8 17.5,11.8 19,16.5 15,13.5 11,16.5 12.5,11.8 8.5,8.8 13.5,8.8" fill="#ffde00"/>
+            </svg>
+            <span>VN</span>
+          </button>
+          <button class="lang-btn" data-lang="en" title="English">
+            <svg class="flag-icon" viewBox="0 0 60 30">
+              <rect width="60" height="30" fill="#012169"/>
+              <path d="M0 0 L60 30 M60 0 L0 30" stroke="#fff" stroke-width="6"/>
+              <path d="M0 0 L60 30 M60 0 L0 30" stroke="#C8102E" stroke-width="3.5"/>
+              <path d="M30 0 v30 M0 15 h60" stroke="#fff" stroke-width="10"/>
+              <path d="M30 0 v30 M0 15 h60" stroke="#C8102E" stroke-width="6"/>
+            </svg>
+            <span>EN</span>
+          </button>
         </div>
         <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Menu">
           <span></span><span></span><span></span>
