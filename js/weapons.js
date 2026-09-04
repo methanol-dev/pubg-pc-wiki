@@ -1,19 +1,27 @@
 /**
- * PUBG PC Tactical Wiki - Weapons Controller
- * Manages weapon catalog rendering, interactive filters, search, modal views, and calculator bindings
+ * PUBG PC Tactical Wiki - Weapons & Attachments Controller
+ * Manages weapon catalog, attachments vault, interactive filters, search, modal views, and damage calculator
  */
 
 class WeaponsManager {
   constructor() {
     this.weapons = [];
     this.attachments = [];
+    this.currentView = 'weapons'; // 'weapons' | 'attachments'
+
+    // Weapons filters
     this.activeCategory = 'all';
     this.activeAmmo = 'all';
     this.searchQuery = '';
     this.sortBy = 'damage-desc';
     this.currentModalWeapon = null;
 
-    // Current calculator state in modal
+    // Attachments filters
+    this.activeSlot = 'all';
+    this.attachmentSearch = '';
+    this.currentModalAttachment = null;
+
+    // Current calculator state in weapon modal
     this.calcState = {
       location: 'chest',
       armor: 2,
@@ -28,20 +36,47 @@ class WeaponsManager {
     ]);
     this.weapons = weapons;
     this.attachments = attachments;
+
+    // Update count badges
+    const wCountBadge = document.getElementById('weaponsCountBadge');
+    if (wCountBadge) wCountBadge.textContent = this.weapons.length;
+    const aCountBadge = document.getElementById('attachmentsCountBadge');
+    if (aCountBadge) aCountBadge.textContent = this.attachments.length;
+
     this.bindEvents();
     this.renderCatalog();
+    this.renderAttachments();
+
+    // Check query params for initial view
+    const urlParams = new URLSearchParams(window.location.search);
+    const viewParam = urlParams.get('view');
+    if (viewParam === 'attachments') {
+      this.switchView('attachments');
+    }
 
     // Listen for language switch
     document.addEventListener('languageChanged', () => {
       this.renderCatalog();
+      this.renderAttachments();
       if (this.currentModalWeapon) {
         this.renderModalContent(this.currentModalWeapon);
+      }
+      if (this.currentModalAttachment) {
+        this.renderAttachmentModalContent(this.currentModalAttachment);
       }
     });
   }
 
   bindEvents() {
-    // Category tabs
+    // View Switcher (Arsenal vs Attachments)
+    const tabWeapons = document.getElementById('tabBtnWeapons');
+    const tabAttachments = document.getElementById('tabBtnAttachments');
+    if (tabWeapons && tabAttachments) {
+      tabWeapons.addEventListener('click', () => this.switchView('weapons'));
+      tabAttachments.addEventListener('click', () => this.switchView('attachments'));
+    }
+
+    // Weapons Category tabs
     document.querySelectorAll('.cat-pill').forEach((btn) => {
       btn.addEventListener('click', (e) => {
         document.querySelectorAll('.cat-pill').forEach((b) => b.classList.remove('active'));
@@ -51,7 +86,7 @@ class WeaponsManager {
       });
     });
 
-    // Ammo filter pills (if present)
+    // Weapons Ammo filter pills
     document.querySelectorAll('.ammo-pill').forEach((btn) => {
       btn.addEventListener('click', (e) => {
         document.querySelectorAll('.ammo-pill').forEach((b) => b.classList.remove('active'));
@@ -61,7 +96,7 @@ class WeaponsManager {
       });
     });
 
-    // Search bar with 120ms debounce to prevent input lag
+    // Weapons Search bar with debounce
     const searchInput = document.getElementById('weaponSearchInput');
     if (searchInput) {
       let debounceTimer = null;
@@ -74,7 +109,7 @@ class WeaponsManager {
       });
     }
 
-    // Sort select
+    // Weapons Sort select
     const sortSelect = document.getElementById('weaponSortSelect');
     if (sortSelect) {
       sortSelect.addEventListener('change', (e) => {
@@ -83,7 +118,30 @@ class WeaponsManager {
       });
     }
 
-    // Modal close events
+    // Attachments Slot filter pills
+    document.querySelectorAll('.slot-pill').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('.slot-pill').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        this.activeSlot = btn.getAttribute('data-slot') || 'all';
+        this.renderAttachments();
+      });
+    });
+
+    // Attachments Search bar with debounce
+    const attachSearchInput = document.getElementById('attachmentSearchInput');
+    if (attachSearchInput) {
+      let debounceAttachTimer = null;
+      attachSearchInput.addEventListener('input', (e) => {
+        clearTimeout(debounceAttachTimer);
+        debounceAttachTimer = setTimeout(() => {
+          this.attachmentSearch = e.target.value.toLowerCase().trim();
+          this.renderAttachments();
+        }, 120);
+      });
+    }
+
+    // Weapon Modal close events
     const modalOverlay = document.getElementById('weaponModal');
     const modalClose = document.getElementById('modalCloseBtn');
     if (modalClose && modalOverlay) {
@@ -91,11 +149,51 @@ class WeaponsManager {
       modalOverlay.addEventListener('click', (e) => {
         if (e.target === modalOverlay) this.closeModal();
       });
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') this.closeModal();
+    }
+
+    // Attachment Modal close events
+    const attachModalOverlay = document.getElementById('attachmentModal');
+    const attachModalClose = document.getElementById('modalAttachCloseBtn');
+    if (attachModalClose && attachModalOverlay) {
+      attachModalClose.addEventListener('click', () => this.closeAttachmentModal());
+      attachModalOverlay.addEventListener('click', (e) => {
+        if (e.target === attachModalOverlay) this.closeAttachmentModal();
       });
     }
+
+    // Global ESC key closes modals
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        this.closeModal();
+        this.closeAttachmentModal();
+      }
+    });
   }
+
+  switchView(view) {
+    this.currentView = view;
+    const tabWeapons = document.getElementById('tabBtnWeapons');
+    const tabAttachments = document.getElementById('tabBtnAttachments');
+    const weaponsView = document.getElementById('weaponsView');
+    const attachmentsView = document.getElementById('attachmentsView');
+
+    if (view === 'weapons') {
+      if (tabWeapons) tabWeapons.classList.add('active');
+      if (tabAttachments) tabAttachments.classList.remove('active');
+      if (weaponsView) weaponsView.style.display = 'block';
+      if (attachmentsView) attachmentsView.style.display = 'none';
+    } else {
+      if (tabWeapons) tabWeapons.classList.remove('active');
+      if (tabAttachments) tabAttachments.classList.add('active');
+      if (weaponsView) weaponsView.style.display = 'none';
+      if (attachmentsView) attachmentsView.style.display = 'block';
+      this.renderAttachments();
+    }
+  }
+
+  // =========================================================================
+  // WEAPONS ARSENAL LOGIC
+  // =========================================================================
 
   getFilteredWeapons() {
     let list = [...this.weapons];
@@ -178,13 +276,10 @@ class WeaponsManager {
       ar: `<svg viewBox="0 0 240 70" fill="currentColor">
         <path d="M15 32 L65 32 L72 26 L135 26 L142 32 L170 32 L174 36 L185 36 L192 52 L180 54 L172 44 L148 44 L138 62 L122 59 L132 44 L85 44 L78 56 L66 54 L72 44 L38 44 L32 52 L15 48 Z" fill="var(--pubg-gold)" opacity="0.85"/>
         <rect x="5" y="33" width="12" height="3" fill="var(--pubg-gold)" opacity="0.6"/>
-        <rect x="90" y="22" width="25" height="4" fill="var(--text-secondary)" opacity="0.4"/>
       </svg>`,
       dmr: `<svg viewBox="0 0 240 70" fill="currentColor">
-        <path d="M10 32 L75 32 L82 27 L155 27 L162 32 L190 32 L196 36 L208 36 L215 54 L202 55 L195 46 L160 46 L148 64 L135 61 L144 46 L95 46 L88 58 L76 56 L82 46 L40 46 L34 54 L16 50 Z" fill="var(--bluezone-cyan)" opacity="0.85"/>
-        <rect x="100" y="18" width="45" height="7" rx="1" fill="var(--bluezone-cyan)" opacity="0.7"/>
-        <line x1="108" y1="25" x2="108" y2="28" stroke="var(--bluezone-cyan)" stroke-width="2"/>
-        <line x1="138" y1="25" x2="138" y2="28" stroke="var(--bluezone-cyan)" stroke-width="2"/>
+        <path d="M10 32 L75 32 L82 28 L155 28 L162 32 L185 32 L190 36 L205 36 L212 54 L198 55 L192 45 L158 45 L150 58 L136 56 L144 45 L90 45 L84 54 L72 52 L78 45 L40 45 L34 54 L18 50 Z" fill="#38bdf8" opacity="0.85"/>
+        <rect x="105" y="18" width="45" height="7" rx="2" fill="#38bdf8" opacity="0.7"/>
       </svg>`,
       sr: `<svg viewBox="0 0 240 70" fill="currentColor">
         <path d="M8 33 L85 33 L92 29 L165 29 L172 33 L200 33 L206 37 L218 37 L226 55 L212 56 L206 47 L170 47 L164 52 L152 51 L158 47 L100 47 L94 52 L88 47 L46 47 L40 55 L22 51 Z" fill="#9333ea" opacity="0.85"/>
@@ -203,6 +298,10 @@ class WeaponsManager {
         <path d="M12 31 L78 31 L84 26 L160 26 L166 31 L195 31 L200 36 L210 36 L218 54 L204 55 L196 45 L160 45 L148 64 L125 64 L136 45 L95 45 L84 62 L72 59 L82 45 L42 45 L36 54 L22 51 Z" fill="#ea580c" opacity="0.85"/>
         <ellipse cx="136" cy="52" rx="16" ry="9" fill="#ea580c" opacity="0.6"/>
         <line x1="30" y1="44" x2="18" y2="62" stroke="#ea580c" stroke-width="2.5" opacity="0.7"/>
+      </svg>`,
+      pistol: `<svg viewBox="0 0 240 70" fill="currentColor">
+        <path d="M60 28 L170 28 L174 42 L150 42 L138 62 L116 58 L126 42 L60 42 Z" fill="#60a5fa" opacity="0.85"/>
+        <rect x="145" y="24" width="12" height="4" fill="#60a5fa" opacity="0.6"/>
       </svg>`,
       default: `<svg viewBox="0 0 240 70" fill="currentColor">
         <path d="M25 35 L95 35 L101 30 L155 30 L161 35 L190 35 L196 50 L180 51 L174 43 L144 43 L132 59 L120 56 L128 43 L85 43 L78 52 L66 50 L70 43 L36 43 Z" fill="var(--pubg-gold)" opacity="0.8"/>
@@ -323,6 +422,9 @@ class WeaponsManager {
     const dps = window.damageCalculator.calculateDPS(weapon);
     const imgUrl = weapon.image || weapon.icon;
 
+    // Get compatible attachments for this weapon
+    const compatibleAttachments = this.getCompatibleAttachmentsForWeapon(weapon);
+
     titleEl.innerHTML = `
       ${weapon.name}
       <span class="badge badge-${weapon.ammo.replace('_', '-')}" style="font-size: 0.75rem;">${ammoLabel}</span>
@@ -373,17 +475,34 @@ class WeaponsManager {
             </div>
           </div>
 
+          <!-- Attachment Slots & Compatible List -->
           <div class="attachment-slots-section">
             <h4 class="section-subtitle">
-              ⚙️ ${window.i18n.t('stats.attachments_slots', 'Các khe phụ kiện')} (${weapon.slots.length})
+              ⚙️ ${window.i18n.t('stats.attachments_slots', 'Các khe phụ kiện')} (${weapon.slots ? weapon.slots.length : 0})
             </h4>
-            <div class="attachment-slots-list">
-              ${weapon.slots.map((s) => `
+            <div class="attachment-slots-list" style="margin-bottom: 0.75rem;">
+              ${weapon.slots && weapon.slots.length > 0 ? weapon.slots.map((s) => `
                 <span class="slot-tag">
                   ✓ ${window.i18n.t(`attachments.${s}`, s)}
                 </span>
-              `).join('')}
+              `).join('') : '<span style="font-size: 0.8rem; color: var(--text-muted);">Không có khe phụ kiện</span>'}
             </div>
+
+            ${compatibleAttachments.length > 0 ? `
+              <div style="border-top: 1px solid var(--border-subtle); padding-top: 0.75rem; margin-top: 0.5rem;">
+                <span style="font-family: var(--font-display); font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;">
+                  🔧 Phụ kiện tương thích (${compatibleAttachments.length}) • Click xem thông số:
+                </span>
+                <div class="weapon-compatible-attachments-list">
+                  ${compatibleAttachments.slice(0, 12).map(att => `
+                    <div class="modal-attach-thumb btn-view-attach-from-weapon" data-attach-id="${att.id}" title="${att.name}">
+                      <img src="${att.image}" alt="${att.name}" loading="lazy" />
+                      <span>${lang === 'vi' && att.nameVi ? att.nameVi : att.name}</span>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+            ` : ''}
           </div>
         </div>
 
@@ -448,19 +567,19 @@ class WeaponsManager {
               </div>
             </div>
 
-            <!-- Dynamic Result Highlights -->
-            <div id="calcDynamicResults">
-              <!-- Rendered by updateCalculatorResults() -->
+            <!-- Dynamic Damage Results Summary -->
+            <div id="calcDynamicResults" style="margin-top: 1rem;">
+              <!-- Injected by updateCalculatorResults -->
             </div>
+          </div>
 
-            <!-- Full Damage Matrix -->
-            <div style="margin-top: 1.5rem;">
-              <h4 style="font-family: var(--font-display); font-size: 0.95rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.5rem;">
-                📊 ${window.i18n.t('calculator.damage_matrix_title', 'Ma trận sát thương toàn diện')}
-              </h4>
-              <div class="damage-matrix-wrap" id="damageMatrixTableWrap">
-                <!-- Rendered by renderDamageMatrix() -->
-              </div>
+          <!-- Comprehensive Damage Matrix Table -->
+          <div style="margin-top: 1.25rem;">
+            <h4 class="section-subtitle" style="font-size: 0.95rem; margin-bottom: 0.5rem;">
+              📊 ${window.i18n.t('calculator.damage_matrix_title', 'Bảng ma trận sát thương chi tiết')}
+            </h4>
+            <div class="damage-matrix-wrap" id="damageMatrixTableWrap">
+              <!-- Injected by renderDamageMatrix -->
             </div>
           </div>
         </div>
@@ -470,28 +589,42 @@ class WeaponsManager {
     this.bindCalculatorEvents(weapon);
     this.updateCalculatorResults(weapon);
     this.renderDamageMatrix(weapon);
+
+    // Bind click on attachment thumbnails inside weapon modal
+    bodyEl.querySelectorAll('.btn-view-attach-from-weapon').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const attachId = btn.getAttribute('data-attach-id');
+        this.openAttachmentModal(attachId);
+      });
+    });
   }
 
   bindCalculatorEvents(weapon) {
-    // Location buttons
-    document.querySelectorAll('#calcLocationBtns .seg-btn').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('#calcLocationBtns .seg-btn').forEach((b) => b.classList.remove('active'));
-        btn.classList.add('active');
-        this.calcState.location = btn.getAttribute('data-val');
-        this.updateCalculatorResults(weapon);
+    // Location segmented control
+    const locBtns = document.getElementById('calcLocationBtns');
+    if (locBtns) {
+      locBtns.querySelectorAll('.seg-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          locBtns.querySelectorAll('.seg-btn').forEach((b) => b.classList.remove('active'));
+          btn.classList.add('active');
+          this.calcState.location = btn.getAttribute('data-val');
+          this.updateCalculatorResults(weapon);
+        });
       });
-    });
+    }
 
-    // Armor buttons
-    document.querySelectorAll('#calcArmorBtns .seg-btn').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('#calcArmorBtns .seg-btn').forEach((b) => b.classList.remove('active'));
-        btn.classList.add('active');
-        this.calcState.armor = parseInt(btn.getAttribute('data-val'), 10);
-        this.updateCalculatorResults(weapon);
+    // Armor segmented control
+    const armorBtns = document.getElementById('calcArmorBtns');
+    if (armorBtns) {
+      armorBtns.querySelectorAll('.seg-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          armorBtns.querySelectorAll('.seg-btn').forEach((b) => b.classList.remove('active'));
+          btn.classList.add('active');
+          this.calcState.armor = parseInt(btn.getAttribute('data-val'), 10);
+          this.updateCalculatorResults(weapon);
+        });
       });
-    });
+    }
 
     // Range slider
     const slider = document.getElementById('calcRangeSlider');
@@ -575,6 +708,320 @@ class WeaponsManager {
         </tbody>
       </table>
     `;
+  }
+
+  // =========================================================================
+  // ATTACHMENTS VAULT LOGIC
+  // =========================================================================
+
+  getFilteredAttachments() {
+    let list = [...this.attachments];
+
+    if (this.activeSlot !== 'all') {
+      list = list.filter((a) => a.slot === this.activeSlot);
+    }
+
+    if (this.attachmentSearch) {
+      const q = this.attachmentSearch;
+      list = list.filter((a) => {
+        const nameMatch = a.name.toLowerCase().includes(q);
+        const viMatch = a.nameVi ? a.nameVi.toLowerCase().includes(q) : false;
+        const slotMatch = a.slot.toLowerCase().includes(q);
+        return nameMatch || viMatch || slotMatch;
+      });
+    }
+
+    return list;
+  }
+
+  renderAttachments() {
+    const grid = document.getElementById('attachmentsGrid');
+    if (!grid) return;
+
+    const filtered = this.getFilteredAttachments();
+    if (filtered.length === 0) {
+      grid.innerHTML = `
+        <div style="grid-column: 1 / -1; text-align: center; padding: 4rem 1rem; color: var(--text-muted);">
+          <p style="font-family: var(--font-display); font-size: 1.25rem;">${window.i18n.t('common.clear_filter', 'Không tìm thấy phụ kiện phù hợp.')}</p>
+        </div>
+      `;
+      return;
+    }
+
+    grid.innerHTML = filtered.map((att) => this.renderAttachmentCard(att)).join('');
+
+    // Attach click events on attachment cards
+    grid.querySelectorAll('.attachment-card').forEach((card) => {
+      card.addEventListener('click', () => {
+        const id = card.getAttribute('data-id');
+        this.openAttachmentModal(id);
+      });
+    });
+  }
+
+  renderAttachmentCard(att) {
+    const lang = window.i18n.getLang();
+    const displayName = lang === 'vi' && att.nameVi ? att.nameVi : att.name;
+    const subName = lang === 'vi' ? att.name : (att.nameVi || '');
+    const slotLabel = window.i18n.t(`attachments.${att.slot}`, att.slot.toUpperCase());
+
+    // Generate effect badges
+    const chips = this.getAttachmentEffectChips(att);
+    const compGuns = this.getCompatibleWeaponsForAttachment(att);
+
+    return `
+      <article class="attachment-card" data-id="${att.id}">
+        <div>
+          <div class="attachment-card-top">
+            <div>
+              <h3 class="attachment-name">${displayName}</h3>
+              <span class="attachment-name-vi">${subName}</span>
+            </div>
+            <span class="badge-slot badge-slot-${att.slot}">${slotLabel}</span>
+          </div>
+
+          <div class="attachment-preview">
+            <img src="${att.image}" alt="${att.name}" loading="lazy" />
+          </div>
+
+          <div class="attachment-effects-wrap">
+            ${chips.map(c => `<span class="effect-chip ${c.type}">${c.label}</span>`).join('')}
+          </div>
+        </div>
+
+        <div class="attachment-compat-footer">
+          <span>🎯 ${compGuns.length} ${window.i18n.t('attachments.compatible_weapons', 'vũ khí')}</span>
+          <span style="color: var(--pubg-gold); font-weight: 600;">${window.i18n.t('attachments.view_details', 'Chi tiết &rarr;')}</span>
+        </div>
+      </article>
+    `;
+  }
+
+  getAttachmentEffectChips(att) {
+    const chips = [];
+    const ef = att.effects || {};
+
+    if (ef.recoilVertical) {
+      chips.push({ label: `Giật dọc ${ef.recoilVertical}%`, type: 'buff' });
+    }
+    if (ef.recoilHorizontal) {
+      chips.push({ label: `Giật ngang ${ef.recoilHorizontal}%`, type: 'buff' });
+    }
+    if (ef.adsSpeed) {
+      chips.push({ label: `ADS +${ef.adsSpeed}%`, type: 'special' });
+    }
+    if (ef.capacity) {
+      chips.push({ label: `+${ef.capacity} Viên`, type: 'special' });
+    }
+    if (ef.reloadSpeed) {
+      chips.push({ label: `Nạp đạn -${ef.reloadSpeed}%`, type: 'buff' });
+    }
+    if (ef.soundDampening) {
+      chips.push({ label: `Giảm âm ${ef.soundDampening}%`, type: 'special' });
+    }
+    if (ef.flashRemoval) {
+      chips.push({ label: `Triệt tiêu lửa`, type: 'special' });
+    }
+    if (ef.pelletSpread) {
+      chips.push({ label: `Tản đạn ${ef.pelletSpread}%`, type: 'buff' });
+    }
+    if (ef.recoilRecovery) {
+      chips.push({ label: `Hồi tâm +${ef.recoilRecovery}%`, type: 'buff' });
+    }
+    if (ef.zoom) {
+      chips.push({ label: `Zoom ${ef.zoom}x`, type: 'special' });
+    }
+
+    return chips.slice(0, 3);
+  }
+
+  openAttachmentModal(attachmentId) {
+    const att = this.attachments.find((a) => a.id === attachmentId);
+    if (!att) return;
+    this.currentModalAttachment = att;
+    this.renderAttachmentModalContent(att);
+
+    const modal = document.getElementById('attachmentModal');
+    if (modal) {
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  closeAttachmentModal() {
+    const modal = document.getElementById('attachmentModal');
+    if (modal) {
+      modal.classList.remove('open');
+      if (!this.currentModalWeapon) {
+        document.body.style.overflow = '';
+      }
+    }
+    this.currentModalAttachment = null;
+  }
+
+  renderAttachmentModalContent(att) {
+    const titleEl = document.getElementById('modalAttachTitle');
+    const bodyEl = document.getElementById('modalAttachBody');
+    if (!titleEl || !bodyEl) return;
+
+    const lang = window.i18n.getLang();
+    const displayName = lang === 'vi' && att.nameVi ? att.nameVi : att.name;
+    const slotLabel = window.i18n.t(`attachments.${att.slot}`, att.slot.toUpperCase());
+    const desc = att.description ? (att.description[lang] || att.description.en) : '';
+    const proTip = att.proTip ? (att.proTip[lang] || att.proTip.en) : '';
+    const compGuns = this.getCompatibleWeaponsForAttachment(att);
+
+    titleEl.innerHTML = `
+      ${displayName}
+      <span class="badge-slot badge-slot-${att.slot}" style="font-size: 0.75rem;">${slotLabel}</span>
+    `;
+
+    // Render detailed effects rows
+    const effectRows = Object.entries(att.effects || {}).map(([k, v]) => {
+      let label = k;
+      let formattedVal = v;
+      if (k === 'recoilVertical') { label = 'Độ giật dọc'; formattedVal = `${v}%`; }
+      else if (k === 'recoilHorizontal') { label = 'Độ giật ngang'; formattedVal = `${v}%`; }
+      else if (k === 'recoilRecovery') { label = 'Tốc độ hồi tâm'; formattedVal = `+${v}%`; }
+      else if (k === 'adsSpeed') { label = 'Tốc độ ngắm ADS'; formattedVal = `+${v}%`; }
+      else if (k === 'capacity') { label = 'Tăng sức chứa đạn'; formattedVal = `+${v} viên`; }
+      else if (k === 'reloadSpeed') { label = 'Rút ngắn thời gian nạp'; formattedVal = `-${v}%`; }
+      else if (k === 'soundDampening') { label = 'Độ giảm âm thanh'; formattedVal = `${v}%`; }
+      else if (k === 'flashRemoval') { label = 'Triệt tiêu ánh sáng nòng'; formattedVal = `${v}%`; }
+      else if (k === 'pelletSpread') { label = 'Thu hẹp chùm đạn ghém'; formattedVal = `${v}%`; }
+      else if (k === 'verticalSpread') { label = 'Độ tản dọc'; formattedVal = `${v}%`; }
+      else if (k === 'horizontalSpread') { label = 'Độ tản ngang'; formattedVal = `+${v}%`; }
+      else if (k === 'weaponSway') { label = 'Độ rung lắc thân súng'; formattedVal = `${v}%`; }
+      else if (k === 'firstShotRecoil') { label = 'Giật viên đạn đầu'; formattedVal = `${v}%`; }
+      else if (k === 'hipfireAccuracy') { label = 'Độ chuẩn bắn không ngắm (Hipfire)'; formattedVal = `+${v}%`; }
+      else if (k === 'softAimAccuracy') { label = 'Độ chuẩn ghìm tâm mềm (Soft Aim)'; formattedVal = `+${v}%`; }
+      else if (k === 'zoom') { label = 'Độ phóng đại (Zoom)'; formattedVal = `${v}x`; }
+      else if (k === 'zoomAdjustable') { label = 'Tùy chỉnh zoom con lăn chuột'; formattedVal = 'Có'; }
+      else if (k === 'dualSight') { label = 'Hỗ trợ ngắm nghiêng kép'; formattedVal = 'Có'; }
+      else if (k === 'airdropOnly') { label = 'Độc quyền Hòm Thính Care Package'; formattedVal = 'Có'; }
+
+      return `
+        <tr>
+          <td>${label}</td>
+          <td class="val-buff">${formattedVal}</td>
+        </tr>
+      `;
+    }).join('');
+
+    bodyEl.innerHTML = `
+      <div class="attachment-modal-body">
+        <!-- Left: Image Box & Slot -->
+        <div>
+          <div class="attachment-modal-imgbox">
+            <img src="${att.image}" alt="${att.name}" />
+            <h3 style="font-family: var(--font-display); font-size: 1.35rem; color: var(--pubg-gold); margin-top: 1rem; margin-bottom: 0.25rem;">
+              ${displayName}
+            </h3>
+            <span style="font-family: var(--font-display); font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">
+              ${att.name}
+            </span>
+          </div>
+
+          <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.5; margin-top: 1rem;">
+            ${desc}
+          </p>
+        </div>
+
+        <!-- Right: Effects Table, Pro Tip & Compatible Guns -->
+        <div>
+          <h4 class="section-subtitle" style="margin-bottom: 0.5rem;">
+            ⚡ ${window.i18n.t('attachments.effect', 'Chỉ Số Hiệu Ứng Bổ Trợ')}
+          </h4>
+          <table class="effects-table">
+            <thead>
+              <tr>
+                <th>Thuộc tính</th>
+                <th>Tác dụng</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${effectRows}
+            </tbody>
+          </table>
+
+          ${proTip ? `
+            <div class="pro-tip-box">
+              <strong>💡 ${window.i18n.t('attachments.pro_tip', 'Mẹo thực chiến')}</strong>
+              <p>${proTip}</p>
+            </div>
+          ` : ''}
+
+          <div>
+            <h4 class="section-subtitle" style="margin-bottom: 0.4rem;">
+              🎯 ${window.i18n.t('attachments.compatible_weapons', 'Vũ Khí Tương Thích')} (${compGuns.length})
+            </h4>
+            <div class="compatible-guns-grid">
+              ${compGuns.map(gun => `
+                <div class="gun-chip-item btn-open-gun-from-attach" data-weapon-id="${gun.id}">
+                  <img src="${gun.image || gun.icon}" alt="${gun.name}" loading="lazy" />
+                  <span>${gun.name}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    // Bind click events on gun chips to switch to weapon modal
+    bodyEl.querySelectorAll('.btn-open-gun-from-attach').forEach((chip) => {
+      chip.addEventListener('click', () => {
+        const weaponId = chip.getAttribute('data-weapon-id');
+        this.closeAttachmentModal();
+        this.openModal(weaponId);
+      });
+    });
+  }
+
+  // =========================================================================
+  // COMPATIBILITY HELPERS
+  // =========================================================================
+
+  isAttachmentCompatibleWithWeapon(attachment, weapon) {
+    if (!attachment || !weapon) return false;
+    const comp = attachment.compatible || [];
+
+    // Category match
+    if (comp.includes(weapon.category)) return true;
+
+    // Direct ID match
+    if (comp.includes(weapon.id)) return true;
+
+    // Special case for S12K (it's SG but takes AR muzzle & mag)
+    if (weapon.id === 's12k' && comp.includes('s12k')) return true;
+
+    // Special case for Laser sight on handguns
+    if (attachment.id === 'laser-sight' && weapon.category === 'pistol' && weapon.slots && weapon.slots.includes('grip')) {
+      return true;
+    }
+
+    return false;
+  }
+
+  getCompatibleWeaponsForAttachment(attachment) {
+    if (!attachment) return [];
+    return this.weapons.filter((w) => {
+      // Must have corresponding slot
+      if (!w.slots || !w.slots.includes(attachment.slot)) {
+        return false;
+      }
+      return this.isAttachmentCompatibleWithWeapon(attachment, w);
+    });
+  }
+
+  getCompatibleAttachmentsForWeapon(weapon) {
+    if (!weapon || !weapon.slots) return [];
+    return this.attachments.filter((att) => {
+      if (!weapon.slots.includes(att.slot)) {
+        return false;
+      }
+      return this.isAttachmentCompatibleWithWeapon(att, weapon);
+    });
   }
 }
 

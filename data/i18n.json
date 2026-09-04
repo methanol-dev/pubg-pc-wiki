@@ -60,7 +60,8 @@
       "ammo_12gauge": "12 Gauge",
       "ammo_300mag": ".300 Magnum",
       "ammo_flare": "Pháo sáng (Flare)",
-      "ammo_arrow": "Mũi tên (Bolt)"
+      "ammo_arrow": "Mũi tên (Bolt)",
+      "ammo_40mm": "Lựu khói 40mm"
     },
     "stats": {
       "base_damage": "Sát thương gốc",
@@ -120,12 +121,20 @@
     },
     "attachments": {
       "title": "Phụ Kiện Vũ Khí",
+      "subtitle": "Tra cứu 40+ phụ kiện chính thức trong PUBG PC: giảm giật %, tốc độ ngắm ADS, tăng sức chứa đạn và độ tương thích",
+      "view_weapons": "🔫 Danh Mục Vũ Khí",
+      "view_attachments": "🔧 Kho Phụ Kiện Vũ Khí",
+      "all_attachments": "Tất Cả Phụ Kiện",
       "muzzle": "Đầu nòng",
       "grip": "Tay cầm",
       "magazine": "Băng đạn",
-      "sight": "Ống ngắm",
+      "sight": "Ống ngắm / Scope",
       "stock": "Báng súng",
-      "effect": "Hiệu quả bổ trợ"
+      "effect": "Hiệu quả bổ trợ",
+      "compatible_weapons": "Vũ khí tương thích",
+      "pro_tip": "Mẹo thực chiến Pro",
+      "view_details": "Xem chi tiết",
+      "search_placeholder": "Tìm kiếm phụ kiện theo tên, công dụng..."
     },
     "maps_page": {
       "title": "Bản Đồ Chiến Thuật PUBG PC",
@@ -260,7 +269,8 @@
       "ammo_12gauge": "12 Gauge",
       "ammo_300mag": ".300 Magnum",
       "ammo_flare": "Flare",
-      "ammo_arrow": "Crossbow Bolt"
+      "ammo_arrow": "Crossbow Bolt",
+      "ammo_40mm": "40mm Smoke"
     },
     "stats": {
       "base_damage": "Base Damage",
@@ -319,13 +329,21 @@
       "equal_stat": "Equal"
     },
     "attachments": {
-      "title": "Weapon Attachments",
+      "title": "Weapon Attachments Vault",
+      "subtitle": "Explore 40+ official PUBG PC attachments: recoil reduction %, ADS acquisition, ammo capacity, and gun compatibility",
+      "view_weapons": "🔫 Weapons Arsenal",
+      "view_attachments": "🔧 Attachments Vault",
+      "all_attachments": "All Attachments",
       "muzzle": "Muzzle",
       "grip": "Foregrip",
       "magazine": "Magazine",
       "sight": "Sight / Scope",
       "stock": "Stock",
-      "effect": "Stat Modifiers"
+      "effect": "Stat Modifiers",
+      "compatible_weapons": "Compatible Weapons",
+      "pro_tip": "Combat Pro Tip",
+      "view_details": "View Details",
+      "search_placeholder": "Search attachments by name, stats..."
     },
     "maps_page": {
       "title": "PUBG PC Tactical Maps",

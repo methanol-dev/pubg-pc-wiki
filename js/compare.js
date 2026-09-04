@@ -48,7 +48,7 @@ class CompareManager {
       let optionsHtml = `<option value="">${placeholderText}</option>`;
       
       // Group by category
-      const categories = ['ar', 'dmr', 'sr', 'smg', 'sg', 'lmg'];
+      const categories = ['ar', 'dmr', 'sr', 'smg', 'sg', 'lmg', 'pistol'];
       categories.forEach((cat) => {
         const catWeapons = this.weapons.filter((w) => w.category === cat);
         if (catWeapons.length > 0) {

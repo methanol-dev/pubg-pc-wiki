@@ -797,5 +797,319 @@
       "en": "Airdrop machine gun with dual fire modes (660 & blazing 990 RPM). Deals 1.25x bonus damage against vehicles."
     },
     "image": "assets/weapons/mg3.png"
+  },
+  {
+    "id": "deagle",
+    "name": "Desert Eagle",
+    "category": "pistol",
+    "ammo": "ammo_45acp",
+    "spawn": "world_spawn",
+    "damage": 62,
+    "rpm": 240,
+    "muzzleVelocity": 450,
+    "effectiveRange": 100,
+    "magStandard": 7,
+    "magExtended": 10,
+    "reloadTime": 2.5,
+    "tacticalReload": 2,
+    "fireModes": [
+      "single"
+    ],
+    "recoilVertical": 88,
+    "recoilHorizontal": 58,
+    "headshotMultiplier": 2,
+    "slots": [
+      "sight",
+      "magazine",
+      "grip"
+    ],
+    "icon": "assets/weapons/deagle.png",
+    "description": {
+      "vi": "Khẩu súng lục uy lực bậc nhất PUBG với đạn .45 ACP, có thể hạ gục đối thủ đội mũ cấp 3 chỉ sau 2 phát headshot.",
+      "en": "The hardest-hitting handgun in PUBG firing .45 ACP rounds, capable of cracking Level 3 helmets in two direct headshots."
+    },
+    "image": "assets/weapons/deagle.png"
+  },
+  {
+    "id": "p18c",
+    "name": "P18C",
+    "category": "pistol",
+    "ammo": "ammo_9mm",
+    "spawn": "world_spawn",
+    "damage": 23,
+    "rpm": 750,
+    "muzzleVelocity": 375,
+    "effectiveRange": 50,
+    "magStandard": 17,
+    "magExtended": 25,
+    "reloadTime": 2,
+    "tacticalReload": 1.7,
+    "fireModes": [
+      "single",
+      "auto"
+    ],
+    "recoilVertical": 55,
+    "recoilHorizontal": 40,
+    "headshotMultiplier": 2,
+    "slots": [
+      "muzzle",
+      "magazine",
+      "sight",
+      "grip"
+    ],
+    "icon": "assets/weapons/p18c.png",
+    "description": {
+      "vi": "Súng ngắn tự động Glock 18C với tốc độ xả đạn lên tới 750 RPM, hoạt động hiệu quả như một khẩu tiểu liên mini ở cự ly gần.",
+      "en": "A machine pistol featuring rapid full-auto firing at 750 RPM, acting as a pocket SMG for close-quarters surprise attacks."
+    },
+    "image": "assets/weapons/p18c.png"
+  },
+  {
+    "id": "p1911",
+    "name": "P1911",
+    "category": "pistol",
+    "ammo": "ammo_45acp",
+    "spawn": "world_spawn",
+    "damage": 41,
+    "rpm": 300,
+    "muzzleVelocity": 250,
+    "effectiveRange": 50,
+    "magStandard": 7,
+    "magExtended": 12,
+    "reloadTime": 2.1,
+    "tacticalReload": 1.8,
+    "fireModes": [
+      "single"
+    ],
+    "recoilVertical": 62,
+    "recoilHorizontal": 44,
+    "headshotMultiplier": 2,
+    "slots": [
+      "muzzle",
+      "magazine",
+      "sight",
+      "grip"
+    ],
+    "icon": "assets/weapons/p1911.png",
+    "description": {
+      "vi": "Khẩu súng ngắn kinh điển bắn đạn .45 ACP, mang lại uy lực đơn phát cao và độ đầm tay tốt ở đầu trận đấu.",
+      "en": "A classic .45 ACP sidearm delivering solid single-shot stopping power in early-game building drop fights."
+    },
+    "image": "assets/weapons/p1911.png"
+  },
+  {
+    "id": "p92",
+    "name": "P92",
+    "category": "pistol",
+    "ammo": "ammo_9mm",
+    "spawn": "world_spawn",
+    "damage": 35,
+    "rpm": 400,
+    "muzzleVelocity": 380,
+    "effectiveRange": 50,
+    "magStandard": 15,
+    "magExtended": 20,
+    "reloadTime": 2,
+    "tacticalReload": 1.7,
+    "fireModes": [
+      "single"
+    ],
+    "recoilVertical": 48,
+    "recoilHorizontal": 34,
+    "headshotMultiplier": 2,
+    "slots": [
+      "muzzle",
+      "magazine",
+      "sight",
+      "grip"
+    ],
+    "icon": "assets/weapons/p92.png",
+    "description": {
+      "vi": "Khẩu súng ngắn 9mm tiêu chuẩn có sức chứa băng đạn lớn và độ giật thấp, dễ dàng làm chủ trong mọi tình huống khẩn cấp.",
+      "en": "A dependable 9mm sidearm with generous ammunition capacity and low recoil, easy to handle in panic drops."
+    },
+    "image": "assets/weapons/p92.png"
+  },
+  {
+    "id": "r1895",
+    "name": "R1895",
+    "category": "pistol",
+    "ammo": "ammo_762",
+    "spawn": "world_spawn",
+    "damage": 55,
+    "rpm": 150,
+    "muzzleVelocity": 330,
+    "effectiveRange": 50,
+    "magStandard": 7,
+    "magExtended": 7,
+    "reloadTime": 6.25,
+    "tacticalReload": 6.25,
+    "fireModes": [
+      "single"
+    ],
+    "recoilVertical": 82,
+    "recoilHorizontal": 52,
+    "headshotMultiplier": 2,
+    "slots": [
+      "muzzle"
+    ],
+    "icon": "assets/weapons/r1895.png",
+    "description": {
+      "vi": "Khẩu súng lục ổ quay Nagant 7.62mm sở hữu sát thương đơn phát hủy diệt, bù lại thời gian nạp từng viên đạn khá lâu.",
+      "en": "A heavy 7.62mm revolver packing lethal single-bullet damage, balanced by slow individual cylinder reloads."
+    },
+    "image": "assets/weapons/r1895.png"
+  },
+  {
+    "id": "r45",
+    "name": "R45",
+    "category": "pistol",
+    "ammo": "ammo_45acp",
+    "spawn": "world_spawn",
+    "damage": 55,
+    "rpm": 250,
+    "muzzleVelocity": 330,
+    "effectiveRange": 50,
+    "magStandard": 6,
+    "magExtended": 6,
+    "reloadTime": 3.2,
+    "tacticalReload": 3.2,
+    "fireModes": [
+      "single"
+    ],
+    "recoilVertical": 76,
+    "recoilHorizontal": 46,
+    "headshotMultiplier": 2,
+    "slots": [
+      "sight",
+      "grip"
+    ],
+    "icon": "assets/weapons/r45.png",
+    "description": {
+      "vi": "Súng lục ổ quay hiện đại nạp nhanh theo cụm đạn .45 ACP, có thể lắp Red Dot để ngắm bắn chuẩn xác.",
+      "en": "A modern speedloader revolver chambered in .45 ACP, capable of mounting red dot sights for swift targeting."
+    },
+    "image": "assets/weapons/r45.png"
+  },
+  {
+    "id": "skorpion",
+    "name": "Skorpion",
+    "category": "pistol",
+    "ammo": "ammo_9mm",
+    "spawn": "world_spawn",
+    "damage": 22,
+    "rpm": 850,
+    "muzzleVelocity": 350,
+    "effectiveRange": 50,
+    "magStandard": 20,
+    "magExtended": 40,
+    "reloadTime": 3.1,
+    "tacticalReload": 2.5,
+    "fireModes": [
+      "single",
+      "auto"
+    ],
+    "recoilVertical": 45,
+    "recoilHorizontal": 35,
+    "headshotMultiplier": 2,
+    "slots": [
+      "muzzle",
+      "grip",
+      "magazine",
+      "sight",
+      "stock"
+    ],
+    "icon": "assets/weapons/skorpion.png",
+    "description": {
+      "vi": "Súng tiểu liên phụ đặt ở khe súng ngắn với 5 slot phụ kiện và băng đạn nâng cấp lên tới 40 viên, xả đạn cực rát 850 RPM.",
+      "en": "A high-capacity machine pistol equipped in the sidearm slot with 5 attachment points and up to 40 rounds at 850 RPM."
+    },
+    "image": "assets/weapons/skorpion.png"
+  },
+  {
+    "id": "sawed-off",
+    "name": "Sawed-off",
+    "category": "pistol",
+    "ammo": "ammo_12gauge",
+    "spawn": "world_spawn",
+    "damage": 80,
+    "rpm": 180,
+    "muzzleVelocity": 330,
+    "effectiveRange": 25,
+    "magStandard": 2,
+    "magExtended": 2,
+    "reloadTime": 3.9,
+    "tacticalReload": 3.9,
+    "fireModes": [
+      "single"
+    ],
+    "recoilVertical": 95,
+    "recoilHorizontal": 70,
+    "headshotMultiplier": 1.5,
+    "slots": [
+      "muzzle"
+    ],
+    "icon": "assets/weapons/sawed-off.png",
+    "description": {
+      "vi": "Khẩu shotgun 2 nòng cưa ngắn đặt ở slot súng phụ, sức công phá 1-shot chí mạng ở cự ly cận chiến.",
+      "en": "A double-barrel sawed-off shotgun carried in the sidearm slot, offering instant one-shot stopping power at point-blank."
+    },
+    "image": "assets/weapons/sawed-off.png"
+  },
+  {
+    "id": "m79",
+    "name": "M79 Smoke Launcher",
+    "category": "pistol",
+    "ammo": "ammo_40mm",
+    "spawn": "world_spawn",
+    "damage": 0,
+    "rpm": 20,
+    "muzzleVelocity": 76,
+    "effectiveRange": 150,
+    "magStandard": 1,
+    "magExtended": 1,
+    "reloadTime": 3.5,
+    "tacticalReload": 3.5,
+    "fireModes": [
+      "single"
+    ],
+    "recoilVertical": 30,
+    "recoilHorizontal": 20,
+    "headshotMultiplier": 1,
+    "slots": [],
+    "icon": "assets/weapons/m79.png",
+    "description": {
+      "vi": "Súng phóng lựu khói tầm xa đặt ở slot súng phụ, tạo màn sương mù tức thì che chở đường di chuyển hoặc cứu đồng đội.",
+      "en": "A tactical smoke grenade launcher in the sidearm slot, creating instant thick smokescreens for rotations and revives."
+    },
+    "image": "assets/weapons/m79.png"
+  },
+  {
+    "id": "flaregun",
+    "name": "Flare Gun",
+    "category": "pistol",
+    "ammo": "ammo_flare",
+    "spawn": "world_spawn",
+    "damage": 0,
+    "rpm": 10,
+    "muzzleVelocity": 50,
+    "effectiveRange": 200,
+    "magStandard": 1,
+    "magExtended": 1,
+    "reloadTime": 3.5,
+    "tacticalReload": 3.5,
+    "fireModes": [
+      "single"
+    ],
+    "recoilVertical": 10,
+    "recoilHorizontal": 10,
+    "headshotMultiplier": 1,
+    "slots": [],
+    "icon": "assets/weapons/flaregun.png",
+    "description": {
+      "vi": "Súng bắn pháo sáng gọi hòm thính đặc biệt Care Package hoặc xe bọc thép thiết giáp BRDM-2 khi bắn thẳng lên trời.",
+      "en": "Fires a signal flare directly into the sky to call down special Care Packages or the amphibious armored BRDM-2."
+    },
+    "image": "assets/weapons/flaregun.png"
   }
 ]

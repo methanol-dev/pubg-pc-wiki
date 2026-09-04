@@ -2,116 +2,1068 @@
   {
     "id": "ar-compensator",
     "slot": "muzzle",
-    "name": "AR Compensator",
-    "compatible": ["ar", "dmr", "s12k"],
+    "name": "Compensator (AR, DMR, S12K)",
+    "nameVi": "Nòng giảm giật súng trường (AR)",
+    "image": "assets/attachments/ar-compensator.png",
+    "compatible": [
+      "ar",
+      "dmr",
+      "s12k"
+    ],
     "effects": {
       "recoilVertical": -15,
       "recoilHorizontal": -10,
       "recoilRecovery": 10
     },
     "description": {
-      "vi": "Giảm 15% giật dọc và 10% giật ngang cho súng trường, phụ kiện tối quan trọng để spray đạn chuẩn.",
-      "en": "Reduces vertical recoil by 15% and horizontal recoil by 10% on ARs, essential for tight spray patterns."
+      "vi": "Giảm 15% độ giật dọc và 10% độ giật ngang cho súng trường và DMR, phụ kiện tối thượng cho phong cách sấy đạn (spray).",
+      "en": "Reduces vertical recoil by 15% and horizontal recoil by 10% on ARs and DMRs, vital for tight full-auto spray control."
+    },
+    "proTip": {
+      "vi": "Lựa chọn số 1 khi sấy Beryl M762, M416 hoặc bắn nhấp nhả SLR/SKS cự ly trung bình.",
+      "en": "The undisputed top pick for spraying Beryl M762, M416 or rapid-tapping SLR/SKS at mid-range."
+    }
+  },
+  {
+    "id": "dmr-sr-compensator",
+    "slot": "muzzle",
+    "name": "Compensator (Sniper Rifle, DMR)",
+    "nameVi": "Nòng giảm giật súng tỉa (SR / DMR)",
+    "image": "assets/attachments/dmr-sr-compensator.png",
+    "compatible": [
+      "sr",
+      "dmr"
+    ],
+    "effects": {
+      "recoilVertical": -20,
+      "recoilHorizontal": -20,
+      "recoilRecovery": 20
+    },
+    "description": {
+      "vi": "Giảm tới 20% độ giật dọc & ngang và tăng 20% tốc độ hồi tâm, cực kỳ giá trị cho các khẩu DMR như Mk14, SLR, SKS.",
+      "en": "Reduces vertical & horizontal recoil by 20% and boosts recoil recovery by 20%, exceptionally powerful for DMRs."
+    },
+    "proTip": {
+      "vi": "Biến Mk14 và SLR thành quái vật bắn liên thanh khi giảm rung chấn màn hình tối đa.",
+      "en": "Turns Mk14 and SLR into rapid-fire beasts by dramatically stabilizing the crosshair kick."
+    }
+  },
+  {
+    "id": "smg-compensator",
+    "slot": "muzzle",
+    "name": "Compensator (SMG)",
+    "nameVi": "Nòng giảm giật tiểu liên (SMG)",
+    "image": "assets/attachments/smg-compensator.png",
+    "compatible": [
+      "smg"
+    ],
+    "effects": {
+      "recoilVertical": -25,
+      "recoilHorizontal": -20,
+      "recoilRecovery": 10
+    },
+    "description": {
+      "vi": "Giảm tới 25% giật dọc và 20% giật ngang cho tiểu liên, biến Vector và UZI thành laser khi bắn tầm gần.",
+      "en": "Cuts SMG vertical recoil by 25% and horizontal by 20%, turning Vector and UZI into laser-accurate beams."
+    },
+    "proTip": {
+      "vi": "Kết hợp với báng súng hoặc tay cầm để ghìm tâm gần như đứng yên một chỗ.",
+      "en": "Pair with a stock or foregrip for virtually zero muzzle climb during hipfire or ADS."
+    }
+  },
+  {
+    "id": "ar-flash-hider",
+    "slot": "muzzle",
+    "name": "Flash Hider (AR, DMR, S12K)",
+    "nameVi": "Nòng triệt tia lửa súng trường (AR)",
+    "image": "assets/attachments/ar-flash-hider.png",
+    "compatible": [
+      "ar",
+      "dmr",
+      "s12k"
+    ],
+    "effects": {
+      "flashRemoval": 100,
+      "recoilVertical": -10,
+      "recoilHorizontal": -10
+    },
+    "description": {
+      "vi": "Ẩn hoàn toàn tia lửa đầu nòng và giảm 10% cả giật dọc lẫn giật ngang khi xả súng trường.",
+      "en": "Completely hides muzzle flash while reducing both vertical and horizontal recoil by 10%."
+    },
+    "proTip": {
+      "vi": "Vừa giúp kiểm soát đường đạn tốt, vừa chống bị phát hiện khi bắn từ trong bụi rậm hoặc thời tiết sương mù/đêm tối.",
+      "en": "Great balance of recoil reduction and concealment in foggy weather, sunset maps, or grass flanks."
+    }
+  },
+  {
+    "id": "dmr-sr-flash-hider",
+    "slot": "muzzle",
+    "name": "Flash Hider (Sniper Rifle, DMR)",
+    "nameVi": "Nòng triệt tia lửa súng tỉa (SR / DMR)",
+    "image": "assets/attachments/dmr-sr-flash-hider.png",
+    "compatible": [
+      "sr",
+      "dmr"
+    ],
+    "effects": {
+      "flashRemoval": 100,
+      "recoilVertical": -10,
+      "recoilHorizontal": -10
+    },
+    "description": {
+      "vi": "Xóa sạch ánh lửa đầu nòng của súng ngắm và giảm 10% độ giật, giữ an toàn vị trí ẩn nấp của tay bắn tỉa.",
+      "en": "Eliminates visible muzzle flashes on sniper rifles and provides a 10% recoil reduction."
+    },
+    "proTip": {
+      "vi": "Lý tưởng cho các pha bắn tỉa cự ly xa trên đồi cao mà không lo lộ vị trí bởi chớp lửa.",
+      "en": "Ideal for long-range hilltop sniping where bright flashes would instantly reveal your spot."
+    }
+  },
+  {
+    "id": "smg-flash-hider",
+    "slot": "muzzle",
+    "name": "Flash Hider (SMG)",
+    "nameVi": "Nòng triệt tia lửa tiểu liên (SMG)",
+    "image": "assets/attachments/smg-flash-hider.png",
+    "compatible": [
+      "smg"
+    ],
+    "effects": {
+      "flashRemoval": 100,
+      "recoilVertical": -10,
+      "recoilHorizontal": -10
+    },
+    "description": {
+      "vi": "Triệt tiêu tia lửa đầu nòng và giảm 10% độ giật dọc/ngang cho các dòng súng tiểu liên.",
+      "en": "Removes muzzle flare and grants 10% recoil mitigation across all compatible SMGs."
+    },
+    "proTip": {
+      "vi": "Giúp giữ tầm nhìn quang đãng khi sấy trong nhà tối hoặc ban đêm.",
+      "en": "Keeps sightlines unobstructed by bright flashes when engaging inside dim buildings."
     }
   },
   {
     "id": "ar-suppressor",
     "slot": "muzzle",
-    "name": "AR Suppressor",
-    "compatible": ["ar", "dmr", "s12k"],
+    "name": "Suppressor (AR, DMR, S12K)",
+    "nameVi": "Ống giảm thanh súng trường (AR)",
+    "image": "assets/attachments/ar-suppressor.png",
+    "compatible": [
+      "ar",
+      "dmr",
+      "s12k"
+    ],
     "effects": {
       "soundDampening": 90,
-      "flashRemoval": 100
+      "flashRemoval": 100,
+      "deviation": -5
     },
     "description": {
-      "vi": "Triệt tiêu tia lửa đầu nòng và giảm đáng kể âm thanh phát ra, che giấu vị trí bắn tối ưu.",
-      "en": "Eliminates muzzle flash and greatly dampens gunshot report, concealing your firing position."
+      "vi": "Triệt tiêu tia lửa và giảm đáng kể âm thanh phát ra khi bắn, khiến đối thủ khó xác định hướng đạn.",
+      "en": "Muffles gunfire report and eliminates muzzle flash, confusing enemy directional audio."
+    },
+    "proTip": {
+      "vi": "Cực kỳ lợi hại ở các vòng bo cuối (Phase 5+) khi bắn lén từ ngoài bo vào mà không bị cả server phát hiện.",
+      "en": "Deadly in late circle rotations (Phase 5+) to third-party enemies without giving away your exact trench."
     }
   },
   {
-    "id": "vert-grip",
+    "id": "dmr-sr-suppressor",
+    "slot": "muzzle",
+    "name": "Suppressor (Sniper Rifle, DMR)",
+    "nameVi": "Ống giảm thanh súng tỉa (SR / DMR)",
+    "image": "assets/attachments/dmr-sr-suppressor.png",
+    "compatible": [
+      "sr",
+      "dmr"
+    ],
+    "effects": {
+      "soundDampening": 95,
+      "flashRemoval": 100
+    },
+    "description": {
+      "vi": "Ống giảm thanh cho SR và DMR, tạo ra âm thanh đặc trưng êm ái và che giấu tối đa vị trí của xạ thủ.",
+      "en": "Iconic sniper suppressor providing near-silent acoustic masking and total flash suppression."
+    },
+    "proTip": {
+      "vi": "Gắn trên AWM, Kar98k hoặc M24 tạo ra tiếng nổ êm tai kinh điển, cự ly trên 200m đối thủ hoàn toàn không nghe thấy tiếng súng.",
+      "en": "Iconic auditory bliss on Kar98k, M24 and AWM. Beyond 200 meters, targets cannot pinpoint shot origin."
+    }
+  },
+  {
+    "id": "smg-suppressor",
+    "slot": "muzzle",
+    "name": "Suppressor (SMG)",
+    "nameVi": "Ống giảm thanh tiểu liên (SMG)",
+    "image": "assets/attachments/smg-suppressor.png",
+    "compatible": [
+      "smg"
+    ],
+    "effects": {
+      "soundDampening": 95,
+      "flashRemoval": 100
+    },
+    "description": {
+      "vi": "Giảm âm và che lửa nòng cho súng tiểu liên, thích hợp cho các pha móc lốp hoặc phục kích bất ngờ.",
+      "en": "Silences SMG fire to whisper-quiet levels, ideal for urban ambushes and flank plays."
+    },
+    "proTip": {
+      "vi": "Cực kỳ êm trên Vector hoặc UMP45, đối thủ trong cùng tòa nhà cũng khó nhận diện bạn đang ở phòng nào.",
+      "en": "Whisper quiet on Vector or UMP45, confusing defenders in multi-story apartments."
+    }
+  },
+  {
+    "id": "pistol-suppressor",
+    "slot": "muzzle",
+    "name": "Suppressor (Handgun)",
+    "nameVi": "Ống giảm thanh súng ngắn (Pistol)",
+    "image": "assets/attachments/pistol-suppressor.png",
+    "compatible": [
+      "p18c",
+      "p1911",
+      "p92",
+      "skorpion"
+    ],
+    "effects": {
+      "soundDampening": 95,
+      "flashRemoval": 100
+    },
+    "description": {
+      "vi": "Ống giảm thanh gọn nhẹ cho các khẩu súng lục như P18C, P1911, P92 và Skorpion.",
+      "en": "Compact suppressor tailored for handguns including P18C, P1911, P92, and Skorpion."
+    },
+    "proTip": {
+      "vi": "Tuyệt vời để phá lốp xe của đối thủ trong im lặng mà không làm kinh động kẻ địch xung quanh.",
+      "en": "Great for silently popping vehicle tires in compound raids without alarming surrounding squads."
+    }
+  },
+  {
+    "id": "choke",
+    "slot": "muzzle",
+    "name": "Choke (Shotgun)",
+    "nameVi": "Nòng thu hẹp đạn shotgun (Choke)",
+    "image": "assets/attachments/choke.png",
+    "compatible": [
+      "s686",
+      "s1897",
+      "sawed-off"
+    ],
+    "effects": {
+      "pelletSpread": -25,
+      "muzzleVelocity": 15
+    },
+    "description": {
+      "vi": "Gom cụm chùm đạn ghém shotgun hẹp hơn 25% và tăng 15% vận tốc đạn, gia tăng tầm bắn hiệu quả đáng kể.",
+      "en": "Tightly narrows shotgun pellet spread by 25% and boosts muzzle velocity by 15%."
+    },
+    "proTip": {
+      "vi": "Phụ kiện bắt buộc phải có trên S686 và S1897 để có thể 1-shot đối thủ ở cự ly lên tới 15 - 20 mét.",
+      "en": "Essential for S686 and S1897 to reliably land lethal one-hit kills out to 15-20 meters."
+    }
+  },
+  {
+    "id": "duckbill",
+    "slot": "muzzle",
+    "name": "Duckbill (Shotgun)",
+    "nameVi": "Nòng tản ngang shotgun (Duckbill)",
+    "image": "assets/attachments/duckbill.png",
+    "compatible": [
+      "s12k",
+      "s1897",
+      "o12"
+    ],
+    "effects": {
+      "verticalSpread": -20,
+      "horizontalSpread": 15
+    },
+    "description": {
+      "vi": "Giảm độ tản đạn theo chiều dọc và dàn đều đạn theo chiều ngang, tăng xác suất trúng đích khi bắn mục tiêu di chuyển.",
+      "en": "Reduces vertical pellet spread while fanning pellets horizontally for moving target coverage."
+    },
+    "proTip": {
+      "vi": "Rất thích hợp khi công nhà hoặc bắn tạt đầu kẻ địch đang chạy băng qua hành lang.",
+      "en": "Helpful for clearing staircases and catching sprinters crossing hallway chokepoints."
+    }
+  },
+  {
+    "id": "vertical-foregrip",
     "slot": "grip",
     "name": "Vertical Foregrip",
-    "compatible": ["ar", "dmr", "smg"],
+    "nameVi": "Tay cầm dọc (Vertical Grip)",
+    "image": "assets/attachments/vertical-foregrip.png",
+    "compatible": [
+      "ar",
+      "dmr",
+      "smg"
+    ],
     "effects": {
       "recoilVertical": -15,
       "recoilRecovery": 15
     },
     "description": {
-      "vi": "Tay cầm dọc giảm 15% giật dọc, lựa chọn số 1 cho súng giật mạnh như Beryl M762 và DMR nhấp nhả.",
-      "en": "Cuts vertical climb by 15%, top choice for high-kick weapons like the Beryl M762 and DMR tapping."
+      "vi": "Giảm 15% độ giật dọc và tăng 15% tốc độ hồi tâm. Lựa chọn hàng đầu cho súng giật mạnh và bắn nhấp nhả (tap).",
+      "en": "Cuts vertical recoil by 15% and speeds up recoil centering by 15%. Premier grip for tapping and heavy kick."
+    },
+    "proTip": {
+      "vi": "Tay cầm quốc dân cho Beryl M762, SLR, SKS, Mk14 và M416 khi bắn ở cự ly trên 50 mét.",
+      "en": "The undisputed meta foregrip for Beryl M762, SLR, SKS, and Mk14 long-range tapping."
     }
   },
   {
-    "id": "angled-grip",
+    "id": "angled-foregrip",
     "slot": "grip",
     "name": "Angled Foregrip",
-    "compatible": ["ar", "dmr", "smg"],
+    "nameVi": "Tay cầm tam giác (Angled Grip)",
+    "image": "assets/attachments/angled-foregrip.png",
+    "compatible": [
+      "ar",
+      "dmr",
+      "smg"
+    ],
     "effects": {
       "recoilHorizontal": -15,
       "adsSpeed": 10
     },
     "description": {
-      "vi": "Giảm 15% giật ngang và tăng 10% tốc độ bật ống ngắm (ADS), thích hợp cho M416 và SCAR-L.",
-      "en": "Reduces horizontal horizontal wobble by 15% and accelerates ADS speed by 10%, great for M416/SCAR-L."
+      "vi": "Giảm 15% giật ngang bất định và tăng 10% tốc độ ngắm ADS. Giúp đường đạn sấy thẳng tắp sang hai bên.",
+      "en": "Reduces random horizontal drift by 15% and increases ADS acquisition speed by 10%."
+    },
+    "proTip": {
+      "vi": "Rất hợp với các tuyển thủ pro có khả năng kéo chuột ghìm tâm dọc tốt và muốn triệt tiêu hoàn toàn giật ngang của M416 hay SCAR-L.",
+      "en": "Loved by competitive players who can drag down vertically and need zero unpredictable horizontal sway."
     }
   },
   {
     "id": "half-grip",
     "slot": "grip",
     "name": "Half Grip",
-    "compatible": ["ar", "dmr", "smg"],
+    "nameVi": "Tay cầm đỏ (Half Grip)",
+    "image": "assets/attachments/half-grip.png",
+    "compatible": [
+      "ar",
+      "dmr",
+      "smg"
+    ],
     "effects": {
       "recoilVertical": -8,
       "recoilHorizontal": -8,
-      "recoilRecovery": 10
+      "recoilRecovery": 10,
+      "weaponSway": 15
     },
     "description": {
-      "vi": "Giảm cả giật dọc lẫn giật ngang, tăng tốc độ hồi tâm, cực kỳ phù hợp cho phong cách sấy đạn (spray).",
-      "en": "Balanced reduction in both vertical & horizontal recoil, ideal for continuous full-auto spray."
+      "vi": "Giảm đồng thời cả giật dọc và giật ngang, tăng tốc hồi phục tâm ngắm, thiết kế chuyên biệt cho phong cách sấy đạn liên tục.",
+      "en": "Balances both vertical and horizontal recoil cuts with faster centering, optimized for sustained full-auto sprays."
+    },
+    "proTip": {
+      "vi": "Ông vua sấy đạn cự ly 30 - 60 mét cho M416, AUG và Vector.",
+      "en": "The king of 30-60m mid-range sprays on M416, AUG, and Vector."
     }
   },
   {
     "id": "thumb-grip",
     "slot": "grip",
     "name": "Thumb Grip",
-    "compatible": ["ar", "dmr", "smg"],
+    "nameVi": "Tay cầm ngón cái (Thumb Grip)",
+    "image": "assets/attachments/thumb-grip.png",
+    "compatible": [
+      "ar",
+      "dmr",
+      "smg"
+    ],
     "effects": {
       "adsSpeed": 30,
-      "recoilVertical": -5
+      "recoilVertical": -5,
+      "weaponSway": -20
     },
     "description": {
-      "vi": "Tăng tốc độ bật ống ngắm ADS lên tới 30%, phản xạ nhanh nhất trong các pha đấu súng chớp nhoáng.",
-      "en": "Boosts ADS speed by a massive 30%, granting the fastest target acquisition in twitch gunfights."
+      "vi": "Tăng tới 30% tốc độ bật kính ngắm ADS, giúp người chơi ngắm bắn trước đối thủ trong tích tắc.",
+      "en": "Dramatically accelerates ADS speed by 30%, winning split-second aim duels."
+    },
+    "proTip": {
+      "vi": "Cực kỳ được ưa chuộng bởi các tay súng có phong cách peeking nhanh qua góc tường hoặc công nhà chớp nhoáng.",
+      "en": "Favored by aggressive peekers and fast corner-jiggle duelists."
     }
   },
   {
-    "id": "ext-quick-mag-ar",
+    "id": "lightweight-grip",
+    "slot": "grip",
+    "name": "Lightweight Grip",
+    "nameVi": "Tay cầm nhẹ (Lightweight Grip)",
+    "image": "assets/attachments/lightweight-grip.png",
+    "compatible": [
+      "ar",
+      "dmr",
+      "smg"
+    ],
+    "effects": {
+      "recoilRecovery": 20,
+      "firstShotRecoil": -15,
+      "weaponSway": -20
+    },
+    "description": {
+      "vi": "Giảm 15% độ giật viên đạn đầu tiên và tăng 20% tốc độ hồi tâm, giảm độ lắc súng khi di chuyển.",
+      "en": "Reduces initial shot kick by 15% and boosts centering recovery by 20% while reducing weapon sway."
+    },
+    "proTip": {
+      "vi": "Mảnh ghép hoàn hảo nhất cho SKS và Mk12 khi bắn từng phát đạn đơn chính xác vào đầu đối thủ.",
+      "en": "The gold-standard attachment for SKS and Mk12 single-tap headshot tracking."
+    }
+  },
+  {
+    "id": "laser-sight",
+    "slot": "grip",
+    "name": "Laser Sight",
+    "nameVi": "Đèn chỉ thị Laser (Laser Sight)",
+    "image": "assets/attachments/laser-sight.png",
+    "compatible": [
+      "ar",
+      "dmr",
+      "smg",
+      "pistol"
+    ],
+    "effects": {
+      "hipfireAccuracy": 30,
+      "softAimAccuracy": 25
+    },
+    "description": {
+      "vi": "Giảm 30% độ lệch tâm khi bắn không ngắm (hipfire) và bắn ghìm tâm mềm (soft aim). Gắn được cho cả súng ngắn và súng trường.",
+      "en": "Tightens hipfire and soft-aim spread by 30%. Can be mounted on ARs, SMGs, and handguns."
+    },
+    "proTip": {
+      "vi": "Tối ưu hóa cho các pha cận chiến áp sát trong nhà vệ sinh hoặc cầu thang chật hẹp không kịp bật kính ngắm.",
+      "en": "Essential for tight building room-clearing where there is zero time to scope in."
+    }
+  },
+  {
+    "id": "ar-ext-mag",
     "slot": "magazine",
-    "name": "Extended QuickDraw Mag (AR)",
-    "compatible": ["ar", "dmr", "s12k"],
+    "name": "Extended Mag (AR, DMR, S12K)",
+    "nameVi": "Băng đạn mở rộng súng trường (AR)",
+    "image": "assets/attachments/ar-ext-mag.png",
+    "compatible": [
+      "ar",
+      "dmr",
+      "s12k"
+    ],
+    "effects": {
+      "capacity": 10
+    },
+    "description": {
+      "vi": "Tăng thêm 10 viên đạn cho súng trường (30 -> 40 viên) và 10 viên cho DMR (10 -> 20 viên).",
+      "en": "Expands AR ammo capacity by +10 rounds (30 to 40) and DMR by +10 rounds (10 to 20)."
+    },
+    "proTip": {
+      "vi": "Cung cấp thêm lượng đạn dự trữ dồi dào để sấy hạ gục cả squad đối phương mà không bị hụt đạn giữa chừng.",
+      "en": "Provides enough ammunition to spray down multiple squad members without needing to reload."
+    }
+  },
+  {
+    "id": "ar-quick-mag",
+    "slot": "magazine",
+    "name": "QuickDraw Mag (AR, DMR, S12K)",
+    "nameVi": "Băng đạn thay nhanh súng trường (AR)",
+    "image": "assets/attachments/ar-quick-mag.png",
+    "compatible": [
+      "ar",
+      "dmr",
+      "s12k"
+    ],
+    "effects": {
+      "reloadSpeed": 30
+    },
+    "description": {
+      "vi": "Rút ngắn 30% thời gian thay đạn, giúp bạn nhanh chóng trở lại giao tranh trong các pha đấu súng căng thẳng.",
+      "en": "Reduces reload duration by 30%, getting you back into action significantly faster."
+    },
+    "proTip": {
+      "vi": "Cực kỳ hữu ích trong các pha giao tranh liên tục khi đối thủ canh me lúc bạn đang nạp đạn.",
+      "en": "Helps survive aggressive enemy pushes timed against your reload sounds."
+    }
+  },
+  {
+    "id": "ar-ext-quick-mag",
+    "slot": "magazine",
+    "name": "Extended QuickDraw Mag (AR, DMR, S12K)",
+    "nameVi": "Băng đạn mở rộng thay nhanh súng trường (AR)",
+    "image": "assets/attachments/ar-ext-quick-mag.png",
+    "compatible": [
+      "ar",
+      "dmr",
+      "s12k"
+    ],
     "effects": {
       "capacity": 10,
       "reloadSpeed": 30
     },
     "description": {
-      "vi": "Tăng 10 viên dung lượng băng đạn và rút ngắn 30% thời gian nạp đạn.",
-      "en": "Adds 10 rounds to magazine capacity and cuts reload duration by 30%."
+      "vi": "Sự kết hợp hoàn hảo giữa tăng 10 viên dung lượng băng đạn và giảm 30% thời gian nạp đạn.",
+      "en": "The best-in-slot magazine offering both +10 round capacity and 30% quicker reloads."
+    },
+    "proTip": {
+      "vi": "Băng đạn tối thượng cho mọi khẩu súng trường tấn công và DMR trong PUBG PC.",
+      "en": "Universal best-in-slot magazine for all assault rifles and DMRs in PUBG PC."
     }
   },
   {
-    "id": "tac-stock",
-    "slot": "stock",
-    "name": "Tactical Stock",
-    "compatible": ["m416", "vector", "ace32", "m249"],
+    "id": "sr-ext-mag",
+    "slot": "magazine",
+    "name": "Extended Mag (Sniper Rifle, DMR)",
+    "nameVi": "Băng đạn mở rộng súng tỉa (SR / DMR)",
+    "image": "assets/attachments/sr-ext-mag.png",
+    "compatible": [
+      "sr",
+      "dmr"
+    ],
     "effects": {
-      "recoilRecovery": 20,
-      "swayReduction": 10,
-      "adsSpeed": 5
+      "capacity": 5
     },
     "description": {
-      "vi": "Báng súng chiến thuật giảm lắc lư khi ngắm bắn và hỗ trợ tâm súng hồi về nhanh hơn 20%.",
-      "en": "Tactical stock reducing weapon sway while accelerating reticle recovery speed by 20%."
+      "vi": "Tăng dung lượng đạn cho SR (M24, AWM) từ 5 lên 7 viên, và DMR từ 10 lên 20 viên.",
+      "en": "Expands sniper capacity (M24, AWM to 7 rounds) and DMRs from 10 to 20 rounds."
+    },
+    "proTip": {
+      "vi": "Cực kỳ quan trọng với AWM và Mk14 để tối ưu hóa lượng đạn xả trước khi phải nạp lại.",
+      "en": "Critical for AWM and Mk14 to maximize combat uptime before lengthy reloads."
+    }
+  },
+  {
+    "id": "sr-quick-mag",
+    "slot": "magazine",
+    "name": "QuickDraw Mag (Sniper Rifle, DMR)",
+    "nameVi": "Băng đạn thay nhanh súng tỉa (SR / DMR)",
+    "image": "assets/attachments/sr-quick-mag.png",
+    "compatible": [
+      "sr",
+      "dmr"
+    ],
+    "effects": {
+      "reloadSpeed": 30
+    },
+    "description": {
+      "vi": "Giảm 30% thời gian nạp đạn cho súng bắn tỉa và súng trường thiện xạ.",
+      "en": "Decreases reload cycle by 30% on compatible sniper rifles and DMRs."
+    },
+    "proTip": {
+      "vi": "Giúp AWM hoặc M24 nạp đạn nhanh hơn trong các cuộc đấu súng ngắm cân não.",
+      "en": "Allows faster bolting cycle follow-through during high-stakes sniper duels."
+    }
+  },
+  {
+    "id": "sr-ext-quick-mag",
+    "slot": "magazine",
+    "name": "Extended QuickDraw Mag (Sniper Rifle, DMR)",
+    "nameVi": "Băng đạn mở rộng thay nhanh súng tỉa (SR / DMR)",
+    "image": "assets/attachments/sr-ext-quick-mag.png",
+    "compatible": [
+      "sr",
+      "dmr"
+    ],
+    "effects": {
+      "capacity": 5,
+      "reloadSpeed": 30
+    },
+    "description": {
+      "vi": "Băng đạn tối thượng cho dòng súng tỉa: vừa tăng sức chứa vừa nạp đạn thần tốc.",
+      "en": "Top-tier magazine combining bonus round capacity with lightning-fast reload speed."
+    },
+    "proTip": {
+      "vi": "Trang bị trấn phái cho Mk14, SLR, SKS để biến thành vũ khí sấy đạn hủy diệt.",
+      "en": "Top priority pickup for Mk14, SLR, and SKS loadouts."
+    }
+  },
+  {
+    "id": "smg-ext-mag",
+    "slot": "magazine",
+    "name": "Extended Mag (SMG)",
+    "nameVi": "Băng đạn mở rộng tiểu liên (SMG)",
+    "image": "assets/attachments/smg-ext-mag.png",
+    "compatible": [
+      "smg"
+    ],
+    "effects": {
+      "capacity": 10
+    },
+    "description": {
+      "vi": "Tăng sức chứa đạn cho SMG (Vector từ 19 lên 33 viên, UMP45 từ 25 lên 35 viên).",
+      "en": "Boosts SMG capacity (Vector from 19 to 33, UMP45 from 25 to 35 rounds)."
+    },
+    "proTip": {
+      "vi": "Vector nếu không có băng đạn mở rộng sẽ hết đạn trong chưa đầy 1 giây, phụ kiện bắt buộc phải có.",
+      "en": "A must-have for the Vector, which empties its base mag in under one second."
+    }
+  },
+  {
+    "id": "smg-quick-mag",
+    "slot": "magazine",
+    "name": "QuickDraw Mag (SMG)",
+    "nameVi": "Băng đạn thay nhanh tiểu liên (SMG)",
+    "image": "assets/attachments/smg-quick-mag.png",
+    "compatible": [
+      "smg"
+    ],
+    "effects": {
+      "reloadSpeed": 30
+    },
+    "description": {
+      "vi": "Rút ngắn 30% thời gian thay đạn cho súng tiểu liên.",
+      "en": "Cuts SMG reload time by 30%."
+    },
+    "proTip": {
+      "vi": "Phù hợp khi chưa nhặt được băng đạn mở rộng thay nhanh.",
+      "en": "A solid placeholder before finding an Extended Quickdraw mag."
+    }
+  },
+  {
+    "id": "smg-ext-quick-mag",
+    "slot": "magazine",
+    "name": "Extended QuickDraw Mag (SMG)",
+    "nameVi": "Băng đạn mở rộng thay nhanh tiểu liên (SMG)",
+    "image": "assets/attachments/smg-ext-quick-mag.png",
+    "compatible": [
+      "smg"
+    ],
+    "effects": {
+      "capacity": 10,
+      "reloadSpeed": 30
+    },
+    "description": {
+      "vi": "Vừa tăng tối đa lượng đạn xả vừa rút ngắn 30% thời gian nạp đạn cho tiểu liên.",
+      "en": "The premier SMG magazine providing high capacity and 30% reload acceleration."
+    },
+    "proTip": {
+      "vi": "Biến Vector thành cỗ máy diệt gọn squad địch trong các pha cận chiến.",
+      "en": "Empowers the Vector to wipe out entire rooms in rapid succession."
+    }
+  },
+  {
+    "id": "pistol-ext-mag",
+    "slot": "magazine",
+    "name": "Extended Mag (Handgun)",
+    "nameVi": "Băng đạn mở rộng súng ngắn (Pistol)",
+    "image": "assets/attachments/pistol-ext-mag.png",
+    "compatible": [
+      "p18c",
+      "p1911",
+      "p92",
+      "skorpion",
+      "deagle"
+    ],
+    "effects": {
+      "capacity": 5
+    },
+    "description": {
+      "vi": "Tăng lượng đạn cho súng lục (P18C lên 25 viên, Skorpion lên tới 40 viên, Deagle lên 10 viên).",
+      "en": "Increases handgun ammo capacity (P18C to 25, Skorpion to 40, Deagle to 10 rounds)."
+    },
+    "proTip": {
+      "vi": "Biến P18C và Skorpion thành vũ khí phụ mạnh mẽ ngang ngửa súng tiểu liên chính.",
+      "en": "Elevates the P18C and Skorpion into pocket SMG parity."
+    }
+  },
+  {
+    "id": "pistol-quick-mag",
+    "slot": "magazine",
+    "name": "QuickDraw Mag (Handgun)",
+    "nameVi": "Băng đạn thay nhanh súng ngắn (Pistol)",
+    "image": "assets/attachments/pistol-quick-mag.png",
+    "compatible": [
+      "p18c",
+      "p1911",
+      "p92",
+      "skorpion",
+      "deagle"
+    ],
+    "effects": {
+      "reloadSpeed": 30
+    },
+    "description": {
+      "vi": "Giảm 30% thời gian thay đạn cho súng ngắn.",
+      "en": "Reduces sidearm reload duration by 30%."
+    },
+    "proTip": {
+      "vi": "Tăng khả năng ứng biến khi súng chính cạn đạn và cần rút súng phụ xả gấp.",
+      "en": "Useful for emergency sidearm swaps when your primary dry-fires."
+    }
+  },
+  {
+    "id": "pistol-ext-quick-mag",
+    "slot": "magazine",
+    "name": "Extended QuickDraw Mag (Handgun)",
+    "nameVi": "Băng đạn mở rộng thay nhanh súng ngắn (Pistol)",
+    "image": "assets/attachments/pistol-ext-quick-mag.png",
+    "compatible": [
+      "p18c",
+      "p1911",
+      "p92",
+      "skorpion",
+      "deagle"
+    ],
+    "effects": {
+      "capacity": 5,
+      "reloadSpeed": 30
+    },
+    "description": {
+      "vi": "Băng đạn hoàn hảo nhất cho súng phụ: tăng cơ số đạn và nạp cực nhanh.",
+      "en": "Best-in-slot sidearm mag providing increased capacity and snappy reloads."
+    },
+    "proTip": {
+      "vi": "Tối ưu tuyệt đối cho Skorpion để xả hết 40 viên đạn trong chớp mắt.",
+      "en": "Essential setup for 40-round Skorpion secondary spray builds."
+    }
+  },
+  {
+    "id": "red-dot",
+    "slot": "sight",
+    "name": "Red Dot Sight",
+    "nameVi": "Kính ngắm Red Dot",
+    "image": "assets/attachments/red-dot.png",
+    "compatible": [
+      "ar",
+      "dmr",
+      "sr",
+      "smg",
+      "sg",
+      "lmg",
+      "pistol"
+    ],
+    "effects": {
+      "adsSpeed": 20,
+      "zoom": 1.2
+    },
+    "description": {
+      "vi": "Kính ngắm phản xạ chấm đỏ tiêu chuẩn, tăng 20% tốc độ bật ngắm ADS và mang lại tầm nhìn thoáng đãng.",
+      "en": "Standard holographic red dot optic boosting ADS speed by 20% with clean sightlines."
+    },
+    "proTip": {
+      "vi": "Kính ngắm được ưa chuộng nhất trong các giải đấu chuyên nghiệp để sấy AR tầm gần - trung.",
+      "en": "The preferred optic in pro tournaments for clean close-to-mid range AR spraying."
+    }
+  },
+  {
+    "id": "holo-sight",
+    "slot": "sight",
+    "name": "Holographic Sight",
+    "nameVi": "Kính ngắm Holographic",
+    "image": "assets/attachments/holo-sight.png",
+    "compatible": [
+      "ar",
+      "dmr",
+      "sr",
+      "smg",
+      "sg",
+      "lmg",
+      "pistol"
+    ],
+    "effects": {
+      "adsSpeed": 20,
+      "zoom": 1.2
+    },
+    "description": {
+      "vi": "Kính ngắm Holographic với vòng tròn tâm rộng, giúp bắt mục tiêu đang di chuyển nhanh dễ dàng hơn.",
+      "en": "Holographic optic with circular reticle, aiding rapid target acquisition on moving targets."
+    },
+    "proTip": {
+      "vi": "Tâm ngắm tròn lớn giúp dễ căn dẫn bắn (lead shot) kẻ địch đang chạy băng đồng.",
+      "en": "The wide outer reticle helps judge lead distances when shooting running foes."
+    }
+  },
+  {
+    "id": "canted-sight",
+    "slot": "sight",
+    "name": "Canted Sight",
+    "nameVi": "Ống ngắm nghiêng (Canted Sight)",
+    "image": "assets/attachments/canted-sight.png",
+    "compatible": [
+      "ar",
+      "dmr",
+      "sr",
+      "smg",
+      "sg",
+      "lmg"
+    ],
+    "effects": {
+      "adsSpeed": 20,
+      "dualSight": true
+    },
+    "description": {
+      "vi": "Ống ngắm phụ lắp ở ray nghiêng 45 độ, cho phép chuyển đổi tức thì giữa Scope tầm xa và ngắm bắn tầm gần.",
+      "en": "Secondary 45-degree offset reflex sight enabling instant switching between long-range scopes and 1x ADS."
+    },
+    "proTip": {
+      "vi": "Kết hợp với Scope 4x hoặc 6x để biến súng thành vũ khí đa năng mọi cự ly chỉ bằng phím Alt + Chuột phải.",
+      "en": "Pair with a 4x or 6x scope to handle both sniper duels and sudden point-blank ambushes."
+    }
+  },
+  {
+    "id": "scope-2x",
+    "slot": "sight",
+    "name": "2x Aimpoint Scope",
+    "nameVi": "Ống ngắm Scope 2x",
+    "image": "assets/attachments/scope-2x.png",
+    "compatible": [
+      "ar",
+      "dmr",
+      "sr",
+      "smg",
+      "lmg"
+    ],
+    "effects": {
+      "adsSpeed": 10,
+      "zoom": 2
+    },
+    "description": {
+      "vi": "Ống ngắm phóng đại 2 lần với vòng tâm ngọc lục bảo tinh tế, rất thích hợp cho súng tiểu liên SMG và AR cự ly 50m.",
+      "en": "2x magnification optic featuring a circular green reticle, ideal for SMGs and close-mid AR duels."
+    },
+    "proTip": {
+      "vi": "Tuyệt vời khi gắn trên UMP45, Vector hoặc Tommy Gun để giữ góc ngắm rõ ràng hơn Red Dot.",
+      "en": "Outstanding on UMP45 and Vector for clearer sight picture at 40-70 meters."
+    }
+  },
+  {
+    "id": "scope-3x",
+    "slot": "sight",
+    "name": "3x Backlit Scope",
+    "nameVi": "Ống ngắm Scope 3x",
+    "image": "assets/attachments/scope-3x.png",
+    "compatible": [
+      "ar",
+      "dmr",
+      "sr",
+      "smg",
+      "lmg"
+    ],
+    "effects": {
+      "zoom": 3
+    },
+    "description": {
+      "vi": "Ống ngắm phóng đại 3 lần có vạch đo cự ly tích hợp, lựa chọn hàng đầu của dân sấy M416 và Beryl tầm trung.",
+      "en": "3x magnification optic with range-finding stadia lines, widely favored for mid-range AR spray control."
+    },
+    "proTip": {
+      "vi": "Độ phóng đại 3x hoàn hảo: vừa đủ xa để thấy rõ kẻ địch, vừa đủ thấp để ghìm tâm sấy trọn băng đạn.",
+      "en": "The sweet spot for recoil control: enough zoom to see heads, low enough to easily drag-spray."
+    }
+  },
+  {
+    "id": "scope-4x",
+    "slot": "sight",
+    "name": "4x ACOG Scope",
+    "nameVi": "Ống ngắm Scope 4x (ACOG)",
+    "image": "assets/attachments/scope-4x.png",
+    "compatible": [
+      "ar",
+      "dmr",
+      "sr",
+      "smg",
+      "lmg"
+    ],
+    "effects": {
+      "zoom": 4
+    },
+    "description": {
+      "vi": "Kính ngắm phóng đại 4 lần kinh điển với tâm hình chóp (Chevron) và các vạch bù độ rơi đạn (BDC) chuẩn xác.",
+      "en": "Classic 4x ACOG optic with chevron reticle and bullet drop compensation lines calibrated for 100-800m."
+    },
+    "proTip": {
+      "vi": "Đỉnh chóp nhọn dùng cho mục tiêu 100m, vạch ngang số 4 cho 400m. Cực chuẩn cho Kar98k, Mosin và Mini-14.",
+      "en": "Top tip of the chevron zeroes at 100m; horizontal hashes mark 200m increments on Kar98k and Mini-14."
+    }
+  },
+  {
+    "id": "scope-6x",
+    "slot": "sight",
+    "name": "6x Scope",
+    "nameVi": "Ống ngắm Scope 6x",
+    "image": "assets/attachments/scope-6x.png",
+    "compatible": [
+      "ar",
+      "dmr",
+      "sr",
+      "smg",
+      "lmg"
+    ],
+    "effects": {
+      "zoom": 6,
+      "zoomAdjustable": true
+    },
+    "description": {
+      "vi": "Ống ngắm đa năng có thể zoom từ 3x đến 6x bằng con lăn chuột, tầm nhìn cực kỳ trong trẻo và thanh mảnh.",
+      "en": "Versatile variable optic adjustable from 3x down to 6x via scroll wheel, boasting pristine reticle clarity."
+    },
+    "proTip": {
+      "vi": "Tuyệt chiêu của cao thủ: gắn Scope 6x lên M416 hoặc Beryl rồi cuộn zoom về 3x để có tâm ngắm sấy đẹp và dễ nhìn nhất game.",
+      "en": "Pro meta trick: mount the 6x on M416/Beryl and scroll down to 3x for the cleanest spray reticle in PUBG."
+    }
+  },
+  {
+    "id": "scope-8x",
+    "slot": "sight",
+    "name": "8x CQBSS Scope",
+    "nameVi": "Ống ngắm Scope 8x",
+    "image": "assets/attachments/scope-8x.png",
+    "compatible": [
+      "dmr",
+      "sr"
+    ],
+    "effects": {
+      "zoom": 8,
+      "zoomAdjustable": true
+    },
+    "description": {
+      "vi": "Ống ngắm chuyên dụng cho xạ thủ bắn tỉa, có thể tùy chỉnh độ phóng đại từ 4x đến 8x và chỉnh độ Zeroing cự ly.",
+      "en": "Dedicated high-power marksman optic variable between 4x and 8x with distance zeroing adjustments."
+    },
+    "proTip": {
+      "vi": "Phụ kiện tối thượng cho các khẩu Sniper như Kar98k, M24, AWM và DMR để kết liễu mục tiêu cự ly 300 - 600 mét.",
+      "en": "The ultimate long-range sniping sight for AWM, M24, Kar98k, and SLR at 300m+ distances."
+    }
+  },
+  {
+    "id": "scope-15x",
+    "slot": "sight",
+    "name": "15x PM II Scope",
+    "nameVi": "Ống ngắm siêu phóng đại Scope 15x",
+    "image": "assets/attachments/scope-15x.png",
+    "compatible": [
+      "dmr",
+      "sr"
+    ],
+    "effects": {
+      "zoom": 15,
+      "zoomAdjustable": true,
+      "airdropOnly": true
+    },
+    "description": {
+      "vi": "Kính ngắm siêu phóng đại chỉ xuất hiện trong Hòm Thính (Care Package), phóng to từ 8x đến 15x để do thám và bắn siêu xa.",
+      "en": "Ultra-high magnification care package exclusive scope, adjustable from 8x to 15x for extreme distance sniping."
+    },
+    "proTip": {
+      "vi": "Gắn trên AWM với đạn .300 Magnum có thể headshot tiêu diệt đối thủ ở khoảng cách gần 1000 mét.",
+      "en": "Pair with the AWM to deliver lethal headshots across entire map valleys up to 1000 meters away."
+    }
+  },
+  {
+    "id": "tactical-stock",
+    "slot": "stock",
+    "name": "Tactical Stock",
+    "nameVi": "Báng súng chiến thuật (Tactical Stock)",
+    "image": "assets/attachments/tactical-stock.png",
+    "compatible": [
+      "m416",
+      "vector",
+      "mp5k",
+      "m16a4",
+      "mutant"
+    ],
+    "effects": {
+      "recoilRecovery": 15,
+      "weaponSway": -20,
+      "adsSpeed": 10,
+      "recoilVertical": -5
+    },
+    "description": {
+      "vi": "Báng súng cao cấp tăng tốc độ hồi tâm 15%, giảm 20% độ rung lắc và tăng tốc độ bật kính ngắm ADS.",
+      "en": "High-grade stock accelerating recoil recovery by 15%, slashing weapon sway by 20%, and boosting ADS speed."
+    },
+    "proTip": {
+      "vi": "Mảnh ghép cuối cùng bắt buộc phải có để hoàn thiện khẩu M416 hoặc Vector max phụ kiện 'full đồ'.",
+      "en": "The critical final component required to achieve a fully kitted, laser-precise M416 or Vector."
+    }
+  },
+  {
+    "id": "cheek-pad",
+    "slot": "stock",
+    "name": "Cheek Pad (Sniper Rifle, DMR)",
+    "nameVi": "Miếng đệm gò má súng tỉa (Cheek Pad)",
+    "image": "assets/attachments/cheek-pad.png",
+    "compatible": [
+      "sr",
+      "dmr"
+    ],
+    "effects": {
+      "recoilVertical": -20,
+      "recoilRecovery": 20,
+      "weaponSway": -20
+    },
+    "description": {
+      "vi": "Miếng đệm tì má cho SR và DMR, giảm 20% độ giật dọc và giảm 20% độ rung lắc của súng khi nhắm bắn.",
+      "en": "Cheek rest for DMRs and sniper rifles cutting vertical recoil by 20% and weapon sway by 20%."
+    },
+    "proTip": {
+      "vi": "Giúp tâm ngắm ổn định đứng yên không bị chòng chành khi nín thở (Shift) bắn mục tiêu xa.",
+      "en": "Keeps your scope reticle rock-steady when holding breath (Shift) during long-range shots."
+    }
+  },
+  {
+    "id": "sr-bullet-loops",
+    "slot": "stock",
+    "name": "Bullet Loops (Kar98k, Mosin, Win94)",
+    "nameVi": "Bao đạn báng súng tỉa (Bullet Loops)",
+    "image": "assets/attachments/sr-bullet-loops.png",
+    "compatible": [
+      "kar98k",
+      "mosin-nagant",
+      "win94"
+    ],
+    "effects": {
+      "reloadSpeed": 30,
+      "bulletSpread": -50
+    },
+    "description": {
+      "vi": "Túi đựng đạn đeo báng súng giúp rút ngắn tới 30% thời gian nạp từng viên đạn cho Kar98k và Mosin Nagant.",
+      "en": "Stock ammo carrier reducing round-by-round reload time by 30% on bolt-action rifles."
+    },
+    "proTip": {
+      "vi": "Cực kỳ quý giá với Kar98k khi bạn bắn từng viên một rồi nạp bù đạn ngay lập tức.",
+      "en": "Crucial for Kar98k and Mosin to quickly top up rounds during cover-peek duels."
+    }
+  },
+  {
+    "id": "sg-bullet-loops",
+    "slot": "stock",
+    "name": "Bullet Loops (Shotgun)",
+    "nameVi": "Bao đạn báng súng shotgun (Bullet Loops)",
+    "image": "assets/attachments/sg-bullet-loops.png",
+    "compatible": [
+      "s1897",
+      "s686"
+    ],
+    "effects": {
+      "reloadSpeed": 30
+    },
+    "description": {
+      "vi": "Bao đạn báng súng cho Shotgun, rút ngắn 30% thời gian nạp đạn cho S1897 và S686.",
+      "en": "Shotgun stock shell loops cutting reload cycles by 30% on S1897 and S686."
+    },
+    "proTip": {
+      "vi": "Giúp khẩu S686 nạp 2 viên đạn chỉ trong chớp mắt để tiếp tục bắn hạ đợt kẻ địch thứ hai.",
+      "en": "Allows S686 to reload both barrels rapidly between enemy room-clearing pushes."
+    }
+  },
+  {
+    "id": "folding-stock",
+    "slot": "stock",
+    "name": "Folding Stock (Micro UZI)",
+    "nameVi": "Báng súng gập (Folding Stock UZI)",
+    "image": "assets/attachments/folding-stock.png",
+    "compatible": [
+      "micro-uzi",
+      "skorpion"
+    ],
+    "effects": {
+      "recoilVertical": -15,
+      "recoilRecovery": 15,
+      "weaponSway": -20
+    },
+    "description": {
+      "vi": "Báng gập chuyên biệt cho Micro UZI và Skorpion, giảm 15% giật dọc và giữ tâm súng cực kỳ ổn định.",
+      "en": "Dedicated folding wire stock for Micro UZI and Skorpion cutting vertical kick by 15%."
+    },
+    "proTip": {
+      "vi": "Biến Micro UZI thành quái vật cận chiến không thể ngăn cản trong các pha áp sát.",
+      "en": "Transforms the Micro UZI into an unstoppable hipfire close-quarters buzzsaw."
     }
   }
 ]
