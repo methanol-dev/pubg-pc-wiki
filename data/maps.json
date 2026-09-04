@@ -127,24 +127,6 @@
         }
       },
       {
-        "id": "erangel_secret_basement",
-        "name": "Secret Basement Bunker",
-        "type": "secret_room",
-        "x": 42,
-        "y": 62,
-        "grid": "D6",
-        "lootTier": "Special",
-        "riskLevel": "Medium",
-        "description": {
-          "vi": "Hầm trú ẩn bí mật nằm dưới các ngôi nhà gỗ đặc trưng. Cửa hầm gỗ có thể phá hủy bằng xà beng (Crowbar) hoặc súng uy lực.",
-          "en": "Hidden underground bunker under wooden shacks. Break wooden cellar doors with a crowbar or explosives."
-        },
-        "tip": {
-          "vi": "Chứa trang bị Cấp 3, hòm thính thu nhỏ và ống ngắm cấp cao. Hãy luôn nhặt xà beng khi nhìn thấy!",
-          "en": "Guarantees Level 3 gear, care package items, and high-tier scopes. Always carry a crowbar!"
-        }
-      },
-      {
         "id": "erangel_bluechip_tower",
         "name": "Blue Chip Recall Transmitter",
         "type": "bluechip",
@@ -160,6 +142,276 @@
         "tip": {
           "vi": "Khi kích hoạt trụ sẽ phát ra âm thanh và cột sáng báo hiệu trong phạm vi lớn, thu hút kẻ địch xung quanh.",
           "en": "Transmitters broadcast loud audio and visual cues when activated, alerting nearby enemies."
+        }
+      },
+      {
+        "id": "erangel_secret_basement_1",
+        "name": "Hầm Mật Thất Severny Bắc",
+        "type": "secret_room",
+        "x": 62.7,
+        "y": 6.2,
+        "grid": "F1",
+        "lootTier": "Special Tier 3",
+        "riskLevel": "Medium",
+        "description": {
+          "vi": "Hầm trú ẩn ngầm tại vách biển phía bắc Severny. Cửa hầm bằng gỗ kiên cố có thể mở bằng Chìa Khóa Bí Mật (Secret Key) hoặc cạy bằng Xà beng (Crowbar).",
+          "en": "Secret underground basement at Severny North Coast Basement. Opened with a rare Secret Key or pried open with a Crowbar."
+        },
+        "tip": {
+          "vi": "Chứa trang bị Cấp 3, hòm thính thu nhỏ, phụ kiện cao cấp và vật phẩm y tế. Hãy luôn mang theo xà beng hoặc chìa khóa!",
+          "en": "Guarantees Level 3 armor, airdrop weapons, and top-tier attachments. Keep a crowbar or secret key ready!"
+        }
+      },
+      {
+        "id": "erangel_secret_basement_2",
+        "name": "Hầm Mật Thất Zharki Nam",
+        "type": "secret_room",
+        "x": 16.8,
+        "y": 19.9,
+        "grid": "B2",
+        "lootTier": "Special Tier 3",
+        "riskLevel": "Medium",
+        "description": {
+          "vi": "Hầm trú ẩn ngầm tại thung lũng đồi thông phía nam Zharki. Cửa hầm bằng gỗ kiên cố có thể mở bằng Chìa Khóa Bí Mật (Secret Key) hoặc cạy bằng Xà beng (Crowbar).",
+          "en": "Secret underground basement at Zharki Valley Basement. Opened with a rare Secret Key or pried open with a Crowbar."
+        },
+        "tip": {
+          "vi": "Chứa trang bị Cấp 3, hòm thính thu nhỏ, phụ kiện cao cấp và vật phẩm y tế. Hãy luôn mang theo xà beng hoặc chìa khóa!",
+          "en": "Guarantees Level 3 armor, airdrop weapons, and top-tier attachments. Keep a crowbar or secret key ready!"
+        }
+      },
+      {
+        "id": "erangel_secret_basement_3",
+        "name": "Hầm Mật Thất Trường Bắn Đông",
+        "type": "secret_room",
+        "x": 50.3,
+        "y": 22.0,
+        "grid": "E2",
+        "lootTier": "Special Tier 3",
+        "riskLevel": "Medium",
+        "description": {
+          "vi": "Hầm trú ẩn ngầm tại khu nhà ngã ba đường phía đông Shooting Range. Cửa hầm bằng gỗ kiên cố có thể mở bằng Chìa Khóa Bí Mật (Secret Key) hoặc cạy bằng Xà beng (Crowbar).",
+          "en": "Secret underground basement at Shooting Range East Basement. Opened with a rare Secret Key or pried open with a Crowbar."
+        },
+        "tip": {
+          "vi": "Chứa trang bị Cấp 3, hòm thính thu nhỏ, phụ kiện cao cấp và vật phẩm y tế. Hãy luôn mang theo xà beng hoặc chìa khóa!",
+          "en": "Guarantees Level 3 armor, airdrop weapons, and top-tier attachments. Keep a crowbar or secret key ready!"
+        }
+      },
+      {
+        "id": "erangel_secret_basement_4",
+        "name": "Hầm Mật Thất Stalber Đông",
+        "type": "secret_room",
+        "x": 79.7,
+        "y": 23.3,
+        "grid": "G2",
+        "lootTier": "Special Tier 3",
+        "riskLevel": "Medium",
+        "description": {
+          "vi": "Hầm trú ẩn ngầm tại sườn đồi phía đông núi Stalber, gần Kameshki. Cửa hầm bằng gỗ kiên cố có thể mở bằng Chìa Khóa Bí Mật (Secret Key) hoặc cạy bằng Xà beng (Crowbar).",
+          "en": "Secret underground basement at Stalber East Basement. Opened with a rare Secret Key or pried open with a Crowbar."
+        },
+        "tip": {
+          "vi": "Chứa trang bị Cấp 3, hòm thính thu nhỏ, phụ kiện cao cấp và vật phẩm y tế. Hãy luôn mang theo xà beng hoặc chìa khóa!",
+          "en": "Guarantees Level 3 armor, airdrop weapons, and top-tier attachments. Keep a crowbar or secret key ready!"
+        }
+      },
+      {
+        "id": "erangel_secret_basement_5",
+        "name": "Hầm Mật Thất Georgopol Đông Bắc",
+        "type": "secret_room",
+        "x": 31.7,
+        "y": 25.0,
+        "grid": "C3",
+        "lootTier": "Special Tier 3",
+        "riskLevel": "Medium",
+        "description": {
+          "vi": "Hầm trú ẩn ngầm tại khu đồi thoai thoải phía đông bắc Georgopol. Cửa hầm bằng gỗ kiên cố có thể mở bằng Chìa Khóa Bí Mật (Secret Key) hoặc cạy bằng Xà beng (Crowbar).",
+          "en": "Secret underground basement at Georgopol Northeast Basement. Opened with a rare Secret Key or pried open with a Crowbar."
+        },
+        "tip": {
+          "vi": "Chứa trang bị Cấp 3, hòm thính thu nhỏ, phụ kiện cao cấp và vật phẩm y tế. Hãy luôn mang theo xà beng hoặc chìa khóa!",
+          "en": "Guarantees Level 3 armor, airdrop weapons, and top-tier attachments. Keep a crowbar or secret key ready!"
+        }
+      },
+      {
+        "id": "erangel_secret_basement_6",
+        "name": "Hầm Mật Thất Yasnaya Nam",
+        "type": "secret_room",
+        "x": 66.7,
+        "y": 39.8,
+        "grid": "F4",
+        "lootTier": "Special Tier 3",
+        "riskLevel": "Medium",
+        "description": {
+          "vi": "Hầm trú ẩn ngầm tại khu nhà phía nam Yasnaya Polyana, tây Mansion. Cửa hầm bằng gỗ kiên cố có thể mở bằng Chìa Khóa Bí Mật (Secret Key) hoặc cạy bằng Xà beng (Crowbar).",
+          "en": "Secret underground basement at Yasnaya South Basement. Opened with a rare Secret Key or pried open with a Crowbar."
+        },
+        "tip": {
+          "vi": "Chứa trang bị Cấp 3, hòm thính thu nhỏ, phụ kiện cao cấp và vật phẩm y tế. Hãy luôn mang theo xà beng hoặc chìa khóa!",
+          "en": "Guarantees Level 3 armor, airdrop weapons, and top-tier attachments. Keep a crowbar or secret key ready!"
+        }
+      },
+      {
+        "id": "erangel_secret_basement_7",
+        "name": "Hầm Mật Thất Bệnh Viện Nam",
+        "type": "secret_room",
+        "x": 18.1,
+        "y": 41.2,
+        "grid": "B4",
+        "lootTier": "Special Tier 3",
+        "riskLevel": "Medium",
+        "description": {
+          "vi": "Hầm trú ẩn ngầm tại rừng thông phía nam Hospital, tây Gatka. Cửa hầm bằng gỗ kiên cố có thể mở bằng Chìa Khóa Bí Mật (Secret Key) hoặc cạy bằng Xà beng (Crowbar).",
+          "en": "Secret underground basement at Hospital South Basement. Opened with a rare Secret Key or pried open with a Crowbar."
+        },
+        "tip": {
+          "vi": "Chứa trang bị Cấp 3, hòm thính thu nhỏ, phụ kiện cao cấp và vật phẩm y tế. Hãy luôn mang theo xà beng hoặc chìa khóa!",
+          "en": "Guarantees Level 3 armor, airdrop weapons, and top-tier attachments. Keep a crowbar or secret key ready!"
+        }
+      },
+      {
+        "id": "erangel_secret_basement_8",
+        "name": "Hầm Mật Thất Tàn Tích Nam",
+        "type": "secret_room",
+        "x": 36.9,
+        "y": 43.4,
+        "grid": "C4",
+        "lootTier": "Special Tier 3",
+        "riskLevel": "Medium",
+        "description": {
+          "vi": "Hầm trú ẩn ngầm tại khu nhà thờ hoang phía nam Ruins, tây bắc Pochinki. Cửa hầm bằng gỗ kiên cố có thể mở bằng Chìa Khóa Bí Mật (Secret Key) hoặc cạy bằng Xà beng (Crowbar).",
+          "en": "Secret underground basement at Ruins South Basement. Opened with a rare Secret Key or pried open with a Crowbar."
+        },
+        "tip": {
+          "vi": "Chứa trang bị Cấp 3, hòm thính thu nhỏ, phụ kiện cao cấp và vật phẩm y tế. Hãy luôn mang theo xà beng hoặc chìa khóa!",
+          "en": "Guarantees Level 3 armor, airdrop weapons, and top-tier attachments. Keep a crowbar or secret key ready!"
+        }
+      },
+      {
+        "id": "erangel_secret_basement_9",
+        "name": "Hầm Mật Thất Pochinki Đông Nam",
+        "type": "secret_room",
+        "x": 56.9,
+        "y": 52.1,
+        "grid": "E5",
+        "lootTier": "Special Tier 3",
+        "riskLevel": "Medium",
+        "description": {
+          "vi": "Hầm trú ẩn ngầm tại đỉnh đồi có tháp canh đông nam Pochinki, hướng về Farm. Cửa hầm bằng gỗ kiên cố có thể mở bằng Chìa Khóa Bí Mật (Secret Key) hoặc cạy bằng Xà beng (Crowbar).",
+          "en": "Secret underground basement at Pochinki Southeast Basement. Opened with a rare Secret Key or pried open with a Crowbar."
+        },
+        "tip": {
+          "vi": "Chứa trang bị Cấp 3, hòm thính thu nhỏ, phụ kiện cao cấp và vật phẩm y tế. Hãy luôn mang theo xà beng hoặc chìa khóa!",
+          "en": "Guarantees Level 3 armor, airdrop weapons, and top-tier attachments. Keep a crowbar or secret key ready!"
+        }
+      },
+      {
+        "id": "erangel_secret_basement_10",
+        "name": "Hầm Mật Thất Mylta Power Tây",
+        "type": "secret_room",
+        "x": 82.9,
+        "y": 57.6,
+        "grid": "G5",
+        "lootTier": "Special Tier 3",
+        "riskLevel": "Medium",
+        "description": {
+          "vi": "Hầm trú ẩn ngầm tại khu nhà ven rừng giữa Mylta và Mylta Power. Cửa hầm bằng gỗ kiên cố có thể mở bằng Chìa Khóa Bí Mật (Secret Key) hoặc cạy bằng Xà beng (Crowbar).",
+          "en": "Secret underground basement at Mylta Power West Basement. Opened with a rare Secret Key or pried open with a Crowbar."
+        },
+        "tip": {
+          "vi": "Chứa trang bị Cấp 3, hòm thính thu nhỏ, phụ kiện cao cấp và vật phẩm y tế. Hãy luôn mang theo xà beng hoặc chìa khóa!",
+          "en": "Guarantees Level 3 armor, airdrop weapons, and top-tier attachments. Keep a crowbar or secret key ready!"
+        }
+      },
+      {
+        "id": "erangel_secret_basement_11",
+        "name": "Hầm Mật Thất Mỏ Đá Bắc",
+        "type": "secret_room",
+        "x": 33.7,
+        "y": 60.9,
+        "grid": "C5",
+        "lootTier": "Special Tier 3",
+        "riskLevel": "Medium",
+        "description": {
+          "vi": "Hầm trú ẩn ngầm tại cánh đồng phía bắc Quarry, nam đầm lầy Gatka. Cửa hầm bằng gỗ kiên cố có thể mở bằng Chìa Khóa Bí Mật (Secret Key) hoặc cạy bằng Xà beng (Crowbar).",
+          "en": "Secret underground basement at Quarry North Basement. Opened with a rare Secret Key or pried open with a Crowbar."
+        },
+        "tip": {
+          "vi": "Chứa trang bị Cấp 3, hòm thính thu nhỏ, phụ kiện cao cấp và vật phẩm y tế. Hãy luôn mang theo xà beng hoặc chìa khóa!",
+          "en": "Guarantees Level 3 armor, airdrop weapons, and top-tier attachments. Keep a crowbar or secret key ready!"
+        }
+      },
+      {
+        "id": "erangel_secret_basement_12",
+        "name": "Hầm Mật Thất Mỏ Đá Tây",
+        "type": "secret_room",
+        "x": 15.4,
+        "y": 65.3,
+        "grid": "B6",
+        "lootTier": "Special Tier 3",
+        "riskLevel": "Medium",
+        "description": {
+          "vi": "Hầm trú ẩn ngầm tại sườn đồi phía tây Quarry, bắc thị trấn Primorsk. Cửa hầm bằng gỗ kiên cố có thể mở bằng Chìa Khóa Bí Mật (Secret Key) hoặc cạy bằng Xà beng (Crowbar).",
+          "en": "Secret underground basement at Quarry West Basement. Opened with a rare Secret Key or pried open with a Crowbar."
+        },
+        "tip": {
+          "vi": "Chứa trang bị Cấp 3, hòm thính thu nhỏ, phụ kiện cao cấp và vật phẩm y tế. Hãy luôn mang theo xà beng hoặc chìa khóa!",
+          "en": "Guarantees Level 3 armor, airdrop weapons, and top-tier attachments. Keep a crowbar or secret key ready!"
+        }
+      },
+      {
+        "id": "erangel_secret_basement_13",
+        "name": "Hầm Mật Thất Cầu Sosnovka Bắc",
+        "type": "secret_room",
+        "x": 53.6,
+        "y": 70.3,
+        "grid": "E6",
+        "lootTier": "Special Tier 3",
+        "riskLevel": "Medium",
+        "description": {
+          "vi": "Hầm trú ẩn ngầm tại bờ biển đất liền ngay sát đầu cầu Sosnovka, nam Farm. Cửa hầm bằng gỗ kiên cố có thể mở bằng Chìa Khóa Bí Mật (Secret Key) hoặc cạy bằng Xà beng (Crowbar).",
+          "en": "Secret underground basement at Sosnovka Bridge North Basement. Opened with a rare Secret Key or pried open with a Crowbar."
+        },
+        "tip": {
+          "vi": "Chứa trang bị Cấp 3, hòm thính thu nhỏ, phụ kiện cao cấp và vật phẩm y tế. Hãy luôn mang theo xà beng hoặc chìa khóa!",
+          "en": "Guarantees Level 3 armor, airdrop weapons, and top-tier attachments. Keep a crowbar or secret key ready!"
+        }
+      },
+      {
+        "id": "erangel_secret_basement_14",
+        "name": "Hầm Mật Thất Đảo Quân Sự Tây",
+        "type": "secret_room",
+        "x": 40.3,
+        "y": 79.8,
+        "grid": "D7",
+        "lootTier": "Special Tier 3",
+        "riskLevel": "Medium",
+        "description": {
+          "vi": "Hầm trú ẩn ngầm tại sườn đồi sỏi đá phía tây căn cứ quân sự Sosnovka. Cửa hầm bằng gỗ kiên cố có thể mở bằng Chìa Khóa Bí Mật (Secret Key) hoặc cạy bằng Xà beng (Crowbar).",
+          "en": "Secret underground basement at Sosnovka Island West Basement. Opened with a rare Secret Key or pried open with a Crowbar."
+        },
+        "tip": {
+          "vi": "Chứa trang bị Cấp 3, hòm thính thu nhỏ, phụ kiện cao cấp và vật phẩm y tế. Hãy luôn mang theo xà beng hoặc chìa khóa!",
+          "en": "Guarantees Level 3 armor, airdrop weapons, and top-tier attachments. Keep a crowbar or secret key ready!"
+        }
+      },
+      {
+        "id": "erangel_secret_basement_15",
+        "name": "Hầm Mật Thất Novorepnoye Nam",
+        "type": "secret_room",
+        "x": 69.3,
+        "y": 80.2,
+        "grid": "F7",
+        "lootTier": "Special Tier 3",
+        "riskLevel": "Medium",
+        "description": {
+          "vi": "Hầm trú ẩn ngầm tại chân núi cao phía nam thành phố cảng Novorepnoye. Cửa hầm bằng gỗ kiên cố có thể mở bằng Chìa Khóa Bí Mật (Secret Key) hoặc cạy bằng Xà beng (Crowbar).",
+          "en": "Secret underground basement at Novorepnoye South Basement. Opened with a rare Secret Key or pried open with a Crowbar."
+        },
+        "tip": {
+          "vi": "Chứa trang bị Cấp 3, hòm thính thu nhỏ, phụ kiện cao cấp và vật phẩm y tế. Hãy luôn mang theo xà beng hoặc chìa khóa!",
+          "en": "Guarantees Level 3 armor, airdrop weapons, and top-tier attachments. Keep a crowbar or secret key ready!"
         }
       }
     ]
@@ -363,24 +615,6 @@
         }
       },
       {
-        "id": "taego_secret_room",
-        "name": "Taego Secret Room",
-        "type": "secret_room",
-        "x": 59,
-        "y": 60.5,
-        "grid": "E5",
-        "lootTier": "Special Crate",
-        "riskLevel": "High",
-        "description": {
-          "vi": "Căn phòng bảo mật cao được bảo vệ bởi cửa cuốn kim loại. Cần có Chìa khóa bí mật Taego nhặt ngẫu nhiên trên bản đồ.",
-          "en": "High-security room locked behind iron shutters. Requires a rare Taego Secret Room Key to open."
-        },
-        "tip": {
-          "vi": "Chứa bộ Self-AED, mũ giáp 3, súng hòm thính Groza/AWM và ống ngắm 8x. Hãy giữ chìa khóa an toàn đến khi bo thuận lợi.",
-          "en": "Guarantees Self-AEDs, Level 3 armor, airdrop crate guns, and 8x scopes."
-        }
-      },
-      {
         "id": "taego_prison",
         "name": "Ho San Prison",
         "type": "hotdrop",
@@ -396,6 +630,276 @@
         "tip": {
           "vi": "Shotgun và SMG cực kỳ lợi hại trong các dãy hành lang buồng giam.",
           "en": "Shotguns and fast-firing SMGs rule the cramped prison corridors."
+        }
+      },
+      {
+        "id": "taego_secret_room_1",
+        "name": "Mật Thất Vách Đá Wol Song",
+        "type": "secret_room",
+        "x": 17.4,
+        "y": 12.9,
+        "grid": "B2",
+        "lootTier": "Special Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh mật thất tại vách đá tây bắc Wol Song. Cửa bọc thép cuốn kín mít, yêu cầu phải có Chìa Khóa Bí Mật Taego (Secret Room Key) nhặt ngẫu nhiên trên bản đồ.",
+          "en": "High-security room with iron shutters at Wol Song Northwest Cliffs Secret Room. Requires a rare Taego Secret Room Key to unlock."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED (tự hồi sinh khi gục ngã), mũ giáp Cấp 3, súng hòm thính và ống ngắm 8x. Chú ý tiếng mở cửa cơ khí sẽ vang xa.",
+          "en": "Guarantees Self-AED kits, Level 3 gear, crate weapons, and 8x scopes. Opening the shutter creates audible noise."
+        }
+      },
+      {
+        "id": "taego_secret_room_2",
+        "name": "Mật Thất Núi Army Base",
+        "type": "secret_room",
+        "x": 31.9,
+        "y": 14.7,
+        "grid": "C2",
+        "lootTier": "Special Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh mật thất tại dãy núi phía nam căn cứ quân sự Army Base. Cửa bọc thép cuốn kín mít, yêu cầu phải có Chìa Khóa Bí Mật Taego (Secret Room Key) nhặt ngẫu nhiên trên bản đồ.",
+          "en": "High-security room with iron shutters at Army Base South Ridge Secret Room. Requires a rare Taego Secret Room Key to unlock."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED (tự hồi sinh khi gục ngã), mũ giáp Cấp 3, súng hòm thính và ống ngắm 8x. Chú ý tiếng mở cửa cơ khí sẽ vang xa.",
+          "en": "Guarantees Self-AED kits, Level 3 gear, crate weapons, and 8x scopes. Opening the shutter creates audible noise."
+        }
+      },
+      {
+        "id": "taego_secret_room_3",
+        "name": "Mật Thất Bến Tàu Shipyard",
+        "type": "secret_room",
+        "x": 59.8,
+        "y": 19.3,
+        "grid": "E2",
+        "lootTier": "Special Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh mật thất tại sườn đồi phía tây bến tàu Shipyard. Cửa bọc thép cuốn kín mít, yêu cầu phải có Chìa Khóa Bí Mật Taego (Secret Room Key) nhặt ngẫu nhiên trên bản đồ.",
+          "en": "High-security room with iron shutters at Shipyard West Secret Room. Requires a rare Taego Secret Room Key to unlock."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED (tự hồi sinh khi gục ngã), mũ giáp Cấp 3, súng hòm thính và ống ngắm 8x. Chú ý tiếng mở cửa cơ khí sẽ vang xa.",
+          "en": "Guarantees Self-AED kits, Level 3 gear, crate weapons, and 8x scopes. Opening the shutter creates audible noise."
+        }
+      },
+      {
+        "id": "taego_secret_room_4",
+        "name": "Mật Thất Go Dok Bắc",
+        "type": "secret_room",
+        "x": 44.3,
+        "y": 22.4,
+        "grid": "D2",
+        "lootTier": "Special Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh mật thất tại thung lũng giữa Go Dok và Army Base. Cửa bọc thép cuốn kín mít, yêu cầu phải có Chìa Khóa Bí Mật Taego (Secret Room Key) nhặt ngẫu nhiên trên bản đồ.",
+          "en": "High-security room with iron shutters at Go Dok North Valley Secret Room. Requires a rare Taego Secret Room Key to unlock."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED (tự hồi sinh khi gục ngã), mũ giáp Cấp 3, súng hòm thính và ống ngắm 8x. Chú ý tiếng mở cửa cơ khí sẽ vang xa.",
+          "en": "Guarantees Self-AED kits, Level 3 gear, crate weapons, and 8x scopes. Opening the shutter creates audible noise."
+        }
+      },
+      {
+        "id": "taego_secret_room_5",
+        "name": "Mật Thất Đảo Đông Bắc",
+        "type": "secret_room",
+        "x": 85.4,
+        "y": 23.6,
+        "grid": "G2",
+        "lootTier": "Special Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh mật thất tại hòn đảo phía đông bắc, ngoài khơi Shipyard. Cửa bọc thép cuốn kín mít, yêu cầu phải có Chìa Khóa Bí Mật Taego (Secret Room Key) nhặt ngẫu nhiên trên bản đồ.",
+          "en": "High-security room with iron shutters at Northeast Island Secret Room. Requires a rare Taego Secret Room Key to unlock."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED (tự hồi sinh khi gục ngã), mũ giáp Cấp 3, súng hòm thính và ống ngắm 8x. Chú ý tiếng mở cửa cơ khí sẽ vang xa.",
+          "en": "Guarantees Self-AED kits, Level 3 gear, crate weapons, and 8x scopes. Opening the shutter creates audible noise."
+        }
+      },
+      {
+        "id": "taego_secret_room_6",
+        "name": "Mật Thất Ven Biển Hae Moo Sa",
+        "type": "secret_room",
+        "x": 15.8,
+        "y": 31.2,
+        "grid": "B3",
+        "lootTier": "Special Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh mật thất tại khu nhà ven biển thị trấn Hae Moo Sa. Cửa bọc thép cuốn kín mít, yêu cầu phải có Chìa Khóa Bí Mật Taego (Secret Room Key) nhặt ngẫu nhiên trên bản đồ.",
+          "en": "High-security room with iron shutters at Hae Moo Sa Coastal Secret Room. Requires a rare Taego Secret Room Key to unlock."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED (tự hồi sinh khi gục ngã), mũ giáp Cấp 3, súng hòm thính và ống ngắm 8x. Chú ý tiếng mở cửa cơ khí sẽ vang xa.",
+          "en": "Guarantees Self-AED kits, Level 3 gear, crate weapons, and 8x scopes. Opening the shutter creates audible noise."
+        }
+      },
+      {
+        "id": "taego_secret_room_7",
+        "name": "Mật Thất Sân Bay Taego",
+        "type": "secret_room",
+        "x": 87.6,
+        "y": 39.6,
+        "grid": "H4",
+        "lootTier": "Special Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh mật thất tại khu vực sân bay quốc tế Airport phía đông. Cửa bọc thép cuốn kín mít, yêu cầu phải có Chìa Khóa Bí Mật Taego (Secret Room Key) nhặt ngẫu nhiên trên bản đồ.",
+          "en": "High-security room with iron shutters at Taego Airport Secret Room. Requires a rare Taego Secret Room Key to unlock."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED (tự hồi sinh khi gục ngã), mũ giáp Cấp 3, súng hòm thính và ống ngắm 8x. Chú ý tiếng mở cửa cơ khí sẽ vang xa.",
+          "en": "Guarantees Self-AED kits, Level 3 gear, crate weapons, and 8x scopes. Opening the shutter creates audible noise."
+        }
+      },
+      {
+        "id": "taego_secret_room_8",
+        "name": "Mật Thất Bán Đảo Tây",
+        "type": "secret_room",
+        "x": 12.7,
+        "y": 39.9,
+        "grid": "B4",
+        "lootTier": "Special Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh mật thất tại bán đảo nhô ra biển phía tây Hae Moo Sa. Cửa bọc thép cuốn kín mít, yêu cầu phải có Chìa Khóa Bí Mật Taego (Secret Room Key) nhặt ngẫu nhiên trên bản đồ.",
+          "en": "High-security room with iron shutters at West Peninsula Secret Room. Requires a rare Taego Secret Room Key to unlock."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED (tự hồi sinh khi gục ngã), mũ giáp Cấp 3, súng hòm thính và ống ngắm 8x. Chú ý tiếng mở cửa cơ khí sẽ vang xa.",
+          "en": "Guarantees Self-AED kits, Level 3 gear, crate weapons, and 8x scopes. Opening the shutter creates audible noise."
+        }
+      },
+      {
+        "id": "taego_secret_room_9",
+        "name": "Mật Thất Thung Lũng Kang Neung",
+        "type": "secret_room",
+        "x": 74.5,
+        "y": 45.8,
+        "grid": "F4",
+        "lootTier": "Special Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh mật thất tại thung lũng ven sông phía tây bắc Kang Neung. Cửa bọc thép cuốn kín mít, yêu cầu phải có Chìa Khóa Bí Mật Taego (Secret Room Key) nhặt ngẫu nhiên trên bản đồ.",
+          "en": "High-security room with iron shutters at Kang Neung Northwest Secret Room. Requires a rare Taego Secret Room Key to unlock."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED (tự hồi sinh khi gục ngã), mũ giáp Cấp 3, súng hòm thính và ống ngắm 8x. Chú ý tiếng mở cửa cơ khí sẽ vang xa.",
+          "en": "Guarantees Self-AED kits, Level 3 gear, crate weapons, and 8x scopes. Opening the shutter creates audible noise."
+        }
+      },
+      {
+        "id": "taego_secret_room_10",
+        "name": "Mật Thất Ho San Đông",
+        "type": "secret_room",
+        "x": 54.5,
+        "y": 59.2,
+        "grid": "E5",
+        "lootTier": "Special Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh mật thất tại khu nhà giữa Ho San và Buk San Sa. Cửa bọc thép cuốn kín mít, yêu cầu phải có Chìa Khóa Bí Mật Taego (Secret Room Key) nhặt ngẫu nhiên trên bản đồ.",
+          "en": "High-security room with iron shutters at Ho San East Secret Room. Requires a rare Taego Secret Room Key to unlock."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED (tự hồi sinh khi gục ngã), mũ giáp Cấp 3, súng hòm thính và ống ngắm 8x. Chú ý tiếng mở cửa cơ khí sẽ vang xa.",
+          "en": "Guarantees Self-AED kits, Level 3 gear, crate weapons, and 8x scopes. Opening the shutter creates audible noise."
+        }
+      },
+      {
+        "id": "taego_secret_room_11",
+        "name": "Mật Thất Đồi Đá Ha Po",
+        "type": "secret_room",
+        "x": 12.1,
+        "y": 62.3,
+        "grid": "A5",
+        "lootTier": "Special Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh mật thất tại đồi đá cao phía nam Ha Po. Cửa bọc thép cuốn kín mít, yêu cầu phải có Chìa Khóa Bí Mật Taego (Secret Room Key) nhặt ngẫu nhiên trên bản đồ.",
+          "en": "High-security room with iron shutters at Ha Po South Crags Secret Room. Requires a rare Taego Secret Room Key to unlock."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED (tự hồi sinh khi gục ngã), mũ giáp Cấp 3, súng hòm thính và ống ngắm 8x. Chú ý tiếng mở cửa cơ khí sẽ vang xa.",
+          "en": "Guarantees Self-AED kits, Level 3 gear, crate weapons, and 8x scopes. Opening the shutter creates audible noise."
+        }
+      },
+      {
+        "id": "taego_secret_room_12",
+        "name": "Mật Thất Ngã Ba Kang Neung",
+        "type": "secret_room",
+        "x": 79.1,
+        "y": 66.6,
+        "grid": "G6",
+        "lootTier": "Special Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh mật thất tại ngã ba đường lớn phía nam Kang Neung. Cửa bọc thép cuốn kín mít, yêu cầu phải có Chìa Khóa Bí Mật Taego (Secret Room Key) nhặt ngẫu nhiên trên bản đồ.",
+          "en": "High-security room with iron shutters at Kang Neung South Secret Room. Requires a rare Taego Secret Room Key to unlock."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED (tự hồi sinh khi gục ngã), mũ giáp Cấp 3, súng hòm thính và ống ngắm 8x. Chú ý tiếng mở cửa cơ khí sẽ vang xa.",
+          "en": "Guarantees Self-AED kits, Level 3 gear, crate weapons, and 8x scopes. Opening the shutter creates audible noise."
+        }
+      },
+      {
+        "id": "taego_secret_room_13",
+        "name": "Mật Thất Song Am Đông",
+        "type": "secret_room",
+        "x": 61.2,
+        "y": 77.0,
+        "grid": "E7",
+        "lootTier": "Special Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh mật thất tại khu nhà phía đông Song Am, bắc Bệnh viện Hospital. Cửa bọc thép cuốn kín mít, yêu cầu phải có Chìa Khóa Bí Mật Taego (Secret Room Key) nhặt ngẫu nhiên trên bản đồ.",
+          "en": "High-security room with iron shutters at Song Am East Secret Room. Requires a rare Taego Secret Room Key to unlock."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED (tự hồi sinh khi gục ngã), mũ giáp Cấp 3, súng hòm thính và ống ngắm 8x. Chú ý tiếng mở cửa cơ khí sẽ vang xa.",
+          "en": "Guarantees Self-AED kits, Level 3 gear, crate weapons, and 8x scopes. Opening the shutter creates audible noise."
+        }
+      },
+      {
+        "id": "taego_secret_room_14",
+        "name": "Mật Thất Trại Giam Ho San",
+        "type": "secret_room",
+        "x": 30.0,
+        "y": 77.5,
+        "grid": "C7",
+        "lootTier": "Special Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh mật thất tại khu vực trại giam Ho San Prison phía tây nam. Cửa bọc thép cuốn kín mít, yêu cầu phải có Chìa Khóa Bí Mật Taego (Secret Room Key) nhặt ngẫu nhiên trên bản đồ.",
+          "en": "High-security room with iron shutters at Ho San Prison Secret Room. Requires a rare Taego Secret Room Key to unlock."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED (tự hồi sinh khi gục ngã), mũ giáp Cấp 3, súng hòm thính và ống ngắm 8x. Chú ý tiếng mở cửa cơ khí sẽ vang xa.",
+          "en": "Guarantees Self-AED kits, Level 3 gear, crate weapons, and 8x scopes. Opening the shutter creates audible noise."
+        }
+      },
+      {
+        "id": "taego_secret_room_15",
+        "name": "Mật Thất Mũi Đất Đông Nam",
+        "type": "secret_room",
+        "x": 78.3,
+        "y": 86.4,
+        "grid": "G7",
+        "lootTier": "Special Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh mật thất tại mũi đất ven biển cực đông nam Taego. Cửa bọc thép cuốn kín mít, yêu cầu phải có Chìa Khóa Bí Mật Taego (Secret Room Key) nhặt ngẫu nhiên trên bản đồ.",
+          "en": "High-security room with iron shutters at Southeast Cape Secret Room. Requires a rare Taego Secret Room Key to unlock."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED (tự hồi sinh khi gục ngã), mũ giáp Cấp 3, súng hòm thính và ống ngắm 8x. Chú ý tiếng mở cửa cơ khí sẽ vang xa.",
+          "en": "Guarantees Self-AED kits, Level 3 gear, crate weapons, and 8x scopes. Opening the shutter creates audible noise."
         }
       }
     ]
@@ -506,6 +1010,276 @@
           "vi": "Dùng lựu đạn hoặc xe hơi ủi đổ rừng tre để triệt hạ nơi ẩn nấp của đối thủ bắn tỉa.",
           "en": "Flatten bamboo clusters with vehicles or grenades to flush out concealed snipers."
         }
+      },
+      {
+        "id": "rondo_secret_room_1",
+        "name": "Mật Thất Rondo #1 (Bei Li)",
+        "type": "secret_room",
+        "x": 17.9,
+        "y": 16.7,
+        "grid": "B2",
+        "lootTier": "Honor Vault",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng mật thất số 1 tại ngã ba đường Bei Li & Min Hu phía tây bắc. Cửa gỗ hoa văn chạm trổ bảo vệ bằng khóa đồng cổ. Cần có Chìa Khóa Mật Thất Rondo (Secret Key) xuất hiện ngẫu nhiên trên bản đồ.",
+          "en": "Rondo Secret Room #1 at Rondo Secret Room #1 (Bei Li). Unlocked using a Rondo Secret Key spawned randomly across the map."
+        },
+        "tip": {
+          "vi": "Bên trong có súng hòm thính (AWM, Groza, P90), mũ giáp Cấp 3, thỏi vàng tích lũy tiền xu BR Coins và pháo sáng khẩn cấp.",
+          "en": "Guarantees airdrop weapons, Level 3 protective armor, emergency cover flares, and high-value BR Coins."
+        }
+      },
+      {
+        "id": "rondo_secret_room_2",
+        "name": "Mật Thất Rondo #2 (Non Chu Bắc)",
+        "type": "secret_room",
+        "x": 37.5,
+        "y": 11.4,
+        "grid": "D1",
+        "lootTier": "Honor Vault",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng mật thất số 2 tại khu nhà ven đồi phía bắc Non Chu. Cửa gỗ hoa văn chạm trổ bảo vệ bằng khóa đồng cổ. Cần có Chìa Khóa Mật Thất Rondo (Secret Key) xuất hiện ngẫu nhiên trên bản đồ.",
+          "en": "Rondo Secret Room #2 at Rondo Secret Room #2 (Non Chu North). Unlocked using a Rondo Secret Key spawned randomly across the map."
+        },
+        "tip": {
+          "vi": "Bên trong có súng hòm thính (AWM, Groza, P90), mũ giáp Cấp 3, thỏi vàng tích lũy tiền xu BR Coins và pháo sáng khẩn cấp.",
+          "en": "Guarantees airdrop weapons, Level 3 protective armor, emergency cover flares, and high-value BR Coins."
+        }
+      },
+      {
+        "id": "rondo_secret_room_3",
+        "name": "Mật Thất Rondo #3 (Kun Xia Đông Bắc)",
+        "type": "secret_room",
+        "x": 71.4,
+        "y": 11.2,
+        "grid": "F1",
+        "lootTier": "Honor Vault",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng mật thất số 3 tại khu đồi phong cảnh phía đông bắc Kun Xia. Cửa gỗ hoa văn chạm trổ bảo vệ bằng khóa đồng cổ. Cần có Chìa Khóa Mật Thất Rondo (Secret Key) xuất hiện ngẫu nhiên trên bản đồ.",
+          "en": "Rondo Secret Room #3 at Rondo Secret Room #3 (Kun Xia Northeast). Unlocked using a Rondo Secret Key spawned randomly across the map."
+        },
+        "tip": {
+          "vi": "Bên trong có súng hòm thính (AWM, Groza, P90), mũ giáp Cấp 3, thỏi vàng tích lũy tiền xu BR Coins và pháo sáng khẩn cấp.",
+          "en": "Guarantees airdrop weapons, Level 3 protective armor, emergency cover flares, and high-value BR Coins."
+        }
+      },
+      {
+        "id": "rondo_secret_room_4",
+        "name": "Mật Thất Rondo #4 (Hemay Town Đông)",
+        "type": "secret_room",
+        "x": 86.5,
+        "y": 33.9,
+        "grid": "G3",
+        "lootTier": "Honor Vault",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng mật thất số 4 tại sườn đồi phía đông thị trấn cổ Hemay Town. Cửa gỗ hoa văn chạm trổ bảo vệ bằng khóa đồng cổ. Cần có Chìa Khóa Mật Thất Rondo (Secret Key) xuất hiện ngẫu nhiên trên bản đồ.",
+          "en": "Rondo Secret Room #4 at Rondo Secret Room #4 (Hemay Town East). Unlocked using a Rondo Secret Key spawned randomly across the map."
+        },
+        "tip": {
+          "vi": "Bên trong có súng hòm thính (AWM, Groza, P90), mũ giáp Cấp 3, thỏi vàng tích lũy tiền xu BR Coins và pháo sáng khẩn cấp.",
+          "en": "Guarantees airdrop weapons, Level 3 protective armor, emergency cover flares, and high-value BR Coins."
+        }
+      },
+      {
+        "id": "rondo_secret_room_5",
+        "name": "Mật Thất Rondo #5 (Khúc Sông Rai An)",
+        "type": "secret_room",
+        "x": 61.7,
+        "y": 25.3,
+        "grid": "E3",
+        "lootTier": "Honor Vault",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng mật thất số 5 tại khúc sông lớn uốn lượn phía nam Rai An. Cửa gỗ hoa văn chạm trổ bảo vệ bằng khóa đồng cổ. Cần có Chìa Khóa Mật Thất Rondo (Secret Key) xuất hiện ngẫu nhiên trên bản đồ.",
+          "en": "Rondo Secret Room #5 at Rondo Secret Room #5 (Rai An River Bend). Unlocked using a Rondo Secret Key spawned randomly across the map."
+        },
+        "tip": {
+          "vi": "Bên trong có súng hòm thính (AWM, Groza, P90), mũ giáp Cấp 3, thỏi vàng tích lũy tiền xu BR Coins và pháo sáng khẩn cấp.",
+          "en": "Guarantees airdrop weapons, Level 3 protective armor, emergency cover flares, and high-value BR Coins."
+        }
+      },
+      {
+        "id": "rondo_secret_room_6",
+        "name": "Mật Thất Rondo #6 (Đông Sân Vận Động)",
+        "type": "secret_room",
+        "x": 46.5,
+        "y": 32.5,
+        "grid": "D3",
+        "lootTier": "Honor Vault",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng mật thất số 6 tại khu nhà biệt lập phía đông sân vận động Stadium. Cửa gỗ hoa văn chạm trổ bảo vệ bằng khóa đồng cổ. Cần có Chìa Khóa Mật Thất Rondo (Secret Key) xuất hiện ngẫu nhiên trên bản đồ.",
+          "en": "Rondo Secret Room #6 at Rondo Secret Room #6 (Stadium East). Unlocked using a Rondo Secret Key spawned randomly across the map."
+        },
+        "tip": {
+          "vi": "Bên trong có súng hòm thính (AWM, Groza, P90), mũ giáp Cấp 3, thỏi vàng tích lũy tiền xu BR Coins và pháo sáng khẩn cấp.",
+          "en": "Guarantees airdrop weapons, Level 3 protective armor, emergency cover flares, and high-value BR Coins."
+        }
+      },
+      {
+        "id": "rondo_secret_room_7",
+        "name": "Mật Thất Rondo #7 (Thị Trấn Jao)",
+        "type": "secret_room",
+        "x": 17.4,
+        "y": 39.9,
+        "grid": "B4",
+        "lootTier": "Honor Vault",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng mật thất số 7 tại khu dân cư phía tây thị trấn Jao. Cửa gỗ hoa văn chạm trổ bảo vệ bằng khóa đồng cổ. Cần có Chìa Khóa Mật Thất Rondo (Secret Key) xuất hiện ngẫu nhiên trên bản đồ.",
+          "en": "Rondo Secret Room #7 at Rondo Secret Room #7 (Jao City West). Unlocked using a Rondo Secret Key spawned randomly across the map."
+        },
+        "tip": {
+          "vi": "Bên trong có súng hòm thính (AWM, Groza, P90), mũ giáp Cấp 3, thỏi vàng tích lũy tiền xu BR Coins và pháo sáng khẩn cấp.",
+          "en": "Guarantees airdrop weapons, Level 3 protective armor, emergency cover flares, and high-value BR Coins."
+        }
+      },
+      {
+        "id": "rondo_secret_room_8",
+        "name": "Mật Thất Rondo #8 (Khu Vực Fong Tun)",
+        "type": "secret_room",
+        "x": 17.8,
+        "y": 59.0,
+        "grid": "B5",
+        "lootTier": "Honor Vault",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng mật thất số 8 tại khu đồi phía tây nam thị trấn Fong Tun. Cửa gỗ hoa văn chạm trổ bảo vệ bằng khóa đồng cổ. Cần có Chìa Khóa Mật Thất Rondo (Secret Key) xuất hiện ngẫu nhiên trên bản đồ.",
+          "en": "Rondo Secret Room #8 at Rondo Secret Room #8 (Fong Tun). Unlocked using a Rondo Secret Key spawned randomly across the map."
+        },
+        "tip": {
+          "vi": "Bên trong có súng hòm thính (AWM, Groza, P90), mũ giáp Cấp 3, thỏi vàng tích lũy tiền xu BR Coins và pháo sáng khẩn cấp.",
+          "en": "Guarantees airdrop weapons, Level 3 protective armor, emergency cover flares, and high-value BR Coins."
+        }
+      },
+      {
+        "id": "rondo_secret_room_9",
+        "name": "Mật Thất Rondo #9 (Nam Rừng Tre Yu Lin)",
+        "type": "secret_room",
+        "x": 37.1,
+        "y": 63.2,
+        "grid": "C6",
+        "lootTier": "Honor Vault",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng mật thất số 9 tại thung lũng đá vôi phía nam rừng tre Yu Lin. Cửa gỗ hoa văn chạm trổ bảo vệ bằng khóa đồng cổ. Cần có Chìa Khóa Mật Thất Rondo (Secret Key) xuất hiện ngẫu nhiên trên bản đồ.",
+          "en": "Rondo Secret Room #9 at Rondo Secret Room #9 (Yu Lin South). Unlocked using a Rondo Secret Key spawned randomly across the map."
+        },
+        "tip": {
+          "vi": "Bên trong có súng hòm thính (AWM, Groza, P90), mũ giáp Cấp 3, thỏi vàng tích lũy tiền xu BR Coins và pháo sáng khẩn cấp.",
+          "en": "Guarantees airdrop weapons, Level 3 protective armor, emergency cover flares, and high-value BR Coins."
+        }
+      },
+      {
+        "id": "rondo_secret_room_10",
+        "name": "Mật Thất Rondo #10 (Nam Nhà Máy NEOX)",
+        "type": "secret_room",
+        "x": 57.2,
+        "y": 54.1,
+        "grid": "E5",
+        "lootTier": "Honor Vault",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng mật thất số 10 tại khu nhà kỹ thuật phía nam tổ hợp NEOX Factory. Cửa gỗ hoa văn chạm trổ bảo vệ bằng khóa đồng cổ. Cần có Chìa Khóa Mật Thất Rondo (Secret Key) xuất hiện ngẫu nhiên trên bản đồ.",
+          "en": "Rondo Secret Room #10 at Rondo Secret Room #10 (NEOX Factory South). Unlocked using a Rondo Secret Key spawned randomly across the map."
+        },
+        "tip": {
+          "vi": "Bên trong có súng hòm thính (AWM, Groza, P90), mũ giáp Cấp 3, thỏi vàng tích lũy tiền xu BR Coins và pháo sáng khẩn cấp.",
+          "en": "Guarantees airdrop weapons, Level 3 protective armor, emergency cover flares, and high-value BR Coins."
+        }
+      },
+      {
+        "id": "rondo_secret_room_11",
+        "name": "Mật Thất Rondo #11 (Bắc Jadena City)",
+        "type": "secret_room",
+        "x": 81.3,
+        "y": 52.4,
+        "grid": "G5",
+        "lootTier": "Honor Vault",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng mật thất số 11 tại ngã ba cao tốc tiếp giáp phía bắc siêu đô thị Jadena City. Cửa gỗ hoa văn chạm trổ bảo vệ bằng khóa đồng cổ. Cần có Chìa Khóa Mật Thất Rondo (Secret Key) xuất hiện ngẫu nhiên trên bản đồ.",
+          "en": "Rondo Secret Room #11 at Rondo Secret Room #11 (Jadena City North). Unlocked using a Rondo Secret Key spawned randomly across the map."
+        },
+        "tip": {
+          "vi": "Bên trong có súng hòm thính (AWM, Groza, P90), mũ giáp Cấp 3, thỏi vàng tích lũy tiền xu BR Coins và pháo sáng khẩn cấp.",
+          "en": "Guarantees airdrop weapons, Level 3 protective armor, emergency cover flares, and high-value BR Coins."
+        }
+      },
+      {
+        "id": "rondo_secret_room_12",
+        "name": "Mật Thất Rondo #12 (Tây Jadena City)",
+        "type": "secret_room",
+        "x": 70.0,
+        "y": 74.7,
+        "grid": "F6",
+        "lootTier": "Honor Vault",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng mật thất số 12 tại bờ sông phía tây thành phố Jadena City. Cửa gỗ hoa văn chạm trổ bảo vệ bằng khóa đồng cổ. Cần có Chìa Khóa Mật Thất Rondo (Secret Key) xuất hiện ngẫu nhiên trên bản đồ.",
+          "en": "Rondo Secret Room #12 at Rondo Secret Room #12 (Jadena City West). Unlocked using a Rondo Secret Key spawned randomly across the map."
+        },
+        "tip": {
+          "vi": "Bên trong có súng hòm thính (AWM, Groza, P90), mũ giáp Cấp 3, thỏi vàng tích lũy tiền xu BR Coins và pháo sáng khẩn cấp.",
+          "en": "Guarantees airdrop weapons, Level 3 protective armor, emergency cover flares, and high-value BR Coins."
+        }
+      },
+      {
+        "id": "rondo_secret_room_13",
+        "name": "Mật Thất Rondo #13 (Núi Tin Long Garden)",
+        "type": "secret_room",
+        "x": 60.7,
+        "y": 90.6,
+        "grid": "E8",
+        "lootTier": "Honor Vault",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng mật thất số 13 tại đỉnh núi nhìn xuống hoa viên Tin Long Garden. Cửa gỗ hoa văn chạm trổ bảo vệ bằng khóa đồng cổ. Cần có Chìa Khóa Mật Thất Rondo (Secret Key) xuất hiện ngẫu nhiên trên bản đồ.",
+          "en": "Rondo Secret Room #13 at Rondo Secret Room #13 (Tin Long Garden South). Unlocked using a Rondo Secret Key spawned randomly across the map."
+        },
+        "tip": {
+          "vi": "Bên trong có súng hòm thính (AWM, Groza, P90), mũ giáp Cấp 3, thỏi vàng tích lũy tiền xu BR Coins và pháo sáng khẩn cấp.",
+          "en": "Guarantees airdrop weapons, Level 3 protective armor, emergency cover flares, and high-value BR Coins."
+        }
+      },
+      {
+        "id": "rondo_secret_room_14",
+        "name": "Mật Thất Rondo #14 (Dan Liang)",
+        "type": "secret_room",
+        "x": 41.5,
+        "y": 85.9,
+        "grid": "D7",
+        "lootTier": "Honor Vault",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng mật thất số 14 tại khu nhà kiến trúc cổ truyền tại Dan Liang. Cửa gỗ hoa văn chạm trổ bảo vệ bằng khóa đồng cổ. Cần có Chìa Khóa Mật Thất Rondo (Secret Key) xuất hiện ngẫu nhiên trên bản đồ.",
+          "en": "Rondo Secret Room #14 at Rondo Secret Room #14 (Dan Liang). Unlocked using a Rondo Secret Key spawned randomly across the map."
+        },
+        "tip": {
+          "vi": "Bên trong có súng hòm thính (AWM, Groza, P90), mũ giáp Cấp 3, thỏi vàng tích lũy tiền xu BR Coins và pháo sáng khẩn cấp.",
+          "en": "Guarantees airdrop weapons, Level 3 protective armor, emergency cover flares, and high-value BR Coins."
+        }
+      },
+      {
+        "id": "rondo_secret_room_15",
+        "name": "Mật Thất Rondo #15 (Lan Po / Long Ho)",
+        "type": "secret_room",
+        "x": 15.5,
+        "y": 79.9,
+        "grid": "B7",
+        "lootTier": "Honor Vault",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng mật thất số 15 tại vùng đồi ranh giới phía tây nam giữa Lan Po và Long Ho. Cửa gỗ hoa văn chạm trổ bảo vệ bằng khóa đồng cổ. Cần có Chìa Khóa Mật Thất Rondo (Secret Key) xuất hiện ngẫu nhiên trên bản đồ.",
+          "en": "Rondo Secret Room #15 at Rondo Secret Room #15 (Lan Po / Long Ho). Unlocked using a Rondo Secret Key spawned randomly across the map."
+        },
+        "tip": {
+          "vi": "Bên trong có súng hòm thính (AWM, Groza, P90), mũ giáp Cấp 3, thỏi vàng tích lũy tiền xu BR Coins và pháo sáng khẩn cấp.",
+          "en": "Guarantees airdrop weapons, Level 3 protective armor, emergency cover flares, and high-value BR Coins."
+        }
       }
     ]
   },
@@ -581,24 +1355,6 @@
         }
       },
       {
-        "id": "vikendi_lab_camp",
-        "name": "Secret Lab Camp",
-        "type": "secret_room",
-        "x": 60,
-        "y": 40,
-        "grid": "E4",
-        "lootTier": "Special Crate",
-        "riskLevel": "High",
-        "description": {
-          "vi": "Trại nghiên cứu dã chiến trang bị thùng đồ tiếp tế tối mật màu vàng. Mở thùng sẽ kích hoạt còi báo động khẩn cấp hú vang toàn khu vực.",
-          "en": "Field research station housing special yellow airdrop crates. Opening them triggers a loud siren across the sector."
-        },
-        "tip": {
-          "vi": "Âm thanh báo động sẽ thu hút mọi kẻ địch gần đó. Hãy phân công đồng đội yểm trợ vòng ngoài trước khi mở hòm.",
-          "en": "Alarms will alert nearby predators. Position crossfire watches before breaking the security seal."
-        }
-      },
-      {
         "id": "vikendi_cable_car",
         "name": "Mountain Cable Car Station",
         "type": "special",
@@ -614,6 +1370,186 @@
         "tip": {
           "vi": "Cáp treo có thể vận chuyển cả xe Snowmobile lên cabin!",
           "en": "Cable cars can carry Snowmobiles inside their gondolas for rapid getaways upon arrival."
+        }
+      },
+      {
+        "id": "vikendi_secret_room_1",
+        "name": "Mật Thất Núi Cosmodrome Tây",
+        "type": "secret_room",
+        "x": 66.8,
+        "y": 14.5,
+        "grid": "F2",
+        "lootTier": "Polar Classified",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Mật thất an ninh vùng cực tại núi tuyết phía tây trạm vũ trụ Cosmodrome. Cửa hầm thép kiên cố cần có Chìa Khóa Bí Mật Vikendi hoặc xà beng cạy cửa.",
+          "en": "Polar security chamber at Cosmodrome West Mountain Room. Heavy locked steel door requiring Vikendi Secret Key or crowbar."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED, kính ngắm nhiệt Thermal Scope chống bão tuyết và trang bị Cấp 3 cao cấp.",
+          "en": "Contains Self-AEDs, 4x Thermal Scopes to see through blizzard, and Level 3 armor."
+        }
+      },
+      {
+        "id": "vikendi_secret_room_2",
+        "name": "Mật Thất Núi Đài Thiên Văn",
+        "type": "secret_room",
+        "x": 34.0,
+        "y": 17.7,
+        "grid": "C2",
+        "lootTier": "Polar Classified",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Mật thất an ninh vùng cực tại núi cao phía tây đài thiên văn Observatory. Cửa hầm thép kiên cố cần có Chìa Khóa Bí Mật Vikendi hoặc xà beng cạy cửa.",
+          "en": "Polar security chamber at Observatory West Mountain Room. Heavy locked steel door requiring Vikendi Secret Key or crowbar."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED, kính ngắm nhiệt Thermal Scope chống bão tuyết và trang bị Cấp 3 cao cấp.",
+          "en": "Contains Self-AEDs, 4x Thermal Scopes to see through blizzard, and Level 3 armor."
+        }
+      },
+      {
+        "id": "vikendi_secret_room_3",
+        "name": "Mật Thất Núi Laveni Đông",
+        "type": "secret_room",
+        "x": 77.0,
+        "y": 28.4,
+        "grid": "G3",
+        "lootTier": "Polar Classified",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Mật thất an ninh vùng cực tại rặng núi dốc phía đông làng tuyết Laveni. Cửa hầm thép kiên cố cần có Chìa Khóa Bí Mật Vikendi hoặc xà beng cạy cửa.",
+          "en": "Polar security chamber at Laveni East Ridge Room. Heavy locked steel door requiring Vikendi Secret Key or crowbar."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED, kính ngắm nhiệt Thermal Scope chống bão tuyết và trang bị Cấp 3 cao cấp.",
+          "en": "Contains Self-AEDs, 4x Thermal Scopes to see through blizzard, and Level 3 armor."
+        }
+      },
+      {
+        "id": "vikendi_secret_room_4",
+        "name": "Mật Thất Đỉnh Núi Trung Tâm",
+        "type": "secret_room",
+        "x": 50.8,
+        "y": 37.8,
+        "grid": "E4",
+        "lootTier": "Polar Classified",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Mật thất an ninh vùng cực tại đỉnh núi tuyết cao nhất vùng trung tâm, đông Naros. Cửa hầm thép kiên cố cần có Chìa Khóa Bí Mật Vikendi hoặc xà beng cạy cửa.",
+          "en": "Polar security chamber at Central Summit Peak Room. Heavy locked steel door requiring Vikendi Secret Key or crowbar."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED, kính ngắm nhiệt Thermal Scope chống bão tuyết và trang bị Cấp 3 cao cấp.",
+          "en": "Contains Self-AEDs, 4x Thermal Scopes to see through blizzard, and Level 3 armor."
+        }
+      },
+      {
+        "id": "vikendi_secret_room_5",
+        "name": "Mật Thất Rặng Núi Dinoland",
+        "type": "secret_room",
+        "x": 17.3,
+        "y": 45.3,
+        "grid": "B4",
+        "lootTier": "Polar Classified",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Mật thất an ninh vùng cực tại sườn đồi phía tây công viên giải trí Dinoland. Cửa hầm thép kiên cố cần có Chìa Khóa Bí Mật Vikendi hoặc xà beng cạy cửa.",
+          "en": "Polar security chamber at Dinoland West Mountain Room. Heavy locked steel door requiring Vikendi Secret Key or crowbar."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED, kính ngắm nhiệt Thermal Scope chống bão tuyết và trang bị Cấp 3 cao cấp.",
+          "en": "Contains Self-AEDs, 4x Thermal Scopes to see through blizzard, and Level 3 armor."
+        }
+      },
+      {
+        "id": "vikendi_secret_room_6",
+        "name": "Mật Thất Núi Villa Nam",
+        "type": "secret_room",
+        "x": 84.4,
+        "y": 46.0,
+        "grid": "G4",
+        "lootTier": "Polar Classified",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Mật thất an ninh vùng cực tại vùng đồi đá tuyết phía nam biệt thự cổ Villa. Cửa hầm thép kiên cố cần có Chìa Khóa Bí Mật Vikendi hoặc xà beng cạy cửa.",
+          "en": "Polar security chamber at Villa South Ridge Room. Heavy locked steel door requiring Vikendi Secret Key or crowbar."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED, kính ngắm nhiệt Thermal Scope chống bão tuyết và trang bị Cấp 3 cao cấp.",
+          "en": "Contains Self-AEDs, 4x Thermal Scopes to see through blizzard, and Level 3 armor."
+        }
+      },
+      {
+        "id": "vikendi_secret_room_7",
+        "name": "Mật Thất Núi Castle Bắc",
+        "type": "secret_room",
+        "x": 58.1,
+        "y": 59.0,
+        "grid": "E5",
+        "lootTier": "Polar Classified",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Mật thất an ninh vùng cực tại sườn núi tuyết nhìn xuống lâu đài Castle từ phía bắc. Cửa hầm thép kiên cố cần có Chìa Khóa Bí Mật Vikendi hoặc xà beng cạy cửa.",
+          "en": "Polar security chamber at Castle North Mountain Room. Heavy locked steel door requiring Vikendi Secret Key or crowbar."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED, kính ngắm nhiệt Thermal Scope chống bão tuyết và trang bị Cấp 3 cao cấp.",
+          "en": "Contains Self-AEDs, 4x Thermal Scopes to see through blizzard, and Level 3 armor."
+        }
+      },
+      {
+        "id": "vikendi_secret_room_8",
+        "name": "Mật Thất Thung Lũng Deka Mesto",
+        "type": "secret_room",
+        "x": 29.6,
+        "y": 67.4,
+        "grid": "C6",
+        "lootTier": "Polar Classified",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Mật thất an ninh vùng cực tại thung lũng tuyết phía tây thành phố Deka Mesto. Cửa hầm thép kiên cố cần có Chìa Khóa Bí Mật Vikendi hoặc xà beng cạy cửa.",
+          "en": "Polar security chamber at Deka Mesto West Valley Room. Heavy locked steel door requiring Vikendi Secret Key or crowbar."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED, kính ngắm nhiệt Thermal Scope chống bão tuyết và trang bị Cấp 3 cao cấp.",
+          "en": "Contains Self-AEDs, 4x Thermal Scopes to see through blizzard, and Level 3 armor."
+        }
+      },
+      {
+        "id": "vikendi_secret_room_9",
+        "name": "Mật Thất Rặng Núi Castle Đông",
+        "type": "secret_room",
+        "x": 74.6,
+        "y": 70.3,
+        "grid": "F6",
+        "lootTier": "Polar Classified",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Mật thất an ninh vùng cực tại rặng núi tuyết phía đông lâu đài Castle, bắc trạm cáp treo. Cửa hầm thép kiên cố cần có Chìa Khóa Bí Mật Vikendi hoặc xà beng cạy cửa.",
+          "en": "Polar security chamber at Castle East Ridge Room. Heavy locked steel door requiring Vikendi Secret Key or crowbar."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED, kính ngắm nhiệt Thermal Scope chống bão tuyết và trang bị Cấp 3 cao cấp.",
+          "en": "Contains Self-AEDs, 4x Thermal Scopes to see through blizzard, and Level 3 armor."
+        }
+      },
+      {
+        "id": "vikendi_secret_room_10",
+        "name": "Mật Thất Đồi Deka Mesto Nam",
+        "type": "secret_room",
+        "x": 48.8,
+        "y": 78.5,
+        "grid": "D7",
+        "lootTier": "Polar Classified",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Mật thất an ninh vùng cực tại ngọn đồi tuyết phía nam Deka Mesto, đông nhà máy rượu Winery. Cửa hầm thép kiên cố cần có Chìa Khóa Bí Mật Vikendi hoặc xà beng cạy cửa.",
+          "en": "Polar security chamber at Deka Mesto South Hill Room. Heavy locked steel door requiring Vikendi Secret Key or crowbar."
+        },
+        "tip": {
+          "vi": "Chứa bộ sốc điện Self-AED, kính ngắm nhiệt Thermal Scope chống bão tuyết và trang bị Cấp 3 cao cấp.",
+          "en": "Contains Self-AEDs, 4x Thermal Scopes to see through blizzard, and Level 3 armor."
         }
       }
     ]
@@ -706,21 +1642,327 @@
         }
       },
       {
-        "id": "deston_security_room",
-        "name": "Pillar Security Room",
+        "id": "deston_security_room_1",
+        "name": "Phòng An Ninh Ten Forts",
         "type": "secret_room",
-        "x": 67,
-        "y": 65,
-        "grid": "F6",
-        "lootTier": "Special Crate",
+        "x": 33.7,
+        "y": 4.5,
+        "grid": "C1",
+        "lootTier": "Pillar Crate",
         "riskLevel": "High",
         "description": {
-          "vi": "Phòng an ninh đặc nhiệm Pillar chống đạn. Cần có Thẻ từ an ninh (Security Keycard) nhặt được trên bản đồ hoặc dùng Drone luồn qua lỗ thông gió.",
-          "en": "Bulletproof Pillar corporate security vault. Opened via rare Pillar Keycards or using Drones through ventilation ducts."
+          "vi": "Phòng an ninh đặc nhiệm Pillar tại khu căn cứ Ten Forts phía bắc. Cửa chống đạn yêu cầu Thẻ Từ An Ninh (Security Keycard) hoặc dùng Drone điều khiển bay qua lỗ thông gió.",
+          "en": "Pillar corporate security vault at Ten Forts Security Room. Opened via Pillar Keycards or using a Scout Drone through vents."
         },
         "tip": {
-          "vi": "Drone trinh sát có thể bay qua ô thông gió nhỏ trên trần để nhặt chìa khóa bên trong phòng!",
-          "en": "Scout Drones can navigate ceiling duct vents to snatch valuable keycards remotely!"
+          "vi": "Chứa súng Airdrop, giáp 3, súng O12/MP9 đặc trưng và súng gọi thính Flare Gun. Có thể dùng Drone để nhặt thẻ an ninh từ xa.",
+          "en": "Houses Level 3 armor, airdrop weapons, and Flare Guns. Drones can fly into ceiling vents to grab keys."
+        }
+      },
+      {
+        "id": "deston_security_room_2",
+        "name": "Phòng An Ninh Carpenter's End",
+        "type": "secret_room",
+        "x": 63.5,
+        "y": 9.2,
+        "grid": "F1",
+        "lootTier": "Pillar Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh đặc nhiệm Pillar tại thị trấn Carpenter's End ven biển bắc. Cửa chống đạn yêu cầu Thẻ Từ An Ninh (Security Keycard) hoặc dùng Drone điều khiển bay qua lỗ thông gió.",
+          "en": "Pillar corporate security vault at Carpenter's End Security Room. Opened via Pillar Keycards or using a Scout Drone through vents."
+        },
+        "tip": {
+          "vi": "Chứa súng Airdrop, giáp 3, súng O12/MP9 đặc trưng và súng gọi thính Flare Gun. Có thể dùng Drone để nhặt thẻ an ninh từ xa.",
+          "en": "Houses Level 3 armor, airdrop weapons, and Flare Guns. Drones can fly into ceiling vents to grab keys."
+        }
+      },
+      {
+        "id": "deston_security_room_3",
+        "name": "Phòng An Ninh Los Arcos Bắc",
+        "type": "secret_room",
+        "x": 22.8,
+        "y": 15.7,
+        "grid": "B2",
+        "lootTier": "Pillar Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh đặc nhiệm Pillar tại khu nhà cao tầng phía bắc Los Arcos. Cửa chống đạn yêu cầu Thẻ Từ An Ninh (Security Keycard) hoặc dùng Drone điều khiển bay qua lỗ thông gió.",
+          "en": "Pillar corporate security vault at Los Arcos North Security Room. Opened via Pillar Keycards or using a Scout Drone through vents."
+        },
+        "tip": {
+          "vi": "Chứa súng Airdrop, giáp 3, súng O12/MP9 đặc trưng và súng gọi thính Flare Gun. Có thể dùng Drone để nhặt thẻ an ninh từ xa.",
+          "en": "Houses Level 3 armor, airdrop weapons, and Flare Guns. Drones can fly into ceiling vents to grab keys."
+        }
+      },
+      {
+        "id": "deston_security_room_4",
+        "name": "Phòng An Ninh Los Arcos Nam",
+        "type": "secret_room",
+        "x": 23.4,
+        "y": 20.0,
+        "grid": "B2",
+        "lootTier": "Pillar Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh đặc nhiệm Pillar tại khu trung tâm thương mại phía nam Los Arcos. Cửa chống đạn yêu cầu Thẻ Từ An Ninh (Security Keycard) hoặc dùng Drone điều khiển bay qua lỗ thông gió.",
+          "en": "Pillar corporate security vault at Los Arcos South Security Room. Opened via Pillar Keycards or using a Scout Drone through vents."
+        },
+        "tip": {
+          "vi": "Chứa súng Airdrop, giáp 3, súng O12/MP9 đặc trưng và súng gọi thính Flare Gun. Có thể dùng Drone để nhặt thẻ an ninh từ xa.",
+          "en": "Houses Level 3 armor, airdrop weapons, and Flare Guns. Drones can fly into ceiling vents to grab keys."
+        }
+      },
+      {
+        "id": "deston_security_room_5",
+        "name": "Phòng An Ninh Assembly Đông",
+        "type": "secret_room",
+        "x": 82.1,
+        "y": 21.0,
+        "grid": "G2",
+        "lootTier": "Pillar Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh đặc nhiệm Pillar tại khu tổ hợp công nghiệp Assembly phía đông. Cửa chống đạn yêu cầu Thẻ Từ An Ninh (Security Keycard) hoặc dùng Drone điều khiển bay qua lỗ thông gió.",
+          "en": "Pillar corporate security vault at Assembly East Security Room. Opened via Pillar Keycards or using a Scout Drone through vents."
+        },
+        "tip": {
+          "vi": "Chứa súng Airdrop, giáp 3, súng O12/MP9 đặc trưng và súng gọi thính Flare Gun. Có thể dùng Drone để nhặt thẻ an ninh từ xa.",
+          "en": "Houses Level 3 armor, airdrop weapons, and Flare Guns. Drones can fly into ceiling vents to grab keys."
+        }
+      },
+      {
+        "id": "deston_security_room_6",
+        "name": "Phòng An Ninh Concert Arena",
+        "type": "secret_room",
+        "x": 62.1,
+        "y": 22.5,
+        "grid": "E2",
+        "lootTier": "Pillar Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh đặc nhiệm Pillar tại khu vực sân khấu biểu diễn đại nhạc hội Concert. Cửa chống đạn yêu cầu Thẻ Từ An Ninh (Security Keycard) hoặc dùng Drone điều khiển bay qua lỗ thông gió.",
+          "en": "Pillar corporate security vault at Concert Arena Security Room. Opened via Pillar Keycards or using a Scout Drone through vents."
+        },
+        "tip": {
+          "vi": "Chứa súng Airdrop, giáp 3, súng O12/MP9 đặc trưng và súng gọi thính Flare Gun. Có thể dùng Drone để nhặt thẻ an ninh từ xa.",
+          "en": "Houses Level 3 armor, airdrop weapons, and Flare Guns. Drones can fly into ceiling vents to grab keys."
+        }
+      },
+      {
+        "id": "deston_security_room_7",
+        "name": "Phòng An Ninh Construction Site",
+        "type": "secret_room",
+        "x": 38.3,
+        "y": 31.2,
+        "grid": "D3",
+        "lootTier": "Pillar Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh đặc nhiệm Pillar tại công trường xây dựng Construction Site. Cửa chống đạn yêu cầu Thẻ Từ An Ninh (Security Keycard) hoặc dùng Drone điều khiển bay qua lỗ thông gió.",
+          "en": "Pillar corporate security vault at Construction Site Security Room. Opened via Pillar Keycards or using a Scout Drone through vents."
+        },
+        "tip": {
+          "vi": "Chứa súng Airdrop, giáp 3, súng O12/MP9 đặc trưng và súng gọi thính Flare Gun. Có thể dùng Drone để nhặt thẻ an ninh từ xa.",
+          "en": "Houses Level 3 armor, airdrop weapons, and Flare Guns. Drones can fly into ceiling vents to grab keys."
+        }
+      },
+      {
+        "id": "deston_security_room_8",
+        "name": "Phòng An Ninh Buxley",
+        "type": "secret_room",
+        "x": 55.5,
+        "y": 31.3,
+        "grid": "E3",
+        "lootTier": "Pillar Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh đặc nhiệm Pillar tại khu đô thị trung tâm Buxley. Cửa chống đạn yêu cầu Thẻ Từ An Ninh (Security Keycard) hoặc dùng Drone điều khiển bay qua lỗ thông gió.",
+          "en": "Pillar corporate security vault at Buxley Central Security Room. Opened via Pillar Keycards or using a Scout Drone through vents."
+        },
+        "tip": {
+          "vi": "Chứa súng Airdrop, giáp 3, súng O12/MP9 đặc trưng và súng gọi thính Flare Gun. Có thể dùng Drone để nhặt thẻ an ninh từ xa.",
+          "en": "Houses Level 3 armor, airdrop weapons, and Flare Guns. Drones can fly into ceiling vents to grab keys."
+        }
+      },
+      {
+        "id": "deston_security_room_9",
+        "name": "Phòng An Ninh Wind Farm",
+        "type": "secret_room",
+        "x": 90.4,
+        "y": 36.9,
+        "grid": "H3",
+        "lootTier": "Pillar Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh đặc nhiệm Pillar tại bán đảo tuabin gió Wind Farm phía đông. Cửa chống đạn yêu cầu Thẻ Từ An Ninh (Security Keycard) hoặc dùng Drone điều khiển bay qua lỗ thông gió.",
+          "en": "Pillar corporate security vault at Wind Farm Peninsula Security Room. Opened via Pillar Keycards or using a Scout Drone through vents."
+        },
+        "tip": {
+          "vi": "Chứa súng Airdrop, giáp 3, súng O12/MP9 đặc trưng và súng gọi thính Flare Gun. Có thể dùng Drone để nhặt thẻ an ninh từ xa.",
+          "en": "Houses Level 3 armor, airdrop weapons, and Flare Guns. Drones can fly into ceiling vents to grab keys."
+        }
+      },
+      {
+        "id": "deston_security_room_10",
+        "name": "Phòng An Ninh Barclift",
+        "type": "secret_room",
+        "x": 20.9,
+        "y": 39.9,
+        "grid": "B4",
+        "lootTier": "Pillar Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh đặc nhiệm Pillar tại thị trấn ven đồi Barclift phía tây. Cửa chống đạn yêu cầu Thẻ Từ An Ninh (Security Keycard) hoặc dùng Drone điều khiển bay qua lỗ thông gió.",
+          "en": "Pillar corporate security vault at Barclift West Security Room. Opened via Pillar Keycards or using a Scout Drone through vents."
+        },
+        "tip": {
+          "vi": "Chứa súng Airdrop, giáp 3, súng O12/MP9 đặc trưng và súng gọi thính Flare Gun. Có thể dùng Drone để nhặt thẻ an ninh từ xa.",
+          "en": "Houses Level 3 armor, airdrop weapons, and Flare Guns. Drones can fly into ceiling vents to grab keys."
+        }
+      },
+      {
+        "id": "deston_security_room_11",
+        "name": "Phòng An Ninh Turrita",
+        "type": "secret_room",
+        "x": 40.1,
+        "y": 42.5,
+        "grid": "D4",
+        "lootTier": "Pillar Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh đặc nhiệm Pillar tại nút giao thông cao tốc Turrita. Cửa chống đạn yêu cầu Thẻ Từ An Ninh (Security Keycard) hoặc dùng Drone điều khiển bay qua lỗ thông gió.",
+          "en": "Pillar corporate security vault at Turrita Junction Security Room. Opened via Pillar Keycards or using a Scout Drone through vents."
+        },
+        "tip": {
+          "vi": "Chứa súng Airdrop, giáp 3, súng O12/MP9 đặc trưng và súng gọi thính Flare Gun. Có thể dùng Drone để nhặt thẻ an ninh từ xa.",
+          "en": "Houses Level 3 armor, airdrop weapons, and Flare Guns. Drones can fly into ceiling vents to grab keys."
+        }
+      },
+      {
+        "id": "deston_security_room_12",
+        "name": "Phòng An Ninh Arena Đông",
+        "type": "secret_room",
+        "x": 55.9,
+        "y": 48.4,
+        "grid": "E4",
+        "lootTier": "Pillar Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh đặc nhiệm Pillar tại khu phức hợp Arena trung tâm phía đông. Cửa chống đạn yêu cầu Thẻ Từ An Ninh (Security Keycard) hoặc dùng Drone điều khiển bay qua lỗ thông gió.",
+          "en": "Pillar corporate security vault at Arena East Security Room. Opened via Pillar Keycards or using a Scout Drone through vents."
+        },
+        "tip": {
+          "vi": "Chứa súng Airdrop, giáp 3, súng O12/MP9 đặc trưng và súng gọi thính Flare Gun. Có thể dùng Drone để nhặt thẻ an ninh từ xa.",
+          "en": "Houses Level 3 armor, airdrop weapons, and Flare Guns. Drones can fly into ceiling vents to grab keys."
+        }
+      },
+      {
+        "id": "deston_security_room_13",
+        "name": "Phòng An Ninh Lodge",
+        "type": "secret_room",
+        "x": 46.6,
+        "y": 54.2,
+        "grid": "D5",
+        "lootTier": "Pillar Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh đặc nhiệm Pillar tại khu biệt thự nghỉ dưỡng Lodge. Cửa chống đạn yêu cầu Thẻ Từ An Ninh (Security Keycard) hoặc dùng Drone điều khiển bay qua lỗ thông gió.",
+          "en": "Pillar corporate security vault at Lodge Central Security Room. Opened via Pillar Keycards or using a Scout Drone through vents."
+        },
+        "tip": {
+          "vi": "Chứa súng Airdrop, giáp 3, súng O12/MP9 đặc trưng và súng gọi thính Flare Gun. Có thể dùng Drone để nhặt thẻ an ninh từ xa.",
+          "en": "Houses Level 3 armor, airdrop weapons, and Flare Guns. Drones can fly into ceiling vents to grab keys."
+        }
+      },
+      {
+        "id": "deston_security_room_14",
+        "name": "Phòng An Ninh Cavala",
+        "type": "secret_room",
+        "x": 19.6,
+        "y": 54.2,
+        "grid": "B5",
+        "lootTier": "Pillar Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh đặc nhiệm Pillar tại thị trấn ven hồ Cavala. Cửa chống đạn yêu cầu Thẻ Từ An Ninh (Security Keycard) hoặc dùng Drone điều khiển bay qua lỗ thông gió.",
+          "en": "Pillar corporate security vault at Cavala West Security Room. Opened via Pillar Keycards or using a Scout Drone through vents."
+        },
+        "tip": {
+          "vi": "Chứa súng Airdrop, giáp 3, súng O12/MP9 đặc trưng và súng gọi thính Flare Gun. Có thể dùng Drone để nhặt thẻ an ninh từ xa.",
+          "en": "Houses Level 3 armor, airdrop weapons, and Flare Guns. Drones can fly into ceiling vents to grab keys."
+        }
+      },
+      {
+        "id": "deston_security_room_15",
+        "name": "Phòng An Ninh Đập Thủy Điện",
+        "type": "secret_room",
+        "x": 28.0,
+        "y": 56.2,
+        "grid": "C5",
+        "lootTier": "Pillar Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh đặc nhiệm Pillar tại tổ hợp nhà máy đập thủy điện khổng lồ. Cửa chống đạn yêu cầu Thẻ Từ An Ninh (Security Keycard) hoặc dùng Drone điều khiển bay qua lỗ thông gió.",
+          "en": "Pillar corporate security vault at Hydroelectric Dam Security Room. Opened via Pillar Keycards or using a Scout Drone through vents."
+        },
+        "tip": {
+          "vi": "Chứa súng Airdrop, giáp 3, súng O12/MP9 đặc trưng và súng gọi thính Flare Gun. Có thể dùng Drone để nhặt thẻ an ninh từ xa.",
+          "en": "Houses Level 3 armor, airdrop weapons, and Flare Guns. Drones can fly into ceiling vents to grab keys."
+        }
+      },
+      {
+        "id": "deston_security_room_16",
+        "name": "Phòng An Ninh Sancarna",
+        "type": "secret_room",
+        "x": 45.8,
+        "y": 68.3,
+        "grid": "D6",
+        "lootTier": "Pillar Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh đặc nhiệm Pillar tại khu dân cư Sancarna phía nam. Cửa chống đạn yêu cầu Thẻ Từ An Ninh (Security Keycard) hoặc dùng Drone điều khiển bay qua lỗ thông gió.",
+          "en": "Pillar corporate security vault at Sancarna South Security Room. Opened via Pillar Keycards or using a Scout Drone through vents."
+        },
+        "tip": {
+          "vi": "Chứa súng Airdrop, giáp 3, súng O12/MP9 đặc trưng và súng gọi thính Flare Gun. Có thể dùng Drone để nhặt thẻ an ninh từ xa.",
+          "en": "Houses Level 3 armor, airdrop weapons, and Flare Guns. Drones can fly into ceiling vents to grab keys."
+        }
+      },
+      {
+        "id": "deston_security_room_17",
+        "name": "Phòng An Ninh El Koro",
+        "type": "secret_room",
+        "x": 13.6,
+        "y": 76.0,
+        "grid": "B7",
+        "lootTier": "Pillar Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh đặc nhiệm Pillar tại thị trấn cảng El Koro bờ biển tây nam. Cửa chống đạn yêu cầu Thẻ Từ An Ninh (Security Keycard) hoặc dùng Drone điều khiển bay qua lỗ thông gió.",
+          "en": "Pillar corporate security vault at El Koro Coast Security Room. Opened via Pillar Keycards or using a Scout Drone through vents."
+        },
+        "tip": {
+          "vi": "Chứa súng Airdrop, giáp 3, súng O12/MP9 đặc trưng và súng gọi thính Flare Gun. Có thể dùng Drone để nhặt thẻ an ninh từ xa.",
+          "en": "Houses Level 3 armor, airdrop weapons, and Flare Guns. Drones can fly into ceiling vents to grab keys."
+        }
+      },
+      {
+        "id": "deston_security_room_18",
+        "name": "Phòng An Ninh Holston Meadows",
+        "type": "secret_room",
+        "x": 69.8,
+        "y": 77.0,
+        "grid": "F7",
+        "lootTier": "Pillar Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh đặc nhiệm Pillar tại khu trang trại Holston Meadows phía đông nam. Cửa chống đạn yêu cầu Thẻ Từ An Ninh (Security Keycard) hoặc dùng Drone điều khiển bay qua lỗ thông gió.",
+          "en": "Pillar corporate security vault at Holston Meadows Security Room. Opened via Pillar Keycards or using a Scout Drone through vents."
+        },
+        "tip": {
+          "vi": "Chứa súng Airdrop, giáp 3, súng O12/MP9 đặc trưng và súng gọi thính Flare Gun. Có thể dùng Drone để nhặt thẻ an ninh từ xa.",
+          "en": "Houses Level 3 armor, airdrop weapons, and Flare Guns. Drones can fly into ceiling vents to grab keys."
         }
       }
     ]
@@ -970,24 +2212,6 @@
         }
       },
       {
-        "id": "paramo_secret_room",
-        "name": "Secret Chamber of Paramo",
-        "type": "secret_room",
-        "x": 52,
-        "y": 50,
-        "grid": "B2",
-        "lootTier": "Special Artifact",
-        "riskLevel": "High",
-        "description": {
-          "vi": "Căn phòng bí mật ngàn năm trong ngôi đền cổ. Chỉ mở được bằng Chìa Khóa Bí Mật Paramo nhặt ngẫu nhiên từ hòm trực thăng.",
-          "en": "Ancient secret chamber inside stone temple relics. Accessible only with the rare Paramo Secret Key."
-        },
-        "tip": {
-          "vi": "Chứa bộ Critical Response Kit cứu đồng đội gục ngã chỉ trong 1 giây!",
-          "en": "Guarantees the Critical Response Kit that revives a knocked teammate in just 1 second!"
-        }
-      },
-      {
         "id": "paramo_volcano",
         "name": "Volcanic Lava Flow",
         "type": "special",
@@ -1003,6 +2227,150 @@
         "tip": {
           "vi": "Tìm các gờ đá tự nhiên hoặc cầu đá bắc qua dung nham để vượt dòng mà không chạm chân vào lửa đỏ.",
           "en": "Navigate narrow rock bridges over lava to avoid fatal burns while rotating."
+        }
+      },
+      {
+        "id": "paramo_secret_room_1",
+        "name": "Mật Thất Vực Bắc",
+        "type": "secret_room",
+        "x": 39.1,
+        "y": 28.4,
+        "grid": "B1",
+        "lootTier": "Relic Artifact",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng bí mật bằng đá cổ ngàn năm tại hẻm núi đá vực sâu phía bắc. Cửa đá phong ấn chỉ có thể mở bằng Chìa Khóa Bí Mật Paramo (Paramo Secret Key).",
+          "en": "Ancient stone relic chamber at North Canyon Rim Chamber. Unlocked exclusively with the rare Paramo Secret Key."
+        },
+        "tip": {
+          "vi": "Chứa bộ dụng cụ hồi sinh siêu tốc Critical Response Kit (cứu đồng đội gục trong 1 giây) và hòm thính 3 cấp.",
+          "en": "Guarantees the Critical Response Kit (1-second revive) and rare Care Package gear."
+        }
+      },
+      {
+        "id": "paramo_secret_room_2",
+        "name": "Mật Thất Tây Bắc Capaco",
+        "type": "secret_room",
+        "x": 27.1,
+        "y": 32.8,
+        "grid": "A1",
+        "lootTier": "Relic Artifact",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng bí mật bằng đá cổ ngàn năm tại sườn núi phía tây bắc làng Capaco. Cửa đá phong ấn chỉ có thể mở bằng Chìa Khóa Bí Mật Paramo (Paramo Secret Key).",
+          "en": "Ancient stone relic chamber at Northwest Ridge Chamber. Unlocked exclusively with the rare Paramo Secret Key."
+        },
+        "tip": {
+          "vi": "Chứa bộ dụng cụ hồi sinh siêu tốc Critical Response Kit (cứu đồng đội gục trong 1 giây) và hòm thính 3 cấp.",
+          "en": "Guarantees the Critical Response Kit (1-second revive) and rare Care Package gear."
+        }
+      },
+      {
+        "id": "paramo_secret_room_3",
+        "name": "Mật Thất Đền Cổ Nam Lab",
+        "type": "secret_room",
+        "x": 62.1,
+        "y": 45.9,
+        "grid": "B2",
+        "lootTier": "Relic Artifact",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng bí mật bằng đá cổ ngàn năm tại ngôi đền đá cổ phía đông nam trạm nghiên cứu Lab. Cửa đá phong ấn chỉ có thể mở bằng Chìa Khóa Bí Mật Paramo (Paramo Secret Key).",
+          "en": "Ancient stone relic chamber at East Canyon Temple Chamber. Unlocked exclusively with the rare Paramo Secret Key."
+        },
+        "tip": {
+          "vi": "Chứa bộ dụng cụ hồi sinh siêu tốc Critical Response Kit (cứu đồng đội gục trong 1 giây) và hòm thính 3 cấp.",
+          "en": "Guarantees the Critical Response Kit (1-second revive) and rare Care Package gear."
+        }
+      },
+      {
+        "id": "paramo_secret_room_4",
+        "name": "Mật Thất Cao Nguyên Atahul",
+        "type": "secret_room",
+        "x": 81.6,
+        "y": 54.0,
+        "grid": "C2",
+        "lootTier": "Relic Artifact",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng bí mật bằng đá cổ ngàn năm tại cao nguyên đá phía đông thị trấn Atahul. Cửa đá phong ấn chỉ có thể mở bằng Chìa Khóa Bí Mật Paramo (Paramo Secret Key).",
+          "en": "Ancient stone relic chamber at East Plateau Chamber. Unlocked exclusively with the rare Paramo Secret Key."
+        },
+        "tip": {
+          "vi": "Chứa bộ dụng cụ hồi sinh siêu tốc Critical Response Kit (cứu đồng đội gục trong 1 giây) và hòm thính 3 cấp.",
+          "en": "Guarantees the Critical Response Kit (1-second revive) and rare Care Package gear."
+        }
+      },
+      {
+        "id": "paramo_secret_room_5",
+        "name": "Mật Thất Bờ Hồ Dung Nham",
+        "type": "secret_room",
+        "x": 60.1,
+        "y": 57.2,
+        "grid": "B2",
+        "lootTier": "Relic Artifact",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng bí mật bằng đá cổ ngàn năm tại bờ nam hồ dung nham nóng chảy. Cửa đá phong ấn chỉ có thể mở bằng Chìa Khóa Bí Mật Paramo (Paramo Secret Key).",
+          "en": "Ancient stone relic chamber at Lava Lake South Chamber. Unlocked exclusively with the rare Paramo Secret Key."
+        },
+        "tip": {
+          "vi": "Chứa bộ dụng cụ hồi sinh siêu tốc Critical Response Kit (cứu đồng đội gục trong 1 giây) và hòm thính 3 cấp.",
+          "en": "Guarantees the Critical Response Kit (1-second revive) and rare Care Package gear."
+        }
+      },
+      {
+        "id": "paramo_secret_room_6",
+        "name": "Mật Thất Cao Nguyên Trung Tâm",
+        "type": "secret_room",
+        "x": 42.9,
+        "y": 60.2,
+        "grid": "B2",
+        "lootTier": "Relic Artifact",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng bí mật bằng đá cổ ngàn năm tại gò đất cao giữa bản đồ, nam bãi đáp Helipad. Cửa đá phong ấn chỉ có thể mở bằng Chìa Khóa Bí Mật Paramo (Paramo Secret Key).",
+          "en": "Ancient stone relic chamber at Central Plateau Chamber. Unlocked exclusively with the rare Paramo Secret Key."
+        },
+        "tip": {
+          "vi": "Chứa bộ dụng cụ hồi sinh siêu tốc Critical Response Kit (cứu đồng đội gục trong 1 giây) và hòm thính 3 cấp.",
+          "en": "Guarantees the Critical Response Kit (1-second revive) and rare Care Package gear."
+        }
+      },
+      {
+        "id": "paramo_secret_room_7",
+        "name": "Mật Thất Biên Giới Tây",
+        "type": "secret_room",
+        "x": 12.0,
+        "y": 60.9,
+        "grid": "A2",
+        "lootTier": "Relic Artifact",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng bí mật bằng đá cổ ngàn năm tại ngôi đền đá giáp ranh giới bản đồ phía tây. Cửa đá phong ấn chỉ có thể mở bằng Chìa Khóa Bí Mật Paramo (Paramo Secret Key).",
+          "en": "Ancient stone relic chamber at West Border Temple Chamber. Unlocked exclusively with the rare Paramo Secret Key."
+        },
+        "tip": {
+          "vi": "Chứa bộ dụng cụ hồi sinh siêu tốc Critical Response Kit (cứu đồng đội gục trong 1 giây) và hòm thính 3 cấp.",
+          "en": "Guarantees the Critical Response Kit (1-second revive) and rare Care Package gear."
+        }
+      },
+      {
+        "id": "paramo_secret_room_8",
+        "name": "Mật Thất Thung Lũng Makalpa",
+        "type": "secret_room",
+        "x": 51.4,
+        "y": 77.4,
+        "grid": "B3",
+        "lootTier": "Relic Artifact",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng bí mật bằng đá cổ ngàn năm tại thung lũng phía bắc ngôi làng Makalpa. Cửa đá phong ấn chỉ có thể mở bằng Chìa Khóa Bí Mật Paramo (Paramo Secret Key).",
+          "en": "Ancient stone relic chamber at South Valley Chamber. Unlocked exclusively with the rare Paramo Secret Key."
+        },
+        "tip": {
+          "vi": "Chứa bộ dụng cụ hồi sinh siêu tốc Critical Response Kit (cứu đồng đội gục trong 1 giây) và hòm thính 3 cấp.",
+          "en": "Guarantees the Critical Response Kit (1-second revive) and rare Care Package gear."
         }
       }
     ]

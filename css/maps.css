@@ -245,6 +245,8 @@
   object-fit: fill;
   display: block;
   pointer-events: none;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: high-quality;
 }
 
 /* 4. MILITARY GRID OVERLAY */
@@ -317,7 +319,7 @@
 
 .poi-marker {
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(calc(1 / var(--map-zoom, 1)));
   pointer-events: auto;
   cursor: pointer;
   z-index: 5;
@@ -328,12 +330,12 @@
 }
 
 .poi-marker:hover {
-  transform: translate(-50%, -50%) scale(1.25);
+  transform: translate(-50%, -50%) scale(calc(1.25 / var(--map-zoom, 1)));
   z-index: 20;
 }
 
 .poi-marker.active {
-  transform: translate(-50%, -50%) scale(1.35);
+  transform: translate(-50%, -50%) scale(calc(1.35 / var(--map-zoom, 1)));
   z-index: 25;
 }
 
@@ -792,4 +794,117 @@
   width: 100vw;
   height: 100vh;
   max-height: 100vh;
+}
+
+/* 7. INFOGRAPHIC GUIDE BUTTON & MODAL */
+.btn-infographic-guide {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 4px;
+  background: rgba(241, 168, 10, 0.12);
+  border: 1px solid rgba(241, 168, 10, 0.45);
+  color: var(--pubg-gold);
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-infographic-guide:hover {
+  background: var(--pubg-gold);
+  color: #000;
+  border-color: var(--pubg-gold);
+  box-shadow: 0 0 12px rgba(241, 168, 10, 0.4);
+}
+
+.infographic-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 6, 9, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.infographic-modal-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.infographic-modal-card {
+  position: relative;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-tactical);
+  border-radius: 8px;
+  max-width: 92vw;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+.infographic-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.25rem;
+  border-bottom: 1px solid var(--border-tactical);
+  background: rgba(15, 20, 25, 0.95);
+}
+
+.infographic-modal-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--pubg-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.infographic-modal-close {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  transition: color var(--transition-fast);
+}
+
+.infographic-modal-close:hover {
+  color: var(--pubg-gold);
+}
+
+.infographic-modal-body {
+  padding: 1rem;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #080b0e;
+}
+
+.infographic-modal-img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }

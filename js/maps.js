@@ -80,6 +80,10 @@ class TacticalMapViewer {
     this.hudZoom = document.getElementById('hudZoomLevel');
     this.filterChips = document.querySelectorAll('.filter-chip');
     this.dossierContainer = document.getElementById('tacticalDossierSection');
+    this.btnInfographic = document.getElementById('btnOpenInfographic');
+    this.infographicModal = document.getElementById('infographicModal');
+    this.infographicModalImg = document.getElementById('infographicModalImg');
+    this.btnCloseInfographic = document.getElementById('btnCloseInfographic');
   }
 
   bindEvents() {
@@ -122,6 +126,19 @@ class TacticalMapViewer {
     // Close Popup button
     document.getElementById('popupCloseBtn')?.addEventListener('click', () => {
       this.closePoiPopup();
+    });
+
+    // Infographic Modal Controls
+    this.btnInfographic?.addEventListener('click', () => this.openInfographicModal());
+    this.btnCloseInfographic?.addEventListener('click', () => this.closeInfographicModal());
+    this.infographicModal?.addEventListener('click', (e) => {
+      if (e.target === this.infographicModal) this.closeInfographicModal();
+    });
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        this.closeInfographicModal();
+        this.closePoiPopup();
+      }
     });
 
     // Window resize adjust
@@ -178,6 +195,12 @@ class TacticalMapViewer {
 
     // Render POI Markers
     this.renderMarkers();
+
+    // Update Infographic Button Visibility
+    const mapsWithInfographic = ['erangel', 'taego', 'deston', 'paramo', 'vikendi', 'rondo'];
+    if (this.btnInfographic) {
+      this.btnInfographic.style.display = mapsWithInfographic.includes(mapId) ? 'inline-flex' : 'none';
+    }
 
     // Render Tactical Dossier Details
     this.renderDossier();
@@ -268,21 +291,27 @@ class TacticalMapViewer {
   }
 
   applyMarkerFilter() {
-    if (!this.markersLayer) return;
-    const markers = this.markersLayer.querySelectorAll('.poi-marker');
-    markers.forEach(el => {
+    const filter = this.activeFilter;
+    const isMatch = (type) => {
+      if (filter === 'all') return true;
+      if (filter === 'utility') return (type === 'bluechip' || type === 'market' || type === 'special');
+      if (filter === 'hotdrop') return (type === 'hotdrop');
+      if (filter === 'secret_room') return (type === 'secret_room');
+      return (type === filter);
+    };
+
+    if (this.markersLayer) {
+      const markers = this.markersLayer.querySelectorAll('.poi-marker');
+      markers.forEach(el => {
+        const type = el.getAttribute('data-type');
+        el.style.display = isMatch(type) ? 'flex' : 'none';
+      });
+    }
+
+    const cards = document.querySelectorAll('.hotspot-item-card');
+    cards.forEach(el => {
       const type = el.getAttribute('data-type');
-      if (this.activeFilter === 'all') {
-        el.style.display = 'flex';
-      } else if (this.activeFilter === 'utility') {
-        el.style.display = (type === 'bluechip' || type === 'market' || type === 'special') ? 'flex' : 'none';
-      } else if (this.activeFilter === 'hotdrop') {
-        el.style.display = (type === 'hotdrop') ? 'flex' : 'none';
-      } else if (this.activeFilter === 'secret_room') {
-        el.style.display = (type === 'secret_room') ? 'flex' : 'none';
-      } else {
-        el.style.display = (type === this.activeFilter) ? 'flex' : 'none';
-      }
+      el.style.display = isMatch(type) ? 'flex' : 'none';
     });
   }
 
@@ -554,6 +583,7 @@ class TacticalMapViewer {
   updateTransform() {
     if (this.stage) {
       this.stage.style.transform = `translate3d(${this.panX}px, ${this.panY}px, 0) scale(${this.scale})`;
+      this.stage.style.setProperty('--map-zoom', this.scale);
     }
     if (this.hudZoom) {
       this.hudZoom.textContent = `${Math.round(this.scale * 100)}%`;
@@ -679,7 +709,7 @@ class TacticalMapViewer {
               else if (h.type === 'special') { icon = '⭐'; bg = '#a855f7'; }
 
               return `
-                <div class="hotspot-item-card" data-id="${h.id}">
+                <div class="hotspot-item-card" data-id="${h.id}" data-type="${h.type}">
                   <div class="item-left">
                     <div class="item-icon-circle" style="background: ${bg}22; border: 1px solid ${bg}; color: ${bg};">
                       ${icon}
@@ -717,6 +747,31 @@ class TacticalMapViewer {
         }
       });
     });
+
+    // Apply active filter to newly rendered dossier items
+    this.applyMarkerFilter();
+  }
+
+  openInfographicModal() {
+    if (!this.infographicModal || !this.currentMap) return;
+    const imgUrl = `assets/maps_update/${this.currentMap.id}.png`;
+    if (this.infographicModalImg) {
+      this.infographicModalImg.src = imgUrl;
+      this.infographicModalImg.alt = `${this.currentMap.name} Secret Key Tactical Guide`;
+    }
+    const titleEl = document.getElementById('infographicModalTitle');
+    if (titleEl) {
+      const baseTitle = window.i18n ? window.i18n.t('maps_page.infographic_modal_title', 'Bản Đồ Hướng Dẫn Vị Trí Chìa Khóa & Mật Thất') : 'Bản Đồ Hướng Dẫn Vị Trí Chìa Khóa & Mật Thất';
+      titleEl.textContent = `${baseTitle} // ${this.currentMap.name}`;
+    }
+    this.infographicModal.classList.add('open');
+    this.infographicModal.setAttribute('aria-hidden', 'false');
+  }
+
+  closeInfographicModal() {
+    if (!this.infographicModal) return;
+    this.infographicModal.classList.remove('open');
+    this.infographicModal.setAttribute('aria-hidden', 'true');
   }
 
   onLanguageChanged() {

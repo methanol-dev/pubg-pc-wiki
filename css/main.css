@@ -412,6 +412,43 @@ main {
   color: var(--pubg-gold);
 }
 
+.footer-author {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  justify-content: center;
+  margin: 0.2rem 0;
+}
+
+.footer-author-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--pubg-gold);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.2rem 0.65rem;
+  border-radius: 4px;
+  background: rgba(241, 168, 10, 0.08);
+  border: 1px solid rgba(241, 168, 10, 0.25);
+  transition: all var(--transition-fast);
+}
+
+.footer-author-link:hover {
+  background: var(--pubg-gold);
+  color: #000;
+  border-color: var(--pubg-gold);
+  box-shadow: 0 0 12px rgba(241, 168, 10, 0.35);
+}
+
+.footer-author-link .github-icon {
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
 .footer-disclaimer {
   font-size: 0.825rem;
   color: var(--text-muted);
