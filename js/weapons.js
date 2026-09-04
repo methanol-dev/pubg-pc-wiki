@@ -495,7 +495,7 @@ class WeaponsManager {
                 </span>
                 <div class="weapon-compatible-attachments-list">
                   ${compatibleAttachments.slice(0, 12).map(att => `
-                    <div class="modal-attach-thumb btn-view-attach-from-weapon" data-attach-id="${att.id}" title="${att.name}">
+                    <div class="modal-attach-thumb btn-view-attach-from-weapon" data-attach-id="${att.id}" data-slot="${att.slot}" title="${att.name}">
                       <img src="${att.image}" alt="${att.name}" loading="lazy" />
                       <span>${lang === 'vi' && att.nameVi ? att.nameVi : att.name}</span>
                     </div>
@@ -770,7 +770,7 @@ class WeaponsManager {
     const compGuns = this.getCompatibleWeaponsForAttachment(att);
 
     return `
-      <article class="attachment-card" data-id="${att.id}">
+      <article class="attachment-card" data-id="${att.id}" data-slot="${att.slot}">
         <div>
           <div class="attachment-card-top">
             <div>
@@ -912,7 +912,7 @@ class WeaponsManager {
       <div class="attachment-modal-body">
         <!-- Left: Image Box & Slot -->
         <div>
-          <div class="attachment-modal-imgbox">
+          <div class="attachment-modal-imgbox" data-slot="${att.slot}">
             <img src="${att.image}" alt="${att.name}" />
             <h3 style="font-family: var(--font-display); font-size: 1.35rem; color: var(--pubg-gold); margin-top: 1rem; margin-bottom: 0.25rem;">
               ${displayName}

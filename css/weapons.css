@@ -636,15 +636,66 @@
   object-fit: contain;
   filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.6));
   transition: transform 0.25s ease;
-  transform: rotate(-45deg);
+  transform: rotate(-45deg); /* Default for grips and magazines (dọc) */
 }
 
+/* Nòng súng (Muzzle) - Nằm ngang (Horizontal) */
+.attachment-card[data-slot="muzzle"] .attachment-preview img,
+.attachment-preview img[src*="compensator"],
+.attachment-preview img[src*="flash-hider"],
+.attachment-preview img[src*="suppressor"],
+.attachment-preview img[src*="choke"],
+.attachment-preview img[src*="duckbill"] {
+  transform: rotate(45deg);
+}
+
+/* Ống ngắm (Sight / Scope) - Nằm ngang (Horizontal) */
+.attachment-card[data-slot="sight"] .attachment-preview img,
+.attachment-preview img[src*="red-dot"],
+.attachment-preview img[src*="holo-sight"],
+.attachment-preview img[src*="scope-"] {
+  transform: rotate(35deg);
+}
+
+/* Báng súng (Stock) - Nằm ngang (Horizontal) */
+.attachment-card[data-slot="stock"] .attachment-preview img,
+.attachment-preview img[src*="stock"],
+.attachment-preview img[src*="cheek-pad"],
+.attachment-preview img[src*="bullet-loops"] {
+  transform: rotate(35deg);
+}
+
+/* Riêng Canted Sight có chân ngàm nằm ngang sẵn ở 0deg */
 .attachment-preview img[src*="canted-sight"] {
   transform: rotate(0deg) !important;
 }
 
+/* Hover effects */
 .attachment-card:hover .attachment-preview img {
   transform: rotate(-45deg) scale(1.08);
+}
+
+.attachment-card[data-slot="muzzle"]:hover .attachment-preview img,
+.attachment-card:hover .attachment-preview img[src*="compensator"],
+.attachment-card:hover .attachment-preview img[src*="flash-hider"],
+.attachment-card:hover .attachment-preview img[src*="suppressor"],
+.attachment-card:hover .attachment-preview img[src*="choke"],
+.attachment-card:hover .attachment-preview img[src*="duckbill"] {
+  transform: rotate(45deg) scale(1.08);
+}
+
+.attachment-card[data-slot="sight"]:hover .attachment-preview img,
+.attachment-card:hover .attachment-preview img[src*="red-dot"],
+.attachment-card:hover .attachment-preview img[src*="holo-sight"],
+.attachment-card:hover .attachment-preview img[src*="scope-"] {
+  transform: rotate(35deg) scale(1.08);
+}
+
+.attachment-card[data-slot="stock"]:hover .attachment-preview img,
+.attachment-card:hover .attachment-preview img[src*="stock"],
+.attachment-card:hover .attachment-preview img[src*="cheek-pad"],
+.attachment-card:hover .attachment-preview img[src*="bullet-loops"] {
+  transform: rotate(35deg) scale(1.08);
 }
 
 .attachment-card:hover .attachment-preview img[src*="canted-sight"] {
@@ -723,7 +774,30 @@
   max-height: 150px;
   object-fit: contain;
   filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.7));
-  transform: rotate(-45deg);
+  transform: rotate(-45deg); /* Default for grips and magazines */
+}
+
+.attachment-modal-imgbox[data-slot="muzzle"] img,
+.attachment-modal-imgbox img[src*="compensator"],
+.attachment-modal-imgbox img[src*="flash-hider"],
+.attachment-modal-imgbox img[src*="suppressor"],
+.attachment-modal-imgbox img[src*="choke"],
+.attachment-modal-imgbox img[src*="duckbill"] {
+  transform: rotate(45deg);
+}
+
+.attachment-modal-imgbox[data-slot="sight"] img,
+.attachment-modal-imgbox img[src*="red-dot"],
+.attachment-modal-imgbox img[src*="holo-sight"],
+.attachment-modal-imgbox img[src*="scope-"] {
+  transform: rotate(35deg);
+}
+
+.attachment-modal-imgbox[data-slot="stock"] img,
+.attachment-modal-imgbox img[src*="stock"],
+.attachment-modal-imgbox img[src*="cheek-pad"],
+.attachment-modal-imgbox img[src*="bullet-loops"] {
+  transform: rotate(35deg);
 }
 
 .attachment-modal-imgbox img[src*="canted-sight"] {
@@ -865,7 +939,30 @@
   width: 44px;
   height: 36px;
   object-fit: contain;
-  transform: rotate(-45deg);
+  transform: rotate(-45deg); /* Default for grips and magazines */
+}
+
+.modal-attach-thumb[data-slot="muzzle"] img,
+.modal-attach-thumb img[src*="compensator"],
+.modal-attach-thumb img[src*="flash-hider"],
+.modal-attach-thumb img[src*="suppressor"],
+.modal-attach-thumb img[src*="choke"],
+.modal-attach-thumb img[src*="duckbill"] {
+  transform: rotate(45deg);
+}
+
+.modal-attach-thumb[data-slot="sight"] img,
+.modal-attach-thumb img[src*="red-dot"],
+.modal-attach-thumb img[src*="holo-sight"],
+.modal-attach-thumb img[src*="scope-"] {
+  transform: rotate(35deg);
+}
+
+.modal-attach-thumb[data-slot="stock"] img,
+.modal-attach-thumb img[src*="stock"],
+.modal-attach-thumb img[src*="cheek-pad"],
+.modal-attach-thumb img[src*="bullet-loops"] {
+  transform: rotate(35deg);
 }
 
 .modal-attach-thumb img[src*="canted-sight"] {
