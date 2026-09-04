@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bản Đồ Chiến Thuật PUBG PC | Erangel, Miramar, Taego, Rondo</title>
-  <meta name="description" content="Khám phá địa hình, kích thước, mật thất và phương tiện độc quyền trên các bản đồ Erangel, Miramar, Taego, Rondo, Vikendi, Deston." />
-  <meta name="keywords" content="bản đồ pubg pc, map erangel, map rondo pubg, pubg tactical maps, secret room pubg" />
+  <title>Bản Đồ Chiến Thuật PUBG PC | Erangel, Miramar, Taego, Rondo, Vikendi, Deston, Sanhok, Karakin, Paramo</title>
+  <meta name="description" content="Trình xem bản đồ chiến thuật vệ tinh tương tác PUBG PC. Hỗ trợ zoom in, zoom out, xem lưới tọa độ quân sự, vị trí mật thất, hot drop và trụ hồi sinh." />
+  <meta name="keywords" content="bản đồ pubg pc, map erangel, map rondo pubg, tactical map viewer, secret room pubg, blue chip pubg" />
   <link rel="canonical" href="https://methanol-dev.github.io/pubg-pc-wiki/maps.html" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://methanol-dev.github.io/pubg-pc-wiki/maps.html" />
-  <meta property="og:title" content="Bản Đồ Chiến Thuật PUBG PC | Erangel, Miramar, Taego, Rondo" />
-  <meta property="og:description" content="Khám phá địa hình, kích thước, mật thất và phương tiện độc quyền trên các bản đồ Erangel, Miramar, Taego, Rondo, Vikendi, Deston." />
+  <meta property="og:title" content="Bản Đồ Chiến Thuật PUBG PC | Interactive Tactical Map Viewer" />
+  <meta property="og:description" content="Trình xem bản đồ chiến thuật vệ tinh tương tác PUBG PC với tính năng zoom in/out, lưới tọa độ quân sự và điểm nóng chiến lược." />
   <meta property="og:site_name" content="PUBG PC Tactical Wiki" />
   <meta property="og:locale" content="vi_VN" />
 
@@ -23,7 +23,7 @@
     "@context": "https://schema.org",
     "@type": "ItemList",
     "name": "PUBG PC Battlegrounds & Tactical Maps",
-    "description": "Comprehensive guide to all battle royale maps in PUBG PC."
+    "description": "Comprehensive tactical guide to all 9 battle royale maps in PUBG PC with interactive satellite viewer."
   }
   </script>
 
@@ -33,81 +33,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/main.css?v=2.2" />
-  <link rel="stylesheet" href="css/components.css?v=2.2" />
-  <style>
-    .maps-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-    .map-card {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-tactical);
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      transition: var(--transition-normal);
-    }
-    .map-card:hover {
-      border-color: var(--pubg-gold);
-      transform: translateY(-4px);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5), 0 0 16px var(--pubg-gold-glow);
-    }
-    .map-banner {
-      height: 140px;
-      background: linear-gradient(135deg, rgba(241, 168, 10, 0.15) 0%, rgba(10, 12, 15, 0.95) 100%), var(--bg-surface-elevated);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 1.25rem;
-      border-bottom: 1px solid var(--border-subtle);
-    }
-    .map-name {
-      font-family: var(--font-display);
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: var(--text-primary);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    .map-body {
-      padding: 1.25rem;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .map-info-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 0.85rem;
-      color: var(--text-secondary);
-      border-bottom: 1px dashed var(--border-subtle);
-      padding-bottom: 0.5rem;
-    }
-    .map-feature-list {
-      font-size: 0.85rem;
-      color: var(--text-secondary);
-      line-height: 1.6;
-    }
-    .map-vehicle-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.35rem;
-    }
-    .vehicle-tag {
-      background: var(--bg-surface-elevated);
-      border: 1px solid var(--border-subtle);
-      padding: 0.2rem 0.5rem;
-      border-radius: var(--radius-sm);
-      font-size: 0.75rem;
-      color: var(--text-muted);
-    }
-  </style>
+  <link rel="stylesheet" href="css/main.css?v=2.3" />
+  <link rel="stylesheet" href="css/components.css?v=2.3" />
+  <link rel="stylesheet" href="css/maps.css?v=2.3" />
 </head>
 <body>
   <!-- Header -->
@@ -167,10 +95,11 @@
   </div>
 
   <!-- Main Content -->
-  <main class="container" style="padding-top: 2.5rem;">
-    <div>
+  <main class="container" style="padding-top: 2rem; padding-bottom: 3rem;">
+    <!-- Page Header -->
+    <div style="margin-bottom: 1.5rem;">
       <div class="sys-tag">CARTOGRAPHY // TACTICAL THEATERS</div>
-      <h1 style="font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-primary); margin-top: 0.25rem;">
+      <h1 style="font-family: var(--font-display); font-size: 2.4rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-primary); margin-top: 0.25rem;">
         <span style="color: var(--pubg-gold);">BẢN ĐỒ</span> CHIẾN THUẬT PUBG PC
       </h1>
       <p style="color: var(--text-secondary); font-size: 1.05rem;" data-i18n="maps_page.subtitle">
@@ -178,9 +107,111 @@
       </p>
     </div>
 
-    <!-- Maps Grid -->
-    <div class="maps-grid" id="mapsGrid">
-      <!-- Injected by script -->
+    <!-- Map Theater Wrapper -->
+    <div class="maps-theater-section">
+      <!-- 1. Horizontal Map Selection Tabs -->
+      <div class="map-selector-bar" id="mapSelectorTabs">
+        <!-- Rendered dynamically by js/maps.js -->
+      </div>
+
+      <!-- 2. Interactive Tactical Viewer Container -->
+      <div class="map-viewport-container" id="mapViewerContainer">
+        <!-- Viewer Top Control & Filter Bar -->
+        <div class="viewer-top-bar">
+          <div class="viewer-meta-info">
+            <h2 class="viewer-map-title" id="viewerMapTitle">Erangel</h2>
+            <span class="viewer-map-badge" id="viewerMapBadge">8x8 km // 8x8 GRID</span>
+          </div>
+
+          <div class="viewer-filters">
+            <button class="filter-chip active" data-filter="all">
+              <span class="chip-dot dot-all"></span>
+              <span data-i18n="maps_page.all_markers">Tất Cả</span>
+            </button>
+            <button class="filter-chip" data-filter="hotdrop">
+              <span class="chip-dot dot-hotdrop"></span>
+              <span data-i18n="maps_page.filter_hotdrops">Khu Giao Tranh</span>
+            </button>
+            <button class="filter-chip" data-filter="secret_room">
+              <span class="chip-dot dot-secret"></span>
+              <span data-i18n="maps_page.filter_secret">Mật Thất & Kho</span>
+            </button>
+            <button class="filter-chip" data-filter="utility">
+              <span class="chip-dot dot-bluechip"></span>
+              <span data-i18n="maps_page.filter_utility">Hồi Sinh & Tiện Ích</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Viewport Stage -->
+        <div class="map-viewport" id="mapViewport">
+          <!-- Tactical Corner Brackets -->
+          <div class="viewport-bracket top-left"></div>
+          <div class="viewport-bracket top-right"></div>
+          <div class="viewport-bracket bottom-left"></div>
+          <div class="viewport-bracket bottom-right"></div>
+
+          <!-- Transform Canvas Stage -->
+          <div class="map-stage" id="mapStage">
+            <img class="map-canvas-image" id="mapCanvasImage" src="assets/maps/erangel.png" alt="Erangel Tactical Satellite Map" />
+            <div class="grid-overlay" id="gridOverlay"></div>
+            <div class="markers-layer" id="markersLayer"></div>
+          </div>
+
+          <!-- Hotspot Intelligence Popup Card -->
+          <div class="poi-popup-card" id="poiPopupCard">
+            <div class="popup-header">
+              <div class="popup-title-group">
+                <span class="popup-title" id="popupTitle">Pochinki</span>
+                <span class="popup-coord" id="popupCoord">GRID D5 // X:48.5% Y:53.5%</span>
+              </div>
+              <button class="popup-close-btn" id="popupCloseBtn" aria-label="Đóng">&times;</button>
+            </div>
+            <div class="popup-badges">
+              <span class="popup-badge badge-risk-extreme" id="popupRiskBadge">EXTREME RISK</span>
+              <span class="popup-badge badge-risk-high" id="popupLootBadge">VERY HIGH LOOT</span>
+            </div>
+            <p class="popup-desc" id="popupDesc"></p>
+            <div class="popup-tip-box">
+              <div class="popup-tip-title">
+                <span>🛡️</span> <span data-i18n="maps_page.tactical_tip">Mẹo Chiến Thuật</span>
+              </div>
+              <div id="popupTipText"></div>
+            </div>
+          </div>
+
+          <!-- Floating HUD Controls -->
+          <div class="viewer-hud-controls">
+            <button class="hud-btn" id="hudBtnZoomIn" title="Phóng to (+)">+</button>
+            <button class="hud-btn" id="hudBtnZoomOut" title="Thu nhỏ (-)">−</button>
+            <button class="hud-btn" id="hudBtnReset" title="Đặt lại (1:1)" style="font-size: 0.75rem; font-weight: 700;">1:1</button>
+            <button class="hud-btn active" id="hudBtnGrid" title="Lưới tọa độ (#)" style="font-size: 0.9rem;">#</button>
+            <button class="hud-btn" id="hudBtnFullscreen" title="Toàn màn hình (⛶)" style="font-size: 0.9rem;">⛶</button>
+          </div>
+
+          <!-- Bottom HUD Information Status Bar -->
+          <div class="viewer-hud-bar">
+            <span id="hudCoordinates">GRID: -- [--%, --%]</span>
+            <span>|</span>
+            <span>ZOOM: <span class="zoom-val" id="hudZoomLevel">100%</span></span>
+          </div>
+        </div>
+
+        <!-- Controls Guide Hint Bar -->
+        <div class="viewer-instructions-bar">
+          <span data-i18n="maps_page.controls_hint">
+            Cuộn chuột để Zoom • Giữ chuột & kéo để Di chuyển • Click vào điểm ghim để xem thông tin
+          </span>
+          <span style="display: inline-flex; align-items: center; gap: 0.25rem;">
+            <span style="color: var(--pubg-gold);">●</span> SATELLITE MILITARY ENGINE v2.3
+          </span>
+        </div>
+      </div>
+
+      <!-- 3. Tactical Dossier & Hotspots Interactive Directory -->
+      <section id="tacticalDossierSection">
+        <!-- Rendered dynamically by js/maps.js -->
+      </section>
     </div>
   </main>
 
@@ -205,52 +236,6 @@
   <script src="js/i18n.js"></script>
   <script src="js/data-loader.js"></script>
   <script src="js/main.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', async () => {
-      const maps = await window.dataLoader.getMaps();
-      const grid = document.getElementById('mapsGrid');
-
-      const renderMaps = () => {
-        if (!grid) return;
-        const lang = window.i18n.getLang();
-        grid.innerHTML = maps.map(m => `
-          <div class="map-card">
-            <div class="map-banner">
-              <span class="badge ${m.featured ? 'badge-airdrop' : 'badge-world'}" style="align-self: flex-start; margin-bottom: 0.5rem;">
-                ${m.size}
-              </span>
-              <h3 class="map-name">${m.name}</h3>
-            </div>
-            <div class="map-body">
-              <div class="map-info-row">
-                <span>${window.i18n.t('maps_page.size', 'Kích thước')}:</span>
-                <strong style="color: var(--text-primary); font-family: var(--font-mono);">${m.size}</strong>
-              </div>
-              <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5;">
-                ${m.description[lang] || m.description.en}
-              </p>
-              <div>
-                <strong style="font-family: var(--font-display); font-size: 0.85rem; color: var(--pubg-gold); text-transform: uppercase;">
-                  ✨ ${window.i18n.t('maps_page.secret_rooms', 'Cơ chế & Khí tài')}:
-                </strong>
-                <p class="map-feature-list">${m.specialFeatures[lang] || m.specialFeatures.en}</p>
-              </div>
-              <div>
-                <strong style="font-family: var(--font-display); font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; display: block; margin-bottom: 0.35rem;">
-                  🚗 ${window.i18n.t('maps_page.vehicles', 'Phương tiện tiêu biểu')}:
-                </strong>
-                <div class="map-vehicle-tags">
-                  ${m.vehicles.map(v => `<span class="vehicle-tag">${v}</span>`).join('')}
-                </div>
-              </div>
-            </div>
-          </div>
-        `).join('');
-      };
-
-      renderMaps();
-      document.addEventListener('languageChanged', renderMaps);
-    });
-  </script>
+  <script src="js/maps.js"></script>
 </body>
 </html>

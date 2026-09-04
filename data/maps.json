@@ -3,96 +3,1008 @@
     "id": "erangel",
     "name": "Erangel",
     "size": "8x8 km",
-    "terrain": "Eastern European Woodlands & Coastlines",
+    "gridDimension": 8,
+    "image": "assets/maps/erangel.png",
     "featured": true,
-    "specialFeatures": {
-      "vi": "Hầm bí mật (Secret Basements), Phà qua đảo Sosnovka Military, Trụ hồi sinh Blue Chip Transmitter.",
-      "en": "Secret Basement rooms, Sosnovka Island ferries, Blue Chip revive transmitters."
+    "climate": {
+      "vi": "Ôn đới Bắc Âu, sương mù, mưa rào, hoàng hôn",
+      "en": "Northern temperate, dynamic fog, rain, sunset"
     },
-    "vehicles": ["UAZ", "Dacia 1300", "Motorcycle", "Buggy", "BRDM-2", "PG-117"],
+    "terrain": {
+      "vi": "Đồng cỏ xanh, rừng bạch dương, các thị trấn Soviet, ngọn đồi thoai thoải và đảo quân sự Sosnovka.",
+      "en": "Rolling grasslands, birch forests, Soviet towns, hills, and Sosnovka military island."
+    },
     "description": {
-      "vi": "Bản đồ khởi nguồn huyền thoại của PUBG. Địa hình đồi cỏ thoải, rừng cây và các khu đô thị kinh điển như Pochinki, School, Georgopol, Military Base.",
-      "en": "The original birthplace of PUBG. Rolling green hills, lush forests, and iconic POIs including Pochinki, School, Georgopol, and Military Base."
-    }
+      "vi": "Bản đồ huyền thoại đặt nền móng cho PUBG. Chiến trường kinh điển kết hợp giữa cận chiến đô thị tại Pochinki, đồi cỏ giao tranh tầm xa và các cây cầu tử thần nối đảo quân sự.",
+      "en": "The legendary birthplace of PUBG. A timeless battleground featuring intense urban combat in Pochinki, long-range hill snipes, and perilous bridge choke points."
+    },
+    "specialFeatures": {
+      "vi": "Hầm ngầm bí mật mở bằng xà beng/chìa khóa, Trụ tháp hồi sinh Blue Chip, phà di chuyển qua đảo Sosnovka.",
+      "en": "Secret Basements opened with crowbars/keys, Blue Chip recall towers, passenger ferries to Sosnovka Island."
+    },
+    "vehicles": [
+      "UAZ",
+      "Dacia 1300",
+      "Motorbike",
+      "Buggy",
+      "PG-117 (Boat)",
+      "Aquarail",
+      "Bicycle"
+    ],
+    "exclusiveWeapons": [
+      "DP-28",
+      "Mosina Nagant"
+    ],
+    "hotspots": [
+      {
+        "id": "erangel_pochinki",
+        "name": "Pochinki",
+        "type": "hotdrop",
+        "x": 48.5,
+        "y": 53.5,
+        "grid": "D5",
+        "lootTier": "Very High",
+        "riskLevel": "Extreme",
+        "description": {
+          "vi": "Thành phố trung tâm với mật độ nhà cao tầng dày đặc. Nơi diễn ra những cuộc đọ súng hỗn loạn đẫm máu nhất.",
+          "en": "Dense central city with multi-story buildings. Known for chaotic, close-quarters firefights right after landing."
+        },
+        "tip": {
+          "vi": "Chiếm lĩnh các mái nhà có ban công để kiểm soát các ngã tư chính. Luôn cẩn thận shotgun góc hẹp.",
+          "en": "Secure rooftops with balconies to command intersections. Beware of shotgun ambushers."
+        }
+      },
+      {
+        "id": "erangel_military",
+        "name": "Sosnovka Military Base",
+        "type": "hotdrop",
+        "x": 50.5,
+        "y": 82,
+        "grid": "E8",
+        "lootTier": "Military High",
+        "riskLevel": "Extreme",
+        "description": {
+          "vi": "Căn cứ quân sự kiên cố với 3 dãy nhà chung cư U-Building, đài radar khổng lồ và nhà máy radar vệ tinh. Đầy ắp trang bị Cấp 3.",
+          "en": "Heavily fortified military base with U-shaped barracks, gigantic radar dish, and rich Tier 3 loot."
+        },
+        "tip": {
+          "vi": "Cẩn thận người chơi chặn cầu (Bridge Campers) khi bo thu về đất liền phía bắc. Hãy tìm thuyền hoặc phà nếu cầu bị camp.",
+          "en": "Watch for bridge campers when the circle moves north. Seek ferries or boats if bridges are locked down."
+        }
+      },
+      {
+        "id": "erangel_school",
+        "name": "School & Apartments",
+        "type": "hotdrop",
+        "x": 53,
+        "y": 44.5,
+        "grid": "E4",
+        "lootTier": "High",
+        "riskLevel": "Extreme",
+        "description": {
+          "vi": "Tổ hợp trường học và khu chung cư cao tầng. Điểm hạ cánh kinh điển với hồ bơi mái vòm và sân thượng bao quát.",
+          "en": "Iconic school complex and adjacent high-rise apartments. Fast-paced action around the swimming pool and roofs."
+        },
+        "tip": {
+          "vi": "Hồ bơi trường học có vũ khí xuất hiện nhanh, nhưng thiếu chỗ nấp. Khu chung cư thích hợp cho lối đánh tỉa tầm trung.",
+          "en": "The gym pool spawns guns quickly but lacks cover. Apartments favor mid-range peek-and-shoot angles."
+        }
+      },
+      {
+        "id": "erangel_georgopol",
+        "name": "Georgopol Containers",
+        "type": "hotdrop",
+        "x": 23.5,
+        "y": 33.5,
+        "grid": "B3",
+        "lootTier": "Very High",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Cảng container bến tàu khổng lồ. Vô số vũ khí rải rác trên nóc thùng hàng, cho phép nhặt đồ siêu tốc.",
+          "en": "Massive shipping container seaport. Loot is abundant on top of containers for lightning-fast looting."
+        },
+        "tip": {
+          "vi": "Chạy trên nóc container giúp loot nhanh nhưng lộ hoàn toàn. Dùng lối đi hẹp giữa các thùng để tẩu thoát khi bị bắn.",
+          "en": "Running atop containers speeds up loot but exposes you. Slip into the narrow alleys to break line-of-sight."
+        }
+      },
+      {
+        "id": "erangel_yasnaya",
+        "name": "Yasnaya Polyana",
+        "type": "hotdrop",
+        "x": 66.5,
+        "y": 34,
+        "grid": "F3",
+        "lootTier": "Very High",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Đô thị lớn nhất Erangel với nhà hát, tòa thị chính và những dãy chung cư bạt ngàn. Đủ tài nguyên trang bị cho nhiều đội hình.",
+          "en": "Erangel largest metropolitan area with a police station, courthouses, and blocks of apartments."
+        },
+        "tip": {
+          "vi": "Chiếm các tòa nhà cảnh sát hoặc tháp canh để kiểm soát luồng giao thông đổ về từ mạn đông bắc.",
+          "en": "Control the police building or watchtowers to spot squads rotating in from the northeast."
+        }
+      },
+      {
+        "id": "erangel_secret_basement",
+        "name": "Secret Basement Bunker",
+        "type": "secret_room",
+        "x": 42,
+        "y": 62,
+        "grid": "D6",
+        "lootTier": "Special",
+        "riskLevel": "Medium",
+        "description": {
+          "vi": "Hầm trú ẩn bí mật nằm dưới các ngôi nhà gỗ đặc trưng. Cửa hầm gỗ có thể phá hủy bằng xà beng (Crowbar) hoặc súng uy lực.",
+          "en": "Hidden underground bunker under wooden shacks. Break wooden cellar doors with a crowbar or explosives."
+        },
+        "tip": {
+          "vi": "Chứa trang bị Cấp 3, hòm thính thu nhỏ và ống ngắm cấp cao. Hãy luôn nhặt xà beng khi nhìn thấy!",
+          "en": "Guarantees Level 3 gear, care package items, and high-tier scopes. Always carry a crowbar!"
+        }
+      },
+      {
+        "id": "erangel_bluechip_tower",
+        "name": "Blue Chip Recall Transmitter",
+        "type": "bluechip",
+        "x": 49,
+        "y": 47,
+        "grid": "E4",
+        "lootTier": "Utility",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Trụ tháp vệ tinh Blue Chip cho phép quét chip thẻ tên để hồi sinh đồng đội đã tử trận quay lại chiến trường.",
+          "en": "Satellite Blue Chip recall tower. Upload eliminated teammates blue chips to bring them back into the match."
+        },
+        "tip": {
+          "vi": "Khi kích hoạt trụ sẽ phát ra âm thanh và cột sáng báo hiệu trong phạm vi lớn, thu hút kẻ địch xung quanh.",
+          "en": "Transmitters broadcast loud audio and visual cues when activated, alerting nearby enemies."
+        }
+      }
+    ]
   },
   {
     "id": "miramar",
     "name": "Miramar",
     "size": "8x8 km",
-    "terrain": "Mexican Desert & Rugged Badlands",
+    "gridDimension": 8,
+    "image": "assets/maps/miramar.png",
     "featured": true,
-    "specialFeatures": {
-      "vi": "Cáp treo (Zip lines), Máy bán nước tăng lực tự động (Vending Machines), Bão cát (Sandstorm).",
-      "en": "Tactical ziplines, energy drink vending machines, blinding Sandstorms."
+    "climate": {
+      "vi": "Sa mạc khô cằn, bão cát dữ dội (Sandstorm), hoàng hôn vàng rực",
+      "en": "Arid desert, intense sandstorms, golden hour"
     },
-    "vehicles": ["Pickup Truck", "Van (Minibus)", "Mirado", "Motorcycle", "Quad"],
+    "terrain": {
+      "vi": "Hẻm núi hiểm trở, cao nguyên đất đá cằn cỗi, các thị trấn gạch mộc và không gian mở mênh mông đòi hỏi kỹ năng ngắm bắn cự ly xa.",
+      "en": "Rugged canyons, rocky plateaus, adobe settlements, and sweeping vistas favoring long-range sniper engagements."
+    },
     "description": {
-      "vi": "Bản đồ sa mạc rộng lớn với tầm nhìn thoáng đãng, thánh địa của các tay súng bắn tỉa (SR/DMR) và các pha đấu xe nghẹt thở trên sườn núi đá.",
-      "en": "Expansive desert badlands with sheer verticality, the ultimate haven for marksmen and long-range ridge duels."
-    }
+      "vi": "Thánh địa của súng bắn tỉa DMR/SR. Địa hình gồ ghề tạo nên vô số góc sườn dốc che chắn tự nhiên, nhưng bão cát có thể quét sạch tầm nhìn trong tích tắc.",
+      "en": "The premier sniper paradise. Rolling ridges offer natural hull-down cover, though violent sandstorms can wipe out visibility."
+    },
+    "specialFeatures": {
+      "vi": "Bão cát Sandstorm làm giảm thị lực và giảm máu từ từ, Cáp treo Zipline vượt hẻm núi, Máy bay dã chiến rải rác.",
+      "en": "Sandstorm reducing visibility and draining health, Ziplines across deep canyons, gliders along mountain roads."
+    },
+    "vehicles": [
+      "Mirado (Muscle Car)",
+      "Pickup Truck",
+      "Van (Minibus)",
+      "Motorbike",
+      "Buggy",
+      "Motor Glider"
+    ],
+    "exclusiveWeapons": [
+      "Win94 (Built-in 2.7x Scope)",
+      "Sawed-Off (Sidearm)"
+    ],
+    "hotspots": [
+      {
+        "id": "miramar_pecado",
+        "name": "Pecado",
+        "type": "hotdrop",
+        "x": 49,
+        "y": 54,
+        "grid": "D5",
+        "lootTier": "Very High",
+        "riskLevel": "Extreme",
+        "description": {
+          "vi": "Võ đài quyền anh Casino sầm uất nằm ngay rốn bản đồ. Đấu trường đẫm máu nơi các tay súng thử thách phản xạ đọ súng nhanh.",
+          "en": "The vibrant Casino and Boxing Arena dead-center of Miramar. A bloodbath testing split-second gun reflexes."
+        },
+        "tip": {
+          "vi": "Đáp thẳng nóc Casino hoặc Đấu trường boxing để chiếm súng trước. Sân thượng khách sạn cao tầng bao quát toàn thị trấn.",
+          "en": "Land right onto the Casino roof or Boxing ring to get armed first. Hotel roof commands the town."
+        }
+      },
+      {
+        "id": "miramar_hacienda",
+        "name": "Hacienda del Patrón",
+        "type": "hotdrop",
+        "x": 55.5,
+        "y": 38.5,
+        "grid": "E3",
+        "lootTier": "Luxury High",
+        "riskLevel": "Extreme",
+        "description": {
+          "vi": "Biệt phủ xa hoa của trùm mafia với sân vườn trung tâm và nhà để xe đậu chiếc xe mui trần mạ vàng độc nhất vô nhị (Golden Mirado).",
+          "en": "Lavish cartel estate with courtyard fountains and the garage housing the one-and-only Golden Mirado."
+        },
+        "tip": {
+          "vi": "Chiếc Golden Mirado là phần thưởng tối thượng nhưng sẽ biến bạn thành mục tiêu của toàn bộ máy chủ.",
+          "en": "The Golden Mirado is the ultimate prize but paints a gigantic target on your back."
+        }
+      },
+      {
+        "id": "miramar_los_leones",
+        "name": "Los Leones",
+        "type": "hotdrop",
+        "x": 61,
+        "y": 67,
+        "grid": "E6",
+        "lootTier": "Very High",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Thành phố lớn nhất Miramar với các công trình bê tông dở dang, cần cẩu chọc trời và vô số nhà kho công nghiệp chứa đầy vũ khí xịn.",
+          "en": "Largest metropolis in Miramar filled with unfinished high-rises, towering cranes, and industrial warehouses."
+        },
+        "tip": {
+          "vi": "Leo lên đỉnh các tòa nhà đang xây để có tầm bắn tỉa toàn cảnh tuyệt đỉnh sang các khu nhà kho đối diện.",
+          "en": "Scale the construction frames for superior sniper vantage points across surrounding warehouse lots."
+        }
+      },
+      {
+        "id": "miramar_san_martin",
+        "name": "San Martin & Power Grid",
+        "type": "hotdrop",
+        "x": 48,
+        "y": 36,
+        "grid": "D3",
+        "lootTier": "High",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Thị trấn trung tâm sầm uất kế bên trạm phát điện. Vị trí trọng yếu thường xuyên nằm trên lộ trình di chuyển an toàn vào bo.",
+          "en": "Busy crossroads town next to the Power Grid. A critical strategic hub along central rotation routes."
+        },
+        "tip": {
+          "vi": "Đồi cao nhìn xuống San Martin là chốt chặn hoàn hảo để phục kích các đoàn xe chạy từ El Azahar sang.",
+          "en": "High cliffs overlooking San Martin serve as the perfect ambush point for convoys from the east."
+        }
+      },
+      {
+        "id": "miramar_zipline",
+        "name": "Mountain Zipline Hub",
+        "type": "special",
+        "x": 53,
+        "y": 42,
+        "grid": "E4",
+        "lootTier": "Medium",
+        "riskLevel": "Medium",
+        "description": {
+          "vi": "Hệ thống đường đu dây Zipline băng qua các vách vực sâu hun hút, cho phép di chuyển địa hình đồi núi không gây tiếng động cơ.",
+          "en": "Suspended zipline cables traversing steep ravines, enabling silent, swift mountain transitions."
+        },
+        "tip": {
+          "vi": "Có thể vừa đu dây vừa bắn súng lục hoặc SMG một tay, nhưng bạn rất dễ bị bắn trúng nếu đối thủ phát hiện.",
+          "en": "You can fire one-handed secondary weapons while riding, but you are exposed if spotted."
+        }
+      }
+    ]
   },
   {
     "id": "taego",
     "name": "Taego",
     "size": "8x8 km",
-    "terrain": "Korean Countryside & Reeds",
+    "gridDimension": 8,
+    "image": "assets/maps/taego.png",
     "featured": true,
-    "specialFeatures": {
-      "vi": "Hòm bí mật chìa khóa Taego, Xe bán tải Porter có cốp chứa đồ (Trunk Storage), Hồi sinh Tự cứu Self-AED.",
-      "en": "Taego secret key rooms, Porter trucks with vehicle trunk storage, Self-AED revives."
+    "climate": {
+      "vi": "Vùng quê Hàn Quốc thập niên 1980, hoàng hôn trong trẻo, sương sớm mờ ảo",
+      "en": "1980s South Korean countryside, vivid twilight, morning mist"
     },
-    "vehicles": ["Hyundai Pony Coupe", "Porter Truck", "UAZ", "Dacia"],
+    "terrain": {
+      "vi": "Cánh đồng lúa bạt ngàn, làng cổ truyền thống Hanok, cung điện lộng lẫy, sân bay hiện đại và sông đào chia cắt vùng đất.",
+      "en": "Expansive rice paddies, traditional Hanok villages, ancient palace complexes, airport, and winding waterways."
+    },
     "description": {
-      "vi": "Khung cảnh thôn quê Hàn Quốc thập niên 1980 với những cánh đồng lau sậy bạt ngàn, nhiều khu đền thờ cổ và trang bị độc quyền.",
-      "en": "1980s South Korean rural countryside with vast reed plains, traditional temples, and rich regional exclusive mechanics."
-    }
+      "vi": "Chiến trường Hàn Quốc nguyên bản của PUBG. Nơi khởi xướng cơ chế Vực Dậy Tự Thân (Self-AED) và Hộp quà cứu trợ siêu cấp thả hàng loạt.",
+      "en": "The quintessential Korean battleground. Pioneered the Self-AED revival kit and multi-drop super airdrop planes."
+    },
+    "specialFeatures": {
+      "vi": "Hầm mật thất mở bằng Chìa Khóa Bí Mật (Secret Key), Bộ sốc điện Self-AED tự cứu, Không gian trở lại Comeback BR, Hòm tiếp tế Airdrop thả 10-15 hòm cùng lúc.",
+      "en": "Secret Rooms unlocked with Secret Keys, Self-AED revival kits, Multi-airdrop planes dropping a dozen crates."
+    },
+    "vehicles": [
+      "Hyundai Pony Coupe",
+      "Porter (Truck có khoang chứa Trunk)",
+      "Pony",
+      "Motorbike"
+    ],
+    "exclusiveWeapons": [
+      "K2 (5.56mm AR)",
+      "Mk12 (5.56mm DMR)"
+    ],
+    "hotspots": [
+      {
+        "id": "taego_terminal",
+        "name": "Terminal Airport",
+        "type": "hotdrop",
+        "x": 33.5,
+        "y": 43,
+        "grid": "C4",
+        "lootTier": "Extreme",
+        "riskLevel": "Extreme",
+        "description": {
+          "vi": "Nhà ga sân bay quốc tế khổng lồ với đường băng dài và sảnh chờ rộng mở. Loot cực kỳ phong phú nhưng dễ bị bắn từ tầng 2.",
+          "en": "Gigantic airport terminal with long runways and multi-tier concourses. Rich loot with wide vertical sightlines."
+        },
+        "tip": {
+          "vi": "Tận dụng kính chống đạn và quầy check-in để làm công sự phòng thủ khi giao chiến.",
+          "en": "Use baggage counters and escalators as solid cover against pushers."
+        }
+      },
+      {
+        "id": "taego_palace",
+        "name": "Palace",
+        "type": "hotdrop",
+        "x": 52,
+        "y": 46.5,
+        "grid": "E4",
+        "lootTier": "Very High",
+        "riskLevel": "Extreme",
+        "description": {
+          "vi": "Khu hoàng cung lộng lẫy đậm phong cách kiến trúc truyền thống Hàn Quốc. Tường thành vây quanh tạo nên pháo đài phòng thủ cực mạnh.",
+          "en": "Grand traditional Korean royal palace surrounded by outer stone ramparts. Creates a natural defensive fortress."
+        },
+        "tip": {
+          "vi": "Kiểm soát cổng thành và gác chuông để chặn mọi ngả đường tiến vào của các đội khác.",
+          "en": "Lock down the main gates and pagoda towers to deny entry to flanking teams."
+        }
+      },
+      {
+        "id": "taego_secret_room",
+        "name": "Taego Secret Room",
+        "type": "secret_room",
+        "x": 59,
+        "y": 60.5,
+        "grid": "E5",
+        "lootTier": "Special Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Căn phòng bảo mật cao được bảo vệ bởi cửa cuốn kim loại. Cần có Chìa khóa bí mật Taego nhặt ngẫu nhiên trên bản đồ.",
+          "en": "High-security room locked behind iron shutters. Requires a rare Taego Secret Room Key to open."
+        },
+        "tip": {
+          "vi": "Chứa bộ Self-AED, mũ giáp 3, súng hòm thính Groza/AWM và ống ngắm 8x. Hãy giữ chìa khóa an toàn đến khi bo thuận lợi.",
+          "en": "Guarantees Self-AEDs, Level 3 armor, airdrop crate guns, and 8x scopes."
+        }
+      },
+      {
+        "id": "taego_prison",
+        "name": "Ho San Prison",
+        "type": "hotdrop",
+        "x": 45,
+        "y": 74,
+        "grid": "D6",
+        "lootTier": "High",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Trại giam kiên cố với các tháp canh giám sát, sân tập ngoài trời và hành lang buồng giam chật hẹp.",
+          "en": "Secure penitentiary facility with guard observation towers, exercise yards, and tight cell corridors."
+        },
+        "tip": {
+          "vi": "Shotgun và SMG cực kỳ lợi hại trong các dãy hành lang buồng giam.",
+          "en": "Shotguns and fast-firing SMGs rule the cramped prison corridors."
+        }
+      }
+    ]
   },
   {
     "id": "rondo",
     "name": "Rondo",
     "size": "8x8 km",
-    "terrain": "Modern Megacity & Ancient Bamboo Groves",
+    "gridDimension": 8,
+    "image": "assets/maps/rondo.png",
     "featured": true,
-    "specialFeatures": {
-      "vi": "Hệ thống tiền tệ BR Coins mua đồ tại trạm Market, Kỹ thuật leo tường đồng đội (Co-op Climb), Súng JS9 độc quyền.",
-      "en": "In-game BR Coins economy with Market kiosks, Co-op climb mechanic, JS9 SMG exclusive."
+    "climate": {
+      "vi": "Á Đông huyền ảo, sương mù ráng chiều, ánh đèn neon rực rỡ",
+      "en": "East Asian mystical twilight, neon ambiance, calm rivers"
     },
-    "vehicles": ["Blanc SUV", "Pillar UAZ", "Bus", "Motorcycle"],
+    "terrain": {
+      "vi": "Sự tương phản ngoạn mục giữa siêu đô thị hiện đại Jadena City rực rỡ neon và những rặng núi đá vôi Yu Lin thanh bình với rừng tre bạt ngàn.",
+      "en": "Stunning contrast between neon metropolis of Jadena City and tranquil bamboo forests in Yu Lin."
+    },
     "description": {
-      "vi": "Bản đồ lớn thứ 10 kết hợp đối lập giữa siêu đô thị Jadena City chọc trời hiện đại và các đền làng truyền thống giữa rừng tre tĩnh mịch.",
-      "en": "The 10th battleground featuring the stark contrast between futuristic skyscraper metropolis Jadena City and serene bamboo groves."
-    }
+      "vi": "Vùng đất của Vinh quang (The Ground of Honor). Bản đồ 8x8 km tiên tiến nhất tích hợp hệ thống Chợ mua sắm BR Market, Khiên chắn khẩn cấp và xe điện Blanc điện khí hóa.",
+      "en": "The Ground of Honor. The newest 8x8 battlefield featuring the BR Market economy, Deployable Shields, and Blanc EV cars."
+    },
+    "specialFeatures": {
+      "vi": "Hệ thống Chợ BR Market giao dịch bằng Tiền xu BR Coins, Khiên cơ động Deployable Shield, Máy gây nhiễu EMP, Pháo sáng khẩn cấp, Rừng tre có thể phá hủy.",
+      "en": "BR Market economy using BR Coins, Deployable Shields, EMP Zone, Emergency Cover Flares, destructible bamboo."
+    },
+    "vehicles": [
+      "Blanc (SUV Điện)",
+      "Pico Bus (Xe buýt điện)",
+      "UAZ",
+      "Dacia",
+      "Motorbike"
+    ],
+    "exclusiveWeapons": [
+      "JS9 (9mm SMG)",
+      "Stun Gun (Vũ khí phụ)"
+    ],
+    "hotspots": [
+      {
+        "id": "rondo_jadena",
+        "name": "Jadena City",
+        "type": "hotdrop",
+        "x": 68,
+        "y": 72,
+        "grid": "F6",
+        "lootTier": "Extreme",
+        "riskLevel": "Extreme",
+        "description": {
+          "vi": "Siêu đô thị tương lai tráng lệ với các tòa tháp chọc trời, cầu vượt trên không, thang cuốn tự động và biển quảng cáo neon rực rỡ.",
+          "en": "Futuristic megacity featuring skyscrapers, skywalks, operational escalators, and glowing neon billboards."
+        },
+        "tip": {
+          "vi": "Thang cuốn tự động giúp di chuyển siêu nhanh giữa các tầng trung tâm thương mại. Hãy dùng súng JS9 để quét tầm gần!",
+          "en": "Use functional escalators for rapid vertical pushes. The high fire-rate JS9 dominates here."
+        }
+      },
+      {
+        "id": "rondo_market",
+        "name": "BR Market & Garage",
+        "type": "market",
+        "x": 52,
+        "y": 56,
+        "grid": "E5",
+        "lootTier": "Economy Store",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Trạm chợ trao đổi vật phẩm cao cấp. Sử dụng Đồng xu BR Coins tích lũy từ nhặt đồ để mua vũ khí hòm thính, giáp 3 và xe điện Blanc.",
+          "en": "High-tier trading kiosk. Spend scavenged BR Coins to purchase airdrop weapons, Level 3 armor, and Blanc EVs."
+        },
+        "tip": {
+          "vi": "Thu thập tiền xu trong các hòm két sắt để nhanh chóng nâng cấp hòm cứu trợ di động và khiên bảo vệ.",
+          "en": "Loot safe boxes to stockpile coins quickly for emergency covers and airdrop call-ins."
+        }
+      },
+      {
+        "id": "rondo_neox",
+        "name": "NEOX Factory",
+        "type": "hotdrop",
+        "x": 50,
+        "y": 42,
+        "grid": "E4",
+        "lootTier": "Very High",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Nhà máy sản xuất xe điện công nghệ cao với dây chuyền băng chuyền robot tự động và đường thử xe thử nghiệm tốc độ cao.",
+          "en": "High-tech EV automotive factory with robotic assembly belts and a multi-tiered test track."
+        },
+        "tip": {
+          "vi": "Băng chuyền sản xuất có thể dùng làm đường di chuyển lắt léo để đánh tạt sườn đối phương bất ngờ.",
+          "en": "Conveyor belts provide deceptive flank routes to ambush campers above the factory floor."
+        }
+      },
+      {
+        "id": "rondo_yulin",
+        "name": "Yu Lin Bamboo Grove",
+        "type": "special",
+        "x": 45,
+        "y": 20,
+        "grid": "D2",
+        "lootTier": "High",
+        "riskLevel": "Medium",
+        "description": {
+          "vi": "Thung lũng tre thanh tịnh với hồ nước phong cảnh và những ngôi nhà mái ngói truyền thống. Rừng tre có thể bị chặt hạ hoặc bắn gãy.",
+          "en": "Serene bamboo forest surrounding tranquil ponds. Bamboo stalks can be sliced or blasted down."
+        },
+        "tip": {
+          "vi": "Dùng lựu đạn hoặc xe hơi ủi đổ rừng tre để triệt hạ nơi ẩn nấp của đối thủ bắn tỉa.",
+          "en": "Flatten bamboo clusters with vehicles or grenades to flush out concealed snipers."
+        }
+      }
+    ]
   },
   {
     "id": "vikendi",
     "name": "Vikendi Reborn",
     "size": "8x8 km",
-    "terrain": "Snowy Glaciers & Alpine Forests",
-    "featured": false,
-    "specialFeatures": {
-      "vi": "Hệ thống cáp treo (Cable Car), Bão tuyết nhiệt độ âm (Blizzard Zone), Xà beng cạy cửa mật thất.",
-      "en": "High-altitude Cable Cars, subzero Blizzard Zones, crowbar-pryable secret doors."
+    "gridDimension": 8,
+    "image": "assets/maps/vikendi.png",
+    "featured": true,
+    "climate": {
+      "vi": "Mùa đông Bắc Cực băng giá, bão tuyết dữ dội (Blizzard Zone), cực quang Aurora",
+      "en": "Glacial Arctic winter, devastating Blizzard Zone, Aurora Borealis"
     },
-    "vehicles": ["Snowmobile", "Snowbike", "Zima 4x4", "Vikendi Station Wagon"],
+    "terrain": {
+      "vi": "Bình nguyên tuyết trắng xóa, dòng sông băng trơn trượt, các trạm nghiên cứu vùng cực, cáp treo vận hành và đỉnh núi tuyết trùng điệp.",
+      "en": "Blanketed snowfields, frozen slippery rivers, polar research camps, operational cable cars, and alpine ridges."
+    },
     "description": {
-      "vi": "Bản đồ băng giá được tái sinh với diện tích 8x8 km, thử thách sinh tồn trong gió tuyết và các đỉnh núi băng dựng đứng.",
-      "en": "Reborn alpine winter wonderland expanded to 8x8 km, challenging players in blistering cold and steep glacier crests."
-    }
+      "vi": "Bản đồ tuyết huyền thoại được tái sinh với diện tích 8x8 km mở rộng. Nơi thử thách sinh tồn trước bão tuyết lạnh cóng và chiến đấu bằng xe trượt tuyết Snowmobile.",
+      "en": "The legendary snow map reborn into a full 8x8 km expanse. Survive freezing blizzards and race on Snowmobiles."
+    },
+    "specialFeatures": {
+      "vi": "Vùng Bão Tuyết Blizzard làm mờ tầm nhìn và rút máu, Hệ thống Cáp treo Cable Car liên hoàn, Trại thí nghiệm Lab Camp có hòm đồ báo động, Xà beng nạy cửa khóa.",
+      "en": "Devastating Blizzard Zones, Cable Car transit system, Lab Camps with alarmed supply crates, crowbar-locked doors."
+    },
+    "vehicles": [
+      "Snowmobile",
+      "Snowbike",
+      "Zima",
+      "Pickup Truck",
+      "UAZ"
+    ],
+    "exclusiveWeapons": [
+      "G36C (5.56mm AR)",
+      "MP5K (9mm SMG)"
+    ],
+    "hotspots": [
+      {
+        "id": "vikendi_cosmodrome",
+        "name": "Cosmodrome",
+        "type": "hotdrop",
+        "x": 53,
+        "y": 25,
+        "grid": "E2",
+        "lootTier": "Very High",
+        "riskLevel": "Extreme",
+        "description": {
+          "vi": "Trung tâm phóng tên lửa vũ trụ thời Chiến tranh Lạnh với bệ phóng khổng lồ, đường hầm ngầm bảo trì và tháp điều khiển không lưu.",
+          "en": "Massive Cold War rocket launch facility with immense launch pads, subterranean service tunnels, and towers."
+        },
+        "tip": {
+          "vi": "Đường hầm ngầm là lối thoát an toàn và đường luồn vòng cực kỳ hiểm hóc khi bị ép hỏa lực từ trên cao.",
+          "en": "Subterranean corridors offer safe passage when taking fire from the towering gantry frames."
+        }
+      },
+      {
+        "id": "vikendi_castle",
+        "name": "Castle",
+        "type": "hotdrop",
+        "x": 52,
+        "y": 54,
+        "grid": "E5",
+        "lootTier": "High",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Lâu đài cổ kính nằm giữa hồ nước bao quanh. Cây cầu đá độc đạo nối vào lâu đài luôn là tâm điểm của những cuộc phục kích nghẹt thở.",
+          "en": "Medieval fortress situated on a lake island. Bridges leading inside are notorious choke points."
+        },
+        "tip": {
+          "vi": "Vào mùa đông, mặt hồ đóng băng cho phép đi bộ hoặc lái xe vượt qua mà không cần băng qua cầu độc đạo.",
+          "en": "The surrounding lake is frozen over, allowing you to bypass choke-point bridges completely."
+        }
+      },
+      {
+        "id": "vikendi_lab_camp",
+        "name": "Secret Lab Camp",
+        "type": "secret_room",
+        "x": 60,
+        "y": 40,
+        "grid": "E4",
+        "lootTier": "Special Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Trại nghiên cứu dã chiến trang bị thùng đồ tiếp tế tối mật màu vàng. Mở thùng sẽ kích hoạt còi báo động khẩn cấp hú vang toàn khu vực.",
+          "en": "Field research station housing special yellow airdrop crates. Opening them triggers a loud siren across the sector."
+        },
+        "tip": {
+          "vi": "Âm thanh báo động sẽ thu hút mọi kẻ địch gần đó. Hãy phân công đồng đội yểm trợ vòng ngoài trước khi mở hòm.",
+          "en": "Alarms will alert nearby predators. Position crossfire watches before breaking the security seal."
+        }
+      },
+      {
+        "id": "vikendi_cable_car",
+        "name": "Mountain Cable Car Station",
+        "type": "special",
+        "x": 48,
+        "y": 65,
+        "grid": "D6",
+        "lootTier": "Utility",
+        "riskLevel": "Medium",
+        "description": {
+          "vi": "Trạm cáp treo liên kết các đỉnh núi cao hiểm trở, giúp cả đội di chuyển qua hẻm vực mà không sợ trượt dốc tuyết.",
+          "en": "Aerial cable car stations linking jagged peaks, ferrying squads over otherwise impassable snowy chasms."
+        },
+        "tip": {
+          "vi": "Cáp treo có thể vận chuyển cả xe Snowmobile lên cabin!",
+          "en": "Cable cars can carry Snowmobiles inside their gondolas for rapid getaways upon arrival."
+        }
+      }
+    ]
   },
   {
     "id": "deston",
     "name": "Deston",
     "size": "8x8 km",
-    "terrain": "Submerged Metropolis & Swamps",
-    "featured": false,
-    "specialFeatures": {
-      "vi": "Dây đu thẳng đứng (Ascenders) leo nóc nhà chọc trời, Dù khẩn cấp vĩnh viễn (Emergency Parachute), Thẻ an ninh Pillar Security Key.",
-      "en": "Vertical Ascender ropes to skyscrapers, unlimited utility parachutes, Pillar Security Keycards."
+    "gridDimension": 8,
+    "image": "assets/maps/deston.png",
+    "featured": true,
+    "climate": {
+      "vi": "Bão lốc nhiệt đới, bầu trời u ám sấm sét, gió bão giật mạnh",
+      "en": "Tropical hurricane, overcast thunderstorm, violent gusts"
     },
-    "vehicles": ["Airboat (Lướt đầm lầy)", "Pillar Security Car", "Pickup Truck"],
+    "terrain": {
+      "vi": "Siêu đô thị ngập nước Ripton, đầm lầy cây đước ngập mặn, đập thủy điện hùng vĩ, tuabin gió khổng lồ và khu nghỉ dưỡng giải trí.",
+      "en": "Flooded high-rise metropolis of Ripton, coastal mangrove swamps, massive hydroelectric dam, and wind turbine farms."
+    },
     "description": {
-      "vi": "Thành phố hiện đại ven biển bị ngập lụt một phần, nơi diễn ra các cuộc đột kích đỉnh tháp và di chuyển bằng thuyền lướt khí trên đầm lầy.",
-      "en": "A partly flooded coastal megacity featuring high-rise rooftop sky battles and amphibious swamp airboat chases."
-    }
+      "vi": "Thành phố tương lai bị thiên tai tàn phá tại Texas. Tích hợp dù nhảy khẩn cấp vô hạn (Emergency Parachute) và dây leo thăng thiên Ascender trên mọi tòa nhà chọc trời.",
+      "en": "A storm-ravaged futuristic Texas coastal landscape. Features permanent Emergency Parachutes and vertical Ascenders."
+    },
+    "specialFeatures": {
+      "vi": "Dây leo thẳng đứng Ascender leo tòa nhà 50 tầng trong vài giây, Dù nhảy vô hạn luôn sẵn trong balo, Trạm phát điện gió, Chìa khóa Drone Keycard mở phòng bí mật.",
+      "en": "Vertical Ascender ropes on all skyscrapers, permanent Utility Parachute, Drone-accessible Security Keys."
+    },
+    "vehicles": [
+      "Airboat (Thuyền đầm lầy)",
+      "Pillar Dacia",
+      "Pillar UAZ (Xe cảnh sát đặc nhiệm có còi hú)"
+    ],
+    "exclusiveWeapons": [
+      "O12 (12 Gauge Slug Shotgun)",
+      "MP9 (9mm SMG)"
+    ],
+    "hotspots": [
+      {
+        "id": "deston_ripton",
+        "name": "Ripton Flooded City",
+        "type": "hotdrop",
+        "x": 72,
+        "y": 70,
+        "grid": "F6",
+        "lootTier": "Extreme",
+        "riskLevel": "Extreme",
+        "description": {
+          "vi": "Đô thị cao ốc bị nước biển nhấn chìm một phần. Đỉnh cao của tác chiến ba chiều (Vertical Combat) từ đỉnh tháp chọc trời xuống mặt nước ngập.",
+          "en": "Flooded futuristic city center. The pinnacle of vertical urban combat from 50-story roofs to submerged streets."
+        },
+        "tip": {
+          "vi": "Dùng Ascender leo vèo lên nóc tháp bắn tỉa, sau đó mở Dù khẩn cấp nhảy lượn sang nóc tòa nhà kế bên mà không mất máu.",
+          "en": "Zip up towers with Ascenders, snipe targets, then deploy emergency chutes to glide across blocks."
+        }
+      },
+      {
+        "id": "deston_dam",
+        "name": "Hydroelectric Dam",
+        "type": "hotdrop",
+        "x": 65,
+        "y": 28,
+        "grid": "F3",
+        "lootTier": "Very High",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Đập thủy điện khổng lồ ngăn đôi hồ nước và thung lũng. Cấu trúc phức tạp nhiều tầng với turbine phát điện và đường ống kỹ thuật.",
+          "en": "Massive concrete hydroelectric dam separating the reservoir and lower valleys. Intricate multi-level turbine halls."
+        },
+        "tip": {
+          "vi": "Bờ mặt trên đập là vị trí bắn tỉa bao quát tuyệt vời nhìn xuống hạ lưu con sông.",
+          "en": "The top dam crest provides commanding sniper coverage over downstream river crossings."
+        }
+      },
+      {
+        "id": "deston_concert",
+        "name": "Concert & Arena",
+        "type": "hotdrop",
+        "x": 28,
+        "y": 30,
+        "grid": "C3",
+        "lootTier": "High",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Sân khấu đại nhạc hội ngoài trời với dàn âm thanh ánh sáng đồ sộ và khu lều trại lễ hội âm nhạc.",
+          "en": "Massive outdoor music festival concert grounds with sprawling main stages and vendor fairgrounds."
+        },
+        "tip": {
+          "vi": "Dàn khung ánh sáng kim loại có thể leo lên để có góc bắn bất ngờ vào khán đài bên dưới.",
+          "en": "Scaffold lighting rigs can be ascended for surprising ambush angles into stage crowds."
+        }
+      },
+      {
+        "id": "deston_security_room",
+        "name": "Pillar Security Room",
+        "type": "secret_room",
+        "x": 67,
+        "y": 65,
+        "grid": "F6",
+        "lootTier": "Special Crate",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Phòng an ninh đặc nhiệm Pillar chống đạn. Cần có Thẻ từ an ninh (Security Keycard) nhặt được trên bản đồ hoặc dùng Drone luồn qua lỗ thông gió.",
+          "en": "Bulletproof Pillar corporate security vault. Opened via rare Pillar Keycards or using Drones through ventilation ducts."
+        },
+        "tip": {
+          "vi": "Drone trinh sát có thể bay qua ô thông gió nhỏ trên trần để nhặt chìa khóa bên trong phòng!",
+          "en": "Scout Drones can navigate ceiling duct vents to snatch valuable keycards remotely!"
+        }
+      }
+    ]
+  },
+  {
+    "id": "sanhok",
+    "name": "Sanhok",
+    "size": "4x4 km",
+    "gridDimension": 4,
+    "image": "assets/maps/sanhok.png",
+    "featured": false,
+    "climate": {
+      "vi": "Rừng mưa nhiệt đới Đông Nam Á, mưa giông xối xả, sương mù rậm rạp",
+      "en": "Southeast Asian tropical rainforest, monsoons, thick humidity"
+    },
+    "terrain": {
+      "vi": "Rừng rậm ẩm ướt, đồi cọ rậm rạp cỏ lau cao ngút, các ngôi đền đổ nát và hệ thống sông đào cắt ngang ba hòn đảo.",
+      "en": "Dense jungles, palm plantations with tall grass, ancient stone ruins, and rivers cleaving three islands."
+    },
+    "description": {
+      "vi": "Đấu trường sinh tử 4x4 km với nhịp độ dồn dập tột cùng. Cỏ rậm che khuất tầm nhìn biến mọi bụi cây thành cạm bẫy phục kích tử thần.",
+      "en": "A lightning-fast 4x4 km meat-grinder. Lush vegetation and waist-high foliage turn every bush into a deadly ambush."
+    },
+    "specialFeatures": {
+      "vi": "Xe tải chiến lợi phẩm Loot Truck tự hành chở đầy hòm thính rơi vãi khi bị bắn nổ, Xe tay ga Scooter, Mưa nhiệt đới thay đổi liên tục.",
+      "en": "Loot Trucks dropping supplies when shot, classic Tukshai and Scooter, dynamic monsoonal downpours."
+    },
+    "vehicles": [
+      "Scooter",
+      "Tukshai",
+      "Pickup Truck",
+      "Buggy",
+      "Ronny"
+    ],
+    "exclusiveWeapons": [
+      "QBZ (5.56mm AR)",
+      "QBU (5.56mm DMR)"
+    ],
+    "hotspots": [
+      {
+        "id": "sanhok_bootcamp",
+        "name": "Bootcamp",
+        "type": "hotdrop",
+        "x": 50,
+        "y": 47,
+        "grid": "B2",
+        "lootTier": "Extreme",
+        "riskLevel": "Extreme",
+        "description": {
+          "vi": "Doanh trại quân đội trung tâm. Điểm nóng giao tranh đẫm máu số 1 trong lịch sử PUBG, nơi hàng chục người chơi ngã xuống trong 60 giây đầu.",
+          "en": "Central military base. The undisputed #1 meat-grinder in PUBG history where dozens perish within 60 seconds."
+        },
+        "tip": {
+          "vi": "Tòa nhà chính chữ H (Main Building) là trung tâm hỏa lực. Nếu không tự tin vào kỹ năng bắn súng chớp nhoáng, hãy đáp kho bên hông.",
+          "en": "The central H-building is the focal point. If your twitch aim is cold, start at the peripheral warehouses."
+        }
+      },
+      {
+        "id": "sanhok_paradise",
+        "name": "Paradise Resort",
+        "type": "hotdrop",
+        "x": 64,
+        "y": 32,
+        "grid": "C2",
+        "lootTier": "Very High",
+        "riskLevel": "Extreme",
+        "description": {
+          "vi": "Khu nghỉ dưỡng sang trọng với sân vườn, hồ bơi và những dãy phòng liên thông. Giao tranh cực nhanh ở các góc cua hành lang.",
+          "en": "Luxurious resort compound with courtyards, swimming pools, and interconnected suites. Rapid corner-checking combat."
+        },
+        "tip": {
+          "vi": "Chiếm giữ các mái ngói dốc giúp bạn có góc bắn thẳng vào người chơi đang loot đồ dưới sân trung tâm.",
+          "en": "Controlling tiled roof parapets lets you beam down at squads looting in the open courtyards."
+        }
+      },
+      {
+        "id": "sanhok_ruins",
+        "name": "Ruins",
+        "type": "hotdrop",
+        "x": 32,
+        "y": 62,
+        "grid": "B3",
+        "lootTier": "High",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Ngôi đền cổ đổ nát rêu phong với các hầm mộ ngầm và bậc thang đá chênh vênh. Không gian u tối thuận lợi cho cận chiến.",
+          "en": "Ancient mossy temple ruins with underground catacombs and crumbling stone stairwells."
+        },
+        "tip": {
+          "vi": "Nghe kỹ tiếng bước chân trên bề mặt đá để định vị đối thủ đang ở trên tầng thượng hay dưới hầm mộ ngầm.",
+          "en": "Listen closely for stone footstep cues to pinpoint enemies lurking above or in basement vaults."
+        }
+      },
+      {
+        "id": "sanhok_camp_alpha",
+        "name": "Camp Alpha",
+        "type": "hotdrop",
+        "x": 22,
+        "y": 30,
+        "grid": "A2",
+        "lootTier": "High",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Căn cứ quân sự phía tây bắc gồm các dãy nhà tiền chế và tháp canh bao quát lối sang hòn đảo chính.",
+          "en": "Northwest military outpost consisting of barracks and watchtowers monitoring island river crossings."
+        },
+        "tip": {
+          "vi": "Vị trí đắc địa để chốt chặn các đội bơi qua sông khi bo thu về đảo phía tây.",
+          "en": "Prime position to gatekeep squads swimming across the river toward western circles."
+        }
+      }
+    ]
+  },
+  {
+    "id": "karakin",
+    "name": "Karakin",
+    "size": "2x2 km",
+    "gridDimension": 2,
+    "image": "assets/maps/karakin.png",
+    "featured": false,
+    "climate": {
+      "vi": "Bắc Phi khô cháy, mặt trời thiêu đốt, gió cát hanh hao",
+      "en": "Arid North African sun, scorching heatwaves, dust devils"
+    },
+    "terrain": {
+      "vi": "Đồi đá trọc hiểm trở, các thị trấn đất nung ven biển, hầm ngầm buôn lậu dưới lòng đất và địa hình không bóng cây.",
+      "en": "Barren rocky crags, adobe coastal towns, smuggler catacombs, and stark treeless terrain."
+    },
+    "description": {
+      "vi": "Chiến trường siêu nhỏ 2x2 km chứa 64 người chơi. Cơ chế Vùng Phá Hủy (Black Zone) phá hủy hoàn toàn nhà cửa và tường gạch có thể xuyên thủng bằng bom dính.",
+      "en": "A relentless 64-player 2x2 km pressure cooker. Black Zone missile strikes demolish entire buildings."
+    },
+    "specialFeatures": {
+      "vi": "Vùng Đen (Black Zone) phá hủy sập hoàn toàn nhà cửa thành đống gạch vụn, Bom dính Sticky Bomb phá tường gạch mỏng, Tường xuyên đạn Bullet Penetration.",
+      "en": "Demolition Black Zone leveling buildings to rubble, Sticky Bombs blasting secret walls, bullet-penetrable drywall."
+    },
+    "vehicles": [
+      "Không có phương tiện - Đi bộ 100%"
+    ],
+    "exclusiveWeapons": [
+      "Panzerfaust (Súng phóng lựu chống tăng)",
+      "Sticky Bomb"
+    ],
+    "hotspots": [
+      {
+        "id": "karakin_bashara",
+        "name": "Bashara",
+        "type": "hotdrop",
+        "x": 25,
+        "y": 58,
+        "grid": "A2",
+        "lootTier": "High",
+        "riskLevel": "Extreme",
+        "description": {
+          "vi": "Thị trấn bậc thang ven biển lớn nhất Karakin. Những ngôi nhà san sát với các mái bằng kết nối cho phép nhảy parkour liên tục.",
+          "en": "The largest terraced coastal town in Karakin. Clustered flat-roofed houses allow continuous parkour transitions."
+        },
+        "tip": {
+          "vi": "Cảnh giác còi hú báo hiệu Vùng Đen (Black Zone). Khi còi vang lên trên đầu, hãy lập tức chạy ra khỏi tòa nhà!",
+          "en": "Heed the siren when Black Zone targets your building; evacuate immediately before missile impact!"
+        }
+      },
+      {
+        "id": "karakin_al_habar",
+        "name": "Al Habar",
+        "type": "hotdrop",
+        "x": 72,
+        "y": 25,
+        "grid": "B1",
+        "lootTier": "High",
+        "riskLevel": "Extreme",
+        "description": {
+          "vi": "Thành phố cảng phía đông bắc với nhiều tòa nhà cao tầng nhất trên bản đồ. Nơi tập trung đọ súng tầm gần khốc liệt.",
+          "en": "Northeast port with the highest density of multi-story structures. Prime ground for close-range duels."
+        },
+        "tip": {
+          "vi": "Dùng bom dính Sticky Bomb để thổi bay những bức tường gạch mỏng dẫn vào các căn phòng bí mật đầy súng xịn.",
+          "en": "Use Sticky Bombs to blow breachable walls hiding hidden armories."
+        }
+      },
+      {
+        "id": "karakin_tunnel",
+        "name": "Smuggler Catacombs",
+        "type": "secret_room",
+        "x": 48,
+        "y": 45,
+        "grid": "A1",
+        "lootTier": "Special Military",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Mạng lưới hầm ngầm buôn lậu sâu dưới lòng đá. Cần kích nổ cửa hang bằng bom dính Sticky Bomb hoặc súng phóng lựu Panzerfaust.",
+          "en": "Subterranean smuggler tunnels deep underground. Entrance must be blasted open using Sticky Bombs or Panzerfausts."
+        },
+        "tip": {
+          "vi": "Trong hầm luôn có súng hòm thính và giáp 3. Hãy cẩn thận bị đối thủ ném lựu đạn ngạt khói vào cửa hang độc đạo.",
+          "en": "Holds Level 3 gear and care package items. Watch out for enemies trapping you inside the one-way tunnel exits."
+        }
+      }
+    ]
+  },
+  {
+    "id": "paramo",
+    "name": "Paramo",
+    "size": "3x3 km",
+    "gridDimension": 3,
+    "image": "assets/maps/paramo.png",
+    "featured": false,
+    "climate": {
+      "vi": "Vùng cao nguyên Nam Mỹ mù sương, núi lửa phun trào dung nham đỏ rực",
+      "en": "Highland Andes mist, erupting volcano with glowing lava rivers"
+    },
+    "terrain": {
+      "vi": "Dãy núi hiểm trở mây mù che phủ, suối dung nham nóng chảy làm hỏng lốp xe và gây sát thương, các di tích cổ đại ngẫu nhiên.",
+      "en": "Highland crags shrouded in cloud mist, molten lava rivers that burn boots and pop tires, changing ruins."
+    },
+    "description": {
+      "vi": "Bản đồ động (Dynamic Map) 3x3 km đầu tiên của PUBG. Vị trí các thị trấn và địa hình thay đổi ngẫu nhiên qua từng trận đấu. Trực thăng vận tải thả hòm thính khắp thung lũng.",
+      "en": "PUBGs first dynamic 3x3 km map. Major landmarks and terrain shift between matches, with supply helicopters flying overhead."
+    },
+    "specialFeatures": {
+      "vi": "Địa danh xoay tua ngẫu nhiên giữa các trận, Suối dung nham nóng chảy gây sát thương cực lớn, Trực thăng chở hàng có thể bắn rơi hòm tiếp tế, Chìa khóa Mật thất bí ẩn.",
+      "en": "Landmarks shift locations every match, lethal molten lava streams, supply helicopters that drop loot when shot."
+    },
+    "vehicles": [
+      "Không có phương tiện đường bộ thông thường"
+    ],
+    "exclusiveWeapons": [
+      "Hộp sơ cứu khẩn cấp Critical Response Kit (Hồi sinh trong 1 giây)"
+    ],
+    "hotspots": [
+      {
+        "id": "paramo_capaco",
+        "name": "Capaco",
+        "type": "hotdrop",
+        "x": 42,
+        "y": 28,
+        "grid": "B1",
+        "lootTier": "High",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Khu định cư vùng cao nguyên với nhiều ngôi nhà kiên cố. Vị trí của làng có thể hoán đổi với các khu vực khác tùy trận.",
+          "en": "Highland settlement with clustered brick shelters. Changes coordinates depending on match layout."
+        },
+        "tip": {
+          "vi": "Khi trực thăng bay ngang qua, hãy dồn hỏa lực cả đội bắn vào trực thăng để ép nó thả rơi hòm thính xuống ngay cạnh bạn!",
+          "en": "Concentrate squad fire on passing cargo helicopters to force them to drop care packages right at your feet!"
+        }
+      },
+      {
+        "id": "paramo_secret_room",
+        "name": "Secret Chamber of Paramo",
+        "type": "secret_room",
+        "x": 52,
+        "y": 50,
+        "grid": "B2",
+        "lootTier": "Special Artifact",
+        "riskLevel": "High",
+        "description": {
+          "vi": "Căn phòng bí mật ngàn năm trong ngôi đền cổ. Chỉ mở được bằng Chìa Khóa Bí Mật Paramo nhặt ngẫu nhiên từ hòm trực thăng.",
+          "en": "Ancient secret chamber inside stone temple relics. Accessible only with the rare Paramo Secret Key."
+        },
+        "tip": {
+          "vi": "Chứa bộ Critical Response Kit cứu đồng đội gục ngã chỉ trong 1 giây!",
+          "en": "Guarantees the Critical Response Kit that revives a knocked teammate in just 1 second!"
+        }
+      },
+      {
+        "id": "paramo_volcano",
+        "name": "Volcanic Lava Flow",
+        "type": "special",
+        "x": 50,
+        "y": 15,
+        "grid": "B1",
+        "lootTier": "Hazard",
+        "riskLevel": "Extreme",
+        "description": {
+          "vi": "Dòng dung nham núi lửa nóng chảy chảy tràn qua các sườn đồi. Chạm vào dung nham sẽ bị thiêu đốt mất máu cực nhanh.",
+          "en": "Active molten lava pouring down mountain flanks. Touching lava burns health at an alarming rate."
+        },
+        "tip": {
+          "vi": "Tìm các gờ đá tự nhiên hoặc cầu đá bắc qua dung nham để vượt dòng mà không chạm chân vào lửa đỏ.",
+          "en": "Navigate narrow rock bridges over lava to avoid fatal burns while rotating."
+        }
+      }
+    ]
   }
 ]
